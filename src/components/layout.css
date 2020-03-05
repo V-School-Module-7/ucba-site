@@ -42,6 +42,10 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
 }
 a:active,
 a:hover {

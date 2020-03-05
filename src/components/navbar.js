@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
 
 const Navbar = ({ siteTitle }) => (
   <header
@@ -25,6 +26,15 @@ const Navbar = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+        </Link>
+        <Link
+          to="#"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+         Report A Swarm
         </Link>
         <Link
           to="#"
