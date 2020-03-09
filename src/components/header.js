@@ -1,28 +1,36 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import Logo from "../components/logo"
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li style={{ display: `inline`,     marginRight: `1rem` }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
       background: `lavender`,
       marginBottom: `1.45rem`,
+      
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+       
       }}
     >
       <h1 style={{ margin: 0 }}>
+        <div
+          style={{
+            maxWidth: 100, 
+            
+          }}>
         <Link
           to="/"
           style={{
@@ -30,8 +38,9 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <Logo/>
         </Link>
+        </div>
         <ul style={{ listStyle: `none`, float: `right`}}>
         <ListLink to="/">Home</ListLink>
         <ListLink to="/report-a-swarm/">Report A Swarm</ListLink>
