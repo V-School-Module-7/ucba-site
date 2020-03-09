@@ -1,5 +1,5 @@
 html {
-  font-family: Work Sans;
+  font-family: Work Sans, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -39,7 +39,9 @@ progress {
 template {
   display: none;
 }
+
 a {
+  font-family: Work sans;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   font-size: 10px;

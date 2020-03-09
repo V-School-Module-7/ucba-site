@@ -13,19 +13,21 @@ const Header = () => (
   <header
     style={{
       background: `lavender`,
-      marginBottom: `1.45rem`,
-      
+      // marginBottom: `1.45rem`,
+      margin: `0`,
     }}
   >
     <div
+      className="logoAndList"
       style={{
         margin: `0`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
-       
+        fontFamily: `Work Sans`,
+
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      
         <div
           style={{
             maxWidth: 100, 
@@ -48,7 +50,7 @@ const Header = () => (
         <ListLink to="/education/">Education</ListLink>
         <ListLink to="/membership/">Membership</ListLink>
       </ul>
-      </h1>
+      
     </div>
   </header>
 )
