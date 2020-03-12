@@ -10,6 +10,8 @@ const HeaderContainer = styled.header`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
+  text-decoration: ${props => props.textDecor};
+  color: ${props => props.color}; 
 `
 const LogoAndList = styled.div`
   margin: 0;
@@ -19,6 +21,7 @@ const LogoAndList = styled.div`
   display: flex;
   align-items: flex-end;
   color: black;
+  /* text-decoration: none; */
 `
 const StyledLink = styled(Link)`
   color: black;
@@ -32,17 +35,29 @@ const StyledLink = styled(Link)`
   display: flex;
   text-decoration: none;
   font-size: 20px;
+
+  :visited{
+    color: black
+  };
+  :hover{
+
+  }
+  @media (min-width: 500px) {
+    
+  }
 `
 
-const ListLink = props => (
-  <li style={{ display: `inline`, marginRight: `2rem`, textDecoration: `none`, color: `black` }} >
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  
+`
 
 const Header = () => (
   <HeaderContainer bgColor="lavender">
-    <LogoAndList>
+    <LogoAndList textDecor="textDecor">
         <div
           style={{
             maxWidth: 100, 
@@ -61,15 +76,15 @@ const Header = () => (
           <Logo/>
         </Link>
         </div>
-        <StyledLink>
-        <ul style={{ listStyle: `none`, float: `right`, textDecoration: `none`}}></ul>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/report-a-swarm/">Report A Swarm</ListLink>
-          <ListLink to="/bab/">Be A Beekeeper</ListLink>
-          <ListLink to="/education/">Education</ListLink>
-          <ListLink to="/membership/">Membership</ListLink>
       
-      </StyledLink>
+        <LinkContainer>
+          <StyledLink to="/">Home</StyledLink>
+          <StyledLink to="/reportaswarm/">Report A Swarm</StyledLink>
+          <StyledLink to="/bab/">Be A Beekeeper</StyledLink>
+          <StyledLink to="/education/">Education</StyledLink>
+          <StyledLink to="/membership/">Membership</StyledLink>
+      
+          </LinkContainer>
       
       </LogoAndList>
       
