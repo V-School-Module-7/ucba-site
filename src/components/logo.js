@@ -16,7 +16,15 @@ const Logo = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return (
+    <div style={{
+      height: `100px`,
+      width: `100px`
+    }}>
+    <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+    </div>
+  )
+  }
+  
 
 export default Logo
