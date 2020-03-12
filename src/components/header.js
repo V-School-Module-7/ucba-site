@@ -1,34 +1,94 @@
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import Logo from "../components/logo"
+import styled from 'styled-components'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+const HeaderContainer = styled.header`
+  background: ${props => props.bgColor};
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: ${props => props.textDecor};
+  color: ${props => props.color}; 
+`
+const LogoAndList = styled.div`
+  margin: 0;
+  max-width: 960;
+  padding: 1.45rem 1.0875rem;
+  font-family: Work Sans;
+  display: flex;
+  align-items: flex-end;
+  color: black;
+  /* text-decoration: none; */
+`
+const StyledLink = styled(Link)`
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  padding: 10px 16px;
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+
+  :visited{
+    color: black
+  };
+  :hover{
+
+  }
+  @media (min-width: 500px) {
+    
+  }
+`
+
+const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  
+`
+
+const Header = () => (
+  <HeaderContainer bgColor="lavender">
+    <LogoAndList textDecor="textDecor">
+        <div
+          style={{
+            maxWidth: 100, 
+            
+          }}>
+            
         <Link
           to="/"
           style={{
             color: `white`,
-            textDecoration: `none`,
+            width: `100px`,
+            height: `100px`,
+            textDecoration: `none`
           }}
         >
-          {siteTitle}
+          <Logo/>
         </Link>
-      </h1>
-    </div>
-  </header>
+        </div>
+      
+        <LinkContainer>
+          <StyledLink to="/">Home</StyledLink>
+          <StyledLink to="/reportaswarm/">Report A Swarm</StyledLink>
+          <StyledLink to="/bab/">Be A Beekeeper</StyledLink>
+          <StyledLink to="/education/">Education</StyledLink>
+          <StyledLink to="/membership/">Membership</StyledLink>
+      
+          </LinkContainer>
+      
+      </LogoAndList>
+      
+  </HeaderContainer>
 )
 
 Header.propTypes = {
