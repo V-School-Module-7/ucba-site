@@ -2,22 +2,30 @@ import React from 'react';
 import styled from 'styled-components'
 
 const HeroContainer = styled.div`
+position: relative;
 width: 100%
 `
 
 const HeroImg = styled.img`
 width: 100%;
-/* position: relative;
-z-index: 0 */
-
 `
 
 const HeroText = styled.text`
 position: absolute;
-z-index: 10;
-margin-top: 1000px;
-font-size: 100px;
-color: black
+width: 468px;
+height: 368px;
+left: 64px;
+top: 130px;
+
+@import url(http://allfont.net/allfont.css?fonts=chunkfive);
+font-family: 'ChunkFive Roman', arial;
+font-style: normal;
+font-weight: normal;
+font-size: 62px;
+line-height: 74px;
+text-decoration-line: underline;
+
+color: #FFFFFF;
 `
 
 const heroheader = (props) => {
