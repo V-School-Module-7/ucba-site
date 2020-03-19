@@ -1,6 +1,44 @@
 module.exports = {
   siteMetadata: {
     title: `UCBA`,
+    menuLinks:[
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'report-a-swarm',
+        link: '/report-a-swarm'
+      },
+      {
+        name: 'be-a-beekeeper',
+        link: '/be-a-beekeeper'
+          // {
+          //   name: 'becoming-a-beekeeper',
+          //   link: '/becoming-a-beekeeper'
+          // },
+          // {
+          //   name: 'about-ucba',
+          //   link: '/about-ucba'
+          // },
+          // {
+          //   name: 'youth-bab-program',
+          //   link: '/youth-bab-program'
+          // },
+          // {
+          //   name: 'licensing',
+          //   link: '/licensing'
+          // },
+      },
+      {
+        name: 'education',
+        link: './education'
+      },
+      {
+        name: 'membership',
+        link: './membership'
+      },
+    ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
