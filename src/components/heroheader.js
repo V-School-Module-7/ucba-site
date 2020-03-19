@@ -15,15 +15,15 @@ position: absolute;
 width: 468px;
 height: 368px;
 left: 64px;
-top: 130px;
+top: 64px;
 
-@import url(http://allfont.net/allfont.css?fonts=chunkfive);
-font-family: 'ChunkFive Roman', arial;
+font-family: 'ChunkFive Roman';
 font-style: normal;
 font-weight: normal;
 font-size: 62px;
 line-height: 74px;
 text-decoration-line: underline;
+text-transform: uppercase;
 
 color: #FFFFFF;
 `
