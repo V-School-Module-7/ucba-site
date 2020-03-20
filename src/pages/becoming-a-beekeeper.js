@@ -8,7 +8,7 @@ import Beeimg from "../images/heroheader1.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Becoming A BeeKeeper" />
     <HeroHeader img = {Beeimg} text = {"WELCOME TO THE UTAH COUNTY BEEKEEPERS ASSOCIATION"}/>
   </Layout>
 )
