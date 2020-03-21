@@ -7,12 +7,12 @@ module.exports = {
         link: '/'
       },
       {
-        name: 'report-a-swarm',
+        name: 'report a swarm',
         link: '/report-a-swarm'
       },
       {
-        name: 'be-a-beekeeper',
-        link: '/be-a-beekeeper'
+        name: 'be a beekeeper',
+        link: '/beekeeper'
           // {
           //   name: 'becoming-a-beekeeper',
           //   link: '/becoming-a-beekeeper'
@@ -29,14 +29,56 @@ module.exports = {
           //   name: 'licensing',
           //   link: '/licensing'
           // },
+         
       },
       {
         name: 'education',
-        link: './education'
+        link: '/education'
+          // {
+          //   name: 'honey-information',
+          //   link: '/honey-information'
+          // },
+          // {
+          //   name: 'africanized-honey-bee',
+          //   link: '/africanized-honey-bee'
+          // },
+          // {
+          //   name: 'suggested-readings',
+          //   link: '/suggested-readings'
+          // },
+          // {
+          //   name: 'helpful-links',
+          //   link: '/helpful-links'
+          // },
+          // {
+          //   name: 'diseases-pests-etc',
+          //   link: '/diseases-pests-etc'
+
+          // },
+          // {
+          //   name: 'beekeepers-calendar',
+          //   link: '/beekeepers-calendar'
+          // },
+          // {
+          //   name: 'fun-facts',
+          //   link: '/fun-facts'
+          // },
       },
       {
         name: 'membership',
-        link: './membership'
+        link: '/membership'
+          // {
+          //   name: 'become-a-member',
+          //   link: '/become-a-member'
+          // },
+          // {
+          //   name: 'sponsors',
+          //   link: '/sponsors'
+          // },
+          // {
+          //   name: 'contact-ucba',
+          //   link: '/contact-ucba'
+          // }
       },
     ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,

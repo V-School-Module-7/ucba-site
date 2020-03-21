@@ -3,11 +3,13 @@ import styled from 'styled-components'
 
 const HeroContainer = styled.div`
 position: relative;
-width: 100%
+width: 100%;
+margin-top: 150px;
 `
 
 const HeroImg = styled.img`
 width: 100%;
+
 `
 
 const HeroText = styled.text`
