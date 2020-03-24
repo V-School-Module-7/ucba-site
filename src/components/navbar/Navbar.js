@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import Logo from "../components/logo"
+// import PropTypes from "prop-types"
+import Logo from "../logo"
 import styled from 'styled-components'
+import MenuLink from './MenuLink'
 
 const HeaderContainer = styled.header`
   overflow: hidden;
@@ -31,29 +32,29 @@ const LogoAndList = styled.div`
   align-items: flex-end;
   color: black;
 `
-const StyledLink = styled(Link)`
-  color: black;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  list-style: none;
-  padding: 10px 16px;
-  margin: 0;
-  font-weight: bold;
-  display: flex;
-  text-decoration: none;
-  font-size: 20px;
+// const StyledLink = styled(Link)`
+//   color: black;
+//   position: relative;
+//   display: flex;
+//   align-items: flex-end;
+//   list-style: none;
+//   padding: 10px 16px;
+//   margin: 0;
+//   font-weight: bold;
+//   display: flex;
+//   text-decoration: none;
+//   font-size: 20px;
 
-  :visited{
-    color: black
-  };
-  :hover{
-    background-color: #F5D75F;
-  }
-  @media (min-width: 500px) {
+//   :visited{
+//     color: black
+//   };
+//   :hover{
+//     background-color: #F5D75F;
+//   }
+//   @media (min-width: 500px) {
     
-  }
-`
+//   }
+// `
 
 const LinkContainer = styled.div`
   display: flex;
@@ -63,7 +64,7 @@ const LinkContainer = styled.div`
   
 `
 
-const Header = ({menuLinks}) => (
+const Navbar = ({menuLinks}) => (
   <HeaderContainer>
     <LogoAndList textDecor="textDecor">
         <div
@@ -86,28 +87,9 @@ const Header = ({menuLinks}) => (
       
         <LinkContainer>
         
-        {/* <ul> {menuLinks.map(link => (
-          <li 
-              key={link.name}
-              style={{
-                listStyleType: `none`,
-                padding: `1rem`,
-              }}
-            >
-            <StyledLink to={link.link}>
-              {link.name}
-              
-            </StyledLink>
-            </li>
-        ))}
-          </ul> */}
-            
-           <StyledLink to="/">Home</StyledLink>
-           <StyledLink to="/reportaswarm/">Report A Swarm</StyledLink>
-           <StyledLink to="/bab/">Be A Beekeeper</StyledLink>
-           <StyledLink to="/education/">Education</StyledLink>
-           <StyledLink to="/membership/">Membership</StyledLink>
-
+         {menuLinks.map(link => <MenuLink {...link}/>
+        
+         )}
           </LinkContainer>
       
       </LogoAndList>
@@ -115,12 +97,4 @@ const Header = ({menuLinks}) => (
   </HeaderContainer>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Navbar
