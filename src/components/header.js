@@ -80,7 +80,7 @@ const Header = () => (
         <LinkContainer>
           <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/reportaswarm/">Report A Swarm</StyledLink>
-          <StyledLink to="/bab/">Be A Beekeeper</StyledLink>
+          <StyledLink to="/becoming-a-beekeeper/">Be A Beekeeper</StyledLink>
           <StyledLink to="/education/">Education</StyledLink>
           <StyledLink to="/membership/">Membership</StyledLink>
       
