@@ -18,12 +18,18 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
+          author
           menuLinks {
             name
             link
+             sublinks {
+               name
+               link
+             }
           }
-        }
-      }
+        } 
+       }
     }
   `)
 

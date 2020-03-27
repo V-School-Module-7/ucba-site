@@ -7,25 +7,25 @@ module.exports = {
         link: '/',
         sublinks: []
       },
-      {
-        name: 'report a swarm',
-        link: '/report-a-swarm',
-        sublinks: []
-      },
+      // {
+      //   name: 'report a swarm',
+      //   link: '/report-a-swarm',
+      //   sublinks: []
+      // },
       {
         name: 'be a beekeeper',
         link: null,
         sublinks: [
           {
-              name: 'becoming-a-beekeeper',
+              name: 'becoming a beekeeper',
               link: '/becoming-a-beekeeper'
             },
             {
-              name: 'about-ucba',
+              name: 'about ucba',
               link: '/about-ucba'
             },
             {
-              name: 'youth-bab-program',
+              name: 'youth bab program',
               link: '/youth-bab-program'
             },
             {
@@ -39,31 +39,31 @@ module.exports = {
         link: null,
         sublinks: [
           {
-            name: 'honey-information',
+            name: 'honey information',
             link: '/honey-information'
           },
           {
-            name: 'africanized-honey-bee',
+            name: 'africanized honey bee',
             link: '/africanized-honey-bee'
           },
           {
-            name: 'suggested-readings',
+            name: 'suggested readings',
             link: '/suggested-readings'
           },
           {
-            name: 'helpful-links',
+            name: 'helpful links',
             link: '/helpful-links'
           },
           {
-            name: 'diseases-pests-etc',
+            name: 'diseases, pests, etc.',
             link: '/diseases-pests-etc'
           },
           {
-            name: 'beekeepers-calendar',
+            name: 'beekeepers\' calendar',
             link: '/beekeepers-calendar'
           },
           {
-            name: 'fun-facts',
+            name: 'fun facts',
             link: '/fun-facts'
           },
         ]  
@@ -73,7 +73,7 @@ module.exports = {
         link: null,
         sublinks: [
            {
-            name: 'become-a-member',
+            name: 'become a member',
             link: '/become-a-member'
           },
           {
@@ -81,7 +81,7 @@ module.exports = {
             link: '/sponsors'
           },
           {
-            name: 'contact-ucba',
+            name: 'contact ucba',
             link: '/contact-ucba'
           }
         ]

@@ -1,18 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-// import PropTypes from "prop-types"
 import Logo from "../logo"
 import styled from 'styled-components'
 import MenuLink from './MenuLink'
 
 const HeaderContainer = styled.header`
-  overflow: hidden;
+  
   background-color: #FFFFFF;
   position: fixed;
   top: 0;
   width: 100%;
   height: 150px;
-  z-index: 999;
+  z-index: 3;
   
   background: ${props => props.bgColor};
   margin: 0;
@@ -56,12 +55,18 @@ const LogoAndList = styled.div`
 //   }
 // `
 
+const StyledLink = styled(Link)`
+  color: white;
+  width: 100px;
+  height: 100px;
+  text-decoration: none
+`
+
 const LinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  
 `
 
 const Navbar = ({menuLinks}) => (
@@ -72,25 +77,15 @@ const Navbar = ({menuLinks}) => (
             maxWidth: 100, 
           }}>
             
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            width: `100px`,
-            height: `100px`,
-            textDecoration: `none`
-          }}
-        >
-          <Logo/>
-        </Link>
+          <StyledLink to="/" >
+            <Logo/>
+          </StyledLink>
         </div>
       
         <LinkContainer>
-        
          {menuLinks.map(link => <MenuLink {...link}/>
-        
          )}
-          </LinkContainer>
+        </LinkContainer>
       
       </LogoAndList>
       
