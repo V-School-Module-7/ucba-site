@@ -28,7 +28,7 @@ const StyledLi = styled.li`
   display: flex;
   align-items: flex-end;
   list-style: none;
-  padding: 10px 16px;
+  /* padding: 10px 16px; */
   margin: 0;
   font-weight: bold;
   display: flex;
@@ -61,7 +61,7 @@ export default function MenuLink(props) {
                 {props.name}
               </StyledLink>
             ) : (
-              <span>{props.name}</span>
+              <StyledSpan>{props.name}</StyledSpan>
             )}
               {props.sublinks.length > 0 && (
                 <SubMenu items={props.sublinks} />

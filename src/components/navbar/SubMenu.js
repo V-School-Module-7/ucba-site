@@ -3,64 +3,66 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 
 const SubMenuContainer = styled.ul`
-    visibility: hidden;
-    display: none;
+    /* visibility: hidden; 
+    display: none; */
     z-index: 3;
     margin: 0%;
-    width: 210px;
-    padding: 0 2px;
+    padding: 0;
     background-color: #F5D75F;
     position: absolute;
-    border-width: 2px;
+    border: solid 2px black;
     border-style: solid;
-    border-color: gray;
+    border-color: transparent;
+    box-shadow: 0 0 0 50px rgba(150, 0, 0, 0.5);
     top: 100%;
-    left: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     &::before {
         content: "";
         position: absolute;
-        height: 10px;
-        width: 10px;
         background-color: #F5D75F;
-        top: 0;
-        left: 10%;
-        transform: translateY(-6.4px) rotate(45deg);
-        border-width: 2px;
-        border-style: solid;
-        border-color: blue;
-        border-bottom: none;
-        border-right: none;
-
-      
     }
     & ul:hover {
         visibility: visible;
         display: block;
-        
   }
 `
 
 const SubMenuItem = styled.li`
     list-style: none;
-    color: gray;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     font-size: 18px;
+    font-weight: lighter;
+    width: 275px;
+    height: 53px;
+    left: 613px;
+    top: 152px;
+    display: flex;
+    justify-content: center;
+    background-clip: padding-box;
+    border: 2px solid black;
+    box-shadow: 0 0 0 50px rgba(150, 0, 0, 0.5);
+
     :first-child {
-        margin-top: 12px;
+        /* margin-top: 12px; */
     }
     :last-child {
-        margin-bottom: 12px;
+        /* margin-bottom: 12px; */
     }
     :hover {
         color: black;
-        background-color: gray;
+        background-color: orange;
     }
 `
 const SubMenuLink = styled(Link)`
-     display: block;
+    display: block;
     text-decoration: none;
     line-height: 20px;
     padding: 16px;
+    /* padding-left: -16; */
+    margin: 0;
     color: inherit;
 
     :visited {
