@@ -3,19 +3,17 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 
 const SubMenuContainer = styled.ul`
-    /* visibility: hidden; 
-    display: none; */
+    visibility: hidden; 
+    display: none;
     z-index: 3;
     margin: 0%;
     padding: 0;
     background-color: #F5D75F;
     position: absolute;
-    border: solid 2px black;
+    /* border: solid 1px black; */
     border-style: solid;
-    border-color: transparent;
-    box-shadow: 0 0 0 50px rgba(150, 0, 0, 0.5);
+    /* border-color: transparent; */
     top: 100%;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     &::before {
         content: "";
         position: absolute;
@@ -30,38 +28,34 @@ const SubMenuContainer = styled.ul`
 const SubMenuItem = styled.li`
     list-style: none;
     color: black;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    font-size: 18px;
     font-weight: lighter;
     width: 275px;
     height: 53px;
     left: 613px;
     top: 152px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    border: solid 1px black;
+    /* border-top: 2px black; */
     background-clip: padding-box;
-    border: 2px solid black;
-    box-shadow: 0 0 0 50px rgba(150, 0, 0, 0.5);
 
     :first-child {
-        /* margin-top: 12px; */
+        /* margin-top: 36px;     */
     }
     :last-child {
         /* margin-bottom: 12px; */
     }
     :hover {
         color: black;
-        background-color: orange;
+        font-weight: bold;
+        /* background-color: orange; */
     }
 `
 const SubMenuLink = styled(Link)`
     display: block;
     text-decoration: none;
     line-height: 20px;
-    padding: 16px;
-    /* padding-left: -16; */
     margin: 0;
     color: inherit;
 
