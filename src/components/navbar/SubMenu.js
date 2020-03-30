@@ -10,10 +10,10 @@ const SubMenuContainer = styled.ul`
     padding: 0;
     background-color: #F5D75F;
     position: absolute;
-    /* border: solid 1px black; */
     border-style: solid;
     /* border-color: transparent; */
     top: 100%;
+    position: absolute; left: 0px;
     &::before {
         content: "";
         position: absolute;
@@ -24,6 +24,14 @@ const SubMenuContainer = styled.ul`
         display: block;
   }
 `
+// const Container = styled.div`
+//     /* margin: 10px; */
+//     padding: 10px;
+//     border-color: transparent;
+//     background-clip: padding-box;
+    
+//     /* translate-y: -50px; */
+// `
 
 const SubMenuItem = styled.li`
     list-style: none;
@@ -36,9 +44,10 @@ const SubMenuItem = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px black;
-    /* border-top: 2px black; */
-    background-clip: padding-box;
+    border: solid 1px black; 
+    /* background-clip: padding-box;
+    /* background-clip: padding;  */
+    /* background-clip: content; */ 
 
     :first-child {
         /* margin-top: 36px;     */
@@ -71,12 +80,14 @@ function SubMenu( props ) {
             name, link
         } = subMenuItem
         return (
+            // <Container>
             <SubMenuItem key={i}>
                 <SubMenuLink as={Link} to={link}>
                 {name}
                    
                 </SubMenuLink>
             </SubMenuItem>
+            // </Container>
         )
     })
     return <SubMenuContainer>{subMenuItems}</SubMenuContainer>
