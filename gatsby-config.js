@@ -1,6 +1,92 @@
 module.exports = {
   siteMetadata: {
     title: `UCBA`,
+    menuLinks:[
+      {
+        name: 'home',
+        link: '/',
+        sublinks: []
+      },
+      // {
+      //   name: 'report a swarm',
+      //   link: '/report-a-swarm',
+      //   sublinks: []
+      // },
+      {
+        name: 'be a beekeeper',
+        link: null,
+        sublinks: [
+          {
+              name: 'becoming a beekeeper',
+              link: '/becoming-a-beekeeper'
+            },
+            {
+              name: 'about ucba',
+              link: '/about-ucba'
+            },
+            {
+              name: 'youth bab program',
+              link: '/youth-bab-program'
+            },
+            {
+              name: 'licensing',
+              link: '/licensing'
+            }
+        ]
+      },
+      {
+        name: 'education',
+        link: null,
+        sublinks: [
+          {
+            name: 'honey information',
+            link: '/honey-information'
+          },
+          {
+            name: 'africanized honey bee',
+            link: '/africanized-honey-bee'
+          },
+          {
+            name: 'suggested readings',
+            link: '/suggested-readings'
+          },
+          {
+            name: 'helpful links',
+            link: '/helpful-links'
+          },
+          {
+            name: 'diseases, pests, etc.',
+            link: '/diseases-pests-etc'
+          },
+          {
+            name: 'beekeepers\' calendar',
+            link: '/beekeepers-calendar'
+          },
+          {
+            name: 'fun facts',
+            link: '/fun-facts'
+          },
+        ]  
+      },
+      {
+        name: 'membership',
+        link: null,
+        sublinks: [
+           {
+            name: 'become a member',
+            link: '/become-a-member'
+          },
+          {
+            name: 'sponsors',
+            link: '/sponsors'
+          },
+          {
+            name: 'contact ucba',
+            link: '/contact-ucba'
+          }
+        ]
+      },
+    ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
