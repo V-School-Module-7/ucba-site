@@ -6,7 +6,7 @@ import MenuLink from "./MenuLink"
 
 const HeaderContainer = styled.header`
   background-color: #ffffff;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   height: 150px;

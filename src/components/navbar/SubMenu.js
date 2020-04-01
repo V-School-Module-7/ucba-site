@@ -57,7 +57,6 @@ const SubMenuLink = styled(Link)`
 `
 
 function SubMenu(props) {
-  console.log(props)
   const subMenuItems = props.items.map((subMenuItem, i) => {
     const { name, link } = subMenuItem
     return (
