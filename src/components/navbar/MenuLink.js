@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import { Link } from "gatsby"
-import styled from 'styled-components'
-import SubMenu from './SubMenu'
+import styled from "styled-components"
+import SubMenu from "./SubMenu"
 
 const StyledLink = styled(Link)`
   color: black;
@@ -14,13 +14,6 @@ const StyledLink = styled(Link)`
   display: flex;
   text-decoration: none;
   font-size: 20px;
-
-  /* :visited{
-    color: black
-  };
-  :hover{
-    background-color: #F5D75F;
-  } */
 `
 const StyledLi = styled.li`
   color: black;
@@ -28,24 +21,22 @@ const StyledLi = styled.li`
   display: flex;
   align-items: flex-end;
   list-style: none;
-  /* padding: 10px 16px; */
   margin: 0;
   font-weight: bold;
   display: flex;
   text-decoration: none;
   font-size: 20px;
-    list-style-type: none;
-    padding: 1rem;
-   
-    &:hover {
-        cursor: pointer;
-        background-color: #F5D75F;
-    }
-    &:hover > ul,
-    & ul:hover {
-        visibility: visible;
-        display: block;
+  list-style-type: none;
+  padding: 1rem;
 
+  &:hover {
+    cursor: pointer;
+    background-color: #f5d75f;
+  }
+  &:hover > ul,
+  & ul:hover {
+    visibility: visible;
+    display: block;
   }
 `
 const StyledSpan = styled.span`
@@ -53,19 +44,14 @@ const StyledSpan = styled.span`
 `
 
 export default function MenuLink(props) {
-    // console.log(props.sublinks)
-    return (
-          <StyledLi key={props.name}>
-            {props.link ? (
-              <StyledLink to={props.link}>
-                {props.name}
-              </StyledLink>
-            ) : (
-              <StyledSpan>{props.name}</StyledSpan>
-            )}
-              {props.sublinks.length > 0 && (
-                <SubMenu items={props.sublinks} />
-              )}
-            </StyledLi>
-    )
+  return (
+    <StyledLi key={props.name}>
+      {props.link ? (
+        <StyledLink to={props.link}>{props.name}</StyledLink>
+      ) : (
+        <StyledSpan>{props.name}</StyledSpan>
+      )}
+      {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
+    </StyledLi>
+  )
 }
