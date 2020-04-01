@@ -1,18 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import Logo from "../logo"
-import styled from 'styled-components'
-import MenuLink from './MenuLink'
+import styled from "styled-components"
+import MenuLink from "./MenuLink"
 
 const HeaderContainer = styled.header`
-  
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
   height: 150px;
   z-index: 3;
-  
   background: ${props => props.bgColor};
   margin: 0;
   float: left;
@@ -20,7 +18,7 @@ const HeaderContainer = styled.header`
   font-weight: 700;
   font-size: 20px;
   text-decoration: ${props => props.textDecor};
-  color: ${props => props.color}; 
+  color: ${props => props.color};
 `
 const LogoAndList = styled.div`
   margin: 0;
@@ -31,35 +29,12 @@ const LogoAndList = styled.div`
   align-items: flex-end;
   color: black;
 `
-// const StyledLink = styled(Link)`
-//   color: black;
-//   position: relative;
-//   display: flex;
-//   align-items: flex-end;
-//   list-style: none;
-//   padding: 10px 16px;
-//   margin: 0;
-//   font-weight: bold;
-//   display: flex;
-//   text-decoration: none;
-//   font-size: 20px;
-
-//   :visited{
-//     color: black
-//   };
-//   :hover{
-//     background-color: #F5D75F;
-//   }
-//   @media (min-width: 500px) {
-    
-//   }
-// `
 
 const StyledLink = styled(Link)`
   color: white;
   width: 100px;
   height: 100px;
-  text-decoration: none
+  text-decoration: none;
 `
 
 const LinkContainer = styled.div`
@@ -67,28 +42,28 @@ const LinkContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
+  margin-right: 96px;
 `
 
-const Navbar = ({menuLinks}) => (
+const Navbar = ({ menuLinks }) => (
   <HeaderContainer>
     <LogoAndList textDecor="textDecor">
-        <div
-          style={{
-            maxWidth: 100, 
-          }}>
-            
-          <StyledLink to="/" >
-            <Logo/>
-          </StyledLink>
-        </div>
-      
-        <LinkContainer>
-         {menuLinks.map(link => <MenuLink {...link}/>
-         )}
-        </LinkContainer>
-      
-      </LogoAndList>
-      
+      <div
+        style={{
+          maxWidth: 100,
+        }}
+      >
+        <StyledLink to="/">
+          <Logo />
+        </StyledLink>
+      </div>
+
+      <LinkContainer>
+        {menuLinks.map(link => (
+          <MenuLink {...link} />
+        ))}
+      </LinkContainer>
+    </LogoAndList>
   </HeaderContainer>
 )
 
