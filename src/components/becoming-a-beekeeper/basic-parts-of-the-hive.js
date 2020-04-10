@@ -22,7 +22,6 @@ const BoldText = styled.div`
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-  /* margin-bottom: 32px; */
   color: #000000;
 `
 
@@ -54,11 +53,11 @@ const BasicPartsOfTheHive = () => {
             </ParagraphText>
             <BoldText>Entrance Reducers</BoldText>
             <ParagraphText>
-            These are used to make the opening of the hive smaller for various reasons. You will use one in the winter/ spring to help maintain colony temperature.
+            These are used to make the opening of the hive smaller for various reasons. You will use one in the winter/spring to help maintain colony temperature.
             </ParagraphText>
             <BoldText>Hive Stands</BoldText>
             <ParagraphText>
-            There are many types of prefabricated hive stands such as the one shown. You can also stand your hive on pallets, cinder blocks, bricks etc. The point is to raise your hive off of the ground to avoid pests.
+            There are many types of prefabricated hive stands such as the one shown. You can also stand your hive on pallets, cinder blocks, bricks, etc. The point is to raise your hive off of the ground to avoid pests.
             </ParagraphText>
             <BoldText>Frames</BoldText>
             <ParagraphText>
@@ -77,7 +76,6 @@ const BasicPartsOfTheHive = () => {
             Feeders are used to supply the colony with either honey, sugar water or high fructose corn syrup. You will need to feed a new colony as they have no honey stores to consume. Some feeders are used internally, some at the entrance, some atop the hive and others outside in an accessible spot; consult some beekeepers for their preferences or do some online research.
             </ParagraphText>
         </TextContainer>
-
     )
 }
 export default BasicPartsOfTheHive
