@@ -9,7 +9,7 @@ import {
 
 const GettingStung = () => {
     return (
-        <TextContainer>
+        <TextContainer id="getting-stung">
             <FlexContainer>
                 <TextHeader>getting stung</TextHeader>
             </FlexContainer>

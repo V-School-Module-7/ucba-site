@@ -12,6 +12,8 @@ import LawsAndLicenses from "../components/becoming-a-beekeeper/laws-and-license
 import GettingStarted from "../components/becoming-a-beekeeper/getting-started"
 import BeeBreeds from "../components/becoming-a-beekeeper/bee-breeds"
 import Resources from "../components/becoming-a-beekeeper/resources"
+import GettingStung from "../components/becoming-a-beekeeper/getting-stung"
+import KindsOfBeeKeepers from "../components/becoming-a-beekeeper/kinds-of-beekeepers"
 import styled from "styled-components"
 
 const FlexContainer = styled.div`
@@ -54,6 +56,8 @@ const IndexPage = () => (
           <GettingStarted />
           <BeeBreeds />
           <Resources />
+          <GettingStung />
+          <KindsOfBeeKeepers />
         </div>
       </GridContainer>
     </FlexContainer>
