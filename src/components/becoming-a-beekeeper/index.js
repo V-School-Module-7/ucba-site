@@ -147,13 +147,13 @@ const index = () => {
         </StyledLink>
         <StyledLink
           activeClass="active"
-          to="getting-started"
+          to="getting-stung"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
         >
-          GETTING STARTED
+          GETTING STUNG
         </StyledLink>
         <StyledLink
           activeClass="active"
