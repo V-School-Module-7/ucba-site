@@ -7,6 +7,7 @@ import Beeimg from "../images/heroheader3.png"
 import Index from "../components/becoming-a-beekeeper/index"
 import General from "../components/becoming-a-beekeeper/general"
 import CommittingToBeekeeping from "../components/becoming-a-beekeeper/committing-to-beekeeping.js"
+import BasicPartsOfTheHive from "../components/becoming-a-beekeeper/basic-parts-of-the-hive.js"
 import SelectingAnApiarySite from "../components/becoming-a-beekeeper/selecting-an-apiary-site"
 import LawsAndLicenses from "../components/becoming-a-beekeeper/laws-and-licenses"
 import GettingStarted from "../components/becoming-a-beekeeper/getting-started"
@@ -51,6 +52,7 @@ const IndexPage = () => (
         <div>
           <General />
           <CommittingToBeekeeping />
+          <BasicPartsOfTheHive />
           <SelectingAnApiarySite />
           <LawsAndLicenses />
           <GettingStarted />
