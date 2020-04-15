@@ -27,7 +27,7 @@ const BoldText = styled.div`
 
 const BasicPartsOfTheHive = () => {
     return (
-        <TextContainer>
+        <TextContainer id="basic-parts-of-the-hive">
             <FlexContainer>
                 <TextHeader>BASIC PARTS OF A HIVE</TextHeader>
             </FlexContainer>
