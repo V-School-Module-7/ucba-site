@@ -8,6 +8,13 @@ import Index from "../components/becoming-a-beekeeper/index"
 import General from "../components/becoming-a-beekeeper/general"
 import CommittingToBeekeeping from "../components/becoming-a-beekeeper/committing-to-beekeeping.js"
 import BasicPartsOfTheHive from "../components/becoming-a-beekeeper/basic-parts-of-the-hive.js"
+import SelectingAnApiarySite from "../components/becoming-a-beekeeper/selecting-an-apiary-site"
+import LawsAndLicenses from "../components/becoming-a-beekeeper/laws-and-licenses"
+import GettingStarted from "../components/becoming-a-beekeeper/getting-started"
+import BeeBreeds from "../components/becoming-a-beekeeper/bee-breeds"
+import Resources from "../components/becoming-a-beekeeper/resources"
+import GettingStung from "../components/becoming-a-beekeeper/getting-stung"
+import KindsOfBeeKeepers from "../components/becoming-a-beekeeper/kinds-of-beekeepers"
 import styled from "styled-components"
 
 const FlexContainer = styled.div`
@@ -46,6 +53,13 @@ const IndexPage = () => (
           <General />
           <CommittingToBeekeeping />
           <BasicPartsOfTheHive />
+          <SelectingAnApiarySite />
+          <LawsAndLicenses />
+          <GettingStarted />
+          <BeeBreeds />
+          <Resources />
+          <GettingStung />
+          <KindsOfBeeKeepers />
         </div>
       </GridContainer>
     </FlexContainer>
