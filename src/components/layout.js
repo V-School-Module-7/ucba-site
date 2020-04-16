@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Navbar from "./navbar/Desktop/Navbar.js"
+import Navbar from './navbar/Desktop/DesktopMenu.js'
 import Footer from './Footer'
 import "./layout.css"
 
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-        <Footer />
+      <Footer />
     </>
   )
 }
