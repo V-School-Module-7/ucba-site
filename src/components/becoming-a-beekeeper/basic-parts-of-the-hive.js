@@ -12,7 +12,7 @@ const ParagraphText = styled.div`
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 72px;
+  margin-bottom: 36px;
   color: #000000;
 `
 
