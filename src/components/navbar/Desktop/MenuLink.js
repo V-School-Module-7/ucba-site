@@ -43,7 +43,7 @@ const StyledSpan = styled.span`
   display: inline-block;
 `
 
-export default function MenuLink(props) {
+function MenuLink(props) {
   return (
     <StyledLi key={props.name}>
       {props.link ? (
@@ -55,3 +55,4 @@ export default function MenuLink(props) {
     </StyledLi>
   )
 }
+export default MenuLink
