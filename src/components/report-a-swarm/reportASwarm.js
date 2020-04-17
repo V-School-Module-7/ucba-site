@@ -14,10 +14,11 @@ position: relative;
 width: 100%;
 height auto;
 text-align: center;
-
+padding-bottom: 80px;
 
 @media (max-width: 800px) {
   display: block;
+  text-align: center;
 }
 `
 
@@ -33,6 +34,8 @@ const TextContainer = styled.div`
   padding: 60px;
   border: 6px solid #63966a;
   box-sizing: border-box;
+
+  
 `
 
 
@@ -44,6 +47,21 @@ export const ParagraphText = styled.div`
   line-height: 32px;
   text-align: left;
   color: #000000;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
+ 
+`
+
+const SwarmContact = styled.h1`
+  width: auto;
+  border: 1px solid #63966a;
+  margin-bottom: 60px;
+
+  & > a {
+    color: #63966a;
+  }
 `
 
 export const TextHeader = styled.h1`
@@ -62,6 +80,15 @@ export const TextHeader = styled.h1`
   text-transform: uppercase;
   color: #000000;
   
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 1000px) {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
 `
 export const TextHeader2 = styled.h1`
   position: relative;
@@ -78,10 +105,32 @@ export const TextHeader2 = styled.h1`
   line-height: 42px;
   text-transform: uppercase;
   color: #000000;
+
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+//   @media (min-width: 1000px) {
+//     font-size: 24px;
+//   }
+
+  
 `
 
 const TextHeader3 = styled.h1`
 
+`
+const TextHeader4 = styled.h3`
+font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+line-height: 42px;
+font-size: 22px;
+position: relative;
+  height: 53px;
+  margin: auto;
+  display: inline-block;
+  color: #63966a;
 `
 
 
@@ -109,7 +158,14 @@ const AnswerContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     padding-top: 80px;
     
-    
+    @media (max-width: 800px) {
+        display: inline-block;
+        width: 80%;
+      }
+    @media (max-width: 1000px) {
+        display: inline-block;
+        width: 100%;
+      }
     
 `
 
@@ -119,6 +175,18 @@ const AnswerContainer2 = styled.div`
     padding-top: 100px;
     
     
+    @media (max-width: 1000px) {
+        display: inline-block;
+        width: 80%;
+        
+        
+      }
+    @media (max-width: 600px) {
+        display: inline-block;
+        width: 80%;
+        
+        
+      }
 `
 
 const AnswerQuestion = styled.div`
@@ -126,16 +194,27 @@ const AnswerQuestion = styled.div`
     display:block;
     width: 75%;
     text-align: left;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 60px;
+        
+      }
     
 `
 
 const AnswerImg = styled.div`
-
+ width: 100%;
+@media (max-width: 800px) {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  }
 `
 
 const SwarmImg = styled.img`
-width: 75%
-
+width: 75%;
 `
 
 const reportASwarm = () => {
@@ -148,9 +227,22 @@ const reportASwarm = () => {
 
             </TextContainer>
 
+            <SwarmContact>
+                Swarm Cordiantor Contact Info: <br />
+                Mike Shaffer <br />
+                <a href="tel:+18016331887">801-633-1887</a><br />
+                <a href="mailto:mike@carnibuilders.com">mike@carnibuilders.com</a>
+
+            </SwarmContact>
+
+
             <TextHeader>
 
-                Be prepared to answer the questions below to help the beekeeper:
+                Be prepared to answer the questions
+            </TextHeader>
+            <TextHeader>
+
+                below to help the beekeeper:
             </TextHeader>
             <AnswerContainer>
                 <AnswerQuestion>
@@ -160,6 +252,24 @@ const reportASwarm = () => {
                     <ParagraphText>
                         If the swarm has a “nest” then it is not honey bees but more likely is hornets or wasps especially if it is “papery” looking.  A swarm of honey bees will cluster into a roughly round shape on an object like a tree branch.
                     </ParagraphText>
+                    <TextHeader4>
+                        Where is the swarm (physical address)?
+                    </TextHeader4>
+                    <TextHeader4>
+                        Your name and phone number.
+                    </TextHeader4>
+                    <TextHeader4>
+                        What has the swarm landed on?
+                    </TextHeader4>
+                    <TextHeader4>
+                        How high up is the swarm?
+                    </TextHeader4>
+                    <TextHeader4>
+                        Are there any special concerns in the area?
+
+                            (lots of children, water hazards, bees in the house etc)
+
+                    </TextHeader4>
                 </AnswerQuestion>
                 <AnswerImg>
                     <SwarmImg src={Swarm1}></SwarmImg>
