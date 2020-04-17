@@ -17,7 +17,7 @@ function Navbar(props) {
     return (
         <>
             <DesktopMenu menuLinks={props.menuLinks}/>
-            <MobileMenu />
+            <MobileMenu menuLinks={props.menuLinks}/>
         </>
     )
 }

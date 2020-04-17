@@ -5,9 +5,7 @@ import styled from "styled-components"
 import MenuLink from "./MenuLink"
 
 const HeaderContainer = styled.header`
-  
-
-@media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     background-color: #ffffff;
     position: relative;
     top: 0;
@@ -25,7 +23,8 @@ const HeaderContainer = styled.header`
   }
 `
 const LogoAndList = styled.div`
-display: none;
+  display: none;
+
 @media (min-width: 1000px) {
   {
     margin: 0;
