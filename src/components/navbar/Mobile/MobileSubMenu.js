@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import { animated } from "react-spring"
 import { useMenuAnimation } from "./useMenuAnimation"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
 import Caret from "./Caret"
 import { NavbarContext } from "../navbarContext"
@@ -56,11 +56,12 @@ const ItemLink = styled(Link)`
 `
 
 function MobileSubMenu(props) {
-
+    console.log('CHECKING SUBMENU PROPS')
+    console.log(props)
     const { subMenuOpen, toggleSubMenu, chosenSubMenu } = useContext(
         NavbarContext
     )
-        console.log(chosenSubMenu)
+    console.log(chosenSubMenu)
     const menuAnimation = useMenuAnimation(subMenuOpen)
 
     const subMenuItems =
@@ -69,12 +70,12 @@ function MobileSubMenu(props) {
         chosenSubMenu.map(item => {
             return (
                 <li>
-                   
 
-                         <ItemLink to={item.link}>
-                            {item.name}
-                        </ItemLink> 
-                     
+
+                    <ItemLink to={item.link}>
+                        {item.name}
+                    </ItemLink>
+
                 </li>
             )
         })
@@ -89,7 +90,7 @@ function MobileSubMenu(props) {
                 {subMenuItems}
             </SubMenuBody>
         </Overlay>
-        
+
     )
 }
 

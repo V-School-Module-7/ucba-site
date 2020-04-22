@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 import { animated } from "react-spring"
 import { NavbarContext } from "../navbarContext"
@@ -29,11 +29,11 @@ function MobilePrimaryMenu({ open, items }) {
     const menuItems = items.map(item => (
         <MobilePrimaryMenuItem key={item.name} data={item} />
     ))
-     // 
+    // 
     return (
         <Overlay style={menuAnimation} >
             <Ul>{menuItems}</Ul>
-         </Overlay>
+        </Overlay>
     )
 }
 

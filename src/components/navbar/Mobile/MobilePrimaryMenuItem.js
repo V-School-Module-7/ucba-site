@@ -34,9 +34,9 @@ const StyledArrow = styled(Arrow)`
     transform: rotate(-90deg);
 `
 
-function MobilePrimaryMenuItem({data}) {
-    console.log("CHECKING MobilePrimaryMenuItem")
-    console.log(data)
+function MobilePrimaryMenuItem({ data }) {
+    // console.log("CHECKING MobilePrimaryMenuItem")
+    // console.log(data)
     const { toggleSubMenu, setChosenSubMenu } = useContext(NavbarContext)
 
     function handleClick() {
@@ -46,15 +46,15 @@ function MobilePrimaryMenuItem({data}) {
 
     return (
         <MenuItem>
-         
-         {!data.sublinks.length ? (
+
+            {!data.sublinks.length ? (
                 <Item as={Link} to={data.link}>
                     {data.name}
                 </Item>
             ) : (
-                <Item onClick={handleClick}>{data.name}</Item>
-            )}
-            
+                    <Item onClick={handleClick}>{data.name}</Item>
+                )}
+
             {data.sublinks.length > 0 && <StyledArrow />}
         </MenuItem>
     )
@@ -111,7 +111,7 @@ export default MobilePrimaryMenuItem
 
 //     @media (min-width: 1000px){
 //         display: none;
-        
+
 //     }
 // `
 
