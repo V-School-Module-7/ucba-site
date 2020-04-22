@@ -1,37 +1,37 @@
 module.exports = {
   siteMetadata: {
     title: `UCBA`,
-    menuLinks:[
+    menuLinks: [
       {
         name: 'home',
         link: '/',
         sublinks: []
       },
-      // {
-      //   name: 'report a swarm',
-      //   link: '/report-a-swarm',
-      //   sublinks: []
-      // },
+      {
+        name: 'report a swarm',
+        link: '/report-a-swarm',
+        sublinks: []
+      },
       {
         name: 'be a beekeeper',
         link: null,
         sublinks: [
           {
-              name: 'becoming a beekeeper',
-              link: '/becoming-a-beekeeper'
-            },
-            {
-              name: 'about ucba',
-              link: '/about-ucba'
-            },
-            {
-              name: 'youth bab program',
-              link: '/youth-bab-program'
-            },
-            {
-              name: 'licensing',
-              link: '/licensing'
-            }
+            name: 'becoming a beekeeper',
+            link: '/becoming-a-beekeeper'
+          },
+          {
+            name: 'about ucba',
+            link: '/about-ucba'
+          },
+          {
+            name: 'youth bab program',
+            link: '/youth-bab-program'
+          },
+          {
+            name: 'licensing',
+            link: '/licensing'
+          }
         ]
       },
       {
@@ -66,13 +66,13 @@ module.exports = {
             name: 'fun facts',
             link: '/fun-facts'
           },
-        ]  
+        ]
       },
       {
         name: 'membership',
         link: null,
         sublinks: [
-           {
+          {
             name: 'become a member',
             link: '/become-a-member'
           },
