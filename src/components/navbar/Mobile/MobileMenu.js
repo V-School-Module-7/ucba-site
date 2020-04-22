@@ -10,7 +10,7 @@ import MobileSubMenu from "./MobileSubMenu"
 
 const Menu = styled.div`
     display: flex;
-    height: 100%;
+    height: 75px;
     width: 100%;
     justify-content: space-between;
     /* Don't change position attr, as it will mess with mobile popover menu*/
