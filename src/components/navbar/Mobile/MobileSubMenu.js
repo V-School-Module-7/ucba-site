@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-// import Link from "../../shared/QueryLink"
 import { animated } from "react-spring"
 import { useMenuAnimation } from "./useMenuAnimation"
+import {Link} from "gatsby"
 
 import Caret from "./Caret"
 import { NavbarContext } from "../navbarContext"
@@ -45,51 +45,36 @@ const SubMenuBody = styled.ul`
     }
 `
 
-// const ItemLink = styled(Link)`
-//     display: block;
-//     text-decoration: none;
-//     line-height: 20px;
-//     color: inherit;
-//     :visited {
-//         color: inherit;
-//     }
-// `
-
-
-// const StyledButton = styled(Button)`
-//     width: 100%;
-//     height: 32px;
-//     font-size: 12px;
-//     padding: 0;
-//     margin-top: 16px;
-//     font-family: "Work Sans";
-// `
+const ItemLink = styled(Link)`
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    color: inherit;
+    :visited {
+        color: inherit;
+    }
+`
 
 function MobileSubMenu(props) {
-    console.log("CHECKING MobileSubMenu props")
-    console.log(props.menuLinks)
-    // const subMenuItems = props.items.map(subMenuItem, i) => {
-    //   const { name, link } = subMenuItem
-    // }
 
     const { subMenuOpen, toggleSubMenu, chosenSubMenu } = useContext(
         NavbarContext
     )
-
+        console.log(chosenSubMenu)
     const menuAnimation = useMenuAnimation(subMenuOpen)
 
     const subMenuItems =
         chosenSubMenu &&
-        chosenSubMenu.items &&
-        chosenSubMenu.items.map(item => {
+        chosenSubMenu.length &&
+        chosenSubMenu.map(item => {
             return (
                 <li>
-                   /
-                    // : (
-                        {/* // <ItemLink to={item.sub_nav_link.url}>
-                        //     {item.sub_nav_link_label.text}
-                        // </ItemLink> */}
-                    // }
+                   
+
+                         <ItemLink to={item.link}>
+                            {item.name}
+                        </ItemLink> 
+                     
                 </li>
             )
         })
@@ -100,7 +85,7 @@ function MobileSubMenu(props) {
                 <Caret onClick={toggleSubMenu} />
             </NavbarControls>
             <SubMenuBody>
-                {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>}
+                {/* {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>} */}
                 {subMenuItems}
             </SubMenuBody>
         </Overlay>

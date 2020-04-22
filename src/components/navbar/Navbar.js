@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import styled from 'styled-components'
+
 
 import DesktopMenu from './Desktop/DesktopMenu.js'
 import MobileMenu from './Mobile/MobileMenu.js'
+import { NavbarContextProvider } from './navbarContext'
 
 // const Nav = styled.nav`
 //     position: fixed;
@@ -14,11 +16,14 @@ import MobileMenu from './Mobile/MobileMenu.js'
 
 
 function Navbar(props) {
+    console.log(props)
     return (
-        <>
-            <DesktopMenu menuLinks={props.menuLinks}/>
-            <MobileMenu menuLinks={props.menuLinks}/>
-        </>
+        <Fragment>
+            <DesktopMenu menuLinks={props.menuLinks} />
+            <NavbarContextProvider>
+                <MobileMenu menuLinks={props.menuLinks} />
+            </NavbarContextProvider >
+        </Fragment>
     )
 }
 export default Navbar

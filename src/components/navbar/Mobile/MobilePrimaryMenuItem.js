@@ -34,27 +34,28 @@ const StyledArrow = styled(Arrow)`
     transform: rotate(-90deg);
 `
 
-function MobilePrimaryMenuItem({ menuLinks }) {
+function MobilePrimaryMenuItem({data}) {
     console.log("CHECKING MobilePrimaryMenuItem")
-    console.log(menuLinks)
+    console.log(data)
     const { toggleSubMenu, setChosenSubMenu } = useContext(NavbarContext)
 
     function handleClick() {
-        setChosenSubMenu(menuLinks)
+        setChosenSubMenu(data.sublinks)
         toggleSubMenu()
     }
 
     return (
         <MenuItem>
-            {menuLinks.primary.link ? (
-                <Item as={Link} to={menuLinks.primary.link.url}>
-                    {menuLinks.primary.label.text}
+         
+         {!data.sublinks.length ? (
+                <Item as={Link} to={data.link}>
+                    {data.name}
                 </Item>
             ) : (
-                <Item onClick={handleClick}>{menuLinks.primary.label.text}</Item>
+                <Item onClick={handleClick}>{data.name}</Item>
             )}
-
-            {menuLinks.items.length > 0 && <StyledArrow />}
+            
+            {data.sublinks.length > 0 && <StyledArrow />}
         </MenuItem>
     )
 }
