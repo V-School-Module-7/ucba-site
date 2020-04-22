@@ -29,15 +29,23 @@ const GridContainer = styled.div`
   grid-template-columns: 1fr 2fr;
   margin-top: 40px;
   grid-gap: 110px;
+
+  @media (max-width:1000px) {
+    display:block
+  }
 `
 
 const StickyContainer = styled.div`
-  grid-area: index;
-  grid-template-rows: repeat(12, 1fr);
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  margin-left: 40px;
+  height: 500px;
+
+  @media (min-width:1000px) {
+    grid-area: index;
+    grid-template-rows: repeat(12, 1fr);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    margin-left: 40px;
+  }
 `
 
 const IndexPage = () => (
