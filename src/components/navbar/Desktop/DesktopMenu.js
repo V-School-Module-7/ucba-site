@@ -5,8 +5,7 @@ import styled from "styled-components"
 import MenuLink from "./MenuLink"
 
 const HeaderContainer = styled.header`
-
-@media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     background-color: #ffffff;
     position: relative;
     top: 0;
@@ -53,26 +52,28 @@ const LinkContainer = styled.div`
   margin-right: 96px;
 `
 
-const Navbar = ({ menuLinks }) => (
-  <HeaderContainer>
-    <LogoAndList textDecor="textDecor">
-      <div
-        style={{
-          maxWidth: 100,
-        }}
-      >
-        <StyledLink to="/">
-          <Logo />
-        </StyledLink>
-      </div>
+const DesktopMenu = ({ menuLinks }) => {
+  return (
 
-      <LinkContainer>
-        {menuLinks.map(link => (
-          <MenuLink {...link} />
-        ))}
-      </LinkContainer>
-    </LogoAndList>
-  </HeaderContainer>
-)
+    <HeaderContainer>
+      <LogoAndList textDecor="textDecor">
+        <div
+          style={{
+            maxWidth: 100,
+          }}
+        >
+          <StyledLink to="/">
+            <Logo />
+          </StyledLink>
+        </div>
 
-export default Navbar
+        <LinkContainer>
+          {menuLinks.map(link => (
+            <MenuLink {...link} />
+          ))}
+        </LinkContainer>
+      </LogoAndList>
+    </HeaderContainer>
+  )
+}
+export default DesktopMenu

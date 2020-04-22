@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import SubMenu from "./SubMenu"
+import SubMenu from "./MobileSubMenu"
 
 const StyledLink = styled(Link)`
   color: black;
@@ -43,16 +43,18 @@ const StyledSpan = styled.span`
   display: inline-block;
 `
 
-function MenuLink(props) {
+function MobileMenuLink(props) {
+  // console.log("CHECKING PROPS in MobileMenuLink")
+  // console.log(props.menuLinks)
   return (
     <StyledLi key={props.name}>
       {props.link ? (
         <StyledLink to={props.link}>{props.name}</StyledLink>
       ) : (
-        <StyledSpan>{props.name}</StyledSpan>
-      )}
+          <StyledSpan>{props.name}</StyledSpan>
+        )}
       {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
     </StyledLi>
   )
 }
-export default MenuLink
+export default MobileMenuLink
