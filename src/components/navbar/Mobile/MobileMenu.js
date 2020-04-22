@@ -34,10 +34,10 @@ const MobileLogo = styled.img`
     }
 `
 
-function MobileMenu(menuLinks) {
-//     // const { mainMenuOpen, toggleMainMenu, toggleSubMenu } = useContext(
-//     //     NavbarContext
-//     // )
+function MobileMenu(props) {
+    // const { mainMenuOpen, toggleMainMenu, toggleSubMenu } = useContext(
+    //     NavbarContext
+    // )
 
     // function toggleBothMenus() {
     //     toggleMainMenu()
@@ -48,9 +48,9 @@ function MobileMenu(menuLinks) {
     return (
         <Menu>
             <h1>This is the menu for now</h1>
-            {/* <StyledLogoLink to="/">
+             {/* <StyledLogoLink to="/">
                 {/* <MobileLogo src={mobileLogo.url} /> */}
-            {/* </StyledLogoLink> */} */}
+            {/* </StyledLogoLink> */} 
             {/* <MobileButton
                 toggleMainMenu={toggleMainMenu}
                 toggleBothMenus={toggleBothMenus}
@@ -63,11 +63,3 @@ function MobileMenu(menuLinks) {
 }
 
 export default MobileMenu
-
-
-
-
-
-
-
-

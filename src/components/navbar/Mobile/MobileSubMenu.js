@@ -1,25 +1,25 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
 // import Link from "../../shared/QueryLink"
-// import { animated } from "react-spring"
+import { animated } from "react-spring"
 import { useMenuAnimation } from "./useMenuAnimation"
 
 import Caret from "./Caret"
 import { NavbarContext } from "../navbarContext"
 
-// const Overlay = styled(animated.div)`
-//     height: 100vh;
-//     width: 100vw;
-//     position: fixed;
-//     background-color: yellow;
-//     color: black;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     margin: 0;
-//     padding: 0;
-//     z-index: 100;
-// `
+const Overlay = styled(animated.div)`
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #F5D75F;
+    color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+`
 
 const NavbarControls = styled.div`
     height: 80px;
@@ -93,8 +93,8 @@ function MobileSubMenu(props) {
         })
 
     return (
-        // <Overlay style={menuAnimation}>
-        <>
+        <Overlay style={menuAnimation}>
+        
             <NavbarControls>
                 <Caret onClick={toggleSubMenu} />
             </NavbarControls>
@@ -102,8 +102,8 @@ function MobileSubMenu(props) {
                 {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>}
                 {subMenuItems}
             </SubMenuBody>
-        {/* </Overlay> */}
-        </>
+        </Overlay>
+        
     )
 }
 
