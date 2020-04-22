@@ -66,6 +66,8 @@ const SubMenuBody = styled.ul`
 // `
 
 function MobileSubMenu(props) {
+    console.log("CHECKING MobileSubMenu props")
+    console.log(props.menuLinks)
     // const subMenuItems = props.items.map(subMenuItem, i) => {
     //   const { name, link } = subMenuItem
     // }
@@ -94,7 +96,6 @@ function MobileSubMenu(props) {
 
     return (
         <Overlay style={menuAnimation}>
-        
             <NavbarControls>
                 <Caret onClick={toggleSubMenu} />
             </NavbarControls>

@@ -1,22 +1,22 @@
 import React from "react"
 import styled from "styled-components"
-// import { animated } from ""
+import { animated } from "react-spring"
 
 import MobilePrimaryMenuItem from "./MobilePrimaryMenuItem"
 import { useMenuAnimation } from "./useMenuAnimation"
 
-// const Overlay = styled(animated.div)`
-//     height: 100vh;
-//     width: 100vw;
-//     position: fixed;
-//     background-color: gray;
-//     top: 80px; /* Height of the navbar */
-//     bottom: 0;
-//     left: 0;
-//     margin: 0;
-//     padding: 0;
-//     z-index: 100;
-// `
+const Overlay = styled(animated.div)`
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: gray;
+    top: 80px; /* Height of the navbar */
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+`
 
 const Ul = styled.ul`
     padding: 0 16px;
@@ -30,9 +30,9 @@ function MobilePrimaryMenu({ open, items }) {
     ))
 
     return (
-        // <Overlay style={menuAnimation}>
+        <Overlay style={menuAnimation}>
             <Ul>{menuItems}</Ul>
-        // {/* </Overlay> */}
+        // </Overlay>
     )
 }
 

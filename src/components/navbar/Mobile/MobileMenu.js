@@ -35,6 +35,8 @@ const MobileLogo = styled.img`
 `
 
 function MobileMenu(props) {
+    // console.log("CHECKING PROPS in MobileMenu")
+    // console.log(props)
     // const { mainMenuOpen, toggleMainMenu, toggleSubMenu } = useContext(
     //     NavbarContext
     // )
@@ -48,9 +50,6 @@ function MobileMenu(props) {
     return (
         <Menu>
             <h1>This is the menu for now</h1>
-             {/* <StyledLogoLink to="/">
-                {/* <MobileLogo src={mobileLogo.url} /> */}
-            {/* </StyledLogoLink> */} 
             {/* <MobileButton
                 toggleMainMenu={toggleMainMenu}
                 toggleBothMenus={toggleBothMenus}

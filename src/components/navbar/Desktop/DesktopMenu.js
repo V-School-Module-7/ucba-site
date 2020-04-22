@@ -53,7 +53,6 @@ const LinkContainer = styled.div`
 `
 
 const DesktopMenu = ({ menuLinks }) => {
-  console.log(menuLinks)
   return (
 
     <HeaderContainer>
