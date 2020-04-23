@@ -100,11 +100,11 @@ const DropButton = styled.div`
 `
 
 function myFunction() {
-  document.getElementById({myDropdown}).classList.toggle("show");
+  document.getElementById("myDropDown").classList.toggle("show");
 }
 
 window.onclick = function(event) {
-  if (!event.target.matches({DropButton})) {
+  if (!event.target.matches(DropButton)) {
     var dropdowns = document.getElementsByClassName({DropDownContent});
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -118,9 +118,10 @@ window.onclick = function(event) {
 
 const index = () => {
   return (
+    <>
       <DropDown>
       <DropButton onclick={myFunction()}>DropDown</DropButton>
-      <DropDownContent id={myDropDown}>
+      <DropDownContent id={"myDropDown"}>
         <HiddenGuideContainer>
 
           <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
@@ -340,6 +341,7 @@ const index = () => {
         </StyledLink>
       </LinkContainer>
     </GuideContainer>
+    </>
   )
 }
 
