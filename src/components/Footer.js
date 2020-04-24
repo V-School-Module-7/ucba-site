@@ -15,6 +15,7 @@ const FooterContainer = styled.footer`
 
   @media (max-width: 500px) {
     display: block;
+    font-size: 16px;
   }
 `
 const MailBox = styled.div`

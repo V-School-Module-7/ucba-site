@@ -68,7 +68,7 @@ const SwarmContact = styled.h1`
 
 export const TextHeader = styled.h1`
   position: relative;
-  height: 33px;
+
   margin: auto;
   display: inline-block;
   border-bottom: 6px solid #63966a;
@@ -96,7 +96,7 @@ export const TextHeader = styled.h1`
 
 export const TextHeader2 = styled.h1`
   position: relative;
-  height: 33px;
+
   margin: auto;
   display: inline-block;
   border-bottom: 6px solid #63966a;

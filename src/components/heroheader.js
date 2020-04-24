@@ -21,6 +21,7 @@ const HeroText = styled.p`
   font-family: "ChunkFive Roman";
   font-style: normal;
   font-weight: normal;
+  /* font-size: 62px; */
   font-size: 64px;
   line-height: 74px;
   text-decoration-line: underline;
@@ -35,9 +36,11 @@ const HeroText = styled.p`
     line-height: 40px;
     font-size: 32px;
   }
+
   @media (max-width: 600px){
     font-size: 24px;
   }
+
   @media (max-width: 400px){
     font-size: 18px;
   }

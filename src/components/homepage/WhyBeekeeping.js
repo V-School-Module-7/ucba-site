@@ -4,20 +4,19 @@ import styled from "styled-components"
 import Coneimg from "../../images/homebeecones.png"
 import HiveimgText from "../../images/hiveimgText.png"
 
-
 const HomeContainer = styled.div`
-display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 1fr auto;
-position: relative;
-width: 100%;
-height auto;
-text-align: center;
-padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 80px;
 
-@media (max-width: 800px) {
-  display: block;
-}
+  @media (max-width: 800px) {
+    display: block;
+  }
 `
 
 const HiveImgContainer = styled.div`
@@ -51,11 +50,15 @@ const TextHeader = styled.h1`
   grid-row-end: 2;
   margin-top: 40px;
   margin-bottom: 60px;
+
+  @media (max-width: 500px){
+    font-size: 24px;
+  }
 `
 
 const ParagraphTextTwo = styled.div`
   grid-column: 0/1;
-  grid-row:2/3;
+  grid-row: 2/3;
   font-family: Futura;
   font-style: normal;
   font-weight: 500;
@@ -71,17 +74,16 @@ const ParagraphTextTwo = styled.div`
 `
 
 const TextCone = styled.img`
-width: 80%;
+  width: 80%;
 `
 
 const Conehiveimg = styled.img`
-width: 90%;
+  width: 90%;
 `
 
 const WhyBeekeeping = () => {
   return (
     <HomeContainer>
-
       <TextHeader>WHY BEEKEEPING?</TextHeader>
 
       <ParagraphTextTwo>
@@ -91,7 +93,6 @@ const WhyBeekeeping = () => {
       <HiveImgContainer>
         <Conehiveimg src={Coneimg}></Conehiveimg>
       </HiveImgContainer>
-
     </HomeContainer>
   )
 }

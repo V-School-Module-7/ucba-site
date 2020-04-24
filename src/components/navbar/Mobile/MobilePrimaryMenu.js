@@ -16,6 +16,7 @@ const Overlay = styled(animated.div)`
     margin: 0;
     padding: 0;
     z-index: 100;
+    margin-top: 12px;
 `
 
 const Ul = styled.ul`
