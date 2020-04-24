@@ -10,7 +10,7 @@ const StyledLink = styled(Link)`
   align-items: flex-end;
   list-style: none;
   margin: 0;
-  font-weight: bold;
+  // font-weight: bold;
   display: flex;
   text-decoration: none;
   font-size: 20px;

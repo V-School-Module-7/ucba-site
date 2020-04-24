@@ -44,9 +44,9 @@ function MobileMenu(props) {
     return (
         <Menu>
             <StyledLogoLink to="/">
-                <Logo/>
+                <Logo />
             </StyledLogoLink>
-                
+
             <MobileButton
                 toggleMainMenu={toggleMainMenu}
                 toggleBothMenus={toggleBothMenus}

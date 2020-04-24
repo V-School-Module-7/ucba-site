@@ -16,6 +16,7 @@ const HeaderContainer = styled.header`
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
+   
   }
 `
 const LogoAndList = styled.div`
@@ -46,11 +47,11 @@ const LinkContainer = styled.div`
   justify-content: flex-end;
   width: 100%;
   margin-right: 96px;
+  font-weight: 700;
 `
 
 const DesktopMenu = ({ menuLinks }) => {
   return (
-
     <HeaderContainer>
       <LogoAndList textDecor="textDecor">
         <div
