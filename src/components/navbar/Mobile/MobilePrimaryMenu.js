@@ -9,7 +9,7 @@ const Overlay = styled(animated.div)`
     height: 100vh;
     width: 100vw;
     position: fixed;
-    background-color: gray;
+    background-color: white;
     top: 80px; /* Height of the navbar */
     bottom: 0;
     left: 0;

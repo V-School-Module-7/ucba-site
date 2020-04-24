@@ -31,7 +31,7 @@ const StyledLi = styled.li`
 
   &:hover {
     cursor: pointer;
-    background-color: #f5d75f;
+    background-color: white;
   }
   &:hover > ul,
   & ul:hover {

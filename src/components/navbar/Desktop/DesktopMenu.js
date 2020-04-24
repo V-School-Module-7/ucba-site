@@ -26,7 +26,7 @@ const LogoAndList = styled.div`
   display: none;
 
 @media (min-width: 1000px) {
-  {
+  
     margin: 0;
     max-width: 960;
     padding: 1.45rem 1.0875rem;
