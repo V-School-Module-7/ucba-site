@@ -100,7 +100,7 @@ const DropButton = styled.div`
 `
 
 function myFunction() {
-  document.getElementById("myDropDown").classList.toggle("show");
+  document.getElementById("myDropDown").classList.toggle("show")
 }
 
 window.onclick = function(event) {

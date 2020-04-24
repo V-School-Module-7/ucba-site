@@ -11,6 +11,7 @@ const Button = styled.div`
     justify-content: space-between;
     height: 20px;
     width: 24px;
+    margin: 10px;
     box-sizing: border-box;
     cursor: pointer;
     div {

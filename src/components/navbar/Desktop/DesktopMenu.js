@@ -10,16 +10,12 @@ const HeaderContainer = styled.header`
     position: relative;
     top: 0;
     width: 100%;
-    height: 150px;
     z-index: 3;
-    background: ${props => props.bgColor};
     margin: 0;
-    float: left;
+    float: right;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    text-decoration: ${props => props.textDecor};
-    color: ${props => props.color};
   }
 `
 const LogoAndList = styled.div`
