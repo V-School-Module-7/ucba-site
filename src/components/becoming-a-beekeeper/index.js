@@ -99,28 +99,28 @@ const DropButton = styled.div`
   cursor: pointer;
 `
 
-function myFunction() {
-  document.getElementById("myDropDown").classList.toggle("show")
-}
+// function myFunction() {
+//   document.getElementById("myDropDown").classList.toggle("show")
+// }
 
-window.onclick = function (event) {
-  if (!event.target.matches(DropButton)) {
-    var dropdowns = document.getElementsByClassName({ DropDownContent })
-    var i
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i]
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show")
-      }
-    }
-  }
-}
+// window.onclick = function (event) {
+//   if (!event.target.matches(DropButton)) {
+//     var dropdowns = document.getElementsByClassName({ DropDownContent })
+//     var i
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i]
+//       if (openDropdown.classList.contains("show")) {
+//         openDropdown.classList.remove("show")
+//       }
+//     }
+//   }
+// }
 
 const index = () => {
   return (
     <>
       <DropDown>
-        <DropButton onClick={myFunction}>DropDown</DropButton>
+        {/* <DropButton onClick={myFunction}>DropDown</DropButton> */}
         <DropDownContent id={"myDropDown"}>
           <HiddenGuideContainer>
             <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
