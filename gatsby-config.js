@@ -12,28 +12,28 @@ module.exports = {
         link: '/report-a-swarm',
         sublinks: []
       },
-      {
-        name: 'be a beekeeper',
-        link: null,
-        sublinks: [
-          {
-            name: 'becoming a beekeeper',
-            link: '/becoming-a-beekeeper'
-          },
-          // {
-          //   name: 'about ucba',
-          //   link: '/about-ucba'
-          // },
-          // {
-          //   name: 'youth bab program',
-          //   link: '/youth-bab-program'
-          // },
-          // {
-          //   name: 'licensing',
-          //   link: '/licensing'
-          // }
-        ]
-      },
+      // {
+      //   name: 'be a beekeeper',
+      //   link: null,
+      //   sublinks: [
+      //     {
+      //       name: 'becoming a beekeeper',
+      //       link: '/becoming-a-beekeeper'
+      //     },
+      // {
+      //   name: 'about ucba',
+      //   link: '/about-ucba'
+      // },
+      // {
+      //   name: 'youth bab program',
+      //   link: '/youth-bab-program'
+      // },
+      // {
+      //   name: 'licensing',
+      //   link: '/licensing'
+      // }
+      //   ]
+      // },
       // {
       //   name: 'education',
       //   link: null,

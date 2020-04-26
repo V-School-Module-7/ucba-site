@@ -13,6 +13,13 @@ import Navbar from './navbar/Navbar.js'
 import Footer from './Footer'
 import "./layout.css"
 
+
+// Add under links query
+// sublinks {
+//   name
+//   link
+// }
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -24,10 +31,7 @@ const Layout = ({ children }) => {
           menuLinks {
             name
             link
-             sublinks {
-               name
-               link
-             }
+             
           }
         } 
        }

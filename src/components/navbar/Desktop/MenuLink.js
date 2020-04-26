@@ -49,9 +49,9 @@ function MenuLink(props) {
       {props.link ? (
         <StyledLink to={props.link}>{props.name}</StyledLink>
       ) : (
-        <StyledSpan>{props.name}</StyledSpan>
-      )}
-      {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
+          <StyledSpan>{props.name}</StyledSpan>
+        )}
+      {/* {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />} */}
     </StyledLi>
   )
 }
