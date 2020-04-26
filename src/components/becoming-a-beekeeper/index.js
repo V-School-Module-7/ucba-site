@@ -103,7 +103,7 @@ function myFunction() {
   document.getElementById("myDropDown").classList.toggle("show")
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (!event.target.matches(DropButton)) {
     var dropdowns = document.getElementsByClassName({ DropDownContent })
     var i
