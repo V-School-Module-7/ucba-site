@@ -26,14 +26,12 @@ const Nav = styled.nav`
 function Navbar(props) {
     console.log(props)
     return (
-        // <Nav>
         <Fragment>
             <DesktopMenu menuLinks={props.menuLinks} />
             <NavbarContextProvider>
                 <MobileMenu menuLinks={props.menuLinks} />
             </NavbarContextProvider >
         </Fragment>
-        // </Nav> 
     )
 }
 export default Navbar
