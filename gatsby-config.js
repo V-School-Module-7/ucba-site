@@ -5,12 +5,12 @@ module.exports = {
       {
         name: 'home',
         link: '/',
-        sublinks: []
+        // sublinks: []
       },
       {
         name: 'report a swarm',
         link: '/report-a-swarm',
-        sublinks: []
+        // sublinks: []
       },
       // {
       //   name: 'be a beekeeper',
