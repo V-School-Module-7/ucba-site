@@ -41,7 +41,7 @@ function MobileMenu(props) {
 
   return (
     <Menu>
-      <StyledLogoLink to="/" onClick={toggleMainMenu}>
+      <StyledLogoLink to="/" onClick={() => mainMenuOpen ? toggleMainMenu() : undefined}>
         <Logo />
       </StyledLogoLink>
 
