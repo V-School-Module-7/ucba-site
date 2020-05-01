@@ -14,21 +14,9 @@ const GuideContainer = styled.div`
   box-sizing: border-box;
   padding-top: 16px;
 
-  @media (max-width: 1000px) {
-    visibility: hidden;
+  @media (max-width: 1265px) {
+    /* visibility: hidden; */
   }
-`
-const HiddenGuideContainer = styled.div`
-  width: 349px;
-  height: 550px;
-  left: 40px;
-  top: 40px;
-  display: inline-block;
-  margin-top: 32px;
-  background: #ffffff;
-  border: 6px solid #c4c4c4;
-  box-sizing: border-box;
-  padding-top: 16px;
 `
 
 const GuideSectionText = styled.div`
@@ -73,151 +61,10 @@ const StyledLink = styled(Link)`
   margin: 24px 0px;
   cursor: pointer;
 `
-const DropDown = styled.div`
-  position: relative;
-  display: inline-block;
-  @media (min-width: 1000px) {
-    visibility: hidden;
-  }
-`
 
-const DropDownContent = styled.div`
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-`
-
-const DropButton = styled.div`
-  background-color: #3498db;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-`
-
-
-
-
-const index = () => {
+const index = (prop) => {
   return (
     <>
-      <DropDown>
-
-        <DropDownContent id={"myDropDown"}>
-          <HiddenGuideContainer>
-            <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
-            <FlexContainer>
-              <Underline />
-            </FlexContainer>
-            <LinkContainer>
-              <StyledLink
-                activeClass="active"
-                to="general"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                General
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="committing-to-beekeeping"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                COMMITTING TO BEEKEEPING
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="basic-parts-of-the-hive"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                BASIC PARTS OF THE HIVE
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="selecting-an-apiary-site"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                SELECTING AN APIARY SITE
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="laws-and-licenses"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                LAWS & LICENSES
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="getting-started"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                GETTING STARTED
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="bee-breeds"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                BEE BREEDS
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="resources"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                RESOURCES
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="getting-stung"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                GETTING STUNG
-              </StyledLink>
-              <StyledLink
-                activeClass="active"
-                to="kinds-of-beekeepers"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                KINDS OF BEEKEEPERS
-              </StyledLink>
-            </LinkContainer>
-          </HiddenGuideContainer>
-        </DropDownContent>
-      </DropDown>
       <GuideContainer>
         <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
         <FlexContainer>
