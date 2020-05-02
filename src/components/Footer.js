@@ -74,7 +74,7 @@ const Footer = () => (
           alt=""
         />
       </a>
-      <AddressBox>Design and Developed by []</AddressBox>
+      <AddressBox>Designed and Developed by []</AddressBox>
     </ContactBox>
   </FooterContainer>
 )
