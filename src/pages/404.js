@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import Bee404 from "src/images/bee404.jpg"
 import SEO from "../components/seo"
 
+import Coneimg from "../../images/homebeecones.png"
+import HiveimgText from "../../images/hiveimgText.png"
+
 const Page = styled.div`
 background-color: pink;
 `
@@ -38,10 +41,13 @@ margin: 10px;
 padding: 10px;
 `
 const Bee404 = styled.img`
-//  https://www.instagram.com/p/BeWhES4F3g7/
+  
   width: 80%;
   grid-column: 2/3;
+  grid-row: 2/4;
 `
+
+
 
 const NotFoundPage = () => (
   <Layout>
@@ -59,6 +65,11 @@ const NotFoundPage = () => (
         <ParagraphContainer>
           <p>To return the hive, (and avoid having us <i>drone</i> on with further bee puns) click the logo above, or <a href="/">here</a>.</p>
         </ParagraphContainer>
+    
+        {/* <img src="./images/bee404.jpg" 
+        //  height="420px" width="420px"
+        /> */}
+        <Bee404 />
       </Container>
     </Page>
   </Layout >
