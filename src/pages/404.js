@@ -1,14 +1,12 @@
 import React from "react"
 import styled from 'styled-components'
 import Layout from "../components/layout"
-import Bee404 from "src/images/bee404.jpg"
+import bee404 from "../images/bee404.jpg"
 import SEO from "../components/seo"
 
-import Coneimg from "../../images/homebeecones.png"
-import HiveimgText from "../../images/hiveimgText.png"
-
 const Page = styled.div`
-background-color: pink;
+background-color: #F5D75F;
+
 `
 
 const Container = styled.div`
@@ -20,17 +18,17 @@ position: relative;
 width: 100%;
 height: auto;
 text-align: center;
-margin: 10%;
-
+`
+const Title = styled.h1`
+padding-top: 10px;
+font-size: 24px;
 `
 const ParagraphContainer = styled.div`
-display: block;
-background-color: purple;
 grid-column: 1/2;
 justify-self: center;
-font-family: Futura;
-font-style: normal;
-font-weight: bold;
+font-family: Work Sans;
+// font-style: normal;
+// font-weight: bold;
 font-size: 24px;
 line-height: 32px;
 color: #000000;
@@ -40,14 +38,18 @@ align-items: center;
 margin: 10px;
 padding: 10px;
 `
-const Bee404 = styled.img`
-  
-  width: 80%;
+
+const Div = styled.div`
   grid-column: 2/3;
-  grid-row: 2/4;
+  grid-row: 1/5;
+  margin: 10px auto;
+  height: auto;
+  width: 325px;
+
 `
-
-
+const BeeImage = styled.img`
+  width: 100%;
+`
 
 const NotFoundPage = () => (
   <Layout>
@@ -55,21 +57,22 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <Page>
       <Container>
-        <h1>PAGE NOT FOUND</h1>
+        <Title>
+          <h1>PAGE NOT FOUND</h1>
+        </Title>
+
         <ParagraphContainer>
-          <p> There doesn't seem to <i>bee</i> a page here.</p>
+          <p> There doesn't seem to bee a page here.</p>
         </ParagraphContainer>
         <ParagraphContainer>
-          <p>What a <i>buzz</i>kill.</p>
+          <p>What a buzzkill.</p>
         </ParagraphContainer>
         <ParagraphContainer>
-          <p>To return the hive, (and avoid having us <i>drone</i> on with further bee puns) click the logo above, or <a href="/">here</a>.</p>
+          <p>To return the hive, (and avoid having us drone on with further bee puns) click the logo above, or <a href="/">click here</a>.</p>
         </ParagraphContainer>
-    
-        {/* <img src="./images/bee404.jpg" 
-        //  height="420px" width="420px"
-        /> */}
-        <Bee404 />
+        <Div>
+          <BeeImage src={bee404} />
+        </Div>
       </Container>
     </Page>
   </Layout >
