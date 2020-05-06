@@ -21,6 +21,10 @@ export const TextHeader = styled.h1`
   line-height: 42px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (max-width: 900px) {
+
+  }
 `
 
 export const FlexContainer = styled.div`
@@ -40,6 +44,10 @@ export const ParagraphTextBottomMargin = styled.div`
   margin-bottom: 32px;
 
   color: #000000;
+
+  @media (max-width: 900px) {
+    
+  }
 `
 
 export const ParagraphText = styled.div`
@@ -50,6 +58,10 @@ export const ParagraphText = styled.div`
   line-height: 32px;
 
   color: #000000;
+
+  @media (max-width: 900px) {
+    
+  }
 `
 
 export const SubHeader = styled.div`
@@ -62,6 +74,10 @@ export const SubHeader = styled.div`
   padding-right: 10px;
 
   color: #000000;
+
+  @media (max-width: 900px) {
+    
+  }
 `
 
 export const SubHeaderMarginBottom = styled.div`
@@ -73,4 +89,8 @@ export const SubHeaderMarginBottom = styled.div`
   margin-bottom: 32px;
 
   color: #000000;
+
+  @media (max-width: 900px) {
+    
+  }
 `

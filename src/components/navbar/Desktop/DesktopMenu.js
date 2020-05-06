@@ -16,7 +16,6 @@ const HeaderContainer = styled.header`
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-   
   }
 `
 const LogoAndList = styled.div`

@@ -67,7 +67,8 @@ const OverLay = styled.div`
 position: fixed;
 display: ${props=>props.show? "default" : "none"};
 width: 100vw;
-height: 100vh;
+height: 115vh;
+top:-100px;
 background-color: rgba(100,100,100,.8);
 z-index: 1;
 `
@@ -85,8 +86,8 @@ const IndexPage = () => {
           <StickyContainer show={toggle}>
             <MobleGuide show={toggle} setToggle={setToggle}/>
           </StickyContainer>
-          <StickyContainer2 show={toggle}>
-            <Index show={toggle} setToggle={setToggle}/>
+          <StickyContainer2>
+            <Index />
           </StickyContainer2>
           <div>
             <General />

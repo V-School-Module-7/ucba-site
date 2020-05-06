@@ -73,7 +73,7 @@ const MobleGuide = (props) => {
                 </FlexContainer>
                 <LinkContainer>
                     <StyledLink
-                        onSetActive={() => setToggle(!show)}
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="general"
                         spy={true}
@@ -84,6 +84,7 @@ const MobleGuide = (props) => {
                         General
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="committing-to-beekeeping"
                         spy={true}
@@ -94,6 +95,7 @@ const MobleGuide = (props) => {
                         COMMITTING TO BEEKEEPING
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="basic-parts-of-the-hive"
                         spy={true}
@@ -104,6 +106,7 @@ const MobleGuide = (props) => {
                         BASIC PARTS OF THE HIVE
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="selecting-an-apiary-site"
                         spy={true}
@@ -114,6 +117,7 @@ const MobleGuide = (props) => {
                         SELECTING AN APIARY SITE
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="laws-and-licenses"
                         spy={true}
@@ -124,6 +128,7 @@ const MobleGuide = (props) => {
                         LAWS & LICENSES
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="getting-started"
                         spy={true}
@@ -134,6 +139,7 @@ const MobleGuide = (props) => {
                         GETTING STARTED
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="bee-breeds"
                         spy={true}
@@ -144,6 +150,7 @@ const MobleGuide = (props) => {
                         BEE BREEDS
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="resources"
                         spy={true}
@@ -154,6 +161,7 @@ const MobleGuide = (props) => {
                         RESOURCES
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="getting-stung"
                         spy={true}
@@ -164,6 +172,7 @@ const MobleGuide = (props) => {
                         GETTING STUNG
           </StyledLink>
                     <StyledLink
+                        onClick={() => setToggle(!show)}
                         activeClass="active"
                         to="kinds-of-beekeepers"
                         spy={true}
