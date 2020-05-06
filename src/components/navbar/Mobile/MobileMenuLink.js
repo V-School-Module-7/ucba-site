@@ -44,8 +44,6 @@ const StyledSpan = styled.span`
 `
 
 function MobileMenuLink(props) {
-  // console.log("CHECKING PROPS in MobileMenuLink")
-  // console.log(props.menuLinks)
   return (
     <StyledLi key={props.name}>
       {props.link ? (
