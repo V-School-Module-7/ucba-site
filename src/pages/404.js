@@ -13,11 +13,13 @@ const Container = styled.div`
 background color: magenta;
 display: grid;
 grid-template-columns: 50% 50%;
-grid-template-rows: 1fr auto;
 position: relative;
 width: 100%;
 height: auto;
 text-align: center;
+@media (max-width: 1000px) {
+  grid-template-columns: 100%;
+}
 `
 const Title = styled.h1`
 padding-top: 10px;
