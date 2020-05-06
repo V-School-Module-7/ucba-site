@@ -11,7 +11,7 @@ const Overlay = styled(animated.div)`
     height: 100vh;
     width: 100vw;
     position: fixed;
-    background-color: #F5D75F;
+    background-color: white;
     color: black;
     top: 0;
     bottom: 0;

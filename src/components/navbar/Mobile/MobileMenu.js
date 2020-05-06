@@ -30,31 +30,31 @@ const StyledLogoLink = styled(Link)`
 `
 
 function MobileMenu(props) {
-    const { mainMenuOpen, toggleMainMenu, toggleSubMenu } = useContext(
-        NavbarContext
-    )
+  const { mainMenuOpen, toggleMainMenu, toggleSubMenu } = useContext(
+    NavbarContext
+  )
 
-    function toggleBothMenus() {
-        toggleMainMenu()
-        toggleSubMenu()
-    }
+  function toggleBothMenus() {
+    toggleMainMenu()
+    toggleSubMenu()
+  }
 
-    return (
-        <Menu>
-            <StyledLogoLink to="/" onClick={() => mainMenuOpen ? toggleMainMenu() : undefined}>
-                <Logo />
-            </StyledLogoLink>
+  return (
+    <Menu>
+      <StyledLogoLink to="/" onClick={() => mainMenuOpen ? toggleMainMenu() : undefined}>
+        <Logo />
+      </StyledLogoLink>
 
-            <MobileButton
-                toggleMainMenu={toggleMainMenu}
-                toggleBothMenus={toggleBothMenus}
-                open={mainMenuOpen}
-            />
+      <MobileButton
+        toggleMainMenu={toggleMainMenu}
+        toggleBothMenus={toggleBothMenus}
+        open={mainMenuOpen}
+      />
 
-            <MobilePrimaryMenu open={mainMenuOpen} items={props.menuLinks} />
-            <MobileSubMenu items={[]} />
-        </Menu>
-    )
+      <MobilePrimaryMenu open={mainMenuOpen} items={props.menuLinks} />
+      <MobileSubMenu items={[]} />
+    </Menu>
+  )
 }
 
 export default MobileMenu

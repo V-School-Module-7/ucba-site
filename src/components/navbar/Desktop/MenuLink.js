@@ -10,7 +10,7 @@ const StyledLink = styled(Link)`
   align-items: flex-end;
   list-style: none;
   margin: 0;
-  font-weight: bold;
+  // font-weight: bold;
   display: flex;
   text-decoration: none;
   font-size: 20px;
@@ -49,9 +49,9 @@ function MenuLink(props) {
       {props.link ? (
         <StyledLink to={props.link}>{props.name}</StyledLink>
       ) : (
-        <StyledSpan>{props.name}</StyledSpan>
-      )}
-      {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
+          <StyledSpan>{props.name}</StyledSpan>
+        )}
+      {/* {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />} */}
     </StyledLi>
   )
 }

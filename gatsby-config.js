@@ -5,35 +5,35 @@ module.exports = {
       {
         name: 'home',
         link: '/',
-        sublinks: []
+        // sublinks: []
       },
       {
         name: 'report a swarm',
         link: '/report-a-swarm',
-        sublinks: []
+        // sublinks: []
       },
-      {
-        name: 'be a beekeeper',
-        link: null,
-        sublinks: [
-          {
-            name: 'becoming a beekeeper',
-            link: '/becoming-a-beekeeper'
-          },
-          // {
-          //   name: 'about ucba',
-          //   link: '/about-ucba'
-          // },
-          // {
-          //   name: 'youth bab program',
-          //   link: '/youth-bab-program'
-          // },
-          // {
-          //   name: 'licensing',
-          //   link: '/licensing'
-          // }
-        ]
-      },
+      // {
+      //   name: 'be a beekeeper',
+      //   link: null,
+      //   sublinks: [
+      //     {
+      //       name: 'becoming a beekeeper',
+      //       link: '/becoming-a-beekeeper'
+      //     },
+      // {
+      //   name: 'about ucba',
+      //   link: '/about-ucba'
+      // },
+      // {
+      //   name: 'youth bab program',
+      //   link: '/youth-bab-program'
+      // },
+      // {
+      //   name: 'licensing',
+      //   link: '/licensing'
+      // }
+      //   ]
+      // },
       // {
       //   name: 'education',
       //   link: null,
@@ -93,6 +93,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -110,7 +116,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
         logo: `src/images/logo.png`,
       },
     },
