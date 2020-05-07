@@ -10,7 +10,6 @@ background-color: #F5D75F;
 `
 
 const Container = styled.div`
-background color: magenta;
 display: grid;
 grid-template-columns: 50% 50%;
 position: relative;
@@ -18,7 +17,9 @@ width: 100%;
 height: auto;
 text-align: center;
 @media (max-width: 1000px) {
+  display: grid;
   grid-template-columns: 100%;
+  padding: 10% 0;
 }
 `
 const Title = styled.h1`
@@ -47,11 +48,21 @@ const Div = styled.div`
   margin: 10px auto;
   height: auto;
   width: 325px;
+  @media (max-width: 1000px) {
+    // display: none;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    // margin-bottom: 4%;
+  }
 
 `
 const BeeImage = styled.img`
   width: 100%;
-`
+//   @media (max-width: 1000px) {
+//     margin-bottom: 10%;
+  
+//   }
+// `
 
 const NotFoundPage = () => (
   <Layout>
