@@ -6,6 +6,18 @@ export const TextContainer = styled.div`
   margin: auto;
   margin-top: 88px;
   margin-bottom: 102px;
+
+  @media (max-width: 900px) {
+    width: 500px;
+  }
+
+  @media (max-width: 550px) {
+    width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    width: 300px;
+  }
 `
 export const TextHeader = styled.h1`
   position: relative;
@@ -23,7 +35,11 @@ export const TextHeader = styled.h1`
   color: #000000;
 
   @media (max-width: 900px) {
+    font-size: 31px;
+  }
 
+  @media (max-width: 550px) {
+    font-size: 20px;
   }
 `
 
@@ -46,7 +62,11 @@ export const ParagraphTextBottomMargin = styled.div`
   color: #000000;
 
   @media (max-width: 900px) {
-    
+    font-size: 19px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `
 
@@ -60,7 +80,11 @@ export const ParagraphText = styled.div`
   color: #000000;
 
   @media (max-width: 900px) {
-    
+    font-size: 19px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `
 
@@ -76,7 +100,11 @@ export const SubHeader = styled.div`
   color: #000000;
 
   @media (max-width: 900px) {
-    
+    font-size: 19px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `
 
@@ -91,6 +119,10 @@ export const SubHeaderMarginBottom = styled.div`
   color: #000000;
 
   @media (max-width: 900px) {
-    
+    font-size: 19px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `
