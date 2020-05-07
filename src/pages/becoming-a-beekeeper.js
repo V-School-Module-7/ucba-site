@@ -63,6 +63,13 @@ left: 16px;
 }
 `
 
+const Icon = styled.div`
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+`
+
 const OverLay = styled.div`
 position: fixed;
 display: ${props=>props.show? "default" : "none"};
@@ -82,7 +89,11 @@ const IndexPage = () => {
       <HeroHeader img={Beeimg} text={"become a beekeeper"} />
       <FlexContainer>
         <GridContainer>
-          <StickyButton onClick={() => setToggle(!toggle)}>click</StickyButton>
+          <StickyButton onClick={() => setToggle(!toggle)}>
+            <Icon/>
+            <Icon/>
+            <Icon/>
+          </StickyButton>
           <StickyContainer show={toggle}>
             <MobleGuide show={toggle} setToggle={setToggle}/>
           </StickyContainer>
