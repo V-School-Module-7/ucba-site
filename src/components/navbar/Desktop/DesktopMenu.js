@@ -21,15 +21,17 @@ const HeaderContainer = styled.header`
 const LogoAndList = styled.div`
   display: none;
 
-@media (min-width: 1000px) {
-    margin: 0;
-    max-width: 960;
-    padding: 1.45rem 1.0875rem;
-    font-family: Work Sans;
-    display: flex;
-    align-items: flex-end;
-    color: black;
+  @media (min-width: 1000px) {
+      margin: 0;
+      max-width: 960;
+      padding: 1.45rem 1.0875rem;
+      font-family:"Work Sans";
+      display: flex;
+      align-items: flex-end;
+      color: black;
+  }
 `
+
 
 const StyledLink = styled(Link)`
   color: white;

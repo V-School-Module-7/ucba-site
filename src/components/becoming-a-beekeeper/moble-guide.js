@@ -15,7 +15,7 @@ const GuideContainer = styled.div`
   padding-top: 16px;
 
   @media (max-width: 1265px) {
-    /* visibility: hidden; */
+
   }
 `
 

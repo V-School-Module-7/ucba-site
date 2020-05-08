@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,7 +18,6 @@ import KindsOfBeeKeepers from "../components/becoming-a-beekeeper/kinds-of-beeke
 import MobleGuide from "../components/becoming-a-beekeeper/moble-guide"
 import styled from "styled-components"
 
-
 const FlexContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -32,20 +31,23 @@ const GridContainer = styled.div`
   margin-top: 40px;
   grid-gap: 110px;
 
-  @media (max-width:1265px) {
-    display:block
+  @media (max-width: 1265px) {
+    display: block;
   }
 `
 
 const StickyContainer = styled.div`
   position: fixed;
   z-index: 2;
-  display: ${props=>props.show? "inline-block" : "none"};
+  display: ${props => (props.show ? "inline-block" : "none")};
+  left: auto;
+  right: auto;
+  top: 100px;
 `
 const StickyContainer2 = styled.div`
-  display:none;
-  @media (min-width:1265px) {
-    display:inline-block;
+  display: none;
+  @media (min-width: 1265px) {
+    display: inline-block;
     grid-area: index;
     grid-template-rows: repeat(12, 1fr);
     position: sticky;
@@ -56,11 +58,15 @@ const StickyContainer2 = styled.div`
 `
 
 const StickyButton = styled.button`
-position: fixed;
-left: 16px;
-@media (min-width: 1265px) {
-  visibility: hidden;
-}
+  position: sticky;
+  left: -16px;
+  z-index: 1;
+  top: 16px;
+
+
+  @media (min-width: 1265px) {
+    visibility: hidden;
+  }
 `
 
 const Icon = styled.div`
@@ -71,31 +77,31 @@ const Icon = styled.div`
 `
 
 const OverLay = styled.div`
-position: fixed;
-display: ${props=>props.show? "default" : "none"};
-width: 100vw;
-height: 115vh;
-top:-100px;
-background-color: rgba(100,100,100,.8);
-z-index: 1;
+  position: fixed;
+  display: ${props => (props.show ? "default" : "none")};
+  width: 100vw;
+  height: 115vh;
+  top: -100px;
+  background-color: rgba(100, 100, 100, 0.8);
+  z-index: 1;
 `
 
 const IndexPage = () => {
-  const [toggle,setToggle] = useState(false)
-  return(
+  const [toggle, setToggle] = useState(false)
+  return (
     <Layout>
       <SEO title="Becoming A BeeKeeper" />
-      <OverLay onClick={() => setToggle(!toggle)} show={toggle}/>
+      <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
       <HeroHeader img={Beeimg} text={"become a beekeeper"} />
       <FlexContainer>
         <GridContainer>
           <StickyButton onClick={() => setToggle(!toggle)}>
-            <Icon/>
-            <Icon/>
-            <Icon/>
+            <Icon />
+            <Icon />
+            <Icon />
           </StickyButton>
           <StickyContainer show={toggle}>
-            <MobleGuide show={toggle} setToggle={setToggle}/>
+            <MobleGuide show={toggle} setToggle={setToggle} />
           </StickyContainer>
           <StickyContainer2>
             <Index />
