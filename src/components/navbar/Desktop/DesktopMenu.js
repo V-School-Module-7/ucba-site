@@ -29,6 +29,7 @@ const LogoAndList = styled.div`
     display: flex;
     align-items: flex-end;
     color: black;
+  }
 `
 
 const StyledLink = styled(Link)`

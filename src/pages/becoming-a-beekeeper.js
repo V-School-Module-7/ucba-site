@@ -38,9 +38,10 @@ const GridContainer = styled.div`
 `
 
 const StickyContainer = styled.div`
-  position: fixed;
+  position: sticky;
   z-index: 2;
   display: ${props=>props.show? "inline-block" : "none"};
+  top: 50px;
 `
 const StickyContainer2 = styled.div`
   display:none;
@@ -56,8 +57,10 @@ const StickyContainer2 = styled.div`
 `
 
 const StickyButton = styled.button`
-position: fixed;
+position: sticky;
+top: 16px;
 left: 16px;
+z-index: 1;
 @media (min-width: 1265px) {
   visibility: hidden;
 }

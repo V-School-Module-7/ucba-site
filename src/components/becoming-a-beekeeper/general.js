@@ -28,7 +28,11 @@ const TextContainer = styled.div`
 
   @media (max-width: 400px) {
     width: 300px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
+
+  @media (max-width: )
 `
 
 const HeaderText = styled.div`
