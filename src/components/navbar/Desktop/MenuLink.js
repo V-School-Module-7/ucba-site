@@ -44,6 +44,7 @@ const StyledSpan = styled.span`
 `
 
 function MenuLink(props) {
+  console.log(props)
   return (
     <StyledLi key={props.name}>
       {props.link ? (

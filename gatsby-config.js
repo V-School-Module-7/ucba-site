@@ -12,62 +12,62 @@ module.exports = {
         link: '/report-a-swarm',
         // sublinks: []
       },
-      // {
-      //   name: 'be a beekeeper',
-      //   link: null,
-      //   sublinks: [
-      //     {
-      //       name: 'becoming a beekeeper',
-      //       link: '/becoming-a-beekeeper'
-      //     },
-      // {
-      //   name: 'about ucba',
-      //   link: '/about-ucba'
-      // },
-      // {
-      //   name: 'youth bab program',
-      //   link: '/youth-bab-program'
-      // },
-      // {
-      //   name: 'licensing',
-      //   link: '/licensing'
-      // }
-      //   ]
-      // },
-      // {
-      //   name: 'education',
-      //   link: null,
-      //   sublinks: [
-      //     {
-      //       name: 'honey information',
-      //       link: '/honey-information'
-      //     },
-      //     {
-      //       name: 'africanized honey bee',
-      //       link: '/africanized-honey-bee'
-      //     },
-      //     {
-      //       name: 'suggested readings',
-      //       link: '/suggested-readings'
-      //     },
-      //     {
-      //       name: 'helpful links',
-      //       link: '/helpful-links'
-      //     },
-      //     {
-      //       name: 'diseases, pests, etc.',
-      //       link: '/diseases-pests-etc'
-      //     },
-      //     {
-      //       name: 'beekeepers\' calendar',
-      //       link: '/beekeepers-calendar'
-      //     },
-      //     {
-      //       name: 'fun facts',
-      //       link: '/fun-facts'
-      //     },
-      //   ]
-      // },
+      {
+        name: 'be a beekeeper',
+        link: null,
+        sublinks: [
+          {
+            name: 'becoming a beekeeper',
+            link: '/becoming-a-beekeeper'
+          },
+          {
+            name: 'about ucba',
+            link: '/about-ucba'
+          },
+          {
+            name: 'youth bab program',
+            link: '/youth-bab-program'
+          },
+          {
+            name: 'licensing',
+            link: '/licensing'
+          }
+        ]
+      },
+      {
+        name: 'education',
+        link: null,
+        sublinks: [
+          {
+            name: 'honey information',
+            link: '/honey-information'
+          },
+          {
+            name: 'africanized honey bee',
+            link: '/africanized-honey-bee'
+          },
+          {
+            name: 'suggested readings',
+            link: '/suggested-readings'
+          },
+          {
+            name: 'helpful links',
+            link: '/helpful-links'
+          },
+          {
+            name: 'diseases, pests, etc.',
+            link: '/diseases-pests-etc'
+          },
+          {
+            name: 'beekeepers\' calendar',
+            link: '/calendar'
+          },
+          {
+            name: 'fun facts',
+            link: '/fun-facts'
+          },
+        ]
+      },
       // {
       //   name: 'membership',
       //   link: null,
