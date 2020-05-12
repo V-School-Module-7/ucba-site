@@ -16,7 +16,10 @@ const Layout = ({ children }) => {
           menuLinks {
             name
             link
-             
+            sublinks {
+              name
+              link
+            }
           }
         } 
        }
