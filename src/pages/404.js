@@ -58,11 +58,7 @@ const Div = styled.div`
 `
 const BeeImage = styled.img`
   width: 100%;
-//   @media (max-width: 1000px) {
-//     margin-bottom: 10%;
-  
-//   }
-// `
+`
 
 const NotFoundPage = () => (
   <Layout>

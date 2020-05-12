@@ -44,6 +44,7 @@ const StyledSpan = styled.span`
 `
 
 function MenuLink(props) {
+  console.log(props)
   return (
     <StyledLi key={props.name}>
       {props.link ? (
@@ -51,7 +52,7 @@ function MenuLink(props) {
       ) : (
           <StyledSpan>{props.name}</StyledSpan>
         )}
-      {/* {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />} */}
+      {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
     </StyledLi>
   )
 }

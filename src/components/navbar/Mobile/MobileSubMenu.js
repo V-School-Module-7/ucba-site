@@ -56,8 +56,6 @@ const ItemLink = styled(Link)`
 `
 
 function MobileSubMenu(props) {
-    console.log('CHECKING SUBMENU PROPS')
-    console.log(props)
     const { subMenuOpen, toggleSubMenu, chosenSubMenu } = useContext(
         NavbarContext
     )
@@ -86,7 +84,7 @@ function MobileSubMenu(props) {
                 <Caret onClick={toggleSubMenu} />
             </NavbarControls>
             <SubMenuBody>
-                {/* {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>} */}
+                {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>}
                 {subMenuItems}
             </SubMenuBody>
         </Overlay>
