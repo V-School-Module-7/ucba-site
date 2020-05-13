@@ -84,7 +84,7 @@ function MobileSubMenu(props) {
                 <Caret onClick={toggleSubMenu} />
             </NavbarControls>
             <SubMenuBody>
-                {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>}
+                {/* {chosenSubMenu && <li>{chosenSubMenu.primary.label.text}</li>} */}
                 {subMenuItems}
             </SubMenuBody>
         </Overlay>

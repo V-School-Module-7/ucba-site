@@ -62,10 +62,10 @@ module.exports = {
             name: 'beekeepers\' calendar',
             link: '/calendar'
           },
-      //     {
-      //       name: 'fun facts',
-      //       link: '/fun-facts'
-      //     },
+          {
+            name: 'fun facts',
+            link: '/fun-facts'
+          },
         ]
       },
       // {

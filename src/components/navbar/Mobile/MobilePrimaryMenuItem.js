@@ -48,15 +48,15 @@ function MobilePrimaryMenuItem({ data }) {
 
   return (
     <MenuItem>
-      {/* {!data.sublinks.length ? ( */}
+      {!data.sublinks.length ? (
       <Item as={Link} onClick={toggleMainMenu} to={data.link}>
         {data.name}
       </Item>
-      {/* ) : ( */}
-      {/* <Item onClick={handleClick}>{data.name}</Item> */}
-      {/* )} */}
+      ) : ( 
+       <Item onClick={handleClick}>{data.name}</Item> 
+      )} 
 
-      {/* {data.sublinks.length > 0 && <StyledArrow />} */}
+       {data.sublinks.length > 0 && <StyledArrow />}
     </MenuItem>
   )
 }
