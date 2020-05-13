@@ -29,7 +29,7 @@ function MobilePrimaryMenu({ open, items }) {
   const menuItems = items.map(item => (
     <MobilePrimaryMenuItem key={item.name} data={item} />
   ))
-  //
+  
   return (
     <Overlay style={menuAnimation}>
       <Ul>{menuItems}</Ul>
