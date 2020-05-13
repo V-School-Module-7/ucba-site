@@ -26,8 +26,8 @@ const HeaderText = styled.div`
   line-height: 42px;
   margin-left: auto;
   margin-right: auto;
+  
 
-  color: #000000;
 `
 
 const ParagraphText = styled.div`

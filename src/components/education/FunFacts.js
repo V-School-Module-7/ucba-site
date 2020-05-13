@@ -27,6 +27,10 @@ line-height: 32px;
 padding: 3% 0 5% 0;
 color: #000000;
 
+@media(max-width: 1000px){
+  font-size: 16px;
+}
+
 `
 const ListItem = styled.li`
   margin-top: 15px;
