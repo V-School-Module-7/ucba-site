@@ -13,10 +13,6 @@ const GuideContainer = styled.div`
   border: 6px solid #c4c4c4;
   box-sizing: border-box;
   padding-top: 16px;
-
-  @media (max-width: 1265px) {
-    /* visibility: hidden; */
-  }
 `
 
 const GuideSectionText = styled.div`

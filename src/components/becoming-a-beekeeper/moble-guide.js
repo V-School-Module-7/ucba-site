@@ -14,8 +14,9 @@ const GuideContainer = styled.div`
   box-sizing: border-box;
   padding-top: 16px;
 
-  @media (max-width: 1265px) {
-    /* visibility: hidden; */
+  @media (max-width: 450px) {
+    width: 285px;
+    left: 0;
   }
 `
 
@@ -28,6 +29,10 @@ const GuideSectionText = styled.div`
   line-height: 42px;
 
   color: #000000;
+
+  @media (max-width: 450px) {
+    font-size: 26px;
+  }
 `
 
 const LinkContainer = styled.div`
@@ -42,6 +47,10 @@ const LinkContainer = styled.div`
   line-height: 21px;
 
   color: #000000;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 `
 
 const Underline = styled.div`
@@ -50,6 +59,10 @@ const Underline = styled.div`
   float: center;
 
   background-color: #000000;
+
+  @media (max-width: 450px) {
+    width: 250px;
+  }
 `
 
 const FlexContainer = styled.div`
