@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,6 +15,7 @@ import BeeBreeds from "../components/becoming-a-beekeeper/bee-breeds"
 import Resources from "../components/becoming-a-beekeeper/resources"
 import GettingStung from "../components/becoming-a-beekeeper/getting-stung"
 import KindsOfBeeKeepers from "../components/becoming-a-beekeeper/kinds-of-beekeepers"
+import MobleGuide from "../components/becoming-a-beekeeper/moble-guide"
 import styled from "styled-components"
 
 const FlexContainer = styled.div`
@@ -25,21 +26,36 @@ const FlexContainer = styled.div`
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-areas: "index content";
+  /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
   margin-top: 40px;
   grid-gap: 110px;
 
-  @media (max-width:1000px) {
-    display:block
+  @media (max-width: 1265px) {
+    display: block;
   }
 `
 
 const StickyContainer = styled.div`
-  height: 500px;
+  position: fixed;
+  z-index: 2;
+  display: ${props=>props.show? "inline-block" : "none"};
+  top: 50px;
+  left: auto;
 
-  @media (min-width:1000px) {
-    grid-area: index;
+  @media(max-width: 500px){
+    left: 16px;
+  }
+
+  @media(min-width: 1265px){
+    display: none;
+  }
+`
+const StickyContainer2 = styled.div`
+  display: none;
+  @media (min-width: 1265px) {
+    display: inline-block;
+    grid-column: 1 / 2;
     grid-template-rows: repeat(12, 1fr);
     position: sticky;
     top: 0;
@@ -48,30 +64,71 @@ const StickyContainer = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Becoming A BeeKeeper" />
-    <HeroHeader img={Beeimg} text={"become a beekeeper"} />
-    <FlexContainer>
-      <GridContainer>
-        <StickyContainer>
-          <Index />
-        </StickyContainer>
-        <div>
-          <General />
-          <CommittingToBeekeeping />
-          <BasicPartsOfTheHive />
-          <SelectingAnApiarySite />
-          <LawsAndLicenses />
-          <GettingStarted />
-          <BeeBreeds />
-          <Resources />
-          <GettingStung />
-          <KindsOfBeeKeepers />
-        </div>
-      </GridContainer>
-    </FlexContainer>
-  </Layout>
-)
+const StickyButton = styled.button`
+  position: sticky;
+  /* left: -16px; */
+  z-index: 1;
+  top: 16px;
+
+
+  @media (min-width: 1265px) {
+    visibility: hidden;
+  }
+`
+
+const Icon = styled.div`
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+`
+
+const OverLay = styled.div`
+  position: fixed;
+  display: ${props => (props.show ? "default" : "none")};
+  width: 100vw;
+  height: 115vh;
+  top: -100px;
+  background-color: rgba(100, 100, 100, 0.8);
+  z-index: 1;
+`
+
+const IndexPage = () => {
+  const [toggle, setToggle] = useState(false)
+  return (
+    <Layout>
+      <SEO title="Becoming A BeeKeeper" />
+      <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
+      <HeroHeader img={Beeimg} text={"become a beekeeper"} />
+      <FlexContainer>
+        <GridContainer>
+          <StickyButton onClick={() => setToggle(!toggle)}>
+            <Icon />
+            <Icon />
+            <Icon />
+          </StickyButton>
+          <StickyContainer show={toggle}>
+            <MobleGuide show={toggle} setToggle={setToggle} />
+          </StickyContainer>
+          <StickyContainer2>
+            <Index />
+          </StickyContainer2>
+          <div style={{gridColumn: "2 / 3"}}>
+            <General />
+            <CommittingToBeekeeping />
+            <BasicPartsOfTheHive />
+            <SelectingAnApiarySite />
+            <LawsAndLicenses />
+            <GettingStarted />
+            <BeeBreeds />
+            <Resources />
+            <GettingStung />
+            <KindsOfBeeKeepers />
+          </div>
+        </GridContainer>
+      </FlexContainer>
+    </Layout>
+  )
+}
 
 export default IndexPage

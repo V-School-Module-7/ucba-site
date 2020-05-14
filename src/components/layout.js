@@ -17,9 +17,9 @@ const Layout = ({ children }) => {
             name
             link
             sublinks {
-              name
-              link
-            }
+                name
+                link
+              }
           }
         } 
        }

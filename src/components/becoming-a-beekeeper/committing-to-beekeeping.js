@@ -9,30 +9,18 @@ import {
 } from "../../styles/babstyles.js"
 
 
-const ParagraphTextOne = styled.div`
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 72px;
-
-  color: #000000;
-`
-
-
 const CommittingToBeekeeping = () => {
   return (
     <TextContainer id="committing-to-beekeeping">
       <FlexContainer>
         <TextHeader>COMMITTING TO BEEKEEPING</TextHeader>
       </FlexContainer>
-      <ParagraphTextOne>
+      <ParagraphTextBottomMargin style={{marginBottom: "74px"}}>
         The information below assumes you are starting with 2 hives in Utah
         County. You will need to adjust accordingly if you are beginning with
         more or fewer hives or if you are living somewhere other than
         North/Central Utah.
-      </ParagraphTextOne>
+      </ParagraphTextBottomMargin>
       <SubHeaderMarginBottom>Time</SubHeaderMarginBottom>
       <ParagraphTextBottomMargin>
         To begin, you will need to set aside a day early in the year to assemble
