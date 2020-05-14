@@ -16,21 +16,22 @@ const HeaderContainer = styled.header`
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-   
   }
 `
 const LogoAndList = styled.div`
   display: none;
 
-@media (min-width: 1000px) {
-    margin: 0;
-    max-width: 960;
-    padding: 1.45rem 1.0875rem;
-    font-family: Work Sans;
-    display: flex;
-    align-items: flex-end;
-    color: black;
+  @media (min-width: 1000px) {
+      margin: 0;
+      max-width: 960;
+      padding: 1.45rem 1.0875rem;
+      font-family:"Work Sans";
+      display: flex;
+      align-items: flex-end;
+      color: black;
+  }
 `
+
 
 const StyledLink = styled(Link)`
   color: white;
@@ -49,8 +50,6 @@ const LinkContainer = styled.div`
 `
 
 const DesktopMenu = ({ menuLinks }) => {
-  console.log(menuLinks)
-  console.log("menuLinks check in DesktopMenu")
   return (
     <HeaderContainer>
       <LogoAndList textDecor="textDecor">

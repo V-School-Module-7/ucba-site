@@ -13,6 +13,11 @@ const GuideContainer = styled.div`
   border: 6px solid #c4c4c4;
   box-sizing: border-box;
   padding-top: 16px;
+
+  @media (max-width: 450px) {
+    width: 285px;
+    left: 0;
+  }
 `
 
 const GuideSectionText = styled.div`
@@ -24,6 +29,10 @@ const GuideSectionText = styled.div`
   line-height: 42px;
 
   color: #000000;
+
+  @media (max-width: 450px) {
+    font-size: 26px;
+  }
 `
 
 const LinkContainer = styled.div`
@@ -38,6 +47,10 @@ const LinkContainer = styled.div`
   line-height: 21px;
 
   color: #000000;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 `
 
 const Underline = styled.div`
@@ -46,6 +59,10 @@ const Underline = styled.div`
   float: center;
 
   background-color: #000000;
+
+  @media (max-width: 450px) {
+    width: 250px;
+  }
 `
 
 const FlexContainer = styled.div`
@@ -58,7 +75,8 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 `
 
-const index = (prop) => {
+const MobleGuide = props => {
+  const { setToggle, show } = props
   return (
     <>
       <GuideContainer>
@@ -68,6 +86,7 @@ const index = (prop) => {
         </FlexContainer>
         <LinkContainer>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="general"
             spy={true}
@@ -78,6 +97,7 @@ const index = (prop) => {
             GENERAL
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="committing-to-beekeeping"
             spy={true}
@@ -88,6 +108,7 @@ const index = (prop) => {
             COMMITTING TO BEEKEEPING
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="basic-parts-of-the-hive"
             spy={true}
@@ -98,6 +119,7 @@ const index = (prop) => {
             BASIC PARTS OF THE HIVE
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="selecting-an-apiary-site"
             spy={true}
@@ -108,6 +130,7 @@ const index = (prop) => {
             SELECTING AN APIARY SITE
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="laws-and-licenses"
             spy={true}
@@ -118,6 +141,7 @@ const index = (prop) => {
             LAWS & LICENSES
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="getting-started"
             spy={true}
@@ -128,6 +152,7 @@ const index = (prop) => {
             GETTING STARTED
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="bee-breeds"
             spy={true}
@@ -138,6 +163,7 @@ const index = (prop) => {
             BEE BREEDS
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="resources"
             spy={true}
@@ -148,6 +174,7 @@ const index = (prop) => {
             RESOURCES
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="getting-stung"
             spy={true}
@@ -158,6 +185,7 @@ const index = (prop) => {
             GETTING STUNG
           </StyledLink>
           <StyledLink
+            onClick={() => setToggle(!show)}
             activeClass="active"
             to="kinds-of-beekeepers"
             spy={true}
@@ -173,4 +201,4 @@ const index = (prop) => {
   )
 }
 
-export default index
+export default MobleGuide

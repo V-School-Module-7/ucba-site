@@ -12,14 +12,14 @@ module.exports = {
         link: '/report-a-swarm',
         sublinks: []
       },
-      // {
-      //   name: 'be a beekeeper',
-      //   link: null,
-      //   sublinks: [
-      //     {
-      //       name: 'becoming a beekeeper',
-      //       link: '/becoming-a-beekeeper'
-      //     },
+      {
+        name: 'be a beekeeper',
+        link: null,
+        sublinks: [
+          {
+            name: 'becoming a beekeeper',
+            link: '/becoming-a-beekeeper'
+          },
       //     // {
       //     //   name: 'about ucba',
       //     //   link: '/about-ucba'
@@ -32,8 +32,8 @@ module.exports = {
       //     //   name: 'licensing',
       //     //   link: '/licensing'
       //     // }
-      //   ]
-      // },
+        ]
+      },
       {
         name: 'education',
         link: null,
@@ -97,6 +97,15 @@ module.exports = {
       options: {
         // Add any options here
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Rubik`,
+          `700` // you can also specify font weights and styles
+        ]
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
