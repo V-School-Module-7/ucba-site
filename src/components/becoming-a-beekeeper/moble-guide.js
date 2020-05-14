@@ -75,130 +75,130 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 `
 
-const MobleGuide = (props) => {
-    const { setToggle, show } = props
-    return (
-        <>
-            <GuideContainer>
-                <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
-                <FlexContainer>
-                    <Underline />
-                </FlexContainer>
-                <LinkContainer>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="general"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        General
+const MobleGuide = props => {
+  const { setToggle, show } = props
+  return (
+    <>
+      <GuideContainer>
+        <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
+        <FlexContainer>
+          <Underline />
+        </FlexContainer>
+        <LinkContainer>
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="general"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            General
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="committing-to-beekeeping"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        COMMITTING TO BEEKEEPING
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="committing-to-beekeeping"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            COMMITTING TO BEEKEEPING
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="basic-parts-of-the-hive"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        BASIC PARTS OF THE HIVE
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="basic-parts-of-the-hive"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            BASIC PARTS OF THE HIVE
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="selecting-an-apiary-site"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        SELECTING AN APIARY SITE
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="selecting-an-apiary-site"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            SELECTING AN APIARY SITE
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="laws-and-licenses"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        LAWS & LICENSES
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="laws-and-licenses"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            LAWS & LICENSES
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="getting-started"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        GETTING STARTED
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="getting-started"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            GETTING STARTED
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="bee-breeds"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        BEE BREEDS
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="bee-breeds"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            BEE BREEDS
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="resources"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        RESOURCES
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="resources"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            RESOURCES
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="getting-stung"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        GETTING STUNG
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="getting-stung"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            GETTING STUNG
           </StyledLink>
-                    <StyledLink
-                        onClick={() => setToggle(!show)}
-                        activeClass="active"
-                        to="kinds-of-beekeepers"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        KINDS OF BEEKEEPERS
+          <StyledLink
+            onClick={() => setToggle(!show)}
+            activeClass="active"
+            to="kinds-of-beekeepers"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            KINDS OF BEEKEEPERS
           </StyledLink>
-                </LinkContainer>
-            </GuideContainer>
-        </>
-    )
+        </LinkContainer>
+      </GuideContainer>
+    </>
+  )
 }
 
 export default MobleGuide

@@ -20,24 +20,24 @@ module.exports = {
             name: 'becoming a beekeeper',
             link: '/becoming-a-beekeeper'
           },
-      // {
-      //   name: 'about ucba',
-      //   link: '/about-ucba'
-      // },
-      // {
-      //   name: 'youth bab program',
-      //   link: '/youth-bab-program'
-      // },
-      // {
-      //   name: 'licensing',
-      //   link: '/licensing'
-      // }
+      //     // {
+      //     //   name: 'about ucba',
+      //     //   link: '/about-ucba'
+      //     // },
+      //     // {
+      //     //   name: 'youth bab program',
+      //     //   link: '/youth-bab-program'
+      //     // },
+      //     // {
+      //     //   name: 'licensing',
+      //     //   link: '/licensing'
+      //     // }
         ]
       },
-      // {
-      //   name: 'education',
-      //   link: null,
-      //   sublinks: [
+      {
+        name: 'education',
+        link: null,
+        sublinks: [
       //     {
       //       name: 'honey information',
       //       link: '/honey-information'
@@ -58,16 +58,16 @@ module.exports = {
       //       name: 'diseases, pests, etc.',
       //       link: '/diseases-pests-etc'
       //     },
-      //     {
-      //       name: 'beekeepers\' calendar',
-      //       link: '/beekeepers-calendar'
-      //     },
-      //     {
-      //       name: 'fun facts',
-      //       link: '/fun-facts'
-      //     },
-      //   ]
-      // },
+          {
+            name: 'beekeepers\' calendar',
+            link: '/calendar'
+          },
+          {
+            name: 'fun facts',
+            link: '/fun-facts'
+          },
+        ]
+      },
       // {
       //   name: 'membership',
       //   link: null,
@@ -86,7 +86,7 @@ module.exports = {
       //     }
       //   ]
       // },
-    ],
+     ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },

@@ -56,8 +56,6 @@ const ItemLink = styled(Link)`
 `
 
 function MobileSubMenu(props) {
-    console.log('CHECKING SUBMENU PROPS')
-    console.log(props)
     const { subMenuOpen, toggleSubMenu, chosenSubMenu } = useContext(
         NavbarContext
     )

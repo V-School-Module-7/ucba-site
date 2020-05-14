@@ -35,29 +35,30 @@ const StyledArrow = styled(Arrow)`
 `
 
 function MobilePrimaryMenuItem({ data }) {
-    // console.log("CHECKING MobilePrimaryMenuItem")
-    // console.log(data)
-    const { toggleSubMenu, setChosenSubMenu } = useContext(NavbarContext)
+  // console.log("CHECKING MobilePrimaryMenuItem")
+  // console.log(data)
+  const { toggleSubMenu, setChosenSubMenu, toggleMainMenu } = useContext(
+    NavbarContext
+  )
 
-    function handleClick() {
-        setChosenSubMenu(data.sublinks)
-        toggleSubMenu()
-    }
+  function handleClick() {
+    setChosenSubMenu(data.sublinks)
+    toggleSubMenu()
+  }
 
-    return (
-        <MenuItem>
+  return (
+    <MenuItem>
+      {!data.sublinks.length ? (
+      <Item as={Link} onClick={toggleMainMenu} to={data.link}>
+        {data.name}
+      </Item>
+      ) : ( 
+       <Item onClick={handleClick}>{data.name}</Item> 
+      )} 
 
-            {!data.sublinks.length ? (
-                <Item as={Link} to={data.link}>
-                    {data.name}
-                </Item>
-            ) : (
-            <Item onClick={handleClick}>{data.name}</Item>
-            )}
-
-            {data.sublinks.length > 0 && <StyledArrow />}
-        </MenuItem>
-    )
+       {data.sublinks.length > 0 && <StyledArrow />}
+    </MenuItem>
+  )
 }
 
 export default MobilePrimaryMenuItem

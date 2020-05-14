@@ -52,7 +52,7 @@ function MenuLink(props) {
       ) : (
           <StyledSpan>{props.name}</StyledSpan>
         )}
-      {props.sublinks && props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
+      {props.sublinks.length > 0 && <SubMenu items={props.sublinks} />}
     </StyledLi>
   )
 }
