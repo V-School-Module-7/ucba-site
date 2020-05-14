@@ -45,11 +45,15 @@ const SubMenuItem = styled.li`
   }
 `
 const SubMenuLink = styled(Link)`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   line-height: 20px;
   margin: 0;
   color: inherit;
+  height: 100%;
+  width: 100%;
 
   :visited {
     color: inherit;

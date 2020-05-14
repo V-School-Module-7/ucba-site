@@ -94,7 +94,7 @@ const MobleGuide = props => {
             offset={0}
             duration={500}
           >
-            General
+            GENERAL
           </StyledLink>
           <StyledLink
             onClick={() => setToggle(!show)}

@@ -10,6 +10,7 @@ const HeroImg = styled.img`
   width: 100%;
 `
 
+
 const HeroText = styled.p`
   position: absolute;
   width: 468px;
@@ -18,13 +19,12 @@ const HeroText = styled.p`
   top: 205px;
   margin: 0;
 
-  font-family: "ChunkFive Roman";
+  font-family: "Rubik";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   /* font-size: 62px; */
-  font-size: 64px;
+  font-size: 48px;
   line-height: 74px;
-  text-decoration-line: underline;
   text-transform: uppercase;
 
   color: #ffffff;

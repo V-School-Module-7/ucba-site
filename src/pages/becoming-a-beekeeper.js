@@ -26,7 +26,7 @@ const FlexContainer = styled.div`
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-areas: "index content";
+  /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
   margin-top: 40px;
   grid-gap: 110px;
@@ -37,16 +37,25 @@ const GridContainer = styled.div`
 `
 
 const StickyContainer = styled.div`
-  position: sticky;
+  position: fixed;
   z-index: 2;
   display: ${props=>props.show? "inline-block" : "none"};
   top: 50px;
+  left: auto;
+
+  @media(max-width: 500px){
+    left: 16px;
+  }
+
+  @media(min-width: 1265px){
+    display: none;
+  }
 `
 const StickyContainer2 = styled.div`
   display: none;
   @media (min-width: 1265px) {
     display: inline-block;
-    grid-area: index;
+    grid-column: 1 / 2;
     grid-template-rows: repeat(12, 1fr);
     position: sticky;
     top: 0;
@@ -57,7 +66,7 @@ const StickyContainer2 = styled.div`
 
 const StickyButton = styled.button`
   position: sticky;
-  left: -16px;
+  /* left: -16px; */
   z-index: 1;
   top: 16px;
 
@@ -104,7 +113,7 @@ const IndexPage = () => {
           <StickyContainer2>
             <Index />
           </StickyContainer2>
-          <div>
+          <div style={{gridColumn: "2 / 3"}}>
             <General />
             <CommittingToBeekeeping />
             <BasicPartsOfTheHive />

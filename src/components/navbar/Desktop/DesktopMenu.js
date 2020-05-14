@@ -50,8 +50,6 @@ const LinkContainer = styled.div`
 `
 
 const DesktopMenu = ({ menuLinks }) => {
-  console.log(menuLinks)
-  console.log("menuLinks check in DesktopMenu")
   return (
     <HeaderContainer>
       <LogoAndList textDecor="textDecor">
