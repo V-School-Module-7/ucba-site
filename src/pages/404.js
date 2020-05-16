@@ -16,6 +16,7 @@ position: relative;
 width: 100%;
 height: auto;
 text-align: center;
+padding: 125px 0;
 @media (max-width: 1000px) {
   display: grid;
   grid-template-columns: 100%;
