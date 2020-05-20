@@ -38,10 +38,10 @@ module.exports = {
         name: 'education',
         link: null,
         sublinks: [
-      //     {
-      //       name: 'honey information',
-      //       link: '/honey-information'
-      //     },
+          {
+            name: 'honey information',
+            link: '/honey-information'
+          },
       //     {
       //       name: 'africanized honey bee',
       //       link: '/africanized-honey-bee'
