@@ -10,8 +10,23 @@ const Container = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     font-family: Work Sans;
-    // padding: 0 8%;
     margin: 0 4% 4% 4%;
+
+    @media (max-width: 900px) {
+        width:100%;
+overflow-x:hidden;
+      }
+    
+      @media (max-width: 550px) {
+        width: 350px;
+      }
+    
+      @media (max-width: 400px) {
+        width: 100%;
+        overflow-x: hidden;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
 `
 
 const TextContainer = styled.div`
@@ -21,7 +36,8 @@ const TextContainer = styled.div`
   margin-top: 64px;
   padding-left: 4%;
   padding-right: 4%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
+  margin-bottom: 2%;
 
   border: 6px solid #63966a;
   box-sizing: border-box;
@@ -35,11 +51,12 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 400px) {
-    width: 300px;
+    width: 100%;
     padding-left: 8px;
     padding-right: 8px;
   }
 `
+
 const Title = styled.h1`
   display: flex;
   justify-content: center;
@@ -51,8 +68,30 @@ margin-bottom: 0;
 // padding: 5%;
 `
 
+const Email = styled.span`
+  font-weight: bold;
+  text-decoration: underline;
+`
+
 const BodyContainer = styled.div`
     padding: 0 8%;
+
+    @media (max-width: 900px) {
+        width: 500px;
+        font-size: 16px;
+      }
+    
+      @media (max-width: 550px) {
+        width: 350px;
+        font-size: 16px;
+      }
+    
+      @media (max-width: 400px) {
+          font-size: 16px;
+        width: 300px;
+        margin: 2%;
+
+      }
 
 `
 const BeeHeader = styled.h1`
@@ -63,6 +102,10 @@ const BeeHeader = styled.h1`
   line-height: 42px;
   color: #000000;
   margin-bottom: 2%;
+
+  @media (max-width: 900px) {
+      font-size: 16px;
+  }
 `
 
 
@@ -70,17 +113,29 @@ const Paragraph = styled.p`
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 2% 0 4% 0;
+
+  @media (max-width: 900px) {
+      width: 100%;
+      overflow-x:hidden;
+    font-size: 16px;
+    margin: 2px;
+}
 `
 const Subscript = styled.h3`
-margin: 2% 0;
+    margin: 2% 0;
   font-weight: bold;
   font-size: 24px;
+
+  @media (max-width: 550px) {
+    font-size: 16px;
+  }
 `
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-contents: center;
   align-items: center;
+
 `
 const AppButton = styled.button`
   background-color: #FFCB00;
@@ -89,17 +144,33 @@ const AppButton = styled.button`
   font-weight: 700;
   width: 569px;
   height: 72px;
-  
+  border: none;
+  box-shadow: 18px 22px #FFE994;
+  margin: 3% 0 5% 0;
+
+  @media (max-width: 900px) {
+    width: 400px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 550px) {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 400px) {
+    width: 270px;
+    box-shadow: none;
+    font-size: 16px;
+  }
 `
-
-
 
 function YouthBAB() {
     return (
         <Container>
             <TextContainer>
                 <Title>Youth Be A Beekeeper Program</Title>
-                <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to ut.co.beekeepers@gmail.com before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
+                <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
             </TextContainer>
             <BodyContainer>
                 <BeeHeader>Expectations</BeeHeader>
