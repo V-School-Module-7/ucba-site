@@ -4,30 +4,34 @@ import {
   ParagraphTextBottomMargin, FlexContainer
 } from "../../../styles/babstyles.js"
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: Work Sans;
-    margin: 0 4% 4% 4%;
+// const Container = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     font-family: Work Sans;
+//     margin: 0 4%;
 
-    @media (max-width: 900px) {
-        width:100%;
-      }
+//     @media (max-width: 900px) {
+//         width:100%;
+//       }
     
-      @media (max-width: 550px) {
-        max-width: 350px;
-        width: 100%;
-      }
+//       @media (max-width: 550px) {
+//         max-width: 350px;
+//         width: 100%;
+//       }
     
-      @media (max-width: 400px) {
-        max-width: 350px;
-        width: 100%;
+//       @media (max-width: 400px) {
+//         max-width: 350px;
+//         width: 100%;
        
-      }
-`
+//       }
+// `
 
+const Container = styled(FlexContainer)`
+  margin-bottom: 4%;
+`
+  
 const TextContainer = styled.div`
   position: relative;
   height: auto;
@@ -43,6 +47,11 @@ const TextContainer = styled.div`
 
   @media (max-width: 900px) {
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // align-self: center;
   }
 
   @media (max-width: 550px) {
@@ -58,22 +67,30 @@ const TextContainer = styled.div`
 `
 
 const Title = styled.h1`
-  // display: flex;
-  // justify-content: center;
-  // margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 30px;
+
+  @media (max-width: 900px){
+    margin: 2%;
+    
+  }
   
 `
 const HeaderParagraph = styled.p`
-// margin-bottom: 0;
+margin-bottom: 0;
 `
 
 const Email = styled.span`
-  // font-weight: bold;
-  // text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 `
 
 const BodyContainer = styled.div`
-    // padding: 0 8%;
+    padding: 0 8%;
 
     @media (max-width: 900px) {
         width: 500px;
@@ -92,84 +109,83 @@ const BodyContainer = styled.div`
           width: 100%;
         max-width: 300px;
         margin: 2%;
-
       }
 
 `
 const BeeHeader = styled.h1`
-  // display: inline-block;
-  // border-bottom: 6px solid #63966a;
-  // padding: 16px 0 2px 0 ;
-  // font-size: 24px;
-  // line-height: 42px;
-  // color: #000000;
-  // margin-bottom: 2%;
+  display: inline-block;
+  border-bottom: 6px solid #63966a;
+  padding: 16px 0 2px 0 ;
+  font-size: 24px;
+  line-height: 42px;
+  color: #000000;
+  margin-bottom: 2%;
 
-  // @media (max-width: 900px) {
-  //     font-size: 16px;
-  // }
+  @media (max-width: 900px) {
+      font-size: 16px;
+  }
 `
-
-
 const Paragraph = styled.p`
-//   font-size: 24px;
-//   line-height: 28px;
-//   margin-bottom: 2% 0 4% 0;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 2% 0 4% 0;
 
-//   @media (max-width: 900px) {
-//       width: 100%;
-//       overflow-x:hidden;
-//     font-size: 16px;
-//     margin: 2px;
-// }
+  @media (max-width: 900px) {
+      width: 100%;
+      overflow-x:hidden;
+    font-size: 16px;
+    margin: 2px;
+}
 `
 const Subscript = styled.h3`
-  //   margin: 2% 0;
-  // font-weight: bold;
-  // font-size: 24px;
+  margin: 4% 0;
+  font-weight: bold;
+  font-size: 24px;
 
-  // @media (max-width: 550px) {
-  //   font-size: 16px;
-  // }
+  @media (max-width: 550px) {
+    font-size: 16px;
+  }
 `
 const ButtonContainer = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  // justify-contents: center;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
+  align-items: center;
 
 `
 const AppButton = styled.button`
-  // background-color: #FFCB00;
-  // font-family: Work Sans;
-  // font-size: 24px;
-  // font-weight: 700;
-  // width: 569px;
-  // height: 72px;
-  // border: none;
-  // box-shadow: 18px 22px #FFE994;
-  // margin: 3% 0 5% 0;
+  background-color: #FFCB00;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 700;
+  width: 569px;
+  height: 72px;
+  border: none;
+  box-shadow: 18px 22px #FFE994;
+  margin: 3% 0 5% 0;
 
-  // @media (max-width: 900px) {
-  //   width: 400px;
-  //   font-size: 16px;
-  // }
+  @media (max-width: 900px) {
+    width: 400px;
+    font-size: 16px;
+    box-shadow: 18px 22px #FFE994;
+  }
 
-  // @media (max-width: 550px) {
-  //   width: 300px;
-  //   font-size: 16px;
-  // }
+  @media (max-width: 550px) {
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 12px 12px #FFE994;
+  }
 
-  // @media (max-width: 400px) {
-  //   width: 270px;
-  //   box-shadow: none;
-  //   font-size: 16px;
-  // }
+  @media (max-width: 400px) {
+    width: 270px;
+    box-shadow: none;
+    font-size: 16px;
+  }
 `
 
 function YouthBAB() {
     return (
-        <FlexContainer>
+        <Container>
             <TextContainer>
                 <Title>Youth Be A Beekeeper Program</Title>
                 <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
@@ -199,7 +215,7 @@ function YouthBAB() {
                 </ButtonContainer>
 
             </BodyContainer>
-        </FlexContainer>
+        </Container>
     )
 }
 export default YouthBAB
