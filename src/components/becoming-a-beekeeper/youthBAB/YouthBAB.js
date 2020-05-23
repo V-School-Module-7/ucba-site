@@ -2,31 +2,31 @@ import React from "react"
 import styled from "styled-components"
 import {
   ParagraphTextBottomMargin, FlexContainer
-} from "../../styles/babstyles.js"
+} from "../../../styles/babstyles.js"
 
-// const Container = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     font-family: Work Sans;
-//     margin: 0 4% 4% 4%;
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Work Sans;
+    margin: 0 4% 4% 4%;
 
-//     @media (max-width: 900px) {
-//         width:100%;
-//       }
+    @media (max-width: 900px) {
+        width:100%;
+      }
     
-//       @media (max-width: 550px) {
-//         max-width: 350px;
-//         width: 100%;
-//       }
+      @media (max-width: 550px) {
+        max-width: 350px;
+        width: 100%;
+      }
     
-//       @media (max-width: 400px) {
-//         max-width: 350px;
-//         width: 100%;
+      @media (max-width: 400px) {
+        max-width: 350px;
+        width: 100%;
        
-//       }
-// `
+      }
+`
 
 const TextContainer = styled.div`
   position: relative;
@@ -58,26 +58,28 @@ const TextContainer = styled.div`
 `
 
 const Title = styled.h1`
-  display: flex;
-  justify-content: center;
-  margin: 30px;
+  // display: flex;
+  // justify-content: center;
+  // margin: 30px;
   
 `
 const HeaderParagraph = styled.p`
-margin-bottom: 0;
+// margin-bottom: 0;
 `
 
 const Email = styled.span`
-  font-weight: bold;
-  text-decoration: underline;
+  // font-weight: bold;
+  // text-decoration: underline;
 `
 
 const BodyContainer = styled.div`
-    padding: 0 8%;
+    // padding: 0 8%;
 
     @media (max-width: 900px) {
         width: 500px;
         font-size: 16px;
+        padding: 0;
+        margin: 2%;
       }
     
       @media (max-width: 550px) {
@@ -95,74 +97,74 @@ const BodyContainer = styled.div`
 
 `
 const BeeHeader = styled.h1`
-  display: inline-block;
-  border-bottom: 6px solid #63966a;
-  padding: 16px 0 2px 0 ;
-  font-size: 24px;
-  line-height: 42px;
-  color: #000000;
-  margin-bottom: 2%;
+  // display: inline-block;
+  // border-bottom: 6px solid #63966a;
+  // padding: 16px 0 2px 0 ;
+  // font-size: 24px;
+  // line-height: 42px;
+  // color: #000000;
+  // margin-bottom: 2%;
 
-  @media (max-width: 900px) {
-      font-size: 16px;
-  }
+  // @media (max-width: 900px) {
+  //     font-size: 16px;
+  // }
 `
 
 
 const Paragraph = styled.p`
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 2% 0 4% 0;
+//   font-size: 24px;
+//   line-height: 28px;
+//   margin-bottom: 2% 0 4% 0;
 
-  @media (max-width: 900px) {
-      width: 100%;
-      overflow-x:hidden;
-    font-size: 16px;
-    margin: 2px;
-}
+//   @media (max-width: 900px) {
+//       width: 100%;
+//       overflow-x:hidden;
+//     font-size: 16px;
+//     margin: 2px;
+// }
 `
 const Subscript = styled.h3`
-    margin: 2% 0;
-  font-weight: bold;
-  font-size: 24px;
+  //   margin: 2% 0;
+  // font-weight: bold;
+  // font-size: 24px;
 
-  @media (max-width: 550px) {
-    font-size: 16px;
-  }
+  // @media (max-width: 550px) {
+  //   font-size: 16px;
+  // }
 `
 const ButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-contents: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-contents: center;
+  // align-items: center;
 
 `
 const AppButton = styled.button`
-  background-color: #FFCB00;
-  font-family: Work Sans;
-  font-size: 24px;
-  font-weight: 700;
-  width: 569px;
-  height: 72px;
-  border: none;
-  box-shadow: 18px 22px #FFE994;
-  margin: 3% 0 5% 0;
+  // background-color: #FFCB00;
+  // font-family: Work Sans;
+  // font-size: 24px;
+  // font-weight: 700;
+  // width: 569px;
+  // height: 72px;
+  // border: none;
+  // box-shadow: 18px 22px #FFE994;
+  // margin: 3% 0 5% 0;
 
-  @media (max-width: 900px) {
-    width: 400px;
-    font-size: 16px;
-  }
+  // @media (max-width: 900px) {
+  //   width: 400px;
+  //   font-size: 16px;
+  // }
 
-  @media (max-width: 550px) {
-    width: 300px;
-    font-size: 16px;
-  }
+  // @media (max-width: 550px) {
+  //   width: 300px;
+  //   font-size: 16px;
+  // }
 
-  @media (max-width: 400px) {
-    width: 270px;
-    box-shadow: none;
-    font-size: 16px;
-  }
+  // @media (max-width: 400px) {
+  //   width: 270px;
+  //   box-shadow: none;
+  //   font-size: 16px;
+  // }
 `
 
 function YouthBAB() {
@@ -172,7 +174,7 @@ function YouthBAB() {
                 <Title>Youth Be A Beekeeper Program</Title>
                 <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
             </TextContainer>
-            {/* <BodyContainer>
+            <BodyContainer>
                 <BeeHeader>Expectations</BeeHeader>
                 <Paragraph>If selected, each participant will attend a minimum of 5 Utah County Beekeepers Association (UCBA) meetings; participate in UCBA for at least 2 years; supply 2 written reports or presentations of progress; email the BAB coordinator once a month; write and give thank you notes to BAB coordinator for sponsors no later than May 31, 2020; must participate in at least 2 speaking engagements; meet the financial obligation associated with the BAB program; and learn and have fun!</Paragraph>
                 <BeeHeader>Cost to the BAB participant </BeeHeader>
@@ -196,7 +198,7 @@ function YouthBAB() {
                 <ButtonContainer><AppButton>CLICK HERE TO FILL OUT AN APPLICATION</AppButton>
                 </ButtonContainer>
 
-            </BodyContainer> */}
+            </BodyContainer>
         </FlexContainer>
     )
 }

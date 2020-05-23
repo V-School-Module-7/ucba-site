@@ -1,7 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 import styled from "styled-components"
 import { animated } from "react-spring"
-import { NavbarContext } from "../navbarContext"
 import MobilePrimaryMenuItem from "./MobilePrimaryMenuItem"
 import { useMenuAnimation } from "./useMenuAnimation"
 
