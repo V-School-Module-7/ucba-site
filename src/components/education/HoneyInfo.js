@@ -30,7 +30,8 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 550px) {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
   }
 
   @media (max-width: 400px) {

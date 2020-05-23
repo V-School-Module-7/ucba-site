@@ -1,33 +1,32 @@
 import React from "react"
 import styled from "styled-components"
-// import {
-//   ParagraphTextBottomMargin,
-// } from "../../styles/babstyles.js"
+import {
+  ParagraphTextBottomMargin, FlexContainer
+} from "../../styles/babstyles.js"
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: Work Sans;
-    margin: 0 4% 4% 4%;
+// const Container = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     font-family: Work Sans;
+//     margin: 0 4% 4% 4%;
 
-    @media (max-width: 900px) {
-        width:100%;
-overflow-x:hidden;
-      }
+//     @media (max-width: 900px) {
+//         width:100%;
+//       }
     
-      @media (max-width: 550px) {
-        width: 350px;
-      }
+//       @media (max-width: 550px) {
+//         max-width: 350px;
+//         width: 100%;
+//       }
     
-      @media (max-width: 400px) {
-        width: 100%;
-        overflow-x: hidden;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-`
+//       @media (max-width: 400px) {
+//         max-width: 350px;
+//         width: 100%;
+       
+//       }
+// `
 
 const TextContainer = styled.div`
   position: relative;
@@ -51,6 +50,7 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 400px) {
+    max-width: 350px;
     width: 100%;
     padding-left: 8px;
     padding-right: 8px;
@@ -65,7 +65,6 @@ const Title = styled.h1`
 `
 const HeaderParagraph = styled.p`
 margin-bottom: 0;
-// padding: 5%;
 `
 
 const Email = styled.span`
@@ -88,7 +87,8 @@ const BodyContainer = styled.div`
     
       @media (max-width: 400px) {
           font-size: 16px;
-        width: 300px;
+          width: 100%;
+        max-width: 300px;
         margin: 2%;
 
       }
@@ -167,12 +167,12 @@ const AppButton = styled.button`
 
 function YouthBAB() {
     return (
-        <Container>
+        <FlexContainer>
             <TextContainer>
                 <Title>Youth Be A Beekeeper Program</Title>
                 <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
             </TextContainer>
-            <BodyContainer>
+            {/* <BodyContainer>
                 <BeeHeader>Expectations</BeeHeader>
                 <Paragraph>If selected, each participant will attend a minimum of 5 Utah County Beekeepers Association (UCBA) meetings; participate in UCBA for at least 2 years; supply 2 written reports or presentations of progress; email the BAB coordinator once a month; write and give thank you notes to BAB coordinator for sponsors no later than May 31, 2020; must participate in at least 2 speaking engagements; meet the financial obligation associated with the BAB program; and learn and have fun!</Paragraph>
                 <BeeHeader>Cost to the BAB participant </BeeHeader>
@@ -196,8 +196,8 @@ function YouthBAB() {
                 <ButtonContainer><AppButton>CLICK HERE TO FILL OUT AN APPLICATION</AppButton>
                 </ButtonContainer>
 
-            </BodyContainer>
-        </Container>
+            </BodyContainer> */}
+        </FlexContainer>
     )
 }
 export default YouthBAB
