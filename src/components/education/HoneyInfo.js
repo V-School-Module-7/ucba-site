@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import {GreenLineContainer, BoxTitle} from "../../../styles/edustyles.js"
 
 const FactsContainer = styled.div`
     display: flex;

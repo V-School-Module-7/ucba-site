@@ -1,69 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  ParagraphTextBottomMargin, FlexContainer
+  ParagraphTextBottomMargin, FlexContainer, TextContainer, ParagraphText
 } from "../../../styles/babstyles.js"
-
-// const Container = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     font-family: Work Sans;
-//     margin: 0 4%;
-
-//     @media (max-width: 900px) {
-//         width:100%;
-//       }
-    
-//       @media (max-width: 550px) {
-//         max-width: 350px;
-//         width: 100%;
-//       }
-    
-//       @media (max-width: 400px) {
-//         max-width: 350px;
-//         width: 100%;
-       
-//       }
-// `
+import {GreenLineContainer, BoxTitle} from "../../../styles/edustyles.js"
 
 const Container = styled(FlexContainer)`
   margin-bottom: 4%;
-`
-  
-const TextContainer = styled.div`
-  position: relative;
-  height: auto;
-  margin: 0 8%;
-  margin-top: 64px;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-bottom: 4%;
-  margin-bottom: 2%;
-
-  border: 6px solid #63966a;
-  box-sizing: border-box;
-
-  @media (max-width: 900px) {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // align-self: center;
-  }
-
-  @media (max-width: 550px) {
-    width: 350px;
-  }
-
-  @media (max-width: 400px) {
-    max-width: 350px;
-    width: 100%;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
 `
 
 const Title = styled.h1`
@@ -125,18 +68,18 @@ const BeeHeader = styled.h1`
       font-size: 16px;
   }
 `
-const Paragraph = styled.p`
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 2% 0 4% 0;
+// const Paragraph = styled.p`
+//   font-size: 24px;
+//   line-height: 28px;
+//   margin-bottom: 2% 0 4% 0;
 
-  @media (max-width: 900px) {
-      width: 100%;
-      overflow-x:hidden;
-    font-size: 16px;
-    margin: 2px;
-}
-`
+//   @media (max-width: 900px) {
+//       width: 100%;
+//       overflow-x:hidden;
+//     font-size: 16px;
+//     margin: 2px;
+// }
+// `
 const Subscript = styled.h3`
   margin: 4% 0;
   font-weight: bold;
@@ -186,29 +129,29 @@ const AppButton = styled.button`
 function YouthBAB() {
     return (
         <Container>
-            <TextContainer>
+            <GreenLineContainer>
                 <Title>Youth Be A Beekeeper Program</Title>
                 <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
-            </TextContainer>
+            </GreenLineContainer>
             <BodyContainer>
                 <BeeHeader>Expectations</BeeHeader>
-                <Paragraph>If selected, each participant will attend a minimum of 5 Utah County Beekeepers Association (UCBA) meetings; participate in UCBA for at least 2 years; supply 2 written reports or presentations of progress; email the BAB coordinator once a month; write and give thank you notes to BAB coordinator for sponsors no later than May 31, 2020; must participate in at least 2 speaking engagements; meet the financial obligation associated with the BAB program; and learn and have fun!</Paragraph>
+                <ParagraphText>If selected, each participant will attend a minimum of 5 Utah County Beekeepers Association (UCBA) meetings; participate in UCBA for at least 2 years; supply 2 written reports or presentations of progress; email the BAB coordinator once a month; write and give thank you notes to BAB coordinator for sponsors no later than May 31, 2020; must participate in at least 2 speaking engagements; meet the financial obligation associated with the BAB program; and learn and have fun!</ParagraphText>
                 <BeeHeader>Cost to the BAB participant </BeeHeader>
-                <Paragraph>There will be a $100 deposit. It will be returned by January 31, 2021 to those who fulfilled the expectations (see above) of BAB. Otherwise the deposit will be forfeited. Additionally there may be costs beyond the deposit that will be required from the winner. The association will cover many costs, but may not cover all of those associated with starting a hive.</Paragraph>
+                <ParagraphText>There will be a $100 deposit. It will be returned by January 31, 2021 to those who fulfilled the expectations (see above) of BAB. Otherwise the deposit will be forfeited. Additionally there may be costs beyond the deposit that will be required from the winner. The association will cover many costs, but may not cover all of those associated with starting a hive.</ParagraphText>
                 <BeeHeader>Waiver</BeeHeader>
-                <Paragraph>Each participant's parent or guardian (because the participant will be under legal age) will sign a waiver releasing UCBA and any mentors from any liability associated with owning and operating a hive while participating in the BAB program.</Paragraph>
+                <ParagraphText>Each participant's parent or guardian (because the participant will be under legal age) will sign a waiver releasing UCBA and any mentors from any liability associated with owning and operating a hive while participating in the BAB program.</ParagraphText>
 
                 <BeeHeader>UCBA will provide:</BeeHeader>
-                <Paragraph>A hive with frames and bees; beekeeping mentor; a hive tool; bee brush; smoker; gloves; veil; and a state beekeeping license.</Paragraph>
+                <ParagraphText>A hive with frames and bees; beekeeping mentor; a hive tool; bee brush; smoker; gloves; veil; and a state beekeeping license.</ParagraphText>
 
                 <BeeHeader>Winners</BeeHeader>
-                <Paragraph>For the 2020 year, we will have no more than 4 winners. </Paragraph>
+                <ParagraphText>For the 2020 year, we will have no more than 4 winners. </ParagraphText>
 
                 <BeeHeader>Essay for 12-14 Year-Olds</BeeHeader>
-                <Paragraph>Write a 3-5 paragraph essay. Each paragraph should include 3 but no more than 5 sentences. Write an essay including the following elements. Tell about bees. Do you have any personal experience with them? Why are you interested in beekeeping? What would you like to learn as a beekeeper during the next two years? </Paragraph>
+                <ParagraphText>Write a 3-5 paragraph essay. Each paragraph should include 3 but no more than 5 sentences. Write an essay including the following elements. Tell about bees. Do you have any personal experience with them? Why are you interested in beekeeping? What would you like to learn as a beekeeper during the next two years? </ParagraphText>
 
                 <BeeHeader>Essay for 15-18 Year-Olds</BeeHeader>
-                <Paragraph>Write a 4-7 paragraph essay. Each paragraph should include 4 but no more than 7 sentences. Write an essay including the following elements. Why are you interested in beekeeping? What knowledge or experience do you have with bees, if any? What specifically would you like to learn about bees and beekeeping during the next two years? </Paragraph>
+                <ParagraphText>Write a 4-7 paragraph essay. Each paragraph should include 4 but no more than 7 sentences. Write an essay including the following elements. Why are you interested in beekeeping? What knowledge or experience do you have with bees, if any? What specifically would you like to learn about bees and beekeeping during the next two years? </ParagraphText>
 
                 <Subscript>Good Luck! We look forward to receiving your entries!</Subscript>
                 <ButtonContainer><AppButton>CLICK HERE TO FILL OUT AN APPLICATION</AppButton>
