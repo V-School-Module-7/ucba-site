@@ -1,47 +1,36 @@
 import React from "react"
 import styled from "styled-components"
-import { GreenLineContainer, BoxTitle, HeaderParagraph } from "../../styles/edustyles.js"
+import { Container, GreenLineContainer, BoxTitle, HeaderParagraph, BeeHeader, Paragraph } from "../../styles/edustyles.js"
 
-const FactsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: Work Sans;
-    padding: 0 12% 5% 12%;
-    @media (max-width: 900px){
-        align-items: center;
-    }
-`
 
-const BeeHeader = styled.h1`
-  border-bottom: 6px solid #63966a;
-  padding-bottom: 4px;
-  margin: 16px 0;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000000;
+// const BeeHeader = styled.h1`
+//   border-bottom: 6px solid #63966a;
+//   padding-bottom: 4px;
+//   margin: 16px 0;
+//   font-size: 36px;
+//   line-height: 42px;
+//   color: #000000;
 
-  @media (max-width: 900px){
-      font-size: 18px;
-      align-self: flex-start;
-      padding-bottom: 0;
-  }
-`
+//   @media (max-width: 900px){
+//       font-size: 18px;
+//       align-self: flex-start;
+//       padding-bottom: 0;
+//   }
+// `
 
-const Paragraph = styled.p`
-  font-size: 24px;
-  line-height: 28px;
-  margin: 2% 0 4% 0;
+// const Paragraph = styled.p`
+//   font-size: 24px;
+//   line-height: 28px;
+//   margin: 2% 0 4% 0;
 
-  @media (max-width: 900px) {
-      width: 100%;
-      // overflow-x:hidden;
-    font-size: 16px;
-    margin: 2px;
-    line-height: 24px;
-}
-`
+//   @media (max-width: 900px) {
+//       width: 100%;
+//       // overflow-x:hidden;
+//     font-size: 16px;
+//     margin: 2px;
+//     line-height: 24px;
+// }
+// `
 
 const Indent = styled.div`
     padding-left: 10%;
@@ -50,7 +39,7 @@ const Indent = styled.div`
 
 const HoneyInfo = () => {
   return (
-    <FactsContainer>
+    <Container>
       <GreenLineContainer>
         <BoxTitle>Honey Information</BoxTitle>
         <HeaderParagraph>Liquid honey does not spoil. Because of its high sugar concentration, it kills most bacteria by crenation. Natural airborne yeasts cannot become active in it because the moisture content is too low. Natural, raw honey varies from 14% to 18% moisture content. As long as the moisture content remains under 18%, virtually no organism can successfully multiply to significant amounts in honey, though, importantly, enough bacteria survive to make honey dangerous for infants (especially Clostridium botulinum).</HeaderParagraph>
@@ -104,7 +93,7 @@ const HoneyInfo = () => {
                 1/4 C. sugar = 3 Tbs. honey minus 1 Tbs. liquid or plus 1 Tbs. flour plus 1/16 tsp. baking soda </Paragraph>
       <br></br><br></br>
       <Paragraph>Bake cakes, and other goods made with honey, 25° lower to prevent overbrowning. Honey softens cookie batters. For crisper variety of cookies, add 4 Tbs. flour for each 3/4 cup honey used if necessary.</Paragraph>
-    </FactsContainer >
+    </Container >
   )
 }
 

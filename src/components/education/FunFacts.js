@@ -1,19 +1,17 @@
 import React from "react"
 import styled from "styled-components"
-import {
-  TextContainer
-} from "../../styles/babstyles.js"
-import { BeeHeader } from "../../styles/edustyles.js"
 
-const Container = styled(TextContainer)`
-margin: 4% 6%;
+import { BeeHeader, Container } from "../../styles/edustyles.js"
+
+const FactsContainer = styled(Container)`
+  margin-top: 5px;
 `
 const List = styled.ul`
 font-weight: 400;
 list-style-type: none;
 font-size: 24px;
 line-height: 32px;
-padding: 3% 0 5% 0;
+padding: 5%;
 color: #000000;
 
 @media(max-width: 1000px){
@@ -26,7 +24,7 @@ const ListItem = styled.li`
 `
 const FunBeeFacts = () => {
   return (
-    <Container>
+    <FactsContainer>
       <BeeHeader>Honey Bees</BeeHeader>
 
       <List>
@@ -68,11 +66,7 @@ const FunBeeFacts = () => {
         <ListItem>  - A honeycomb cell has six sides.  </ListItem>
         <ListItem> - Bees maintain a temperature of 92-93 degrees Fahrenheit in their central brood nest regardless of whether the outside temperature is 110 or -40 degrees.</ListItem>
       </List>
-
-
-
-
-    </Container >
+    </FactsContainer >
 
   )
 }

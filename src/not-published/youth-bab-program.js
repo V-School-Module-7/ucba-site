@@ -16,12 +16,8 @@ function YouthBabProgram() {
         
         <HeroHeader img={Beeimg} text={"youth bab program"} />
        
-           
-           
             <YouthBAB />
           
-        
-   
       </Layout>
     )
 }

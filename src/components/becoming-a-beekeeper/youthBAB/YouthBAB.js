@@ -1,32 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import {
-  ParagraphTextBottomMargin, FlexContainer, TextContainer, ParagraphText
-} from "../../../styles/babstyles.js"
-import { GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph } from "../../../styles/edustyles.js"
+import { ParagraphText } from "../../../styles/babstyles.js"
+import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph } from "../../../styles/edustyles.js"
 
-const Container = styled(TextContainer)`
-  margin-bottom: 4%;
-  padding: 0 8%;
-
-    @media (max-width: 900px) {
-        width: 500px;
-        font-size: 16px;
-        padding: 0;
-        margin: 2%;
-      }
-    
-      @media (max-width: 550px) {
-        width: 350px;
-        font-size: 16px;
-      }
-    
-      @media (max-width: 400px) {
-          font-size: 16px;
-          width: 100%;
-        max-width: 400px;
-        margin: 2%;
-      }
+const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 
@@ -85,7 +66,8 @@ function YouthBAB() {
   return (
     <Container>
       <GreenLineContainer>
-        <BoxTitle>Youth Be A Beekeeper Program</BoxTitle>
+        <TitleContainer><BoxTitle>Youth Be A Beekeeper Program</BoxTitle></TitleContainer>
+        
         <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
       </GreenLineContainer>
       <BeeHeader>Expectations</BeeHeader>
