@@ -1,24 +1,13 @@
 import React from "react"
 import styled from "styled-components"
+import {
+  TextContainer
+} from "../../styles/babstyles.js"
+import { BeeHeader } from "../../styles/edustyles.js"
 
-
-const FactsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: Work Sans;
-    padding: 5% 10%;
-    // padding-bottom: 100px;
+const Container = styled(TextContainer)`
+margin: 4% 6%;
 `
-const BeeHeader = styled.h1`
-  border-bottom: 6px solid #63966a;
-  padding-bottom: 4px;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000000;
-`
-
 const List = styled.ul`
 font-weight: 400;
 list-style-type: none;
@@ -37,7 +26,7 @@ const ListItem = styled.li`
 `
 const FunBeeFacts = () => {
   return (
-    <FactsContainer>
+    <Container>
       <BeeHeader>Honey Bees</BeeHeader>
 
       <List>
@@ -83,7 +72,7 @@ const FunBeeFacts = () => {
 
 
 
-    </FactsContainer >
+    </Container >
 
   )
 }

@@ -88,6 +88,7 @@ export const ParagraphText = styled.div`
   }
 `
 
+//small headers in bold but not underlined in green
 export const SubHeader = styled.div`
   font-family: Work Sans;
   font-style: normal;
