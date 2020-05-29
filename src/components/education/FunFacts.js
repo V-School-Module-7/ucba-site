@@ -11,7 +11,7 @@ font-weight: 400;
 list-style-type: none;
 font-size: 24px;
 line-height: 32px;
-padding: 5%;
+// padding: 5%;
 color: #000000;
 
 @media(max-width: 1000px){

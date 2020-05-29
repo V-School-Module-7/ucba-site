@@ -31,7 +31,10 @@ import { Container, GreenLineContainer, BoxTitle, HeaderParagraph, BeeHeader, Pa
 //     line-height: 24px;
 // }
 // `
+const StyledLink = styled.a`
+	word-wrap: break-word;
 
+`
 const Indent = styled.div`
     padding-left: 10%;
     line-height: 28px;
@@ -71,7 +74,7 @@ const HoneyInfo = () => {
       <Paragraph>Amino Acids: Tryptophan, Leucine, Lysine, Isoleucine, Methionine, Cystiene, Thresonine, Arginine, Phenylalanine, Histidine, Valine, Glutamic acid, Tyrosine, Glycine, Serine, Proline, Alanine, Aspartic acid, Hydroxyproline, Butyric acid.</Paragraph>
       <BeeHeader>What's in Your Honey? </BeeHeader>
       <Paragraph> Do you know where your honey comes from? It's something you might want to think about. Food Safety News, a site set up by food safety lawyer Bill Marler, reports that lab tests show that most honey sold on supermarket and drug store shelves today isn't really honey according to international quality standards, or safety requirements set by the Food and Drug Administration. <br>
-      </br>Pollen is a key ingredient in real honey. Without it, honey can't be traced to its country of origin. According to FSN, you won't find much pollen in American store-bought honey because it's been so ultra-filtered (mostly from China and India) that it's largely pollen-free. Know your honey source. Imported honey may be from bees forced fed a high frutose corn syrup diet, impure, loaded with antibiotics, and include questionable additives. <br></br>http://www.foodsafetynews.com/2011/11/tests-show-most-store-honey-isnt-honey/#.UE8XC65618E</Paragraph>
+      </br>Pollen is a key ingredient in real honey. Without it, honey can't be traced to its country of origin. According to FSN, you won't find much pollen in American store-bought honey because it's been so ultra-filtered (mostly from China and India) that it's largely pollen-free. Know your honey source. Imported honey may be from bees forced fed a high frutose corn syrup diet, impure, loaded with antibiotics, and include questionable additives. <StyledLink href="http://www.foodsafetynews.com/2011/11/tests-show-most-store-honey-isnt-honey/#.UE8XC65618E">http://www.foodsafetynews.com/2011/11/tests-show-most-store-honey-isnt-honey/#.UE8XC65618E</StyledLink></Paragraph>
       <BeeHeader>Crystallization of Honey</BeeHeader>
       <Paragraph> All honey will crystallize over time; this is a natural function of the sugars present in the honey. To slow the crystallization process, store honey in a cool, dark location; do not refrigerate. Freezing is the best way to keep honey long term. If your honey does crystallize, gently warm the SEALED honey container in a sink or pan of hot-to-the-touch water. NEVER microwave your honey as this destroys the beneficial enzymes present. NEVER place your honey container in the oven as most containers are plastic and will melt (big mess!). Another idea is to put your honey in the car on a warm sunny day (anytime of the year) and the heat will help it re-liquify.</Paragraph>
       <BeeHeader>Commercially Processed Honey</BeeHeader>
