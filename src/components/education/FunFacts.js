@@ -7,17 +7,15 @@ const FactsContainer = styled(Container)`
   margin-top: 5px;
 `
 const List = styled.ul`
-font-weight: 400;
-list-style-type: none;
-font-size: 24px;
-line-height: 32px;
-// padding: 5%;
-color: #000000;
+  font-weight: 400;
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
 
-@media(max-width: 1000px){
-  font-size: 16px;
+  @media(max-width: 1000px){
+    font-size: 16px;
 }
-
 `
 const ListItem = styled.li`
   margin-top: 15px;
@@ -66,6 +64,7 @@ const FunBeeFacts = () => {
         <ListItem>  - A honeycomb cell has six sides.  </ListItem>
         <ListItem> - Bees maintain a temperature of 92-93 degrees Fahrenheit in their central brood nest regardless of whether the outside temperature is 110 or -40 degrees.</ListItem>
       </List>
+      <br></br><br></br>
     </FactsContainer >
 
   )
