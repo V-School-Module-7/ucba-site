@@ -24,7 +24,6 @@ const Nav = styled.nav`
 
 
 function Navbar(props) {
-    console.log(props)
     return (
         <Fragment>
             <DesktopMenu menuLinks={props.menuLinks} />

@@ -35,8 +35,6 @@ const StyledArrow = styled(Arrow)`
 `
 
 function MobilePrimaryMenuItem({ data }) {
-  // console.log("CHECKING MobilePrimaryMenuItem")
-  // console.log(data)
   const { toggleSubMenu, setChosenSubMenu, toggleMainMenu } = useContext(
     NavbarContext
   )

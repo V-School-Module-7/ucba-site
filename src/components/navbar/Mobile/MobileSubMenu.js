@@ -62,7 +62,6 @@ function MobileSubMenu(props) {
     chosenSubMenu,
     closeBothMenus,
   } = useContext(NavbarContext)
-  console.log(chosenSubMenu)
   const menuAnimation = useMenuAnimation(subMenuOpen)
 
   const subMenuItems =
