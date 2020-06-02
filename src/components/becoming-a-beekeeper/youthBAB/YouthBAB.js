@@ -104,15 +104,13 @@ function YouthBAB() {
       <Subscript>Good Luck! We look forward to receiving your entries!</Subscript>
       
       <ButtonContainer>
-      
         <AppButton>
         <AppLink to="/youth-bab-form">
           CLICK HERE TO FILL OUT AN APPLICATION
           </AppLink>
-          </AppButton>
-          
+          </AppButton>          
       </ButtonContainer>
-      
+     
     </Container>
   )
 }
