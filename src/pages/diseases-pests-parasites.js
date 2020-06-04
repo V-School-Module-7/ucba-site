@@ -4,21 +4,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
 import EducationBee from "../images/EducationBee.png"
-import DiseasesPestsParasites from '../components/education/DiseasesPestsParasites'
+import Diseases from '../components/education/Diseases'
 
 
 
 
-function Diseases() {
+function DiseasesPestsParasites() {
     return (
         <Layout>
             <SEO title="Diseases, Pests and Parasites" />
             <HeroHeader img={EducationBee} text={"diseases, pests & parasites"} />
-            <DiseasesPestsParasites />
+            <Diseases />
 
 
         </Layout>
     )
 }
 
-export default Diseases
+export default DiseasesPestsParasites

@@ -1,6 +1,16 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, GreenLineContainer, BoxTitle, HeaderParagraph, BeeHeader, Paragraph, TextHeader, FlexContainer } from "../../styles/edustyles.js"
+import {
+  Container,
+  GreenLineContainer,
+  BoxTitle,
+  HeaderParagraph,
+  BeeHeader,
+  Paragraph,
+  TextHeader,
+  FlexContainer
+}
+  from "../../styles/edustyles.js"
 
 const BoxHeader = styled(BoxTitle)`
     font-size: 36;
@@ -25,7 +35,7 @@ const MainParagraph = styled(Paragraph)`
 line-height: 32px;
 `
 
-const DiseasesPestsParasites = () => {
+const Diseases = () => {
   return (
     <Container>
 
@@ -107,4 +117,4 @@ const DiseasesPestsParasites = () => {
   )
 }
 
-export default DiseasesPestsParasites
+export default Diseases
