@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeroHeader from "../components/heroheader"
+import Layout from "../layout"
+import SEO from "../seo"
+import HeroHeader from "../heroheader"
 import Beeimg from "../images/heroheader3.png"
-import YouthBabApp from "../components/becoming-a-beekeeper/youthBAB/YouthBabApp.js"
+import YouthBabApp from "../becoming-a-beekeeper/youthBAB/YouthBabApp.js"
 
 
 

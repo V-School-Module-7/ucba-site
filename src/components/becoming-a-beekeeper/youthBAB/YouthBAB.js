@@ -78,7 +78,9 @@ function YouthBAB() {
   return (
     <Container>
       <GreenLineContainer>
-        <TitleContainer><BoxTitle>Youth Be A Beekeeper Program</BoxTitle></TitleContainer>
+        <TitleContainer>
+          <BoxTitle>Youth Be A Beekeeper Program</BoxTitle>
+        </TitleContainer>
 
         <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on February 25, 2020. If you are selected as a finalist, you must be in attendance at the March 12th Utah County Beekeeping Association meeting.</HeaderParagraph>
       </GreenLineContainer>
