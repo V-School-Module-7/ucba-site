@@ -35,6 +35,11 @@ const MainParagraph = styled(Paragraph)`
 line-height: 32px;
 `
 
+const BeeLink = styled.a`
+  width: 50%;
+  word-wrap: break-word;
+`
+
 const Diseases = () => {
   return (
     <Container>
@@ -71,7 +76,7 @@ const Diseases = () => {
       <MainParagraph>How to prevent Chalkbrood: Keep your hives healthy with good ventilation.</MainParagraph>
       <MainParagraph>Requeen every few years to keep a young vigorous queen laying good eggs in the hive.</MainParagraph>
       <MainParagraph>
-        <a href="http://www.ars.usda.gov/is/ar/archive/aug98/bees0898.htm" target="_blank" rel="noopener noreferrer">http://www.ars.usda.gov/is/ar/archive/aug98/bees0898.htm</a>
+        <BeeLink href="http://www.ars.usda.gov/is/ar/archive/aug98/bees0898.htm" target="_blank" rel="noopener noreferrer">http://www.ars.usda.gov/is/ar/archive/aug98/bees0898.htm</BeeLink>
       </MainParagraph>
 
       <SubHeader>Sacbrood</SubHeader>
