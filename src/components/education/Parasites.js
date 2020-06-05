@@ -47,38 +47,33 @@ const Parasites = () => {
 
             <MainParagraph>How to treat against Varroa: there are several methods to treat for varroa mites; a short list follows but you should research what other beekeepers are doing in your area to treat. You must learn to apply these correctly to prevent contamination of honey, and resistance development  by the mites: </MainParagraph>
 
-            <MainParagraph>Apistan Strips
-Checkmite+ Strips
-Sucrocide
-Oxalic Acid
-Formic Acid
-Vaporized mineral oil
-Ascetic Acid
+            <MainParagraph>Apistan Strips<br></br>
+Checkmite+ Strips<br></br>
+Sucrocide<br></br>
+Oxalic Acid<br></br>
+Formic Acid<br></br>
+Vaporized mineral oil<br></br>
+Ascetic Acid<br></br>
 Essential Oils</MainParagraph>
 
-        <MainParagraph>How to prevent Varroa: just as there are several ways to treat for mites, there are several ways to prevent them. In some cases, the treatment and prevention methods are the same: </MainParagraph>
+            <MainParagraph>How to prevent Varroa: just as there are several ways to treat for mites, there are several ways to prevent them. In some cases, the treatment and prevention methods are the same: </MainParagraph>
 
-        <MainParagraph>Screened bottom boards
-            Powdered sugar treatments
-            Drone brood removal
-            Small cell foundation
-            Queen bees with genetic behaviors to reduce mite numbers</MainParagraph>
+            <MainParagraph>Screened bottom boards
+                Powdered sugar treatments
+                Drone brood removal
+                Small cell foundation
+                Queen bees with genetic behaviors to reduce mite numbers</MainParagraph>
 
-        < MainParagraph ></MainParagraph >The same chemicals listed above for treatment can aid in prevention.
+            < MainParagraph ></MainParagraph >The same chemicals listed above for treatment can aid in prevention.
             
-< SubHeader > Tracheal Mite (Acarapis woodi)</SubHeader >
+            < SubHeader > Tracheal Mite (Acarapis woodi)</SubHeader >
 
-    <MainParagraph>How to recognize Tracheal mites: Tracheal mites live in the trachea (lungs) of the honey bee and are therefore impossible to see. However, the presence of bees that are incapable of flight, despite normal wings, may be an indication.</MainParagraph>
+            <MainParagraph>How to recognize Tracheal mites: Tracheal mites live in the trachea (lungs) of the honey bee and are therefore impossible to see. However, the presence of bees that are incapable of flight, despite normal wings, may be an indication.</MainParagraph>
 
-        <MainParagraph>How to treat against tracheal mites: Menthol crystals placed in hive can help significantly reduce the numbers of tracheal mites. Grease patties may also help lower the population.</MainParagraph>
+            <MainParagraph>How to treat against tracheal mites: Menthol crystals placed in hive can help significantly reduce the numbers of tracheal mites. Grease patties may also help lower the population.</MainParagraph>
 
-        <MainParagraph>How to prevent tracheal mites: The same methods for treatment can be used for prevention. Maintaining strong colonies will also help keep the effects of tracheal mites to a minimum.</MainParagraph>
-        <SubHeader></SubHeader>
-
-        <MainParagraph></MainParagraph>
-        <MainParagraph></MainParagraph>
-           
-
+            <MainParagraph>How to prevent tracheal mites: The same methods for treatment can be used for prevention. Maintaining strong colonies will also help keep the effects of tracheal mites to a minimum.</MainParagraph>
+            <SubHeader></SubHeader>
 
         </Container >
     )

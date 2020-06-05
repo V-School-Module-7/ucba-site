@@ -7,6 +7,7 @@ import EducationBee from "../images/EducationBee.png"
 import Diseases from '../components/education/Diseases'
 import Pests from '../components/education/Pests'
 import Parasites from '../components/education/Parasites'
+import Predators from '../components/education/Predators'
 
 function DiseasesPestsParasites() {
     return (
@@ -16,6 +17,7 @@ function DiseasesPestsParasites() {
             <Diseases />
             <Pests />
             <Parasites />
+            <Predators />
         </Layout>
     )
 }
