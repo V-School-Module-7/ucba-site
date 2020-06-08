@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import {
     Container,
-    GreenLineContainer,
     BoxTitle,
     HeaderParagraph,
     BeeHeader,
@@ -27,6 +26,9 @@ const SubHeader = styled(BeeHeader)`
   line-height: 32px;
   text-decoration: none;
   border-bottom:none;
+  @media (max-width: 500px){
+    text-decoration: none;
+   }
 `
 
 const MainParagraph = styled(Paragraph)`

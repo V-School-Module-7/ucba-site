@@ -90,9 +90,17 @@ export const BeeHeader = styled.h1`
   margin-bottom: 3%;
 
   @media (max-width: 900px) {
-      font-size: 16px;
+      font-size: 24px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    border-bottom: none;
   }
 `
+
+
 export const Paragraph = styled.p`
 font-size: 22px;
 line-height: 28px;
@@ -123,11 +131,24 @@ export const TextHeader = styled.h1`
   
 
   @media (max-width: 900px) {
-    font-size: 31px;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    border-bottom: none;
+    // margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  @media (max-width: 550px) {
-    font-size: 20px;
+    @media (max-width: 500px) {
+      font-size: 20px;
+      text-decoration: underline;
+      text-decoration-color: green;
+      border-bottom: none;
+    }
+
   }
 `
 //container for items you want centered
@@ -136,5 +157,4 @@ export const FlexContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5%;
 `

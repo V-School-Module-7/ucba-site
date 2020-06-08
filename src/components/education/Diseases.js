@@ -13,26 +13,33 @@ import {
   from "../../styles/edustyles.js"
 
 const BoxHeader = styled(BoxTitle)`
-    font-size: 36;
-    text-transform: uppercase;
+  font-size: 36;
+  text-transform: uppercase;
 `
 
 const HeaderP = styled(HeaderParagraph)`
-    line-height: 32px;
+  line-height: 32px;
 `
 
 const SubHeader = styled(BeeHeader)`
   display: block;
   font-size: 24px;
   line-height: 32px;
-  text-decoration: none;
   border-bottom:none;
+  text-decoration: none;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+   @media (max-width: 500px){
+    text-decoration: none;
+   }
 `
 
 const MainParagraph = styled(Paragraph)`
   padding: 1% 0;
   font-size: 24px;
-line-height: 32px;
+  line-height: 32px;
 `
 
 const BeeLink = styled.a`
