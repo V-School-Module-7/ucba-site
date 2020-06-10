@@ -75,7 +75,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 `
 
-const MobleGuide = props => {
+const MobileGuide = props => {
   const { setToggle, show } = props
   return (
     <>
@@ -201,4 +201,4 @@ const MobleGuide = props => {
   )
 }
 
-export default MobleGuide
+export default MobileGuide

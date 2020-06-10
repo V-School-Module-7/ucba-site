@@ -54,74 +54,243 @@ const FlexContainer = styled.div`
 `
 const StyledLink = styled(Link)`
   display: block;
-  margin: 24px 0px;
+//   margin: 24px 0px;
   cursor: pointer;
 `
 
+const StyledSubLink = styled(Link)`
+    display: block;
+    margin-left: 16px;
+    // margin: 24px 0px;
+  cursor: pointer;
+    text-transform: uppercase;
+    ::before {
+        content: "• ";
+    }
+`
+
 const Index = (prop) => {
-  return (
-    <>
-      <GuideContainer>
-        <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
-        <FlexContainer>
-          <Underline />
-        </FlexContainer>
-        <LinkContainer>
-          <StyledLink
-            activeClass="active"
-            to="general"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            GENERAL
-          </StyledLink>
-          <StyledLink
-            activeClass="active"
-            to="Diseases"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            DISEASES OF HONEYBEES
-          </StyledLink>
-          <StyledLink
-            activeClass="active"
-            to="Pests"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-           PESTS OF THE HONEYBEE
-          </StyledLink>
-          <StyledLink
-            activeClass="active"
-            to="Parasites"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            PARASITES
-          </StyledLink>
-          <StyledLink
-            activeClass="active"
-            to="Predators"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            PREDATORS
-          </StyledLink>
-          
-        </LinkContainer>
-      </GuideContainer>
-    </>
-  )
+    return (
+        <>
+            <GuideContainer>
+                <GuideSectionText>GUIDE SECTIONS</GuideSectionText>
+                <FlexContainer>
+                    <Underline />
+                </FlexContainer>
+                <LinkContainer>
+
+                    <StyledLink
+                        activeClass="active"
+                        to="intro"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        INTRO
+                    </StyledLink>
+                    <StyledLink
+                        activeClass="active"
+                        to="diseases"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        DISEASES OF HONEYBEES
+                    </StyledLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="AFB"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >AFB
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="EFB"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >EFB
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="chalkbrood"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >CHALKBROOD
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="sacbrood"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >SACBROOD
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="chilled-brood"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >CHILLED BROOD
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="nosema"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >NOSEMA
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="dysentery"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >DYSENTERY
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="paralysis"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >PARALYSIS
+                    </StyledSubLink>
+
+                    <StyledLink
+                        activeClass="active"
+                        to="pests"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        PESTS OF THE HONEYBEE
+                    </StyledLink>
+                    <StyledLink
+                        activeClass="active"
+                        to="parasites"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+
+                    <StyledSubLink
+                        activeClass="active"
+                        to="bee-louse"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >BEE LOUSE
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="wax-moth"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >WAX MOTH
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="mice"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >MICE
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="ants"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >ants
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="small-hive-beetle"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >SMALL HIVE BEETLE
+                    </StyledSubLink>
+
+                        PARASITES
+                    </StyledLink>
+                   
+
+                    <StyledLink
+                        activeClass="active"
+                        to="predators"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        PREDATORS
+                    </StyledLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="birds"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >BIRDS
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="skunks"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >SKUNKS
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="raccoons"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >RACCOONS
+                    </StyledSubLink>
+                    <StyledSubLink
+                        activeClass="active"
+                        to="bears"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        >BEARS
+                    </StyledSubLink>
+                </LinkContainer>
+            </GuideContainer>
+        </>
+    )
 }
 
 export default Index

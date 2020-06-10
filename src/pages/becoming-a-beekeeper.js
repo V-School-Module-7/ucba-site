@@ -15,7 +15,7 @@ import BeeBreeds from "../components/becoming-a-beekeeper/bee-breeds"
 import Resources from "../components/becoming-a-beekeeper/resources"
 import GettingStung from "../components/becoming-a-beekeeper/getting-stung"
 import KindsOfBeeKeepers from "../components/becoming-a-beekeeper/kinds-of-beekeepers"
-import MobleGuide from "../components/becoming-a-beekeeper/moble-guide"
+import MobileGuide from "../components/becoming-a-beekeeper/mobile-guide"
 import styled from "styled-components"
 
 const FlexContainer = styled.div`
@@ -108,7 +108,7 @@ const IndexPage = () => {
             <Icon />
           </StickyButton>
           <StickyContainer show={toggle}>
-            <MobleGuide show={toggle} setToggle={setToggle} />
+            <MobileGuide show={toggle} setToggle={setToggle} />
           </StickyContainer>
           <StickyContainer2>
             <Index />

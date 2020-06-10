@@ -11,15 +11,6 @@ import {
 }
     from "../../styles/edustyles.js"
 
-const BoxHeader = styled(BoxTitle)`
-    font-size: 36;
-    text-transform: uppercase;
-`
-
-const HeaderP = styled(HeaderParagraph)`
-    line-height: 32px;
-`
-
 const SubHeader = styled(BeeHeader)`
   display: block;
   font-size: 24px;
@@ -40,7 +31,7 @@ line-height: 32px;
 const Parasites = () => {
     return (
         <Container>
-            <FlexContainer>
+            <FlexContainer id="parasites">
                 <TextHeader>parasites</TextHeader>
             </FlexContainer>
             <SubHeader>Varroa Mite (Varroa jacobsoni)</SubHeader>
@@ -62,13 +53,13 @@ Essential Oils</MainParagraph>
 
             <MainParagraph>Screened bottom boards
                 Powdered sugar treatments
-                Drone brood removal
-                Small cell foundation
-                Queen bees with genetic behaviors to reduce mite numbers</MainParagraph>
+            Drone brood removal
+            Small cell foundation
+            Queen bees with genetic behaviors to reduce mite numbers</MainParagraph>
 
             < MainParagraph ></MainParagraph >The same chemicals listed above for treatment can aid in prevention.
             
-            < SubHeader > Tracheal Mite (Acarapis woodi)</SubHeader >
+< SubHeader > Tracheal Mite (Acarapis woodi)</SubHeader >
 
             <MainParagraph>How to recognize Tracheal mites: Tracheal mites live in the trachea (lungs) of the honey bee and are therefore impossible to see. However, the presence of bees that are incapable of flight, despite normal wings, may be an indication.</MainParagraph>
 

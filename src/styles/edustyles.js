@@ -84,7 +84,7 @@ export const BeeHeader = styled.h1`
   border-bottom: 6px solid #63966a;
   padding: 0 0 2px 0 ;
   font-size: 36px;
-  line-height: 42px;
+  // line-height: 42px;
   color: #000000;
   margin-top: 5%;
   margin-bottom: 3%;
