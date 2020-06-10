@@ -60,6 +60,8 @@ const StickyContainer2 = styled.div`
 `
 
 const StickyButton = styled.button`
+  background-color: #F5D75F;
+  border-radius: 15px;
   position: sticky;
   /* left: -16px; */
   z-index: 1;
