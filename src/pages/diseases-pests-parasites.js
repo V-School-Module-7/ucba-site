@@ -10,6 +10,7 @@ import Pests from '../components/education/Pests'
 import Parasites from '../components/education/Parasites'
 import Predators from '../components/education/Predators'
 import Index from '../components/education/index'
+import MobileGuide from '../components/education/mobile-guide'
 import Intro from '../components/education/Intro'
 
 const FlexContainer = styled.div`
@@ -102,7 +103,7 @@ function DiseasesPestsParasites() {
                         <Icon />
                     </StickyButton>
                     <StickyContainer show={toggle}>
-                        {/* <MobileGuide show={toggle} setToggle={setToggle} /> */}
+                        <MobileGuide show={toggle} setToggle={setToggle} />
                     </StickyContainer>
                     <StickyContainer2>
                         <Index />
