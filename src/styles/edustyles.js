@@ -9,7 +9,12 @@ export const Container = styled.div`
 
     @media (max-width: 900px) {
       margin-top: 10%;
+      margin: 10% 0 0 0;
+      width: 80vw;
     }
+    // @media (max-width: 500px) {
+    //   font-size: 10px;
+    // }
 `
 
 //text container with green border at top of pages
@@ -84,15 +89,23 @@ export const BeeHeader = styled.h1`
   border-bottom: 6px solid #63966a;
   padding: 0 0 2px 0 ;
   font-size: 36px;
-  line-height: 42px;
+  // line-height: 42px;
   color: #000000;
   margin-top: 5%;
   margin-bottom: 3%;
 
   @media (max-width: 900px) {
-      font-size: 16px;
+      font-size: 24px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    border-bottom: none;
   }
 `
+
+
 export const Paragraph = styled.p`
 font-size: 22px;
 line-height: 28px;
@@ -100,9 +113,53 @@ margin: 2% 0 4% 0;
 
 @media (max-width: 900px) {
     width: 100%;
-    // overflow-x:hidden;
   font-size: 16px;
   margin: 2px;
   line-height: 24px;
 }
+`
+//centered, all caps, green underlined headers
+export const TextHeader = styled.h1`
+  position: relative;
+  height: 33px;
+  margin: auto;
+  display: inline-block;
+  border-bottom: 6px solid #63966a;
+  padding-bottom: 16px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+  
+
+  @media (max-width: 900px) {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    border-bottom: none;
+    // margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+      text-decoration: underline;
+      text-decoration-color: green;
+      border-bottom: none;
+    }
+
+  }
+`
+//container for items you want centered
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `

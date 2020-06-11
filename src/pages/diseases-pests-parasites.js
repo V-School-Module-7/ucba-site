@@ -1,22 +1,17 @@
 import React, { useState } from "react"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
-import Beeimg from "../images/heroheader3.png"
-import Index from "../components/becoming-a-beekeeper/index"
-import General from "../components/becoming-a-beekeeper/general"
-import CommittingToBeekeeping from "../components/becoming-a-beekeeper/committing-to-beekeeping.js"
-import BasicPartsOfTheHive from "../components/becoming-a-beekeeper/basic-parts-of-the-hive.js"
-import SelectingAnApiarySite from "../components/becoming-a-beekeeper/selecting-an-apiary-site"
-import LawsAndLicenses from "../components/becoming-a-beekeeper/laws-and-licenses"
-import GettingStarted from "../components/becoming-a-beekeeper/getting-started"
-import BeeBreeds from "../components/becoming-a-beekeeper/bee-breeds"
-import Resources from "../components/becoming-a-beekeeper/resources"
-import GettingStung from "../components/becoming-a-beekeeper/getting-stung"
-import KindsOfBeeKeepers from "../components/becoming-a-beekeeper/kinds-of-beekeepers"
-import MobileGuide from "../components/becoming-a-beekeeper/mobile-guide"
-import styled from "styled-components"
+import EducationBee from "../images/EducationBee.png"
+import Diseases from '../components/education/Diseases'
+import Pests from '../components/education/Pests'
+import Parasites from '../components/education/Parasites'
+import Predators from '../components/education/Predators'
+import Index from '../components/education/index'
+import MobileGuide from '../components/education/mobile-guide'
+import Intro from '../components/education/Intro'
 
 const FlexContainer = styled.div`
   display: flex;
@@ -39,7 +34,7 @@ const GridContainer = styled.div`
 const StickyContainer = styled.div`
   position: fixed;
   z-index: 2;
-  display: ${props=>props.show? "inline-block" : "none"};
+  display: ${props => props.show ? "inline-block" : "none"};
   top: 50px;
   left: auto;
 
@@ -65,8 +60,10 @@ const StickyContainer2 = styled.div`
 `
 
 const StickyButton = styled.button`
+  background-color: #F5D75F;
+  border-radius: 15px;
   position: sticky;
-  /* left: -16px; */
+  left: 5px; 
   z-index: 1;
   top: 16px;
 
@@ -87,19 +84,21 @@ const OverLay = styled.div`
   position: fixed;
   display: ${props => (props.show ? "default" : "none")};
   width: 100vw;
-  height: 115vh;
+  height: 150%;
   top: -100px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(100, 100, 100, 0.8);
   z-index: 1;
 `
 
-const IndexPage = () => {
+function DiseasesPestsParasites() {
   const [toggle, setToggle] = useState(false)
   return (
     <Layout>
-      <SEO title="Becoming A BeeKeeper" />
+      <SEO title="Diseases, Pests and Parasites" />
       <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
-      <HeroHeader img={Beeimg} text={"become a beekeeper"} />
+      <HeroHeader img={EducationBee} text={"diseases, pests & parasites"} />
       <FlexContainer>
         <GridContainer>
           <StickyButton onClick={() => setToggle(!toggle)}>
@@ -113,17 +112,12 @@ const IndexPage = () => {
           <StickyContainer2>
             <Index />
           </StickyContainer2>
-          <div style={{gridColumn: "2 / 3"}}>
-            <General />
-            <CommittingToBeekeeping />
-            <BasicPartsOfTheHive />
-            <SelectingAnApiarySite />
-            <LawsAndLicenses />
-            <GettingStarted />
-            <BeeBreeds />
-            <Resources />
-            <GettingStung />
-            <KindsOfBeeKeepers />
+          <div style={{ gridColumn: "2 / 3" }}>
+            <Intro />
+            <Diseases />
+            <Pests />
+            <Parasites />
+            <Predators />
           </div>
         </GridContainer>
       </FlexContainer>
@@ -131,4 +125,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default DiseasesPestsParasites

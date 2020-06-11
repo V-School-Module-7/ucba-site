@@ -28,10 +28,14 @@ module.exports = {
       //     //   name: 'youth bab program',
       //     //   link: '/youth-bab-program'
       //     // },
-      //     // {
-      //     //   name: 'licensing',
-      //     //   link: '/licensing'
-      //     // }
+                // {
+                //   name: 'youth bab application form',
+                //   link: '/youth-bab-form'
+                // }
+          {
+            name: 'licensing',
+            link: '/licensing'
+          }
         ]
       },
       {
@@ -54,10 +58,10 @@ module.exports = {
       //       name: 'helpful links',
       //       link: '/helpful-links'
       //     },
-      //     {
-      //       name: 'diseases, pests, etc.',
-      //       link: '/diseases-pests-etc'
-      //     },
+          {
+            name: 'diseases, pests, etc.',
+            link: '/diseases-pests-parasites'
+          },
           {
             name: 'beekeepers\' calendar',
             link: '/calendar'
