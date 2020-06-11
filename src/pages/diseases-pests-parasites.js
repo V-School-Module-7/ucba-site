@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -34,7 +34,7 @@ const GridContainer = styled.div`
 const StickyContainer = styled.div`
   position: fixed;
   z-index: 2;
-  display: ${props=>props.show? "inline-block" : "none"};
+  display: ${props => props.show ? "inline-block" : "none"};
   top: 50px;
   left: auto;
 
@@ -63,7 +63,7 @@ const StickyButton = styled.button`
   background-color: #F5D75F;
   border-radius: 15px;
   position: sticky;
-  /* left: -16px; */
+  left: 5px; 
   z-index: 1;
   top: 16px;
 
@@ -84,48 +84,45 @@ const OverLay = styled.div`
   position: fixed;
   display: ${props => (props.show ? "default" : "none")};
   width: 100vw;
-  height: 115vh;
+  height: 150%;
   top: -100px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(100, 100, 100, 0.8);
   z-index: 1;
 `
 
 function DiseasesPestsParasites() {
-    const [toggle, setToggle] = useState(false)
-    return (
-        <Layout>
-            <SEO title="Diseases, Pests and Parasites" />
-            <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
-            <HeroHeader img={EducationBee} text={"diseases, pests & parasites"} />
-            <FlexContainer>
-                <GridContainer>
-                    <StickyButton onClick={() => setToggle(!toggle)}>
-                        <Icon />
-                        <Icon />
-                        <Icon />
-                    </StickyButton>
-                    <StickyContainer show={toggle}>
-                        <MobileGuide show={toggle} setToggle={setToggle} />
-                    </StickyContainer>
-                    <StickyContainer2>
-                        <Index />
-                    </StickyContainer2>
-                    <div style={{ gridColumn: "2 / 3" }}>
-                        <Intro />
-                        <Diseases />
-                        <Pests />
-                        <Parasites />
-                        <Predators />
-                    </div>
-                </GridContainer>
-            </FlexContainer>
-
-
-
-
-
-        </Layout>
-    )
+  const [toggle, setToggle] = useState(false)
+  return (
+    <Layout>
+      <SEO title="Diseases, Pests and Parasites" />
+      <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
+      <HeroHeader img={EducationBee} text={"diseases, pests & parasites"} />
+      <FlexContainer>
+        <GridContainer>
+          <StickyButton onClick={() => setToggle(!toggle)}>
+            <Icon />
+            <Icon />
+            <Icon />
+          </StickyButton>
+          <StickyContainer show={toggle}>
+            <MobileGuide show={toggle} setToggle={setToggle} />
+          </StickyContainer>
+          <StickyContainer2>
+            <Index />
+          </StickyContainer2>
+          <div style={{ gridColumn: "2 / 3" }}>
+            <Intro />
+            <Diseases />
+            <Pests />
+            <Parasites />
+            <Predators />
+          </div>
+        </GridContainer>
+      </FlexContainer>
+    </Layout>
+  )
 }
 
 export default DiseasesPestsParasites

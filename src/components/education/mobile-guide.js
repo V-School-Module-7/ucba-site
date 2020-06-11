@@ -8,7 +8,7 @@ const GuideContainer = styled.div`
   left: 40px;
   top: 40px;
   display: inline-block;
-  margin-top: 32px;
+//   margin-top: 32px;
   background: #ffffff;
   border: 6px solid #c4c4c4;
   box-sizing: border-box;
@@ -17,6 +17,7 @@ const GuideContainer = styled.div`
   @media (max-width: 450px) {
     width: 285px;
     left: 0;
+    padding-top: 0;
   }
 `
 
@@ -31,7 +32,7 @@ const GuideSectionText = styled.div`
   color: #000000;
 
   @media (max-width: 450px) {
-    font-size: 26px;
+    font-size: 16px;
   }
 `
 
@@ -49,7 +50,7 @@ const LinkContainer = styled.div`
   color: #000000;
 
   @media (max-width: 450px) {
-    font-size: 14px;
+    font-size: 10px;
   }
 `
 
@@ -62,6 +63,7 @@ const Underline = styled.div`
 
   @media (max-width: 450px) {
     width: 250px;
+    height: 2px;
   }
 `
 
@@ -71,7 +73,7 @@ const FlexContainer = styled.div`
 `
 const StyledLink = styled(Link)`
   display: block;
-  margin: 24px 0px;
+//   margin: 24px 0px;
   cursor: pointer;
 `
 const StyledSubLink = styled(Link)`
@@ -226,14 +228,123 @@ const MobileGuide = props => {
                     <StyledSubLink
                         onClick={() => setToggle(!show)}
                         activeClass="active"
-                        to="paralysis"
+                        to="bee-louse"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={500}
-                    >PARALYSIS
+                    >BEE LOUSE
                     </StyledSubLink>
 
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="wax-moth"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >WAX MOTH
+                    </StyledSubLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="mice"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >MICE
+                    </StyledSubLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="ants"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >ants
+                    </StyledSubLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="small-hive-beetle"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >SMALL HIVE BEETLE
+                    </StyledSubLink>
+
+                    <StyledLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="parasites"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    > PARASITES
+                    </StyledLink>
+
+                    <StyledLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="predators"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >PREDATORS
+                    </StyledLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="birds"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >BIRDS
+                    </StyledSubLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="skunks"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >SKUNKS
+                    </StyledSubLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="raccoons"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >RACCOONS
+                    </StyledSubLink>
+
+                    <StyledSubLink
+                        onClick={() => setToggle(!show)}
+                        activeClass="active"
+                        to="bears"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >BEARS
+                    </StyledSubLink>
 
                 </LinkContainer>
             </GuideContainer>

@@ -182,14 +182,6 @@ const Index = (prop) => {
                     >
                         PESTS OF THE HONEYBEE
                     </StyledLink>
-                    <StyledLink
-                        activeClass="active"
-                        to="parasites"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
 
                     <StyledSubLink
                         activeClass="active"
@@ -200,6 +192,7 @@ const Index = (prop) => {
                         duration={500}
                         >BEE LOUSE
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="wax-moth"
@@ -209,6 +202,7 @@ const Index = (prop) => {
                         duration={500}
                         >WAX MOTH
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="mice"
@@ -218,6 +212,7 @@ const Index = (prop) => {
                         duration={500}
                         >MICE
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="ants"
@@ -227,6 +222,7 @@ const Index = (prop) => {
                         duration={500}
                         >ants
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="small-hive-beetle"
@@ -237,9 +233,15 @@ const Index = (prop) => {
                         >SMALL HIVE BEETLE
                     </StyledSubLink>
 
-                        PARASITES
+                    <StyledLink
+                        activeClass="active"
+                        to="parasites"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    > PARASITES
                     </StyledLink>
-                   
 
                     <StyledLink
                         activeClass="active"
@@ -251,6 +253,7 @@ const Index = (prop) => {
                     >
                         PREDATORS
                     </StyledLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="birds"
@@ -260,6 +263,7 @@ const Index = (prop) => {
                         duration={500}
                         >BIRDS
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="skunks"
@@ -269,6 +273,7 @@ const Index = (prop) => {
                         duration={500}
                         >SKUNKS
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="raccoons"
@@ -278,6 +283,7 @@ const Index = (prop) => {
                         duration={500}
                         >RACCOONS
                     </StyledSubLink>
+
                     <StyledSubLink
                         activeClass="active"
                         to="bears"
@@ -287,6 +293,7 @@ const Index = (prop) => {
                         duration={500}
                         >BEARS
                     </StyledSubLink>
+                    
                 </LinkContainer>
             </GuideContainer>
         </>

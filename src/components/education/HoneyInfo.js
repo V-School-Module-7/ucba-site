@@ -1,8 +1,15 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, GreenLineContainer, BoxTitle, HeaderParagraph, BeeHeader, Paragraph } from "../../styles/edustyles.js"
+import { Container, 
+        GreenLineContainer, 
+        BoxTitle, 
+        HeaderParagraph, 
+        BeeHeader, 
+        FlexContainer,
+        Paragraph } from "../../styles/edustyles.js"
 
-const StyledLink = styled.a`
+
+        const StyledLink = styled.a`
   word-wrap: break-word;
 `
 const Indent = styled.div`
@@ -13,10 +20,12 @@ const Indent = styled.div`
 const HoneyInfo = () => {
   return (
     <Container>
+      <FlexContainer>
       <GreenLineContainer>
         <BoxTitle>Honey Information</BoxTitle>
         <HeaderParagraph>Liquid honey does not spoil. Because of its high sugar concentration, it kills most bacteria by crenation. Natural airborne yeasts cannot become active in it because the moisture content is too low. Natural, raw honey varies from 14% to 18% moisture content. As long as the moisture content remains under 18%, virtually no organism can successfully multiply to significant amounts in honey, though, importantly, enough bacteria survive to make honey dangerous for infants (especially Clostridium botulinum).</HeaderParagraph>
       </GreenLineContainer>
+      </FlexContainer>
       <BeeHeader>Nutrition Information</BeeHeader>
       <Paragraph>Generalized nutrition information for honey based upon a 1 tablespoon serving size and a 2,000 calorie diet.</Paragraph>
       <Indent>
@@ -68,7 +77,7 @@ const HoneyInfo = () => {
 
       <Paragraph>Bake cakes, and other goods made with honey, 25° lower to prevent overbrowning. Honey softens cookie batters. For crisper variety of cookies, add 4 Tbs. flour for each 3/4 cup honey used if necessary.</Paragraph>
       <br></br>
-    </Container >
+    </Container>
   )
 }
 

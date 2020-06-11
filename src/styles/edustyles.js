@@ -9,7 +9,12 @@ export const Container = styled.div`
 
     @media (max-width: 900px) {
       margin-top: 10%;
+      margin: 10% 0 0 0;
+      width: 80vw;
     }
+    // @media (max-width: 500px) {
+    //   font-size: 10px;
+    // }
 `
 
 //text container with green border at top of pages
