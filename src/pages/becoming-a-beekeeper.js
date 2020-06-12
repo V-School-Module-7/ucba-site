@@ -70,7 +70,6 @@ const StickyButton = styled.button`
   z-index: 1;
   top: 16px;
 
-
   @media (min-width: 1265px) {
     visibility: hidden;
   }

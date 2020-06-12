@@ -5,7 +5,7 @@ import {
     BeeHeader,
     Paragraph,
     TextHeader,
-    FlexContainer
+    CenteringContainer
 }
     from "../../styles/edustyles.js"
 
@@ -29,9 +29,9 @@ line-height: 32px;
 const Parasites = () => {
     return (
         <Container>
-            <FlexContainer id="parasites">
+            <CenteringContainer id="parasites">
                 <TextHeader>parasites</TextHeader>
-            </FlexContainer>
+            </CenteringContainer>
             <SubHeader>Varroa Mite (Varroa jacobsoni)</SubHeader>
 
             <MainParagraph>How to recognize Varroa mites: Varroa mites are small reddish/brown colored insects that feed off of the body fluids of adult bees as well as larvae. They are visible to the naked eye and are most easily seen on brood (especially drone brood). Another symptom of Varroa is   the presence of "crawlers", bees whose wings are deformed and cannot fly (hence they crawl around). Varroa does not cause this disfigurement directly, instead they are a carrier for a virus that affects the bee while it is a larvae.</MainParagraph>

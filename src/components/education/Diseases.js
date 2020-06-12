@@ -5,7 +5,7 @@ import {
   BeeHeader,
   Paragraph,
   TextHeader,
-  FlexContainer
+  CenteringContainer
 }
   from "../../styles/edustyles.js"
 
@@ -39,9 +39,9 @@ const Diseases = () => {
   return (
     <Container>
 
-      <FlexContainer id="diseases">
+      <CenteringContainer id="diseases">
         <TextHeader>diseases of honeybees</TextHeader>
-      </FlexContainer>
+      </CenteringContainer>
 
       <div id="AFB">
         <SubHeader>American Foulbrood (Bacillus larvae) Abbreviated as AFB</SubHeader>

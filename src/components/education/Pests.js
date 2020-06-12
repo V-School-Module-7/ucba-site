@@ -5,7 +5,7 @@ import {
     BeeHeader,
     Paragraph,
     TextHeader,
-    FlexContainer
+    CenteringContainer
 }
     from "../../styles/edustyles.js"
 
@@ -29,9 +29,9 @@ line-height: 32px;
 const Pests = () => {
     return (
         <Container>
-            <FlexContainer id="pests">
+            <CenteringContainer id="pests">
                 <TextHeader>pests of the honeybee</TextHeader>
-            </FlexContainer>
+            </CenteringContainer>
 
             <div id="bee-louse">
                 <SubHeader>Bee Louse (Braula coeca)</SubHeader>

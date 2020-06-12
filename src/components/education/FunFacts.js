@@ -5,6 +5,7 @@ import { BeeHeader, Container } from "../../styles/edustyles.js"
 
 const FactsContainer = styled(Container)`
   margin-top: 5px;
+  margin-left: 100px;
 `
 const List = styled.ul`
   font-weight: 400;

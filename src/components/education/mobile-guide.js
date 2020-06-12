@@ -31,6 +31,8 @@ const GuideSectionText = styled.div`
 
   color: #000000;
 
+//   margin-top: 100px;
+
   @media (max-width: 450px) {
     font-size: 16px;
   }
