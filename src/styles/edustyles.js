@@ -9,10 +9,27 @@ export const Container = styled.div`
 
     @media (max-width: 900px) {
       margin-top: 10%;
+      margin: 10%;
       width: 80vw;
     }
     @media (max-width: 500px) {
       margin: 10%;
+    }
+`
+//the margins on the media queries work differently on the page with the guide container. hence this container, which is almost identical to the above Container
+export const DiseaseContainer = styled.div`
+    font-family: Work Sans;
+    // margin: 64px 12% 5% 12%;
+    // margin: auto;
+    box-sizing: border-box;
+
+    @media (max-width: 900px) {
+      margin-top: 10%;
+      margin: 10% 0 0 0;
+      width: 80vw;
+    }
+    @media (max-width: 500px) {
+      margin: 10% 0 0 0;
     }
 `
 
@@ -123,6 +140,7 @@ export const TextHeader = styled.h1`
   position: relative;
   height: 33px;
   margin: auto;
+  margin-top: 10%;
   display: inline-block;
   border-bottom: 6px solid #63966a;
   padding-bottom: 16px;

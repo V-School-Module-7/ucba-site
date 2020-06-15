@@ -23,7 +23,8 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin-top: 40px;
+  margin: 40px 0 0 15px ;
+  padding: 0;
 
   @media (max-width: 1265px) {
     display: block;
@@ -31,15 +32,18 @@ const GridContainer = styled.div`
 `
 
 const StickyContainer = styled.div`
-  position: fixed;
+  // position: fixed;
   z-index: 2;
   display: ${props => props.show ? "inline-block" : "none"};
   top: 50px;
-  left: auto;
+  margin: auto;
 
-  @media(max-width: 500px){
-    left: 16px;
-  }
+  // @media (max-width: 1000px) {
+  //   left: 10px;
+  // }
+  // @media(max-width: 500px){
+  //   left: 16px;
+  // }
 
   @media(min-width: 1265px){
     display: none;

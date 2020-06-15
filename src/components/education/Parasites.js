@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    Container,
+    DiseaseContainer,
     BeeHeader,
     Paragraph,
     TextHeader,
@@ -28,7 +28,7 @@ line-height: 32px;
 
 const Parasites = () => {
     return (
-        <Container>
+        <DiseaseContainer>
             <CenteringContainer id="parasites">
                 <TextHeader>parasites</TextHeader>
             </CenteringContainer>
@@ -47,7 +47,7 @@ Vaporized mineral oil<br></br>
 Ascetic Acid<br></br>
 Essential Oils</MainParagraph>
 
-            <MainParagraph>How to prevent Varroa: just as there are several ways to treat for mites, there are several ways to prevent them. In some cases, the treatment and prevention methods are the same: </MainParagraph>
+            <MainParagraph>How to prevent Varroa: just as there are several ways to treat for mites, there are several ways to prevent them. In some cases, the treatment and prevention methods are the same:</MainParagraph>
 
             <MainParagraph>Screened bottom boards
                 Powdered sugar treatments
@@ -66,7 +66,7 @@ Essential Oils</MainParagraph>
             <MainParagraph>How to prevent tracheal mites: The same methods for treatment can be used for prevention. Maintaining strong colonies will also help keep the effects of tracheal mites to a minimum.</MainParagraph>
             <SubHeader></SubHeader>
 
-        </Container >
+        </DiseaseContainer >
     )
 }
 
