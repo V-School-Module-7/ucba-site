@@ -10,6 +10,7 @@ import { Container,
 
 const StyledLink = styled.a`
   word-wrap: break-word;
+  display: block;
 `
 const Indent = styled.div`
     padding-left: 10%;
