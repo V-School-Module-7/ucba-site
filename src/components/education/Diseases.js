@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  Container,
+  DiseaseContainer,
   BeeHeader,
   Paragraph,
   TextHeader,
-  FlexContainer
+  CenteringContainer
 }
   from "../../styles/edustyles.js"
 
@@ -37,11 +37,11 @@ const BeeLink = styled.a`
 
 const Diseases = () => {
   return (
-    <Container>
+    <DiseaseContainer>
 
-      <FlexContainer id="diseases">
+      <CenteringContainer id="diseases">
         <TextHeader>diseases of honeybees</TextHeader>
-      </FlexContainer>
+      </CenteringContainer>
 
       <div id="AFB">
         <SubHeader>American Foulbrood (Bacillus larvae) Abbreviated as AFB</SubHeader>
@@ -123,7 +123,7 @@ const Diseases = () => {
       How to treat for Paralysis: There is no know treatment for these viruses. Some research indicates that susceptibility to these viruses may be genetically linked. Requeening or adding frames of sealed brood from a healthy hive may help.</MainParagraph>
     <MainParagraph>
       How to prevent Paralysis: Maintain healthy colonies and requeen on a regular basis.   </MainParagraph>
-    </Container >
+    </DiseaseContainer >
   )
 }
 

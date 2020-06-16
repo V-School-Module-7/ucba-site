@@ -9,12 +9,27 @@ export const Container = styled.div`
 
     @media (max-width: 900px) {
       margin-top: 10%;
+      margin: 10%;
+      width: 80vw;
+    }
+    @media (max-width: 500px) {
+      margin: 10%;
+    }
+`
+//the margins on the media queries work differently on the page with the guide container. hence this container, which is almost identical to the above Container
+export const DiseaseContainer = styled.div`
+    font-family: Work Sans;
+    margin: 64px 12% 5% 12%;
+    box-sizing: border-box;
+
+    @media (max-width: 900px) {
+      margin-top: 10%;
       margin: 10% 0 0 0;
       width: 80vw;
     }
-    // @media (max-width: 500px) {
-    //   font-size: 10px;
-    // }
+    @media (max-width: 500px) {
+      margin: 10% 0 0 0;
+    }
 `
 
 //text container with green border at top of pages
@@ -32,17 +47,18 @@ export const GreenLineContainer = styled.div`
   box-sizing: border-box;
 
   @media (max-width: 900px) {
-    // margin-top: 12%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
   }
 
   @media (max-width: 550px) {
     max-width: 350px;
     width: 100%;
+    margin-bottom: 4%;
   }
 
   @media (max-width: 400px) {
@@ -123,6 +139,7 @@ export const TextHeader = styled.h1`
   position: relative;
   height: 33px;
   margin: auto;
+  margin-top: 10%;
   display: inline-block;
   border-bottom: 6px solid #63966a;
   padding-bottom: 16px;
@@ -157,7 +174,7 @@ export const TextHeader = styled.h1`
   }
 `
 //container for items you want centered
-export const FlexContainer = styled.div`
+export const CenteringContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

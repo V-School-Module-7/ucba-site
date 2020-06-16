@@ -23,8 +23,8 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin-top: 40px;
-  grid-gap: 110px;
+  margin: 40px 0 0 15px ;
+  padding: 0;
 
   @media (max-width: 1265px) {
     display: block;
@@ -36,10 +36,14 @@ const StickyContainer = styled.div`
   z-index: 2;
   display: ${props => props.show ? "inline-block" : "none"};
   top: 50px;
-  left: auto;
+  margin: auto;
 
+  @media (max-width: 1000px) {
+    // left: 100px;
+    left: 10%;
+  }
   @media(max-width: 500px){
-    left: 16px;
+    left: 5%;
   }
 
   @media(min-width: 1265px){
@@ -48,6 +52,7 @@ const StickyContainer = styled.div`
 `
 const StickyContainer2 = styled.div`
   display: none;
+
   @media (min-width: 1265px) {
     display: inline-block;
     grid-column: 1 / 2;
@@ -55,6 +60,7 @@ const StickyContainer2 = styled.div`
     position: sticky;
     top: 0;
     height: 100vh;
+    width: 80%;
     margin-left: 40px;
   }
 `
@@ -66,7 +72,6 @@ const StickyButton = styled.button`
   left: 5px; 
   z-index: 1;
   top: 16px;
-
 
   @media (min-width: 1265px) {
     visibility: hidden;
@@ -84,10 +89,9 @@ const OverLay = styled.div`
   position: fixed;
   display: ${props => (props.show ? "default" : "none")};
   width: 100vw;
-  height: 150%;
+  // height: 150%;
+  height: 150vh;
   top: -100px;
-  margin: 0;
-  padding: 0;
   background-color: rgba(100, 100, 100, 0.8);
   z-index: 1;
 `
@@ -101,7 +105,7 @@ function DiseasesPestsParasites() {
       <HeroHeader img={EducationBee} text={"diseases, pests & parasites"} />
       <FlexContainer>
         <GridContainer>
-          <StickyButton onClick={() => setToggle(!toggle)}>
+        <StickyButton onClick={() => setToggle(!toggle)}>
             <Icon />
             <Icon />
             <Icon />

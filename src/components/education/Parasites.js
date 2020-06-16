@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    Container,
+    DiseaseContainer,
     BeeHeader,
     Paragraph,
     TextHeader,
-    FlexContainer
+    CenteringContainer
 }
     from "../../styles/edustyles.js"
 
@@ -28,10 +28,10 @@ line-height: 32px;
 
 const Parasites = () => {
     return (
-        <Container>
-            <FlexContainer id="parasites">
+        <DiseaseContainer>
+            <CenteringContainer id="parasites">
                 <TextHeader>parasites</TextHeader>
-            </FlexContainer>
+            </CenteringContainer>
             <SubHeader>Varroa Mite (Varroa jacobsoni)</SubHeader>
 
             <MainParagraph>How to recognize Varroa mites: Varroa mites are small reddish/brown colored insects that feed off of the body fluids of adult bees as well as larvae. They are visible to the naked eye and are most easily seen on brood (especially drone brood). Another symptom of Varroa is   the presence of "crawlers", bees whose wings are deformed and cannot fly (hence they crawl around). Varroa does not cause this disfigurement directly, instead they are a carrier for a virus that affects the bee while it is a larvae.</MainParagraph>
@@ -47,7 +47,7 @@ Vaporized mineral oil<br></br>
 Ascetic Acid<br></br>
 Essential Oils</MainParagraph>
 
-            <MainParagraph>How to prevent Varroa: just as there are several ways to treat for mites, there are several ways to prevent them. In some cases, the treatment and prevention methods are the same: </MainParagraph>
+            <MainParagraph>How to prevent Varroa: just as there are several ways to treat for mites, there are several ways to prevent them. In some cases, the treatment and prevention methods are the same:</MainParagraph>
 
             <MainParagraph>Screened bottom boards
                 Powdered sugar treatments
@@ -66,7 +66,7 @@ Essential Oils</MainParagraph>
             <MainParagraph>How to prevent tracheal mites: The same methods for treatment can be used for prevention. Maintaining strong colonies will also help keep the effects of tracheal mites to a minimum.</MainParagraph>
             <SubHeader></SubHeader>
 
-        </Container >
+        </DiseaseContainer >
     )
 }
 

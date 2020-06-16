@@ -51,6 +51,7 @@ const Underline = styled.div`
 const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
+//   align-items: center;
 `
 const StyledLink = styled(Link)`
   display: block;
@@ -61,8 +62,7 @@ const StyledLink = styled(Link)`
 const StyledSubLink = styled(Link)`
     display: block;
     margin-left: 16px;
-    // margin: 24px 0px;
-  cursor: pointer;
+    cursor: pointer;
     text-transform: uppercase;
     ::before {
         content: "• ";

@@ -13,6 +13,7 @@ const GuideContainer = styled.div`
   border: 6px solid #c4c4c4;
   box-sizing: border-box;
   padding-top: 16px;
+  z-index: 10;
 
   @media (max-width: 450px) {
     width: 285px;
@@ -30,6 +31,8 @@ const GuideSectionText = styled.div`
   line-height: 42px;
 
   color: #000000;
+
+//   margin-top: 100px;
 
   @media (max-width: 450px) {
     font-size: 16px;

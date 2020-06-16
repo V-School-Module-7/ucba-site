@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    Container,
+    DiseaseContainer,
     BeeHeader,
     Paragraph,
     TextHeader,
-    FlexContainer
+    CenteringContainer
 }
     from "../../styles/edustyles.js"
 
@@ -28,10 +28,10 @@ line-height: 32px;
 
 const Pests = () => {
     return (
-        <Container>
-            <FlexContainer id="pests">
+        <DiseaseContainer>
+            <CenteringContainer id="pests">
                 <TextHeader>pests of the honeybee</TextHeader>
-            </FlexContainer>
+            </CenteringContainer>
 
             <div id="bee-louse">
                 <SubHeader>Bee Louse (Braula coeca)</SubHeader>
@@ -71,7 +71,7 @@ const Pests = () => {
             <MainParagraph>How to recognize SHB: Small Hive Beetle larvae consume everything in the comb. They also defecate everywhere they go and this causes the stored honey to ferment and ooze out of the comb causing quite a mess. Eventually, the colony may abscond from the hive entirely. How to eliminate SHB: Fortunately, SHB is currently restricted to the southeastern United States. However, it is probably just a matter of time until it finds its way across the country. The only chemical currently approved for the treatment of SHB is coumaphos (Checkmite+ strips). However, some beekeepers feel that treatments with mineral oil foggers and/or ascetic acid may also control this pest. </MainParagraph>
             <MainParagraph>How to prevent SHB: The larvae of the SHB need to come outside of the hive and burrow into the ground to pupate. Keep your hive on top of a hard packed earth or possibly a concrete pad to prevent re-introduction into the hive. A strong colony will be able to keep the SHB under control; watch weak colonies. Kill any and all SHB that you encounter during routine inspections.</MainParagraph>
 
-        </Container >
+        </DiseaseContainer >
     )
 }
 

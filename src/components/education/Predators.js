@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    Container,
+    DiseaseContainer,
     BeeHeader,
     Paragraph,
     TextHeader,
-    FlexContainer
+    CenteringContainer
 }
     from "../../styles/edustyles.js"
 
@@ -28,10 +28,10 @@ line-height: 32px;
 
 const Predators = () => {
     return (
-        <Container>
-            <FlexContainer id="predators">
+        <DiseaseContainer>
+            <CenteringContainer id="predators">
                 <TextHeader>predators</TextHeader>
-            </FlexContainer>
+            </CenteringContainer>
 
             <div id="birds">
             <SubHeader>Birds</SubHeader>
@@ -62,7 +62,7 @@ const Predators = () => {
             <MainParagraph>Signs of predation: while the presence of bears in Utah county is slim, you may take your bees into bear country someday. Bears will typically knock the entire hive over and scatter the frames and supers as it consumes everything in the hive. An apiary that has had a bear visitor is a sorry sight.</MainParagraph>
             <MainParagraph>Prevention: an electric fence is the only truly effective method of keeping bears away from your hives. You could try a similar trick to that of skunk prevention and put larger nails through the boards - but you would need these to surround your entire apiary.</MainParagraph>
 
-        </Container >
+        </DiseaseContainer >
     )
 }
 

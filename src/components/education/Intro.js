@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    Container,
+    DiseaseContainer,
     GreenLineContainer,
     BoxTitle,
     HeaderParagraph,
@@ -19,12 +19,12 @@ const HeaderP = styled(HeaderParagraph)`
 
 const Intro = () => {
     return (
-    <Container id="intro">
+    <DiseaseContainer id="intro">
         <GreenLineContainer>
             <BoxHeader>Intro</BoxHeader>
             <HeaderP>Listed below are diseases, pests, parasites and predators of honeybees in North America. Learn how to recognize their presence in the hive and the current recommended treatment/prevention. Use the key to the left to find specific information.</HeaderP>
         </GreenLineContainer>
-    </Container>
+    </DiseaseContainer>
     )
 }
 
