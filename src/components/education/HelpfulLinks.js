@@ -7,10 +7,11 @@ const BHeader = styled(BeeHeader)`
     display: block
 `
 const HelpfulList = styled.ul`
+    margin: 5% 0;
    list-style-type: none;
 `
 const ListItem = styled.li`
-    color: red;
+    color: black;
 `
 
 const Links = () => {
@@ -27,69 +28,78 @@ const Links = () => {
 
             <HelpfulList>
                 <ListItem>Cache Valley Beekeepers Association</ListItem>
-                <ListItem>Facebook: http://www.facebook.com/groups/cachebeekeepers/</ListItem>
+                <ListItem>Facebook: <a href="http://www.facebook.com/groups/cachebeekeepers/" target="_blank" rel="noopener noreferrer">http://www.facebook.com/groups/cachebeekeepers/</a></ListItem>
                 <ListItem>
-                    website: https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/ cache-beekeepers-association/
+                    website: <a href="https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/cache-beekeepers-association/" target="_blank" rel="noopener noreferrer">https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/cache-beekeepers-association/</a>
                 </ListItem>
             </HelpfulList>
 
             <HelpfulList>
-                <ListItem>Carbon County Beekeepers Association
-                </ListItem>
                 <ListItem>Carbon County Beekeepers Association</ListItem>
                 <ListItem>(866) 579-1501</ListItem>
-                <ListItem>email: llamasmama@hotmail.com</ListItem>
-                </HelpfulList >
-                <HelpfulList>
-                    <ListItem>Grand County</ListItem>
-                    <ListItem>Jerry Shue(435) 259 - 7541</ListItem>
-                    </HelpfulList>
-    
-    < Paragraph >
-    Iron County 4 - H Beekeeping Club
-Blaine Nay(435) 586 - 8132
-email: blaine@ironbee.us
-website: www.ironbeekeeper.org
-714 South 1175 West
-Cedar City UT 84720
-San Juan County
-Dudley Beck(435) 672 - 2361</Paragraph >
+                <ListItem>email: <a href="mailto:llamasmama@hotmail.com">llamasmama@hotmail.com</a></ListItem>
+            </HelpfulList >
+            <HelpfulList>
+                <ListItem>Grand County</ListItem>
+                <ListItem>Jerry Shue(435) 259 - 7541</ListItem>
+            </HelpfulList>
 
-    <Paragraph>
-        Southern Utah Beekeepers
-Facebook: https://www.facebook.com/groups/227241190622939/</Paragraph>
+            <HelpfulList>
+                <ListItem>Iron County 4 - H Beekeeping Club</ListItem>
+                <ListItem>Blaine Nay(435) 586 - 8132</ListItem>
+                <ListItem>email: blaine@ironbee.us</ListItem>
+                <ListItem>website: www.ironbeekeeper.org</ListItem>
+                <ListItem>714 South 1175 West</ListItem>
+                <ListItem>Cedar City UT 84720</ListItem>
 
-    <Paragraph>
-        USU Beekeeping & Entomology Club
-        http://www.facebook.com/groups/112841172126201/
-        University of Utah
-        Chris Rodesch  (801) 633-6589
-</Paragraph>
 
-    <Paragraph>
-        Utah Beekeepers Association
-        the state association
-        website: www.utahbeekeepers.com
-taylorhoneyco@yahoo.com</Paragraph>
+            </HelpfulList>
 
-    <Paragraph>
-        Utah County Beekeepers Association
-        website: http://www.utahcountybeekeepers.org/
-        Facebook: https://www.facebook.com/groups/332266457945/
-Email: ut.co.beekeepers@gmail.com</Paragraph>
+            <HelpfulList>
+                <ListItem>San Juan County</ListItem>
+                <ListItem>Dudley Beck(435) 672 - 2361</ListItem>
+            </HelpfulList>
 
-    <Paragraph>
-        Wasatch Beekeepers Association
-        serving the Salt Lake area
-        website: http://www.wasatchbeekeepers.com/
-Facebook: https://www.facebook.com/groups/357351232625/</Paragraph>
 
-    <Paragraph>
-        Weber County Beekeepers Association
-website: http://www.weberbeekeepersassociation.com/</Paragraph>
+            <HelpfulList>
+                <ListItem>Southern Utah Beekeepers</ListItem>
+                <ListItem>Facebook: <a href="https://www.facebook.com/groups/227241190622939/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/groups/227241190622939/</a></ListItem>
 
-    <BHeader>
-        Honey Information:</BHeader>
+            </HelpfulList>
+            <HelpfulList>
+                <ListItem>USU Beekeeping & Entomology Club</ListItem>
+                <ListItem><a href="http://www.facebook.com/groups/112841172126201/" target="_blank" rel="noopener noreferrer">http://www.facebook.com/groups/112841172126201/</a></ListItem>
+                <ListItem>University of Utah</ListItem>
+                <ListItem>Chris Rodesch (801) 633-6589</ListItem>
+            </HelpfulList>
+            <HelpfulList>
+                <ListItem>Utah Beekeepers Association</ListItem>
+                <ListItem> the state association</ListItem>
+                <ListItem>website: <a href="www.utahbeekeepers.com" target="_blank" rel="noopener noreferrer">www.utahbeekeepers.com</a></ListItem>
+                <ListItem>taylorhoneyco@yahoo.com</ListItem>
+            </HelpfulList>
+
+            <HelpfulList>
+                <ListItem>Utah County Beekeepers Association</ListItem>
+                <ListItem>website: <a href=">http://www.utahcountybeekeepers.org/" target="_blank" rel="noopener noreferrer">http://www.utahcountybeekeepers.org/</a></ListItem>
+                <ListItem>Facebook: <a href="https://www.facebook.com/groups/332266457945/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/groups/332266457945/</a></ListItem>
+                <ListItem>Email: ut.co.beekeepers@gmail.com</ListItem>
+            </HelpfulList>
+
+            <HelpfulList>
+                <ListItem>Wasatch Beekeepers Association</ListItem>
+                <ListItem>serving the Salt Lake area</ListItem>
+                <ListItem>website: <a href="http://www.wasatchbeekeepers.com/" target="_blank" rel="noopener noreferrer">http://www.wasatchbeekeepers.com/</a></ListItem>
+                <ListItem>Facebook: <a href="https://www.facebook.com/groups/357351232625/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/groups/357351232625/</a></ListItem>
+
+            </HelpfulList>
+
+            <HelpfulList>
+                <ListItem>Weber County Beekeepers Association</ListItem>
+                <ListItem>website: <a href="http://www.weberbeekeepersassociation.com/" target="_blank" rel="noopener noreferrer">http://www.weberbeekeepersassociation.com/</a></ListItem>
+            </HelpfulList>
+
+            <BHeader>Honey Information:</BHeader>
 
 National Honey Board - resources for producers and consumers
 
@@ -99,8 +109,7 @@ Honey.com
 
 Sugar Free Recipes - Including using honey
 
-    < BHeader >
-    Beekeeping Supplies:</BHeader >
+            <BHeader>Beekeeping Supplies:</BHeader >
 
         Bee Commerce - supplies
 
@@ -114,26 +123,19 @@ Betterbee - supplies
 
 Local Suppliers of beekeeping equipment
 
-    < BHeader >
-    Africanized Honey Bees:</BHeader >
+            <BHeader>Africanized Honey Bees:</BHeader>
 
-        http://ag.utah.gov/news/africanmainpage.html
+            <a href="http://ag.utah.gov/news/africanmainpage.html" target="_blank" rel="noopener noreferrer">http://ag.utah.gov/news/africanmainpage.html</a>
 
-http://www.westmtnapiary.com
+            <a href="http://www.westmtnapiary.com" target="_blank" rel="noopener noreferrer">http://www.westmtnapiary.com</a>
 
-<BHeader>
-    Beekeeping Information:</BHeader>
+            <BHeader>Beekeeping Information:</BHeader>
 
-http://bushfarms.com/bees.htm
+            <a href="http://bushfarms.com/bees.htm" target="_blank" rel="noopener noreferrer">http://bushfarms.com/bees.htm</a>
 
 Site for mapping your hive locations:
 
-    http://mapmybees.com/
-
-
-
-
-
+            <a href="http://mapmybees.com/" target="_blank" rel="noopener noreferrer">http://mapmybees.com/</a>
 
         </Container >
     )
