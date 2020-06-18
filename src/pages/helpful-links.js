@@ -12,7 +12,6 @@ function HelpfulLinks() {
         <Layout>
             <SEO title="Helpful Links" />
             <HeroHeader img={EducationBee} text={"helpful links"} />
-            <h1>this is where the helpful links will go</h1>
             <Links />
         </Layout>
     )
