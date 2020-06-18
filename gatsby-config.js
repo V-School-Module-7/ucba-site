@@ -54,10 +54,10 @@ module.exports = {
       //       name: 'suggested readings',
       //       link: '/suggested-readings'
       //     },
-      //     {
-      //       name: 'helpful links',
-      //       link: '/helpful-links'
-      //     },
+          {
+            name: 'helpful links',
+            link: '/helpful-links'
+          },
           {
             name: 'diseases, pests, etc.',
             link: '/diseases-pests-parasites'
