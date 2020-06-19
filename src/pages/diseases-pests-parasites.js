@@ -5,13 +5,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
 import EducationBee from "../images/EducationBee.png"
-import Diseases from '../components/education/Diseases'
-import Pests from '../components/education/Pests'
-import Parasites from '../components/education/Parasites'
-import Predators from '../components/education/Predators'
-import Index from '../components/education/index'
-import MobileGuide from '../components/education/mobile-guide'
-import Intro from '../components/education/Intro'
+import Diseases from '../components/education/DiseasesPestsParasites/Diseases'
+import Pests from '../components/education/DiseasesPestsParasites/Pests'
+import Parasites from '../components/education/DiseasesPestsParasites/Parasites'
+import Predators from '../components/education/DiseasesPestsParasites/Predators'
+import Index from '../components/education/DiseasesPestsParasites/index.js'
+import MobileGuide from '../components/education/DiseasesPestsParasites/mobile-guide.js'
+import Intro from '../components/education/DiseasesPestsParasites/Intro'
 
 const FlexContainer = styled.div`
   display: flex;
