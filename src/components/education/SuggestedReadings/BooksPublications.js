@@ -9,14 +9,38 @@ import {
 
 const Title = styled(BeeHeader)`
     margin-top: 0;
+    font-size: 36px;
+
+    @media (max-width: 900px) {
+        font-size: 30px;
+    }
+    
+    @media (max-width: 500px) {
+        font-size: 24px;
+    }
 `
 
 const BHeader = styled(BeeHeader)`
     display: block;
     margin-bottom: 2%;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media (max-width: 900px) {
+        font-size: 24px;
+    }
 
     @media (max-width: 500px) {
         margin-top: 8%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
     }
 `
 
@@ -62,8 +86,8 @@ const BooksPublications = () => {
             <Paragraph><i>Health and the Honey Bee</i> by Charles Mraz, 1995,  <i>Queen City Publications</i></Paragraph>
 
             <BHeader>Magazines</BHeader>
-            <Paragraph><i><a href="https://www.beeculture.com/">Bee Culture - https://www.beeculture.com/</a></i></Paragraph>
-            <Paragraph><i><a href="https://www.dadant.com/journal/">American Bee Journal - https://www.dadant.com/journal/</a></i></Paragraph>
+            <Paragraph><i><a href="https://www.beeculture.com/" target="_blank" rel="noopener noreferrer">Bee Culture - https://www.beeculture.com/</a></i></Paragraph>
+            <Paragraph><i><a href="https://www.dadant.com/journal/" target="_blank" rel="noopener noreferrer">American Bee Journal - https://www.dadant.com/journal/</a></i></Paragraph>
 
             <BHeader>Miscellaneous</BHeader>
             <Paragraph><i>How to Keep Bees and Sell Honey</i> by Walter T. Kelly, 1978,  <i>The Walter T. Kelly Company</i></Paragraph>

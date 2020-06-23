@@ -116,7 +116,7 @@ export const BeeHeader = styled.h1`
   @media (max-width: 500px) {
     font-size: 20px;
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #63966A;
     border-bottom: none;
   }
 `
@@ -155,7 +155,7 @@ export const TextHeader = styled.h1`
   @media (max-width: 900px) {
     font-size: 24px;
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #63966A;
     border-bottom: none;
     // margin: 10% 0;
     display: flex;
@@ -167,7 +167,7 @@ export const TextHeader = styled.h1`
     @media (max-width: 500px) {
       font-size: 20px;
       text-decoration: underline;
-      text-decoration-color: green;
+      text-decoration-color: #63966A;
       border-bottom: none;
     }
 
