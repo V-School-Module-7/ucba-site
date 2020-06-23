@@ -50,10 +50,10 @@ module.exports = {
       //       name: 'africanized honey bee',
       //       link: '/africanized-honey-bee'
       //     },
-      //     {
-      //       name: 'suggested readings',
-      //       link: '/suggested-readings'
-      //     },
+          {
+            name: 'suggested readings',
+            link: '/suggested-readings'
+          },
           {
             name: 'helpful links',
             link: '/helpful-links'

@@ -1,7 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Container, GreenLineContainer, BoxTitle, HeaderParagraph, BeeHeader, Paragraph, TextHeader, CenteringContainer } from "../../styles/edustyles.js"
+import {    Container, 
+            GreenLineContainer, 
+            BoxTitle, 
+            HeaderParagraph, 
+            BeeHeader} from "../../styles/edustyles.js"
 
 const BHeader = styled(BeeHeader)`
     display: block;

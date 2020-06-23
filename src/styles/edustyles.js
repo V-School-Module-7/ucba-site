@@ -116,7 +116,7 @@ export const BeeHeader = styled.h1`
   @media (max-width: 500px) {
     font-size: 20px;
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #63966A;
     border-bottom: none;
   }
 `
@@ -130,7 +130,7 @@ margin: 2% 0 4% 0;
 @media (max-width: 900px) {
     width: 100%;
   font-size: 16px;
-  margin: 2px;
+  margin: 2%;
   line-height: 24px;
 }
 `
@@ -155,7 +155,7 @@ export const TextHeader = styled.h1`
   @media (max-width: 900px) {
     font-size: 24px;
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #63966A;
     border-bottom: none;
     // margin: 10% 0;
     display: flex;
@@ -167,7 +167,7 @@ export const TextHeader = styled.h1`
     @media (max-width: 500px) {
       font-size: 20px;
       text-decoration: underline;
-      text-decoration-color: green;
+      text-decoration-color: #63966A;
       border-bottom: none;
     }
 
@@ -179,4 +179,9 @@ export const CenteringContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`
+
+export const BeeLink = styled.a`
+  word-wrap: break-word;
+  color: black;
 `

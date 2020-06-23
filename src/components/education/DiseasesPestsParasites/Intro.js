@@ -6,7 +6,7 @@ import {
     BoxTitle,
     HeaderParagraph,
 }
-    from "../../styles/edustyles.js"
+    from "../../../styles/edustyles.js"
 
 const BoxHeader = styled(BoxTitle)`
   font-size: 36;
