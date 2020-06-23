@@ -180,3 +180,8 @@ export const CenteringContainer = styled.div`
   align-items: center;
   justify-content: center;
 `
+
+export const BeeLink = styled.a`
+  word-wrap: break-word;
+  color: black;
+`
