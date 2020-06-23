@@ -130,7 +130,7 @@ margin: 2% 0 4% 0;
 @media (max-width: 900px) {
     width: 100%;
   font-size: 16px;
-  margin: 2px;
+  margin: 2%;
   line-height: 24px;
 }
 `

@@ -4,9 +4,7 @@ import {
     Container,
     GreenLineContainer,
     BoxTitle,
-    Paragraph,
-    BeeHeader,
-    CenteringContainer
+    Paragraph
 } from "../../../styles/edustyles.js"
 
 const Green = styled(GreenLineContainer)`

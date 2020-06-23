@@ -1,9 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+
 import {
-    Container,
-    BoxTitle,
-    Paragraph,
     BeeHeader,
     CenteringContainer
 } from "../../../styles/edustyles.js"
