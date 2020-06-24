@@ -184,4 +184,5 @@ export const CenteringContainer = styled.div`
 export const BeeLink = styled.a`
   word-wrap: break-word;
   color: black;
+  font-style: normal;
 `
