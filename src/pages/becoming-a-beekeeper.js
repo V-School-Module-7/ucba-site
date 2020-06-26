@@ -20,7 +20,7 @@ import styled from "styled-components"
 
 const FlexContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
   width: 100%;
 `
 
@@ -28,10 +28,13 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin-top: 40px;
-  grid-gap: 110px;
+  margin-top: 20px;
+  grid-gap: 50px;
+  // margin: 40px 15px 0 15px ;
+  // padding: 0;
 
-  @media (max-width: 1265px) {
+  // @media (max-width: 1265px) {
+    @media (max-width: 1000px) {
     display: block;
   }
 `

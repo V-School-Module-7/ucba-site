@@ -2,10 +2,12 @@ import styled from "styled-components"
 
 export const TextContainer = styled.div`
   position: relative;
-  width: 763px;
-  margin: auto;
-  margin-top: 88px;
-  margin-bottom: 102px;
+  // width: 763px;
+  // margin: auto;
+  // margin-top: 88px;
+  // margin-bottom: 102px;
+  margin: 88px 10% 102px 4%;
+  
 
   @media (max-width: 900px) {
     width: 500px;
