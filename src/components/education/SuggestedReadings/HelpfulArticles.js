@@ -35,7 +35,7 @@ const Title = styled.h2`
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    text-decoration-line: underline;
+    // text-decoration-line: underline;
 
     @media (max-width: 900px) {
         font-size: 18px;

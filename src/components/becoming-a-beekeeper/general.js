@@ -2,36 +2,38 @@ import React from "react"
 import styled from "styled-components"
 import {
   ParagraphTextBottomMargin,
+  TextContainer
 } from "../../styles/babstyles.js"
+import {GreenLineContainer} from "../../styles/edustyles"
 
-const TextContainer = styled.div`
-  position: relative;
-  width: 763px;
-  height: auto;
-  margin: auto;
-  margin-top: 32px;
-  margin-bottom: 102px;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-bottom: 5%;
+// const TextContainer = styled.div`
+//   position: relative;
+//   // width: 763px;
+//   height: auto;
+//   margin: auto;
+//   margin-top: 32px;
+//   margin-bottom: 102px;
+//   padding-left: 8%;
+//   padding-right: 8%;
+//   padding-bottom: 5%;
 
-  border: 6px solid #63966a;
-  box-sizing: border-box;
+//   border: 6px solid #63966a;
+//   box-sizing: border-box;
 
-  @media (max-width: 900px) {
-    width: 500px;
-  }
+//   @media (max-width: 900px) {
+//     width: 500px;
+//   }
 
-  @media (max-width: 550px) {
-    width: 350px;
-  }
+//   @media (max-width: 550px) {
+//     width: 350px;
+//   }
 
-  @media (max-width: 400px) {
-    width: 300px;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-`
+//   @media (max-width: 400px) {
+//     width: 300px;
+//     padding-left: 8px;
+//     padding-right: 8px;
+//   }
+// `
 
 const HeaderText = styled.div`
   position: relative;
@@ -61,6 +63,7 @@ const HeaderText = styled.div`
 const General = () => {
   return (
     <TextContainer id="general">
+      <GreenLineContainer>
       <HeaderText>GENERAL</HeaderText>
       <ParagraphTextBottomMargin>
         This page is intended to give you some of the basic information you will
@@ -80,6 +83,7 @@ const General = () => {
       <ParagraphTextBottomMargin>
         Please visit the sections below or feel free to browse the entire page.
       </ParagraphTextBottomMargin>
+      </GreenLineContainer>
     </TextContainer>
   )
 }

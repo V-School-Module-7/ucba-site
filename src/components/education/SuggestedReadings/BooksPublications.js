@@ -4,7 +4,8 @@ import {
     Container,
     Paragraph,
     BeeHeader,
-    CenteringContainer
+    CenteringContainer,
+    BeeLink
 } from "../../../styles/edustyles.js"
 
 const Title = styled(BeeHeader)`
@@ -86,8 +87,8 @@ const BooksPublications = () => {
             <Paragraph><i>Health and the Honey Bee</i> by Charles Mraz, 1995,  <i>Queen City Publications</i></Paragraph>
 
             <BHeader>Magazines</BHeader>
-            <Paragraph><i><a href="https://www.beeculture.com/" target="_blank" rel="noopener noreferrer">Bee Culture - https://www.beeculture.com/</a></i></Paragraph>
-            <Paragraph><i><a href="https://www.dadant.com/journal/" target="_blank" rel="noopener noreferrer">American Bee Journal - https://www.dadant.com/journal/</a></i></Paragraph>
+            <Paragraph><i><BeeLink href="https://www.beeculture.com/" target="_blank" rel="noopener noreferrer">Bee Culture - https://www.beeculture.com/</BeeLink></i></Paragraph>
+            <Paragraph><i><BeeLink href="https://www.dadant.com/journal/" target="_blank" rel="noopener noreferrer">American Bee Journal - https://www.dadant.com/journal/</BeeLink></i></Paragraph>
 
             <BHeader>Miscellaneous</BHeader>
             <Paragraph><i>How to Keep Bees and Sell Honey</i> by Walter T. Kelly, 1978,  <i>The Walter T. Kelly Company</i></Paragraph>
