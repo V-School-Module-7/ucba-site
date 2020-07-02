@@ -76,7 +76,7 @@ justify-content: center;
 align-items: center;
 align-self: center;
 margin: 30px;
-font-size: 38px;
+font-size: 28px;
 
 
 @media (max-width: 900px){
@@ -88,7 +88,7 @@ font-size: 38px;
 //the paragraph that goes inside the GreenLineContainer
 export const HeaderParagraph = styled.p`
 margin-bottom: 0;
-font-size: 24px;
+font-size: 20px;
 line-height: 24px;
 
   @media (max-width: 900px){
@@ -104,7 +104,7 @@ export const BeeHeader = styled.h1`
   display: inline-block;
   border-bottom: 6px solid #63966a;
   padding: 0 0 2px 0 ;
-  font-size: 36px;
+  font-size: 28px;
   // line-height: 42px;
   color: #000000;
   margin-top: 5%;
@@ -123,7 +123,7 @@ export const BeeHeader = styled.h1`
 
 
 export const Paragraph = styled.p`
-font-size: 22px;
+font-size: 20px;
 line-height: 28px;
 margin: 2% 0 4% 0;
 
