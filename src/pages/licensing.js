@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
-import Beeimg from "../images/heroheader3.png"
+import BABimage from "../images/BABimage.png"
 import LicensingInfo from "../components/becoming-a-beekeeper/licensing/LicensingInfo"
 
 function Licensing() {
@@ -11,7 +11,7 @@ function Licensing() {
         <Layout>
         <SEO title="Licensing" />
         
-        <HeroHeader img={Beeimg} text={"licensing"} />        
+        <HeroHeader img={BABimage} text={"licensing"} />        
            
             <LicensingInfo />
             

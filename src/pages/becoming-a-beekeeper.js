@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
-import Beeimg from "../images/heroheader3.png"
+import BABimage from "../images/BABimage.png"
 import Index from "../components/becoming-a-beekeeper/index"
 import General from "../components/becoming-a-beekeeper/general"
 import CommittingToBeekeeping from "../components/becoming-a-beekeeper/committing-to-beekeeping.js"
@@ -101,7 +101,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Becoming A BeeKeeper" />
       <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
-      <HeroHeader img={Beeimg} text={"become a beekeeper"} />
+      <HeroHeader img={BABimage} text={"become a beekeeper"} />
       <FlexContainer>
         <GridContainer>
           <StickyButton onClick={() => setToggle(!toggle)}>
