@@ -4,14 +4,14 @@ import {
     Container,
     GreenLineContainer,
     BoxTitle,
-    Paragraph
+    HeaderParagraph
 } from "../../../styles/edustyles.js"
 
-const Green = styled(GreenLineContainer)`
-    padding-bottom: 0;
-`
+// const Green = styled(GreenLineContainer)`
+//     padding-bottom: 2%;
+// `
 
-const cornerOutline = styled.div`
+const CornerOutline = styled.div`
 position: absolute;
 left: 99.98%;
 right: -99.98%;
@@ -50,16 +50,15 @@ border: 4px solid #63966A;
 const ReadingsIntro = () => {
     return (
         <Container>
-            {/* <cornerOutline> */}
-            <Green>
+            {/* <Green> */}<GreenLineContainer>
                 <BoxTitle>Suggested Readings</BoxTitle>
-                <Paragraph>Listed in our guide below are recommended books and articles that will help you learn more about a variety of topics related to beekeeping, bees, honey and other aspects of the culture.</Paragraph>
 
-                <Paragraph>Click the links to view the individual articles. Most are in PDF format so you will need a reader to view them.</Paragraph>
+                <HeaderParagraph>Listed in our guide below are recommended books and articles that will help you learn more about a variety of topics related to beekeeping, bees, honey and other aspects of the culture.</HeaderParagraph>
 
-                <Paragraph>Feel free to submit your recommendations or book reviews to ut.co.beekeepers@gmail.com.</Paragraph>
-            </Green>
-            {/* </cornerOutline> */}
+                <HeaderParagraph>Click the links to view the individual articles. Most are in PDF format so you will need a reader to view them.</HeaderParagraph>
+
+                <HeaderParagraph>Feel free to submit your recommendations or book reviews to ut.co.beekeepers@gmail.com.</HeaderParagraph>
+                </GreenLineContainer>
         </Container>
     )
 }

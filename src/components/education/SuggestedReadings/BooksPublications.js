@@ -11,10 +11,6 @@ import {
 const Title = styled(BeeHeader)`
     margin-top: 0;
     font-size: 28px;
-
-    @media (max-width: 900px) {
-        font-size: 30px;
-    }
     
     @media (max-width: 500px) {
         font-size: 24px;
@@ -29,10 +25,6 @@ const BHeader = styled(BeeHeader)`
     font-weight: bold;
     font-size: 24px;
     line-height: 38px;
-
-    // @media (max-width: 900px) {
-    //     font-size: 24px;
-    // }
 
     @media (max-width: 500px) {
         margin-top: 8%;
