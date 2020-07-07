@@ -111,7 +111,7 @@ export const BeeHeader = styled.h1`
   margin-top: 5%;
   margin-bottom: 3%;
 
-  @media (max-width: 900px) {
+  @media (max-width: 700px) {
       font-size: 24px;
   }
   @media (max-width: 500px) {
@@ -119,6 +119,10 @@ export const BeeHeader = styled.h1`
     text-decoration: underline;
     text-decoration-color: #63966A;
     border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 

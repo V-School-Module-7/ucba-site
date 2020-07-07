@@ -9,7 +9,7 @@ import {
 } from "../../../styles/edustyles.js"
 
 const Title = styled(BeeHeader)`
-    margin-top: 0;
+    margin: 15px 0;
     font-size: 28px;
     
     @media (max-width: 500px) {
