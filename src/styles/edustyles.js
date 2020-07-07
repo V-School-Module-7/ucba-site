@@ -69,6 +69,26 @@ export const GreenLineContainer = styled.div`
     padding-right: 8px;
   }
 `
+
+// export const CornerContainer = styled.div`
+
+//   position: relative;
+//   width: 100px;
+//   height: 100px;
+//   margin: 20px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   color: blue;
+//   padding: 0;
+//   box-sizing: content-box;
+//   border: 2px solid orange;
+
+
+// `
+//this might help: https://stackoverflow.com/questions/42816074/css-for-border-in-corners-only/42816202
+
+
 //for the header inside the green box (above)
 export const BoxTitle = styled.h1`
 display: flex;
