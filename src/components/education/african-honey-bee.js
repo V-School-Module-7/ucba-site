@@ -4,7 +4,7 @@ import AfricanPara1 from "../../images/africanizedbeespt1.png"
 import Africanpt2 from "../../images/africanpt2.png"
 import AfricanbeeMap from "../../images/Africanbeemap.png"
 import AfricanUtahMap from "../../images/AfricanUtahMap.png"
-import Africanpt3 from "../../images/Africanpt3.png"
+import Africanpt3 from "../../images/africanpt3.png"
 
 
 const AfricanBeeContainer = styled.div`
