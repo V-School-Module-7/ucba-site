@@ -2,20 +2,26 @@ import React from "react"
 import styled from "styled-components"
 
 const FooterContainer = styled.footer`
-  background: #e8e8e8;
+  background: #FCECAD;
+  background-image: url("paper.gif");
   margin: 0;
   display: grid;
-  grid-template-columns: 10fr 45fr 10fr 20fr 15fr;
-  font-weight: 800;
-  font-size: 20px;
-  padding: 15px;
+  grid-template-columns: 2fr 18fr 18fr 8fr 10fr;
+
+  font-size: 18px;
+  padding: 20px;
   text-decoration: ${props => props.textDecor};
   color: ${props => props.color};
-  min-height: 300px;
+  min-height: 250px;
 
   @media (max-width: 500px) {
     display: block;
     font-size: 16px;
+  }
+  @media (min-width: 500px) and (max-width:900px) {
+    display:block;
+    font-size: 18px;
+    padding-left: 10vw;
   }
 `
 const MailBox = styled.div`
@@ -31,23 +37,36 @@ const MailBox = styled.div`
 
 const ContactBox = styled.div`
   margin: 0;
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
   color: black;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`
+const DesignTeam = styled.div`
+
+`
+const DevTeam = styled.div`
+
 `
 
+
+
 const MailTitle = styled.p`
-  display: inline-block;
+  display: block;
   margin: 0;
   border-bottom: 2px solid green;
   padding-bottom: 8px;
+  
 `
 
 const AddressBox = styled.p`
   margin: 0;
   padding: 16px 0;
   display: inline-block;
+
 `
 
 const Footer = () => (
@@ -56,14 +75,14 @@ const Footer = () => (
       <MailTitle>Mailing Address:</MailTitle>
 
       <AddressBox>
-        Utah County Beekeeper Association <br />
+        Utah County Beekeepers Association <br />
         185 North 1300 East <br />
         Pleasant Grove, UT <br />
         84062
       </AddressBox>
     </MailBox>
     <ContactBox>
-      <MailTitle>Contact us at:</MailTitle>
+      <MailTitle>Find us at</MailTitle>
       <AddressBox>ut.co.beekeepers@gmail.com</AddressBox>
       <a
         style={{ display: "block" }}
@@ -74,8 +93,29 @@ const Footer = () => (
           alt=""
         />
       </a>
-      <AddressBox>Designed and Developed by []</AddressBox>
+
     </ContactBox>
+    <DesignTeam>
+      <AddressBox>
+        <MailTitle>Designed by:</MailTitle>
+        <AddressBox>
+          Alex Terese<br />
+          Joey Johnston
+        </AddressBox>
+      </AddressBox>
+    </DesignTeam>
+    <DevTeam>
+      <AddressBox>
+        <MailTitle>Developed by:</MailTitle>
+        <AddressBox>
+          Sarah Aldous<br />
+          Bradley Mulick<br />
+          Colby Prowther<br />
+          Alan Triacca<br />
+          Nate Jensen
+        </AddressBox>
+      </AddressBox>
+    </DevTeam>
   </FooterContainer>
 )
 

@@ -38,7 +38,7 @@ const SubMenuItem = styled.li`
   margin-top: 2px;
   background-clip: padding;
   background-clip: content-box;
-
+  font-size: 18px;
   :hover {
     color: black;
     font-weight: bold;

@@ -45,7 +45,7 @@ const LinkContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  margin-right: 96px;
+  margin-right: 120px;
   font-weight: 700;
 `
 
