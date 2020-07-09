@@ -110,7 +110,7 @@ const Footer = () => (
         <AddressBox>
           Sarah Aldous<br />
           Bradley Mulick<br />
-          Colby Prowther<br />
+          Colby Prather<br />
           Alan Triacca<br />
           Nate Jensen
         </AddressBox>
