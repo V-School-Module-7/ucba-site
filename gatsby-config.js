@@ -20,18 +20,18 @@ module.exports = {
             name: 'becoming a beekeeper',
             link: '/becoming-a-beekeeper'
           },
-      //     // {
-      //     //   name: 'about ucba',
-      //     //   link: '/about-ucba'
-      //     // },
-      //     // {
-      //     //   name: 'youth bab program',
-      //     //   link: '/youth-bab-program'
-      //     // },
-                // {
-                //   name: 'youth bab application form',
-                //   link: '/youth-bab-form'
-                // }
+          {
+            name: 'about ucba',
+            link: '/about-ucba'
+          },
+          //     // {
+          //     //   name: 'youth bab program',
+          //     //   link: '/youth-bab-program'
+          //     // },
+          // {
+          //   name: 'youth bab application form',
+          //   link: '/youth-bab-form'
+          // }
           {
             name: 'licensing',
             link: '/licensing'
@@ -46,10 +46,10 @@ module.exports = {
             name: 'honey information',
             link: '/honey-information'
           },
-      //     {
-      //       name: 'africanized honey bee',
-      //       link: '/africanized-honey-bee'
-      //     },
+          {
+            name: 'africanized honey bee',
+            link: '/africanized-honey-bee'
+          },
           {
             name: 'suggested readings',
             link: '/suggested-readings'
@@ -90,7 +90,7 @@ module.exports = {
       //     }
       //   ]
       // },
-     ],
+    ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
