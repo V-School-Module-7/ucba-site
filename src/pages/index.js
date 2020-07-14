@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import HeroHeader from '../components/heroheader'
 import HomePageImage from "../images/HomePageImage.png"
 import Whybeekeeping from "../components/homepage/WhyBeekeeping"
-import BeekeepersCalendar from '../components/calendar/BeekeepersCalendar'
+import BeekeepersCalendar from '../components/homepage/BeekeepersCalendar'
 import coneimg from "../images/homebeecones.png"
 
 
