@@ -7,7 +7,8 @@ import {
     BeeHeader,
     CenteringContainer,
     BeeLink
-} from '../../../styles.edustyles.js'
+} from '../../styles/edustyles.js'
+
 
 const AnnualCalendar = () => {
     return (
