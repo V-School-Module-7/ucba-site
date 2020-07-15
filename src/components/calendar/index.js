@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "react-scroll"
 import styled from "styled-components"
 
@@ -35,9 +35,17 @@ const LinkContainer = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 36px;
 
   color: #000000;
+// position: absolute;
+width: 43px;
+height: 21px;
+left: 80px;
+top: 820px;
+
+
+
 `
 
 const Underline = styled.div`

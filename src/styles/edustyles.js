@@ -151,6 +151,7 @@ export const Paragraph = styled.p`
 font-size: 20px;
 line-height: 21px;
 margin: 2% 0 4% 0;
+font-family: Nunito;
 
 @media (max-width: 900px) {
     width: 100%;
