@@ -11,6 +11,14 @@ import {
     BoxTitle
 } from '../../styles/edustyles.js'
 
+const CalendarContainer = styled(DiseaseContainer)`
+
+ @media (max-width: 900px){
+    margin: 0 5% 0 0 ;
+}
+
+`
+
 const Title = styled(BeeHeader)`
     display: flex;
     flex-direction: column;
@@ -21,6 +29,16 @@ const Title = styled(BeeHeader)`
 const Subtitle = styled(BoxTitle)`
     display: inline-block;
     margin-left: 0;
+    font-size: 24px;
+
+    @media (max-width: 900px){
+        margin: 2%;
+        font-size: 20px;
+      }
+
+      @media (max-width: 500px){
+        font-size: 16px;
+    }
 `
 
 const Para = styled(Paragraph)`
@@ -36,9 +54,7 @@ const List = styled.ul`
     list-style: none;
 
 @media (max-width: 900px) {
-    // width: 100%;
   font-size: 16px;
-//   margin: 2%;
   line-height: 24px;
 }
 `
@@ -51,7 +67,7 @@ const Item = styled.li`
 
 const AnnualCalendar = () => {
     return (
-        <DiseaseContainer>
+        <CalendarContainer>
             <CenteringContainer>
                 <BeeHeader id="january">January</BeeHeader>
             </CenteringContainer>
@@ -254,7 +270,7 @@ const AnnualCalendar = () => {
             <Para>Now's a good time for a year end review.  Go over your record book, supplies, and equipment.  If your record book isn't up to date, write down all those things you forgot to write down when you were supposed to.  Even if you don't get the month right, you'll have them entered, and maybe can straighten them out later.  Especially important are medication dates, splits, harvest dates, and amount per colony.</Para>
 
 
-        </DiseaseContainer>
+        </CalendarContainer>
 
     )
 }

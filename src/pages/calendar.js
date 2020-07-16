@@ -20,8 +20,9 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin: 40px 0 0 15px ;
-  padding: 0;
+  // padding: 40px 0 0 15px ;
+  // padding: 0;
+  width: 100%;
 
   @media (max-width: 1265px) {
     display: block;
@@ -60,15 +61,24 @@ const StickyContainer2 = styled.div`
     width: 80%;
     margin-left: 40px;
   }
+ 
 `
 
 const StickyButton = styled.button`
   background-color: #F5D75F;
   border-radius: 15px;
   position: sticky;
-  left: 5px; 
+  left: 45px; 
   z-index: 1;
   top: 16px;
+  height: 45px;
+
+  @media (max-width: 1000px){
+    left: 0px; 
+  }
+  // @media (max-width: 500px){
+  //   margin-left: -120%; 
+  // }
 
   @media (min-width: 1265px) {
     visibility: hidden;
@@ -103,12 +113,13 @@ function Calendar() {
             <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
             <HeroHeader img={EducationBee} text={"beekeepers' calendar"} />
             <FlexContainer>
-                <GridContainer>
-                    <StickyButton onClick={() => setToggle(!toggle)}>
+            <StickyButton onClick={() => setToggle(!toggle)}>
                         <Icon />
                         <Icon />
                         <Icon />
                     </StickyButton>
+                <GridContainer>
+                    
                     <StickyContainer show={toggle}>
                         <MobileGuide show={toggle} setToggle={setToggle} />
                     </StickyContainer>

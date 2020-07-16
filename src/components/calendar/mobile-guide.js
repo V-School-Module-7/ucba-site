@@ -4,10 +4,11 @@ import styled from "styled-components"
 
 const GuideContainer = styled.div`
   width: 349px;
-  height: 550px;
   left: 40px;
   top: 40px;
+  padding-bottom: 5%;
   display: inline-block;
+  line-height: 300px;
 //   margin-top: 32px;
   background: #ffffff;
   border: 6px solid #c4c4c4;
@@ -76,18 +77,12 @@ const FlexContainer = styled.div`
 `
 const StyledLink = styled(Link)`
   display: block;
-//   margin: 24px 0px;
+  margin: 12px 0px;
   cursor: pointer;
-`
-const StyledSubLink = styled(Link)`
-    display: block;
-    margin-left: 16px;
-    // margin: 24px 0px;
-    cursor: pointer;
-    text-transform: uppercase;
-    ::before {
-        content: "• ";
-    }
+
+  @media (max-width: 900){
+      margin: 6px 0px;
+  }
 `
 
 const MobileGuide = props => {

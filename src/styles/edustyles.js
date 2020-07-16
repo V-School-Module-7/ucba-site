@@ -131,7 +131,7 @@ export const BeeHeader = styled.h1`
   margin-top: 5%;
   margin-bottom: 3%;
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
       font-size: 24px;
   }
   @media (max-width: 500px) {
