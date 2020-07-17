@@ -37,9 +37,10 @@ export const GreenLineContainer = styled.div`
   position: relative;
   height: auto;
  
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-bottom: 4%;
+  // padding-left: 4%;
+  // padding-right: 4%;
+  // padding-bottom: 4%;
+  padding: 4% 6%;
   margin-bottom: 2%;
   margin: auto;   
 
@@ -68,6 +69,26 @@ export const GreenLineContainer = styled.div`
     padding-right: 8px;
   }
 `
+
+// export const CornerContainer = styled.div`
+
+//   position: relative;
+//   width: 100px;
+//   height: 100px;
+//   margin: 20px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   color: blue;
+//   padding: 0;
+//   box-sizing: content-box;
+//   border: 2px solid orange;
+
+
+// `
+//this might help: https://stackoverflow.com/questions/42816074/css-for-border-in-corners-only/42816202
+
+
 //for the header inside the green box (above)
 export const BoxTitle = styled.h1`
 display: flex;
@@ -76,7 +97,7 @@ justify-content: center;
 align-items: center;
 align-self: center;
 margin: 30px;
-font-size: 38px;
+font-size: 28px;
 
 
 @media (max-width: 900px){
@@ -87,9 +108,9 @@ font-size: 38px;
 
 //the paragraph that goes inside the GreenLineContainer
 export const HeaderParagraph = styled.p`
-margin-bottom: 0;
-font-size: 24px;
-line-height: 24px;
+margin: 2% 0;
+font-size: 20px;
+line-height: 27px;
 
   @media (max-width: 900px){
     font-size: 16px;
@@ -102,9 +123,9 @@ line-height: 24px;
 //paragraph headers with green underlining the letters
 export const BeeHeader = styled.h1`
   display: inline-block;
-  border-bottom: 6px solid #63966a;
+  border-bottom: 4px solid #63966A;
   padding: 0 0 2px 0 ;
-  font-size: 36px;
+  font-size: 28px;
   // line-height: 42px;
   color: #000000;
   margin-top: 5%;
@@ -118,14 +139,19 @@ export const BeeHeader = styled.h1`
     text-decoration: underline;
     text-decoration-color: #63966A;
     border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 
 
 export const Paragraph = styled.p`
-font-size: 22px;
-line-height: 28px;
+font-size: 20px;
+line-height: 21px;
 margin: 2% 0 4% 0;
+font-family: Nunito;
 
 @media (max-width: 900px) {
     width: 100%;
@@ -141,7 +167,7 @@ export const TextHeader = styled.h1`
   margin: auto;
   margin-top: 10%;
   display: inline-block;
-  border-bottom: 6px solid #63966a;
+  border-bottom: 4px solid #63966a;
   padding-bottom: 16px;
   font-family: Work Sans;
   font-style: normal;

@@ -108,8 +108,12 @@ module.exports = {
         fonts: [
           `Rubik`,
           `700` // you can also specify font weights and styles
-        ]
-      }
+        ], 
+        // [
+        //   `Nunito`,
+        //   `400`
+        // ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
