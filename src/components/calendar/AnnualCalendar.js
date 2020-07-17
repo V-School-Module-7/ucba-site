@@ -14,16 +14,21 @@ import {
 const CalendarContainer = styled(DiseaseContainer)`
 
  @media (max-width: 900px){
-    margin: 0 5% 0 0 ;
+    margin: 0 0 0 5% ;
+}
+@media (max-width: 500px){
+    padding-right: 3%;
+    margin-left: 0;
 }
 
 `
 
 const Title = styled(BeeHeader)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-top: 40px;
 `
 
 const Subtitle = styled(BoxTitle)`
@@ -69,7 +74,7 @@ const AnnualCalendar = () => {
     return (
         <CalendarContainer>
             <CenteringContainer>
-                <BeeHeader id="january">January</BeeHeader>
+                <Title id="january">January</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -88,7 +93,7 @@ const AnnualCalendar = () => {
             </List>
 
             <CenteringContainer>
-                <BeeHeader id="february">February</BeeHeader>
+                <Title id="february">February</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -103,7 +108,7 @@ const AnnualCalendar = () => {
 
 
             <CenteringContainer>
-                <BeeHeader id="march">March</BeeHeader>
+                <Title id="march">March</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -127,7 +132,7 @@ const AnnualCalendar = () => {
             </List >
 
             <CenteringContainer>
-                <BeeHeader id="april">April</BeeHeader>
+                <Title id="april">April</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -141,7 +146,7 @@ const AnnualCalendar = () => {
             <Para>For those of you starting new this year, make sure all of your equipment is assembled and painted. By now, you should have at lease one deep brood box and 10 frames ready, along with a bottom board, inner cover, cover and feeding mechanism for when packages arrive. You must have a place for those bees when they arrive.</Para>
 
             <CenteringContainer>
-                <BeeHeader id="may">May</BeeHeader>
+                <Title id="may">May</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -154,7 +159,7 @@ const AnnualCalendar = () => {
             <Para>If you haven't already, consider treatment options for both Varrora and tracheal mites BEFORE putting honey supers on the hive, you cannot have medications in the hive when the bees are collecting honey for human consumption. New hives probably don’t need to be treated until the fall so don't worry until after the first harvest about treating. All beekeepers need to research and pursue treatment options before a problem arises.</Para>
 
             <CenteringContainer>
-                <BeeHeader id="june">June</BeeHeader>
+                <Title id="june">June</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -177,7 +182,7 @@ const AnnualCalendar = () => {
 
 
             <CenteringContainer>
-                <BeeHeader id="july">July</BeeHeader>
+                <Title id="july">July</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -194,7 +199,7 @@ const AnnualCalendar = () => {
             <Para>Make sure your hives have some shade or access to easy water so that they can cool the hive effectively. Too much heat can cause the bees to spend more time cooling the hive than gathering nectar to make honey. Add supers as needed to alleviate crowding and to encourage the bees to store more honey than they need.repel invasion by wasps and hornets but watch for signs of struggle, locate the offending nest and destroy it.</Para>
 
             <CenteringContainer>
-                <BeeHeader id="august">August</BeeHeader>
+                <Title id="august">August</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -211,7 +216,7 @@ const AnnualCalendar = () => {
             <Para>Now is the time to ensure that your bees will have enough room to last the summer but not so much that they can't fill the supers before harvest time. Follow the rule of 7/10; if 7 of the 10 frames are fully capped, add another super (early in the month). If it is later in the month, leave them be as they can begin to fill the bottom brood chambers with winter stores.</Para>
 
             <CenteringContainer>
-                <BeeHeader id="september">September</BeeHeader>
+                <Title id="september">September</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -229,7 +234,7 @@ const AnnualCalendar = () => {
             <Para>Lastly, protect the hive from the worst of wind and snow/rain to help the colony maintain temperature in the cluster.</Para>
 
             <CenteringContainer>
-                <BeeHeader id="october">October</BeeHeader>
+                <Title id="october">October</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -245,7 +250,7 @@ const AnnualCalendar = () => {
             <Para>Ensure that the bees do have some ventilation at the top of the hive for the release of the moisture produced throughout the winter - if the moisture does not leave the hive, it will collect on the inside of the cover/inner cover where it will condense, chill and drip on the cluster causing sudden drops in temperature and will cause the bees to struggle. Another affect of poor ventilation is mildewing and molding on the frames which can sour the honey and give the bees nosema (dysentery) which can destroy a hive quickly.</Para>
 
             <CenteringContainer>
-                <BeeHeader id="november">November</BeeHeader>
+                <Title id="november">November</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
@@ -260,7 +265,7 @@ const AnnualCalendar = () => {
             <Para> There is not much to be done for the bees at this time. Remove all medication treatments (if remaining) on a warm day with little or no wind. Ensure that entrance reducers are on the hive to help maintain temperature. This is the time of year when mice will try to enter the hive, check that your entrance reducers are on properly to keep mice out. Check that your hives have enough ventilation to help remove moisture from the hive; excess moisture can seriously harm your colonies. Catch up on some reading in books or trade magazines (see the Bulk Book Purchase feature). Identify additional markets for your bee related products for the next year. Make plans to attend the next association meeting in December. Take a well deserved rest and enjoy the upcoming holidays. Think about workshops and meeting agendas that you would like to see for the next year - share those ideas with the presidency of the association. Spread the word about the UCBA and lets see if we can't find some new members to share the joy with!</Para>
 
             <CenteringContainer>
-                <BeeHeader id="december">December</BeeHeader>
+                <Title id="december">December</Title>
             </CenteringContainer>
 
             <Subtitle>The Bees</Subtitle>
