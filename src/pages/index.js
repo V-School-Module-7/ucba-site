@@ -14,7 +14,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HeroHeader img={HomePageImage} text={"WELCOME TO THE UTAH COUNTY BEEKEEPERS ASSOCIATION"} />
     <Whybeekeeping img={coneimg}></Whybeekeeping>
-    <BeekeepersCalendar />
+    {/* <BeekeepersCalendar /> */}
   </Layout>
 )
 
