@@ -137,6 +137,18 @@ module.exports = {
         logo: `src/images/logo.png`,
       },
     },
+    {
+      resolve: 'gatsby-source-airtable',
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        tables: [
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: process.env.AIRTABLE_TABLE_NAME,
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
