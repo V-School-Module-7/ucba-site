@@ -5,22 +5,22 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 //https://www.gatsbyjs.org/packages/gatsby-source-airtable/
 
 
-export default () => {
+// export default () => {
     
-    const data = useStaticQuery(
-        graphql`
-            allAirtable {
-                edges {
-                    node {
-                        data {
-                            Name
-                            Email_address
-                            Phone
-                            Locations
-                        }
-                    }
-                }
-            }
-        `
-    )
-}
+//     const data = useStaticQuery(
+//         graphql`
+//             allAirtable {
+//                 edges {
+//                     node {
+//                         data {
+//                             Name
+//                             Email_address
+//                             Phone
+//                             Locations
+//                         }
+//                     }
+//                 }
+//             }
+//         `
+//     )
+// }

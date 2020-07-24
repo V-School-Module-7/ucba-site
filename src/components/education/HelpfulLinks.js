@@ -26,6 +26,7 @@ const HelpfulList = styled.ul`
 `
 const ListItem = styled.li`
     color: black;
+    font-family: Nunito;
 `
 
 const StyledLink = styled.a`
