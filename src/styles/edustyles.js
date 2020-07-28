@@ -10,9 +10,9 @@ export const Container = styled.div`
     // background-image: url(../images/BeeBackground.png);
 
     @media (max-width: 900px) {
-      margin-top: 10%;
+      // margin-top: 10%;
       margin: 10%;
-      width: 80vw;
+      width: 80%;
     }
     @media (max-width: 500px) {
       margin: 10%;
