@@ -31,8 +31,12 @@ const MainParagraph = styled(Paragraph)`
 `
 
 const BoldParagraph = styled(Paragraph)`
-   font-weight: bold;
-   font-size: 22px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
 `
 
 const BeeLink = styled.a`
@@ -65,11 +69,11 @@ const Diseases = () => {
       <BoldParagraph>How to recognize EFB: </BoldParagraph>
       <MainParagraph>
         Unlike AFB, larvae infected with EFB typically die BEFORE being capped. They lie twisted at the bottom of the cell in a reverse corkscrew shape. They will be a tan to brown color and will appear melted. EFB killed larvae do not exhibit the same "ropy" results of a stick test like AFB. There may be a sour odor present but it will different than AFB.</MainParagraph>
-        <BoldParagraph>How to treat for EFB:</BoldParagraph>
+      <BoldParagraph>How to treat for EFB:</BoldParagraph>
       <MainParagraph>
-         EFB can be effectively controlled with antibiotics
+        EFB can be effectively controlled with antibiotics
         (Terramycin). Also, requeening your hive will help as it breaks the brood cycle and the EFB reproduction cycle.</MainParagraph>
-        <BoldParagraph>How to prevent EFB: </BoldParagraph>
+      <BoldParagraph>How to prevent EFB: </BoldParagraph>
       <MainParagraph>Keep a young vigorous queen in the hive (requeen every couple of years) and help the hive stay healthy and strong. Preventative treatments with antibiotics will help.</MainParagraph>
 
       <div id="chalkbrood">
@@ -109,7 +113,7 @@ const Diseases = () => {
         There is not real treatment for chilled brood; once the weather warms or the colony grows, they will be able to care for the brood more effectively.</MainParagraph>
       <BoldParagraph>How to prevent Chilled brood:</BoldParagraph>
       <MainParagraph>
-         Do not work your bees in cold weather, replace frames in the same order they were removed when performing cool weather inspections and do not leave frames of brood outside of the hive for any longer than absolutely necessary.</MainParagraph>
+        Do not work your bees in cold weather, replace frames in the same order they were removed when performing cool weather inspections and do not leave frames of brood outside of the hive for any longer than absolutely necessary.</MainParagraph>
 
       <div id="nosema">
         <SubHeader>Nosema (Nosema apis)</SubHeader>

@@ -215,3 +215,14 @@ export const BeeLink = styled.a`
   color: black;
   font-style: normal;
 `
+
+export const BoldParagraph = styled(Paragraph)`
+font-weight: bold;
+font-size: 22px;
+font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: -0.5px;
+`
