@@ -20,7 +20,8 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  // padding: 40px 0 0 15px ;
+  padding: 40px 0 0 15px ;
+  margin: 40px 0 0 15px ;
   // padding: 0;
   width: 100%;
 
@@ -74,7 +75,8 @@ const StickyButton = styled.button`
   height: 45px;
 
   @media (max-width: 1000px){
-    left: 0px; 
+    left: 40px; 
+    margin-left: -120%; 
   }
   // @media (max-width: 500px){
   //   margin-left: -120%; 

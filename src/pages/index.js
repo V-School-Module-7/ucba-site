@@ -4,9 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroHeader from '../components/heroheader'
 import HomePageImage from "../images/HomePageImage.png"
-import Whybeekeeping from "../components/homepage/WhyBeekeeping"
+// import Whybeekeeping from "../components/homepage/WhyBeekeeping"
 import BeekeepersCalendar from '../components/homepage/BeekeepersCalendar'
-import coneimg from "../images/homebeecones.png"
+// import coneimg from "../images/homebeecones.png"
 import BeekeepingWhy from "../components/homepage/BeekeepingWhy"
 
 

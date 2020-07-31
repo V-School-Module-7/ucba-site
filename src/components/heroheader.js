@@ -29,6 +29,10 @@ const HeroText = styled.p`
 
   color: #ffffff;
 
+  @media (max-width: 1200px){
+    top: 160px;
+  }
+
   @media(max-width: 1000px){
     top: 16px;
     left: 16px;
@@ -42,7 +46,7 @@ const HeroText = styled.p`
   }
 
   @media (max-width: 400px){
-    font-size: 18px;
+    font-size: 16px;
   }
 `
 

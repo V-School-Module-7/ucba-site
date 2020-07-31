@@ -24,10 +24,10 @@ module.exports = {
             name: 'about ucba',
             link: '/about-ucba'
           },
-          //     // {
-          //     //   name: 'youth bab program',
-          //     //   link: '/youth-bab-program'
-          //     // },
+              {
+                name: 'youth bab program',
+                link: '/youth-bab-program'
+              },
           // {
           //   name: 'youth bab application form',
           //   link: '/youth-bab-form'
@@ -63,8 +63,8 @@ module.exports = {
             link: '/diseases-pests-parasites'
           },
           {
-            name: 'beekeepers\' calendar',
-            link: '/calendar'
+            name: 'beekeeper tasks',
+            link: '/beekeeper-tasks'
           },
           {
             name: 'fun facts',

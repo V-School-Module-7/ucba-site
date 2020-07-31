@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import styled from "styled-components"
 import { ParagraphText } from "../../../styles/babstyles.js"
 import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph } from "../../../styles/edustyles.js"
@@ -108,7 +108,7 @@ function YouthBAB() {
       <Subscript>Good Luck! We look forward to receiving your entries!</Subscript>
 
       <ButtonContainer>
-      <AppLink to="/youth-bab-form">
+      <AppLink >
         <AppButton>
          
             CLICK HERE TO FILL OUT AN APPLICATION
