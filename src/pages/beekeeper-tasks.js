@@ -108,34 +108,34 @@ const OverLay = styled.div`
 
 
 function Calendar() {
-    const [toggle, setToggle] = useState(false)
-    return (
-        <Layout>
-            <SEO title="Calendar" />
-            <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
-            <HeroHeader img={EducationBee} text={"beekeepers' calendar"} />
-            <FlexContainer>
-            <StickyButton onClick={() => setToggle(!toggle)}>
-                        <Icon />
-                        <Icon />
-                        <Icon />
-                    </StickyButton>
-                <GridContainer>
-                    
-                    <StickyContainer show={toggle}>
-                        <MobileGuide show={toggle} setToggle={setToggle} />
-                    </StickyContainer>
-                    <StickyContainer2>
-                        <Index />
-                    </StickyContainer2>
-                    <div style={{ gridColumn: "2 / 3" }}>
+  const [toggle, setToggle] = useState(false)
+  return (
+    <Layout>
+      <SEO title="Tasks" />
+      <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
+      <HeroHeader img={EducationBee} text={"beekeeper tasks"} />
+      <FlexContainer>
+        <StickyButton onClick={() => setToggle(!toggle)}>
+          <Icon />
+          <Icon />
+          <Icon />
+        </StickyButton>
+        <GridContainer>
 
-                        <AnnualCalendar />
-                    </div>
-                </GridContainer>
-            </FlexContainer>
-        </Layout>
-    )
+          <StickyContainer show={toggle}>
+            <MobileGuide show={toggle} setToggle={setToggle} />
+          </StickyContainer>
+          <StickyContainer2>
+            <Index />
+          </StickyContainer2>
+          <div style={{ gridColumn: "2 / 3" }}>
+
+            <AnnualCalendar />
+          </div>
+        </GridContainer>
+      </FlexContainer>
+    </Layout>
+  )
 }
 
 export default Calendar

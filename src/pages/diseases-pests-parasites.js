@@ -107,7 +107,7 @@ function DiseasesPestsParasites() {
       <HeroHeader img={EducationBee} text={"diseases, pests & parasites"} />
       <FlexContainer>
         <GridContainer>
-        <StickyButton onClick={() => setToggle(!toggle)}>
+          <StickyButton onClick={() => setToggle(!toggle)}>
             <Icon />
             <Icon />
             <Icon />
