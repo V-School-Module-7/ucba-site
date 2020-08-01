@@ -2,12 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {
-    Container,
     Paragraph,
     BeeHeader,
     DiseaseContainer,
     CenteringContainer,
-    BeeLink,
     BoxTitle
 } from '../../styles/edustyles.js'
 

@@ -67,16 +67,6 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 `
 
-const StyledSubLink = styled(Link)`
-    display: block;
-    margin-left: 16px;
-    cursor: pointer;
-    text-transform: uppercase;
-    ::before {
-        content: "• ";
-    }
-`
-
 const Index = (prop) => {
     return (
         <>

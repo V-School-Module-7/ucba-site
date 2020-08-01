@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
 import EducationBee from "../images/EducationBee.png"
 import FunBeeFacts from '../components/education/FunFacts'
-import BeeBackground from "../images/BeeBackground.png"
+// import BeeBackground from "../images/BeeBackground.png"
 
 
 

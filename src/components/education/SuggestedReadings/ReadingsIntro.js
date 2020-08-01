@@ -1,11 +1,10 @@
 import React from "react"
-import styled from "styled-components"
+// import styled from "styled-components"
 import {
     Container,
     GreenLineContainer,
     BoxTitle,
-    HeaderParagraph,
-    CornerContainer
+    HeaderParagraph
 } from "../../../styles/edustyles.js"
 
 // const CornerOutline = styled.div`

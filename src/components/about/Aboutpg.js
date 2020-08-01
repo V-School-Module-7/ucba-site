@@ -41,11 +41,11 @@ const Paragraph = styled.p`
 margin-bottom: 48px;
 `
 
-const LicenseLink = styled.a`
-  width: 50%;
-  word-wrap: break-word;
+// const LicenseLink = styled.a`
+//   width: 50%;
+//   word-wrap: break-word;
 
-`
+// `
 
 function AboutPage() {
     return (
