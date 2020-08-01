@@ -23,8 +23,7 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin: 40px 0 0 15px ;
-  // padding: 0;
+  margin: 40px 0 0 10%;
   width: 100%;
 
   @media (max-width: 1265px) {
@@ -40,7 +39,6 @@ const StickyContainer = styled.div`
   margin: auto;
 
   @media (max-width: 1000px) {
-    // left: 100px;
     left: 10%;
   }
   @media(max-width: 500px){

@@ -20,13 +20,12 @@ const GridContainer = styled.div`
   display: grid;
   /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  padding: 40px 0 0 15px ;
-  margin: 40px 0 0 15px ;
-  // padding: 0;
+  margin: 40px 0 0 5%;
   width: 100%;
 
   @media (max-width: 1265px) {
     display: block;
+    margin-left: 3%;
   }
 `
 
@@ -38,7 +37,6 @@ const StickyContainer = styled.div`
   margin: auto;
 
   @media (max-width: 1000px) {
-    // left: 100px;
     left: 10%;
   }
   @media(max-width: 500px){
@@ -73,14 +71,6 @@ const StickyButton = styled.button`
   z-index: 1;
   top: 16px;
   height: 45px;
-
-  @media (max-width: 1000px){
-    left: 40px; 
-    margin-left: -120%; 
-  }
-  // @media (max-width: 500px){
-  //   margin-left: -120%; 
-  // }
 
   @media (min-width: 1265px) {
     visibility: hidden;
