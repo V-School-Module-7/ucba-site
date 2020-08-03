@@ -1,103 +1,101 @@
 import React from "react"
 import styled from "styled-components"
+import {
+    BeeHeader,
+    Container,
+    CenteringContainer,
+    Paragraph
+} from "../../styles/edustyles.js"
+import { Link } from "gatsby"
 
-import Coneimg from "../../images/homebeecones.png"
-import HiveimgText from "../../images/hiveimgText.png"
-import Container from "../../styles/edustyles"
-// const HomeContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: 50% 50%;
-//   grid-template-rows: 1fr auto;
-//   position: relative;
-//   width: 100%;
-//   height: auto;
-//   text-align: center;
-//   padding-bottom: 80px;
+// import HomepageBackground from "../../images/HomepageBackground"
 
-//   @media (max-width: 800px) {
-//     display: block;
-//   }
-// `
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
+  align-items: center;
+`
+const AppButton = styled.button`
+  background-color: #F5D75F;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 700;
+  width: 569px;
+  height: 72px;
+  border: none;
+  box-shadow: 8px 12px #FFE994;
+  margin: 3% 0 5% 0;
+  cursor: pointer;
+  width: 147px;
+// height: 55px;
+// left: 643px;
+font-family: Work Sans;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
 
-// const HiveImgContainer = styled.div`
-//   grid-column: 2/3;
-//   justify-self: center;
-//   font-family: Futura;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 24px;
-//   line-height: 32px;
-//   color: #000000;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `
+letter-spacing: -0.5px;
+  
 
-// const TextHeader = styled.h1`
-//   height: 33px;
-//   margin: auto;
-//   display: inline-block;
-//   border-bottom: 6px solid #63966a;
-//   padding-bottom: 16px;
-//   font-family: Work Sans;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 36px;
-//   line-height: 42px;
-//   color: #000000;
-//   grid-column: 1 / 3;
-//   grid-row-start: 1;
-//   grid-row-end: 2;
-//   margin-top: 40px;
-//   margin-bottom: 60px;
+  @media (max-width: 900px) {
+    width: 400px;
+    font-size: 16px;
+    box-shadow: 18px 22px #FCECAD;
+  }
 
-//   @media (max-width: 500px){
-//     font-size: 24px;
-//   }
-// `
+  @media (max-width: 550px) {
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 12px 12px #FCECAD;
+  }
 
-// const ParagraphTextTwo = styled.div`
-//   grid-column: 0/1;
-//   grid-row: 2/3;
-//   font-family: Futura;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 24px;
-//   line-height: 32px;
-//   width: 100%;
-//   height: auto;
-//   color: #000000;
-//   text-align: left;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `
+  @media (max-width: 400px) {
+    width: 270px;
+    box-shadow: none;
+    font-size: 16px;
+  }
+`
 
-// const TextCone = styled.img`
-//   width: 80%;
-// `
+const AppLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  height: 72px;
+  // width: 100%;
+  // cursor: pointer;
 
-// const Conehiveimg = styled.img`
-//   width: 90%;
-// `
+   &:hover {
+   color: red;
+   }
+`
+
+
 
 const WhyBeekeeping = () => {
   return (
-    // <HomeContainer>
-    //   <TextHeader>WHY BEEKEEPING?</TextHeader>
 
-    //   <ParagraphTextTwo>
-    //     <TextCone src={HiveimgText}></TextCone>
-    //   </ParagraphTextTwo>
+    <Container 
+    >
+        <CenteringContainer>
+        <BeeHeader>Why Beekeeping?</BeeHeader>
+            <Paragraph>Many different people keep bees for many different reasons, the most important one being pollination. Bee pollination is needed for the production of about one-third of our food crops.  Beekeepers also raise bees for their honey production and numerous hive by-products, including wax, royal jelly, pollen and, yes, even venom!</Paragraph>
 
-    //   <HiveImgContainer>
-    //     <Conehiveimg src={Coneimg}></Conehiveimg>
-    //   </HiveImgContainer>
-    // </HomeContainer>
-    <Container>
+            <Paragraph>Read more about being a beekeeper in our guide below!</Paragraph>
+            <ButtonContainer>
+  <AppLink to="/becoming-a-beekeeper">
+    <AppButton>
+     
+        READ MORE
       
+    </AppButton>
+    </AppLink>
+  </ButtonContainer>
+        </CenteringContainer>
     </Container>
-  )
+
+)
 }
 
 export default WhyBeekeeping
