@@ -21,9 +21,8 @@ const FlexContainer = styled.div`
 
 const GridContainer = styled.div`
   display: grid;
-  /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin: 40px 0 0 10%;
+  margin: 40px 0 0 3%;
   width: 100%;
 
   @media (max-width: 1265px) {

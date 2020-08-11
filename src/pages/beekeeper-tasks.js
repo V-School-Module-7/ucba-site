@@ -18,9 +18,8 @@ const FlexContainer = styled.div`
 
 const GridContainer = styled.div`
   display: grid;
-  /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  margin: 40px 0 0 5%;
+  margin-top: 40px;
   width: 100%;
 
   @media (max-width: 1265px) {
