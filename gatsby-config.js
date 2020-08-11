@@ -24,10 +24,10 @@ module.exports = {
             name: 'about ucba',
             link: '/about-ucba'
           },
-          //     // {
-          //     //   name: 'youth bab program',
-          //     //   link: '/youth-bab-program'
-          //     // },
+              {
+                name: 'youth bab program',
+                link: '/youth-bab-program'
+              },
           // {
           //   name: 'youth bab application form',
           //   link: '/youth-bab-form'
@@ -63,8 +63,8 @@ module.exports = {
             link: '/diseases-pests-parasites'
           },
           {
-            name: 'beekeepers\' calendar',
-            link: '/calendar'
+            name: 'beekeeper tasks',
+            link: '/beekeeper-tasks'
           },
           {
             name: 'fun facts',
@@ -108,7 +108,7 @@ module.exports = {
         fonts: [
           `Rubik`,
           `700` // you can also specify font weights and styles
-        ], 
+        ],
         // [
         //   `Nunito`,
         //   `400`
@@ -135,6 +135,18 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
         logo: `src/images/logo.png`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-airtable',
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        tables: [
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: process.env.AIRTABLE_TABLE_NAME,
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

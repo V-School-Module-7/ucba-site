@@ -1,16 +1,18 @@
 import styled from 'styled-components'
 
 
+
 //container for the whole page
 export const Container = styled.div`
     font-family: Work Sans;
     margin: 64px 12% 5% 12%;
     box-sizing: border-box;
+    // background-image: url(../images/BeeBackground.png);
 
     @media (max-width: 900px) {
-      margin-top: 10%;
+      // margin-top: 10%;
       margin: 10%;
-      width: 80vw;
+      width: 80%;
     }
     @media (max-width: 500px) {
       margin: 10%;
@@ -111,6 +113,7 @@ export const HeaderParagraph = styled.p`
 margin: 2% 0;
 font-size: 20px;
 line-height: 27px;
+font-family: Nunito;
 
   @media (max-width: 900px){
     font-size: 16px;
@@ -125,7 +128,7 @@ export const BeeHeader = styled.h1`
   display: inline-block;
   border-bottom: 4px solid #63966A;
   padding: 0 0 2px 0 ;
-  font-size: 28px;
+  font-size: 24px;
   // line-height: 42px;
   color: #000000;
   margin-top: 5%;
@@ -172,7 +175,7 @@ export const TextHeader = styled.h1`
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 42px;
   text-transform: uppercase;
   color: #000000;
@@ -211,4 +214,15 @@ export const BeeLink = styled.a`
   word-wrap: break-word;
   color: black;
   font-style: normal;
+`
+
+export const BoldParagraph = styled(Paragraph)`
+font-weight: bold;
+font-size: 22px;
+font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: -0.5px;
 `

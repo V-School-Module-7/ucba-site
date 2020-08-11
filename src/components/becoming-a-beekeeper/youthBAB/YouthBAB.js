@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { ParagraphText } from "../../../styles/babstyles.js"
 import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph } from "../../../styles/edustyles.js"
@@ -43,7 +42,9 @@ const AppButton = styled.button`
   box-shadow: 18px 22px #FFE994;
   margin: 3% 0 5% 0;
   cursor: pointer;
-  
+  :hover {
+    box-shadow: 8px 12px #FFE994;
+  }
 
   @media (max-width: 900px) {
     width: 400px;
@@ -62,18 +63,6 @@ const AppButton = styled.button`
     box-shadow: none;
     font-size: 16px;
   }
-`
-
-const AppLink = styled(Link)`
-  text-decoration: none;
-  color: black;
-  height: 72px;
-  // width: 100%;
-  // cursor: pointer;
-
-   &:hover {
-   color: red;
-   }
 `
 
 function YouthBAB() {
@@ -108,13 +97,13 @@ function YouthBAB() {
       <Subscript>Good Luck! We look forward to receiving your entries!</Subscript>
 
       <ButtonContainer>
-      <AppLink to="/youth-bab-form">
+      <a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">
         <AppButton>
          
             CLICK HERE TO FILL OUT AN APPLICATION
           
         </AppButton>
-        </AppLink>
+        </a>
       </ButtonContainer>
 
     </Container>

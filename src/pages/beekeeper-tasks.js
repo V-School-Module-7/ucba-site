@@ -18,14 +18,13 @@ const FlexContainer = styled.div`
 
 const GridContainer = styled.div`
   display: grid;
-  /* grid-template-areas: "index content"; */
   grid-template-columns: 1fr 2fr;
-  // padding: 40px 0 0 15px ;
-  // padding: 0;
+  margin-top: 40px;
   width: 100%;
 
   @media (max-width: 1265px) {
     display: block;
+    margin-left: 3%;
   }
 `
 
@@ -37,7 +36,6 @@ const StickyContainer = styled.div`
   margin: auto;
 
   @media (max-width: 1000px) {
-    // left: 100px;
     left: 10%;
   }
   @media(max-width: 500px){
@@ -73,13 +71,6 @@ const StickyButton = styled.button`
   top: 16px;
   height: 45px;
 
-  @media (max-width: 1000px){
-    left: 0px; 
-  }
-  // @media (max-width: 500px){
-  //   margin-left: -120%; 
-  // }
-
   @media (min-width: 1265px) {
     visibility: hidden;
   }
@@ -106,34 +97,34 @@ const OverLay = styled.div`
 
 
 function Calendar() {
-    const [toggle, setToggle] = useState(false)
-    return (
-        <Layout>
-            <SEO title="Calendar" />
-            <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
-            <HeroHeader img={EducationBee} text={"beekeepers' calendar"} />
-            <FlexContainer>
-            <StickyButton onClick={() => setToggle(!toggle)}>
-                        <Icon />
-                        <Icon />
-                        <Icon />
-                    </StickyButton>
-                <GridContainer>
-                    
-                    <StickyContainer show={toggle}>
-                        <MobileGuide show={toggle} setToggle={setToggle} />
-                    </StickyContainer>
-                    <StickyContainer2>
-                        <Index />
-                    </StickyContainer2>
-                    <div style={{ gridColumn: "2 / 3" }}>
+  const [toggle, setToggle] = useState(false)
+  return (
+    <Layout>
+      <SEO title="Tasks" />
+      <OverLay onClick={() => setToggle(!toggle)} show={toggle} />
+      <HeroHeader img={EducationBee} text={"beekeeper tasks"} />
+      <FlexContainer>
+        <StickyButton onClick={() => setToggle(!toggle)}>
+          <Icon />
+          <Icon />
+          <Icon />
+        </StickyButton>
+        <GridContainer>
 
-                        <AnnualCalendar />
-                    </div>
-                </GridContainer>
-            </FlexContainer>
-        </Layout>
-    )
+          <StickyContainer show={toggle}>
+            <MobileGuide show={toggle} setToggle={setToggle} />
+          </StickyContainer>
+          <StickyContainer2>
+            <Index />
+          </StickyContainer2>
+          <div style={{ gridColumn: "2 / 3" }}>
+
+            <AnnualCalendar />
+          </div>
+        </GridContainer>
+      </FlexContainer>
+    </Layout>
+  )
 }
 
 export default Calendar
