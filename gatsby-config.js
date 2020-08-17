@@ -72,24 +72,24 @@ module.exports = {
           },
         ]
       },
-      // {
-      //   name: 'membership',
-      //   link: null,
-      //   sublinks: [
-      //     {
-      //       name: 'become a member',
-      //       link: '/become-a-member'
-      //     },
-      //     {
-      //       name: 'sponsors',
-      //       link: '/sponsors'
-      //     },
-      //     {
-      //       name: 'contact ucba',
-      //       link: '/contact-ucba'
-      //     }
-      //   ]
-      // },
+      {
+        name: 'membership',
+        link: null,
+        sublinks: [
+          {
+            name: 'become a member',
+            link: '/become-a-member'
+          },
+          {
+            name: 'sponsors',
+            link: '/sponsors'
+          },
+          {
+            name: 'contact ucba',
+            link: '/contact-ucba'
+          }
+        ]
+      },
     ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
