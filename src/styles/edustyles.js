@@ -110,10 +110,13 @@ font-size: 28px;
 
 //the paragraph that goes inside the GreenLineContainer
 export const HeaderParagraph = styled.p`
-margin: 2% 0;
-font-size: 20px;
-line-height: 27px;
-font-family: Nunito;
+  margin: 2% 0;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 
   @media (max-width: 900px){
     font-size: 16px;
@@ -151,10 +154,16 @@ export const BeeHeader = styled.h1`
 
 
 export const Paragraph = styled.p`
-font-size: 20px;
-line-height: 21px;
-margin: 2% 0 4% 0;
-font-family: Nunito;
+  font-size: 20px;
+  line-height: 21px;
+  margin: 2% 0 4% 0;
+  font-family: Nunito;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
 
 @media (max-width: 900px) {
     width: 100%;

@@ -13,7 +13,7 @@ function Sponsors() {
         <Layout>
             <SEO title="Sponsors" />
             <HeroHeader img={Membership} text={"sponsors"} />
-            <Sponsor backgroundImage="Membership"/>
+            <Sponsor />
 
 
         </Layout>
