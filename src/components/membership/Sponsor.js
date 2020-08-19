@@ -19,7 +19,6 @@ const BHeader = styled(BeeHeader)`
     @media (max-width: 500px) {
         margin-top: 8%;
     }
-  
 `
 
 const Sponsor = () => {
