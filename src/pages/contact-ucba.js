@@ -11,7 +11,7 @@ import ContactUCBA from '../components/membership/ContactUCBA.js'
 function ContactUs() {
     return (
         <Layout>
-            <SEO title="Sponsors" />
+            <SEO title="Contact UCBA" />
             <HeroHeader img={Membership} text={"contact ucba"} />
             <ContactUCBA backgroundImage="Membership"/>
 

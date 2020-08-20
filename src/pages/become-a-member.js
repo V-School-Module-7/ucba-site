@@ -11,7 +11,7 @@ import BecomeMember from '../components/membership/BecomeMember'
 function BecomeAMember() {
     return (
         <Layout>
-            <SEO title="Become a member" />
+            <SEO title="Become a Member" />
             <HeroHeader img={Membership} text={"become a member"} />
             <BecomeMember backgroundImage="Membership" />
 

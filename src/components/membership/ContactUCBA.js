@@ -12,39 +12,42 @@ padding-bottom: 1.5%;
     margin-top: 8%;
 }
 `
+const Url = styled.a`
+    color:  #63966A;
+`
 
 const ContactUCBA = () => {
     return (
         <Container>
             <BHeader>General Contact Information</BHeader>
             <Paragraph>Mailing Address:</Paragraph>
-            <Paragraph>Utah County Beekeepers Association</Paragraph>
-            <Paragraph>185 North 1300 East</Paragraph>
-            <Paragraph>Pleasant Grove, UT, 84062</Paragraph>
+            <Paragraph>Utah County Beekeepers Association<br></br>
+            185 North 1300 East<br></br>
+            Pleasant Grove, UT, 84062</Paragraph>
             <Paragraph>Email:</Paragraph>
 
-            <Paragraph><a href="mailto:ut.co.beekeepers@gmail.com">ut.co.beekeepers@gmail.com</a></Paragraph>
+            <Paragraph><Url href="mailto:ut.co.beekeepers@gmail.com">ut.co.beekeepers@gmail.com</Url></Paragraph>
 
-            <Paragraph>You can also contact us through our Facebook!</Paragraph>
+            <Paragraph>You can also contact us through our <Url href="https://www.facebook.com/groups/332266457945" target="_blank" rel="noopener noreferrer">Facebook!</Url></Paragraph>
 
             <BHeader>Presidency Contact Information for 2020:</BHeader>
 
-            <Paragraph>President: Ron Peterson - <a href="mailto:president@utahcountybeekeepers.org">president@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Vice President 1: Terry Berger -<a href="mailto:vicepresident1@utahcountybeekeepers.org">vicepresident1@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Vice President 2: Michelle Buswell -<a href="mailto:vicepresident2@utahcountybeekeepers.org">vicepresident2@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Finance & Treasurer: Jenn White -<a href="mailto:treasurer@utahcountybeekeepers.org">treasurer@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Publicity & Membership Coordinator: Daniel Webster -<a href="mailto:publicity@utahcountybeekeepers.org">publicity@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Newsletter: Gary Jones -<a href="mailto:newsletter@utahcountybeekeepers.org">newsletter@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Swarm Coordinator: Charlie Sigler -<a href="mailto:swarm@utahcountybeekeepers.org">swarm@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Bee a Beekeeper Program Coordinator: Janelle Evans -<a href="mailto:bab@utahcountybeekeepers.org">bab@utahcountybeekeepers.org</a></Paragraph>
-            <Paragraph>Assistant Bee a Beekeeper Program Coordinator: Lon Lewis - <a href="mailto:bab2@utahcountybeekeepers.org">bab2@utahcountybeekeepers.org</a></Paragraph>
-        <Paragraph>Ben Matheson -<a href="mailto:web@utahcountybeekeepers.org">web@utahcountybeekeepers.org</a></Paragraph>
+            <Paragraph>President: Ron Peterson - <Url href="mailto:president@utahcountybeekeepers.org">president@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Vice President 1: Terry Berger -<Url href="mailto:vicepresident1@utahcountybeekeepers.org">vicepresident1@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Vice President 2: Michelle Buswell -<Url href="mailto:vicepresident2@utahcountybeekeepers.org">vicepresident2@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Finance & Treasurer: Jenn White -<Url href="mailto:treasurer@utahcountybeekeepers.org">treasurer@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Publicity & Membership Coordinator: Daniel Webster -<Url href="mailto:publicity@utahcountybeekeepers.org">publicity@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Newsletter: Gary Jones -<Url href="mailto:newsletter@utahcountybeekeepers.org">newsletter@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Swarm Coordinator: Charlie Sigler -<Url href="mailto:swarm@utahcountybeekeepers.org">swarm@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Bee a Beekeeper Program Coordinator: Janelle Evans -<Url href="mailto:bab@utahcountybeekeepers.org">bab@utahcountybeekeepers.org</Url></Paragraph>
+            <Paragraph>Assistant Bee a Beekeeper Program Coordinator: Lon Lewis - <Url href="mailto:bab2@utahcountybeekeepers.org">bab2@utahcountybeekeepers.org</Url></Paragraph>
+        <Paragraph>Ben Matheson -<Url href="mailto:web@utahcountybeekeepers.org">web@utahcountybeekeepers.org</Url></Paragraph>
         <Paragraph>Board of Directors:</Paragraph>
-        <Paragraph>Sam Wimpfheimer -<a href="mailto:swimpy99@utahcountybeekeepers.org">swimpy99@utahcountybeekeepers.org</a></Paragraph>
-        <Paragraph>Charlie Sigler -<a href="mailto:charlie@utahcountybeekeepers.org">charlie@utahcountybeekeepers.org</a></Paragraph>
-        <Paragraph>Stephen Briles -<a href="mailto:sbriles@utahcountybeekeepers.org">sbriles@utahcountybeekeepers.org</a></Paragraph>
-        <Paragraph>Knight -<a href="mailto:lee@knightfamilyhoney.com">lee@knightfamilyhoney.com</a></Paragraph>
-        <Paragraph>Mike Shaffer -<a href="mailto:mike@utahcountybeekeepers.org">mike@utahcountybeekeepers.org</a></Paragraph>
+        <Paragraph>Sam Wimpfheimer -<Url href="mailto:swimpy99@utahcountybeekeepers.org">swimpy99@utahcountybeekeepers.org</Url></Paragraph>
+        <Paragraph>Charlie Sigler -<Url href="mailto:charlie@utahcountybeekeepers.org">charlie@utahcountybeekeepers.org</Url></Paragraph>
+        <Paragraph>Stephen Briles -<Url href="mailto:sbriles@utahcountybeekeepers.org">sbriles@utahcountybeekeepers.org</Url></Paragraph>
+        <Paragraph>Knight -<Url href="mailto:lee@knightfamilyhoney.com">lee@knightfamilyhoney.com</Url></Paragraph>
+        <Paragraph>Mike Shaffer -<Url href="mailto:mike@utahcountybeekeepers.org">mike@utahcountybeekeepers.org</Url></Paragraph>
 </Container>
 
     )
