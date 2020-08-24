@@ -42,7 +42,7 @@ const ContactUCBA = () => {
             <Paragraph>Bee a Beekeeper Program Coordinator: Janelle Evans -<Url href="mailto:bab@utahcountybeekeepers.org">bab@utahcountybeekeepers.org</Url></Paragraph>
             <Paragraph>Assistant Bee a Beekeeper Program Coordinator: Lon Lewis - <Url href="mailto:bab2@utahcountybeekeepers.org">bab2@utahcountybeekeepers.org</Url></Paragraph>
         <Paragraph>Ben Matheson -<Url href="mailto:web@utahcountybeekeepers.org">web@utahcountybeekeepers.org</Url></Paragraph>
-        <Paragraph>Board of Directors:</Paragraph>
+        <Paragraph style={{fontWeight: "bold"}}>Board of Directors:</Paragraph>
         <Paragraph>Sam Wimpfheimer -<Url href="mailto:swimpy99@utahcountybeekeepers.org">swimpy99@utahcountybeekeepers.org</Url></Paragraph>
         <Paragraph>Charlie Sigler -<Url href="mailto:charlie@utahcountybeekeepers.org">charlie@utahcountybeekeepers.org</Url></Paragraph>
         <Paragraph>Stephen Briles -<Url href="mailto:sbriles@utahcountybeekeepers.org">sbriles@utahcountybeekeepers.org</Url></Paragraph>
