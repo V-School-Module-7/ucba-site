@@ -8,7 +8,13 @@ import {
 } from "../../styles/edustyles.js"
 import { Link } from "gatsby"
 
-// import HomepageBackground from "../../images/HomepageBackground"
+import HomepageBackground from "../../images/HomepageBackground"
+import Africanbeemap from '../../images/Africanbeemap'
+import '../../images/Africanbeemap'
+
+const HomeContainer = styled(Container)`
+  background-image: src="../../images/Africanbeemap";
+`
 
 const ButtonContainer = styled.div`
   display: flex;
