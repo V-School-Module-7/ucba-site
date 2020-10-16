@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { BeeHeader, Container, GreenLineContainer, BoxTitle, HeaderParagraph, Paragraph, TextHeader } from "../../styles/edustyles.js"
+import { BeeHeader, Container, GreenLineContainer, BoxTitle, HeaderParagraph, Paragraph } from "../../styles/edustyles.js"
 
 const Pgraph = styled(Paragraph)`
     margin: 10px 0;

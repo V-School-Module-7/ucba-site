@@ -10,7 +10,6 @@ const HeroImg = styled.img`
   width: 100%;
 `
 
-
 const HeroText = styled.p`
   position: absolute;
   width: 468px;
