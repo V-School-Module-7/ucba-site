@@ -235,3 +235,43 @@ font-size: 18px;
 line-height: 21px;
 letter-spacing: -0.5px;
 `
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
+  align-items: center;
+`
+export const BeeButton = styled.button`
+  background-color: #FFCB00;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 700;
+  width: 569px;
+  height: 72px;
+  border: none;
+  box-shadow: 18px 22px #FFE994;
+  margin: 3% 0 5% 0;
+  cursor: pointer;
+  :hover {
+    box-shadow: 8px 12px #FFE994;
+  }
+
+  @media (max-width: 900px) {
+    width: 400px;
+    font-size: 16px;
+    box-shadow: 18px 22px #FFE994;
+  }
+
+  @media (max-width: 550px) {
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 12px 12px #FFE994;
+  }
+
+  @media (max-width: 400px) {
+    width: 270px;
+    box-shadow: none;
+    font-size: 16px;
+  }
+`
