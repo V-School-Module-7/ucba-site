@@ -243,6 +243,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
 `
 export const BeeButton = styled.button`
+display: block;
   background-color: #FFCB00;
   font-family: Work Sans;
   font-size: 24px;
@@ -275,3 +276,25 @@ export const BeeButton = styled.button`
     font-size: 16px;
   }
 `
+
+export const StoreButton = styled.button`
+display: block;
+background-color: #FFE994;
+
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 700;
+width: auto;
+padding: 0 10%;
+text-transform: uppercase;
+height: 72px;
+border: 5px solid #FFCB00;;
+margin: 3% 0 5% 0;
+cursor: pointer;
+
+@media (max-width: 900px) {
+  font-size: 16px;
+}
+
+`
+
