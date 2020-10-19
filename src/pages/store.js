@@ -9,7 +9,7 @@ import StorePage from "../components/store/StorePage"
 function Store() {
     return (
         <Layout>
-        <SEO title="Store" />
+        <SEO title="UCBA Store" />
         
         <HeroHeader img={PinkBeeHeader} text={"store"} />        
            
