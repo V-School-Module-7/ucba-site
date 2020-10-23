@@ -26,10 +26,10 @@ module.exports = {
             name: 'about ucba',
             link: '/about-ucba'
           },
-              {
-                name: 'youth bab program',
-                link: '/youth-bab-program'
-              },
+          {
+            name: 'youth bab program',
+            link: '/youth-bab-program'
+          },
           // {
           //   name: 'youth bab application form',
           //   link: '/youth-bab-form'
@@ -98,7 +98,7 @@ module.exports = {
         sublinks: []
       },
     ],
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Welcome to the Utah County Beekeepers Association's new website!`,
     author: `@gatsbyjs`,
   },
   plugins: [

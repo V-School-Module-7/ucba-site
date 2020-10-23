@@ -11,7 +11,7 @@ function Store() {
         <Layout>
         <SEO title="UCBA Store" />
         
-        <HeroHeader img={PinkBeeHeader} text={"store"} />        
+        <HeroHeader img={PinkBeeHeader} text={"ucba store"} />        
            
             <StorePage />
             

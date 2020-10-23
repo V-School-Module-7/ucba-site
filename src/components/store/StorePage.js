@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Container, GreenLineContainer, HeaderParagraph, StoreButton, BeeHeader, Paragraph} from "../../styles/edustyles.js"
+import { Container, GreenLineContainer, HeaderParagraph, StoreButton, BeeHeader, Paragraph } from "../../styles/edustyles.js"
 
 const StoreTitle = styled(BeeHeader)`
     border-bottom: none;
@@ -26,10 +26,17 @@ const StorePage = () => {
             </HeaderParagraph>
         </GreenLineContainer>
 
+        {/* <ButtonContainer>
+        <a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">
+          
+        </a>
+      </ButtonContainer> */}
+
         <StoreTitle>
         $20 Annual Membership
         </StoreTitle>
-        <Paragraph>membership form must be sent in to activate new memberships</Paragraph>
+        <Paragraph>
+            <a href="" target="_blank" rel="noopener noreferrer">membership form</a> must be sent in to activate new memberships</Paragraph>
         <StoreButton>add to cart</StoreButton>
 
         <StoreTitle>
@@ -50,22 +57,25 @@ const StorePage = () => {
         <StoreTitle>
         $70 Beginning Beekeeping Class
         </StoreTitle>
-        <Paragraph>class registration form     class includes membership dues</Paragraph>
+        <Paragraph><a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">class registration form </a> <br></br>   class includes membership dues</Paragraph>
         <StoreButton>add to cart</StoreButton> 
+        
         <StoreTitle>
         $90 Beginning Beekeeping Class- couple
         </StoreTitle>
-        <Paragraph>class registration form     class includes membership dues</Paragraph>
+        <Paragraph><a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">class registration form </a> <br></br>   class includes membership dues</Paragraph> 
         <StoreButton>add to cart</StoreButton> 
+
         <StoreTitle>
         $70 Intermediate Beekeeping Class
         </StoreTitle>
-        <Paragraph>class registration form     class includes membership dues</Paragraph>
+        <Paragraph><a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">class registration form </a> <br></br>   class includes membership dues</Paragraph>
         <StoreButton>add to cart</StoreButton> 
+
         <StoreTitle>
         $90 Intermediate Beekeeping Class- couple
         </StoreTitle>
-        <Paragraph>class registration form     class includes membership dues</Paragraph>
+        <Paragraph><a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">class registration form </a> <br></br>   class includes membership dues</Paragraph>
         <StoreButton>add to cart</StoreButton> 
         
         </Container>

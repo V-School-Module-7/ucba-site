@@ -97,12 +97,8 @@ function YouthBAB() {
       <Subscript>Good Luck! We look forward to receiving your entries!</Subscript>
 
       <ButtonContainer>
-      <a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">
-        <AppButton>
-         
-            CLICK HERE TO FILL OUT AN APPLICATION
-          
-        </AppButton>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScr98AmiU7JdhVzs37CLmkGXazeOvAHzMmHVwD09UmZyzgpQw/viewform" target="_blank" rel="noopener noreferrer">
+          <AppButton>CLICK HERE TO FILL OUT AN APPLICATION</AppButton>
         </a>
       </ButtonContainer>
 
