@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Container, GreenLineContainer, HeaderParagraph, StoreButton, BeeHeader, Paragraph } from "../../styles/edustyles.js"
+import { Container, GreenLineContainer, HeaderParagraph, StoreButton, BeeHeader, Paragraph } from "../../styles/globalstyles.js"
 
 const StoreTitle = styled(BeeHeader)`
     border-bottom: none;

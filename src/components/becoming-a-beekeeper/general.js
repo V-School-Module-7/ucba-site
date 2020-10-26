@@ -4,7 +4,7 @@ import {
   ParagraphTextBottomMargin,
   TextContainer
 } from "../../styles/babstyles.js"
-import {GreenLineContainer} from "../../styles/edustyles"
+import {GreenLineContainer} from "../../styles/globalstyles.js"
 
 // const TextContainer = styled.div`
 //   position: relative;

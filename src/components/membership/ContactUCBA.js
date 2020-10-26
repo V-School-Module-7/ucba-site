@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { BeeHeader, Container, Paragraph } from "../../styles/edustyles.js"
+import { BeeHeader, Container, Paragraph } from "../../styles/globalstyles.js"
 
 const BHeader = styled(BeeHeader)`
 display: block;

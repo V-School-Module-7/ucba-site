@@ -7,7 +7,7 @@ import {
     TextHeader,
     CenteringContainer
 }
-    from "../../../styles/edustyles.js"
+    from "../../../styles/globalstyles.js"
 
 const SubHeader = styled(BeeHeader)`
   display: block;

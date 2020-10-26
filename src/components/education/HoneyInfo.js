@@ -6,7 +6,7 @@ import { Container,
         HeaderParagraph, 
         BeeHeader, 
         CenteringContainer,
-        Paragraph } from "../../styles/edustyles.js"
+        Paragraph } from "../../styles/globalstyles.js"
 
 const StyledLink = styled.a`
   word-wrap: break-word;

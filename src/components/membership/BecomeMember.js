@@ -1,7 +1,7 @@
 import React from "react"
 // import styled from "styled-components"
 
-import { BeeHeader, Container, BoxTitle, GreenLineContainer, HeaderParagraph, Paragraph } from "../../styles/edustyles.js"
+import { BeeHeader, Container, BoxTitle, GreenLineContainer, HeaderParagraph, Paragraph } from "../../styles/globalstyles.js"
 
 
 

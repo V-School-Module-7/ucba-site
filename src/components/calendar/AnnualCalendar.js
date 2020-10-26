@@ -7,7 +7,7 @@ import {
     DiseaseContainer,
     CenteringContainer,
     BoxTitle
-} from '../../styles/edustyles.js'
+} from '../../styles/globalstyles.js'
 
 const CalendarContainer = styled(DiseaseContainer)`
 margin-top: 0;

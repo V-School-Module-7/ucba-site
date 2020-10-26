@@ -6,7 +6,7 @@ import {
     BeeHeader,
     CenteringContainer,
     BeeLink
-} from "../../../styles/edustyles.js"
+} from "../../../styles/globalstyles.js"
 
 const Title = styled(BeeHeader)`
     margin: 15px 0;

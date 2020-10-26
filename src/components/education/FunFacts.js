@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { BeeHeader, Container } from "../../styles/edustyles.js"
+import { BeeHeader, Container } from "../../styles/globalstyles.js"
 
 const FactsContainer = styled(Container)`
   margin-top: 5px;

@@ -5,7 +5,7 @@ import {
     Container,
     CenteringContainer,
     Paragraph
-} from "../../styles/edustyles.js"
+} from "../../styles/globalstyles.js"
 import { Link } from "gatsby"
 
 // import HomepageBackground from "../../images/HomepageBackground"

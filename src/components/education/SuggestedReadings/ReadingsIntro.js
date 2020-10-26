@@ -5,7 +5,7 @@ import {
     GreenLineContainer,
     BoxTitle,
     HeaderParagraph
-} from "../../../styles/edustyles.js"
+} from "../../../styles/globalstyles.js"
 
 // const CornerOutline = styled.div`
 // position: absolute;
