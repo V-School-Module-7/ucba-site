@@ -48,7 +48,7 @@ const StorePage = () => {
         </StoreTitle>
         <StoreButton>add to cart</StoreButton>
 
-//UCBA used to offer beekeeping classes, but are not as of 2020.
+{ /*{UCBA used to offer beekeeping classes, but are not as of 2020. The links are below, should you need them in the future}*/ }
         {/* <StoreTitle>
         $70 Beginning Beekeeping Class
         </StoreTitle>
