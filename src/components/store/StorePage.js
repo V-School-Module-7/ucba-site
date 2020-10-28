@@ -26,17 +26,11 @@ const StorePage = () => {
             </HeaderParagraph>
         </GreenLineContainer>
 
-        {/* <ButtonContainer>
-        <a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">
-          
-        </a>
-      </ButtonContainer> */}
-
         <StoreTitle>
         $20 Annual Membership
         </StoreTitle>
         <Paragraph>
-            <a href="" target="_blank" rel="noopener noreferrer">membership form</a> must be sent in to activate new memberships</Paragraph>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvr8pE9Se3DCHQskVRMHorqGt8t0HWRa1hPAfnTpqqnBpJIQ/viewform" target="_blank" rel="noopener noreferrer">membership form</a> must be sent in to activate new memberships</Paragraph>
         <StoreButton>add to cart</StoreButton>
 
         <StoreTitle>
@@ -54,7 +48,8 @@ const StorePage = () => {
         </StoreTitle>
         <StoreButton>add to cart</StoreButton>
 
-        <StoreTitle>
+//UCBA used to offer beekeeping classes, but are not as of 2020.
+        {/* <StoreTitle>
         $70 Beginning Beekeeping Class
         </StoreTitle>
         <Paragraph><a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">class registration form </a> <br></br>   class includes membership dues</Paragraph>
@@ -76,7 +71,7 @@ const StorePage = () => {
         $90 Intermediate Beekeeping Class- couple
         </StoreTitle>
         <Paragraph><a href="https://docs.google.com/forms/d/18bOcKuCbn3mfFJOLmdggdA0L5_dwhi6MQt9dvJoN6kM/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">class registration form </a> <br></br>   class includes membership dues</Paragraph>
-        <StoreButton>add to cart</StoreButton> 
+        <StoreButton>add to cart</StoreButton>  */}
         
         </Container>
 
