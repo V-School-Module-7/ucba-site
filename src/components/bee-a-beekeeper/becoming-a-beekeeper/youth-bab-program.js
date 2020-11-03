@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    TextContainer,
     TextHeader,
-    FlexContainer,
     ParagraphText,
     ParagraphTextBottomMargin,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 const YouthBABProgram = () => {
     return (
-        <TextContainer id="laws-and-licenses">
+        <Container id="laws-and-licenses">
             <FlexContainer>
                 <TextHeader>Youth Be A Beekeeper Program</TextHeader>
             </FlexContainer>
@@ -95,7 +95,7 @@ const YouthBABProgram = () => {
                 two hours after sunrise and two hours before sunset; except, 
                 on property owned or operated by the applicator."
             </ParagraphText>
-        </TextContainer>
+        </Container>
     );
 };
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-    TextContainer,
     TextHeader,
-    FlexContainer,
     ParagraphText,
     ParagraphTextBottomMargin,
     SubHeaderMarginBottom,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 const resources = () => {
     return (
-        <TextContainer id="resources">
+        <Container id="resources">
             <FlexContainer>
                 <TextHeader>resources</TextHeader>
             </FlexContainer>
@@ -70,7 +70,7 @@ const resources = () => {
                 learning is doing. If you are interested in latching on to a mentor, 
                 please email the association.
             </ParagraphTextBottomMargin>
-        </TextContainer>
+        </Container>
     );
 };
 

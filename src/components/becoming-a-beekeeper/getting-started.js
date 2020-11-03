@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    TextContainer,
     TextHeader,
-    FlexContainer,
     ParagraphText,
     ParagraphTextBottomMargin,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 const GettingStarted = () => {
     return (
-        <TextContainer id="getting-started">
+        <Container id="getting-started">
             <FlexContainer>
                 <TextHeader>getting started</TextHeader>
             </FlexContainer>
@@ -84,7 +84,7 @@ const GettingStarted = () => {
                 hive may need maintenance sooner (at a minimum a paint job); 
                 conversely, you may get some great equipment.
             </ParagraphText>
-        </TextContainer>
+        </Container>
     );
 };
 

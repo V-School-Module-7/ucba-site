@@ -1,17 +1,15 @@
 import React from "react"
 import {
-  TextContainer,
   TextHeader,
-  FlexContainer,
   ParagraphTextBottomMargin,
   SubHeader,
 } from "../../styles/babstyles.js"
 
-
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
 
 const BasicPartsOfTheHive = () => {
     return (
-        <TextContainer id="basic-parts-of-the-hive">
+        <Container id="basic-parts-of-the-hive">
             <FlexContainer>
                 <TextHeader>BASIC PARTS OF A HIVE</TextHeader>
             </FlexContainer>
@@ -59,7 +57,7 @@ const BasicPartsOfTheHive = () => {
             <ParagraphTextBottomMargin>
             Feeders are used to supply the colony with either honey, sugar water or high fructose corn syrup. You will need to feed a new colony as they have no honey stores to consume. Some feeders are used internally, some at the entrance, some atop the hive and others outside in an accessible spot; consult some beekeepers for their preferences or do some online research.
             </ParagraphTextBottomMargin>
-        </TextContainer>
+        </Container>
     )
 }
 export default BasicPartsOfTheHive

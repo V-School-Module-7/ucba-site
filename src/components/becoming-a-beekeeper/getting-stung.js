@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    TextContainer,
     TextHeader,
-    FlexContainer,
     ParagraphText,
     ParagraphTextBottomMargin,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 const GettingStung = () => {
     return (
-        <TextContainer id="getting-stung">
+        <Container id="getting-stung">
             <FlexContainer>
                 <TextHeader>getting stung</TextHeader>
             </FlexContainer>
@@ -84,7 +84,7 @@ const GettingStung = () => {
                 carrying of one "just in case" can be quite expensive if you are
                 not allergic.
             </ParagraphText>
-        </TextContainer>
+        </Container>
     );
 };
 

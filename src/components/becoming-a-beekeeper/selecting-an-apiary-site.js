@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  TextContainer,
   TextHeader,
-  FlexContainer,
   ParagraphText,
   ParagraphTextBottomMargin,
   SubHeader,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 const SelectingAnApiarySite = () => {
     return (
-        <TextContainer id="selecting-an-apiary-site">
+        <Container id="selecting-an-apiary-site">
             <FlexContainer>
                 <TextHeader>selecting an apiary site</TextHeader>
             </FlexContainer>
@@ -78,7 +78,7 @@ const SelectingAnApiarySite = () => {
             Make sure your hive is on private property that you either own or have 
             permission to utilize.
             </ParagraphText>
-        </TextContainer>
+        </Container>
     );
 };
 

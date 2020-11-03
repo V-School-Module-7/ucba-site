@@ -1,17 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  TextContainer,
   TextHeader,
-  FlexContainer,
   ParagraphTextBottomMargin,
   SubHeaderMarginBottom,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 
 const CommittingToBeekeeping = () => {
   return (
-    <TextContainer id="committing-to-beekeeping">
+    <Container id="committing-to-beekeeping">
       <FlexContainer>
         <TextHeader>COMMITTING TO BEEKEEPING</TextHeader>
       </FlexContainer>
@@ -72,7 +72,7 @@ const CommittingToBeekeeping = () => {
         can vary depending on the supplier and the amount and kind of
         tools/supplies you choose to purchase.
       </ParagraphTextBottomMargin>
-    </TextContainer>
+    </Container>
   )
 }
 

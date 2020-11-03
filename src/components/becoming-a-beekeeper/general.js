@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  ParagraphTextBottomMargin,
-  TextContainer
+  ParagraphTextBottomMargin
 } from "../../styles/babstyles.js"
-import {GreenLineContainer} from "../../styles/globalstyles.js"
+import {GreenLineContainer, Container} from "../../styles/globalstyles.js"
 
-// const TextContainer = styled.div`
+
+// const Container = styled.div`
 //   position: relative;
 //   // width: 763px;
 //   height: auto;
@@ -62,7 +62,7 @@ const HeaderText = styled.div`
 
 const General = () => {
   return (
-    <TextContainer id="general">
+    <Container id="general">
       <GreenLineContainer>
       <HeaderText>GENERAL</HeaderText>
       <ParagraphTextBottomMargin>
@@ -84,7 +84,7 @@ const General = () => {
         Please visit the sections below or feel free to browse the entire page.
       </ParagraphTextBottomMargin>
       </GreenLineContainer>
-    </TextContainer>
+    </Container>
   )
 }
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
 import {
-    TextContainer,
     TextHeader,
-    FlexContainer,
     ParagraphText,
     ParagraphTextBottomMargin,
     SubHeader,
     SubHeaderMarginBottom,
 } from "../../styles/babstyles.js"
+
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
 
 const SubHeaderUnderline = styled.div`
   font-family: Work Sans;
@@ -24,7 +24,7 @@ const SubHeaderUnderline = styled.div`
 
 const BeeBreeds = () => {
     return (
-        <TextContainer id="bee-breeds">
+        <Container id="bee-breeds">
             <FlexContainer>
                 <TextHeader>bee breeds</TextHeader>
             </FlexContainer>
@@ -250,7 +250,7 @@ const BeeBreeds = () => {
                 The Midnight hybrid is a combination of both the 
                 Caucasian and Carniolan races.
             </ParagraphTextBottomMargin>
-        </TextContainer>
+        </Container>
     );
 };
 

@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    TextContainer,
     TextHeader,
-    FlexContainer,
     ParagraphText,
     ParagraphTextBottomMargin,
 } from "../../styles/babstyles.js"
 
+import { Container, FlexContainer } from "../../styles/globalstyles.js"
+
 const KindsOfBeekeepers = () => {
     return (
-        <TextContainer id="kinds-of-beekeepers">
+        <Container id="kinds-of-beekeepers">
             <FlexContainer>
                 <TextHeader>kinds of beekeepers</TextHeader>
             </FlexContainer>
@@ -31,7 +31,7 @@ const KindsOfBeekeepers = () => {
                 is misinformed. Read, research and question and you will be able 
                 to determine what kind of beekeeper YOU want to BEE!
             </ParagraphText>
-        </TextContainer>
+        </Container>
     );
 };
 

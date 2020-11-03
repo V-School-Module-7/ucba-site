@@ -45,14 +45,6 @@ export const TextHeader = styled.h1`
   }
 `
 
-export const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 72px;
-`
-
 export const ParagraphTextBottomMargin = styled.div`
   font-family: Work Sans;
   font-style: normal;
