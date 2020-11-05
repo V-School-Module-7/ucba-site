@@ -6,7 +6,9 @@ import {
     CenteringContainer,
     Paragraph
 } from "../../styles/globalstyles.js"
+
 import { Link } from "gatsby"
+
 
 // import HomepageBackground from "../../images/HomepageBackground"
 // import Africanbeemap from '../../images/Africanbeemap'
@@ -34,8 +36,6 @@ const AppButton = styled.button`
   margin: 3% 0 5% 0;
   cursor: pointer;
   width: 147px;
-// height: 55px;
-// left: 643px;
 font-family: Work Sans;
 font-style: normal;
 font-weight: 800;
@@ -69,8 +69,6 @@ const AppLink = styled(Link)`
   text-decoration: none;
   color: black;
   height: 72px;
-  // width: 100%;
-  // cursor: pointer;
 
    &:hover {
    color: red;
@@ -89,19 +87,19 @@ const WhyBeekeeping = () => {
             <Paragraph>Many different people keep bees for many different reasons, the most important one being pollination. Bee pollination is needed for the production of about one-third of our food crops.  Beekeepers also raise bees for their honey production and numerous hive by-products, including wax, royal jelly, pollen and, yes, even venom!</Paragraph>
 
             <Paragraph>Read more about being a beekeeper in our guide below!</Paragraph>
-            <ButtonContainer>
-  <AppLink to="/becoming-a-beekeeper">
-    <AppButton>
+          <ButtonContainer>
+            <AppLink to="/becoming-a-beekeeper">
+                <AppButton>
      
-        READ MORE
+                  READ MORE
       
-    </AppButton>
-    </AppLink>
-  </ButtonContainer>
+                </AppButton>
+            </AppLink>
+          </ButtonContainer>
         </CenteringContainer>
     </Container>
 
-)
+  )
 }
 
 export default WhyBeekeeping

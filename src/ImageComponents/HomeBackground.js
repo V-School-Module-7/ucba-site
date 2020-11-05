@@ -1,8 +1,10 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import BackgroundImage from "gatsby-background-image"
+import styled from "styled-components"
 
-const HomepageBackground = () => {
+
+const FullBackground = () => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -17,8 +19,17 @@ const HomepageBackground = () => {
     `
   )
   const image = placeholderImage.childImageSharp
-  return <Img fluid={image.fluid} style={{ borderRadius: `15px` }} />
+  return (
+  <BackgroundImage fluid={image.fluid} style={{ borderRadius: `15px` }} />
+  )
 }
+const HomepageBackground = styled(FullBackground)`
+  width: 100%;
+  height: 100px;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+`
 export default HomepageBackground
 
 
@@ -59,11 +70,3 @@ export default HomepageBackground
 //   />
 // )
 
-// const HomepageBackground = styled(BackgroundSection)`
-//   width: 100%;
-//   background-position: bottom center;
-//   background-repeat: repeat-y;
-//   background-size: cover;
-// `
-
-// export default HomepageBackground
