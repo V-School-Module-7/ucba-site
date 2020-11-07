@@ -4,11 +4,10 @@ import {
     TextHeader,
     ParagraphText,
     ParagraphTextBottomMargin,
-    SubHeader,
     SubHeaderMarginBottom,
 } from "../../styles/babstyles.js"
 
-import { Container, FlexContainer } from "../../styles/globalstyles.js"
+import { Container, FlexContainer, SubHeader } from "../../styles/globalstyles.js"
 
 const SubHeaderUnderline = styled.div`
   font-family: Work Sans;

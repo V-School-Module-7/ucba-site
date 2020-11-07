@@ -108,6 +108,7 @@ font-size: 28px;
 }
 `
 
+
 //the paragraph that goes inside the GreenLineContainer
 export const HeaderParagraph = styled.p`
   margin: 2% 0;
@@ -124,6 +125,29 @@ export const HeaderParagraph = styled.p`
 
   @media(max-width: 500px) {
       font-size: 12px;
+  }
+`
+//H2 left-aligned small headers in bold but not underlined in green
+export const SubHeader = styled.h2`
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #000000;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `
 //paragraph headers with green underlining the letters

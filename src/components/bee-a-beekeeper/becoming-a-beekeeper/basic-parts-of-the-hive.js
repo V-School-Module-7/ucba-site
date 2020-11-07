@@ -1,11 +1,10 @@
 import React from "react"
 import {
   TextHeader,
-  ParagraphTextBottomMargin,
-  SubHeader,
+  ParagraphTextBottomMargin
 } from "../../styles/babstyles.js"
 
-import { Container, FlexContainer } from "../../styles/globalstyles.js"
+import { Container, FlexContainer, SubHeader} from "../../styles/globalstyles.js"
 
 const BasicPartsOfTheHive = () => {
     return (

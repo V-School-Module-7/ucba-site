@@ -2,8 +2,12 @@ import React from "react"
 import {
   TextHeader,
   ParagraphTextBottomMargin,
-  SubHeader,
+  
 } from "../../styles/babstyles.js"
+
+import {
+    SubHeader
+} from "../../styles/globalstyles.js"
 
 
 

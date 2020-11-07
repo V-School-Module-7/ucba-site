@@ -82,26 +82,7 @@ export const ParagraphText = styled.div`
   }
 `
 
-//small headers in bold but not underlined in green
-export const SubHeader = styled.div`
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  display: inline-block;
-  padding-right: 10px;
 
-  color: #000000;
-
-  @media (max-width: 900px) {
-    font-size: 19px;
-  }
-
-  @media (max-width: 550px) {
-    font-size: 16px;
-  }
-`
 
 export const SubHeaderMarginBottom = styled.div`
   font-family: Work Sans;
@@ -114,7 +95,7 @@ export const SubHeaderMarginBottom = styled.div`
   color: #000000;
 
   @media (max-width: 900px) {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   @media (max-width: 550px) {
