@@ -4,13 +4,12 @@ import styled from 'styled-components'
 import {
     Paragraph,
     BeeHeader,
-    DiseaseContainer,
+    GuidePageContainer,
     CenteringContainer,
-    BoxTitle, 
     SubHeader
 } from '../../styles/globalstyles.js'
 
-const CalendarContainer = styled(DiseaseContainer)`
+const CalendarContainer = styled(GuidePageContainer)`
 margin-top: 0;
 
  @media (max-width: 900px){
@@ -20,23 +19,7 @@ margin-top: 0;
     padding-right: 3%;
     margin-left: 0;
 }
-
 `
-
-// const Subtitle = styled(BoxTitle)`
-//     display: inline-block;
-//     margin-left: 0;
-//     font-size: 24px;
-
-//     @media (max-width: 900px){
-//         margin: 2%;
-//         font-size: 20px;
-//       }
-
-//       @media (max-width: 500px){
-//         font-size: 16px;
-//     }
-// `
 
 const Para = styled(Paragraph)`
     line-height: 27px;

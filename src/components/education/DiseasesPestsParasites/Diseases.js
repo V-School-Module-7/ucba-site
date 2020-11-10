@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  DiseaseContainer,
+  GuidePageContainer,
   Paragraph,
   TextHeader,
   CenteringContainer,
@@ -46,7 +46,7 @@ const BeeLink = styled.a`
 
 const Diseases = () => {
   return (
-    <DiseaseContainer>
+    <GuidePageContainer>
 
       <CenteringContainer id="diseases">
         <TextHeader>diseases of honeybees</TextHeader>
@@ -150,7 +150,7 @@ const Diseases = () => {
       <BoldParagraph>How to prevent Paralysis:</BoldParagraph>
       <MainParagraph>
         Maintain healthy colonies and requeen on a regular basis.   </MainParagraph>
-    </DiseaseContainer >
+    </GuidePageContainer >
   )
 }
 

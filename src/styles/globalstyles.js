@@ -18,8 +18,10 @@ export const Container = styled.div`
       margin: 10%;
     }
 `
+
+
 //the margins on the media queries work differently on the page with the guide container. hence this container, which is almost identical to the above Container
-export const DiseaseContainer = styled.div`
+export const GuidePageContainer = styled.div`
     font-family: Work Sans;
     margin: 64px 12% 5% 12%;
     box-sizing: border-box;

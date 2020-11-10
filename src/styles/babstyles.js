@@ -1,26 +1,6 @@
 import styled from "styled-components"
 
-export const TextContainer = styled.div`
-  position: relative;
-  // width: 763px;
-  // margin: auto;
-  // margin-top: 88px;
-  // margin-bottom: 102px;
-  margin: 88px 10% 102px 4%;
-  
 
-  @media (max-width: 900px) {
-    width: 500px;
-  }
-
-  @media (max-width: 550px) {
-    width: 350px;
-  }
-
-  @media (max-width: 400px) {
-    width: 300px;
-  }
-`
 export const TextHeader = styled.h1`
   position: relative;
   height: 33px;

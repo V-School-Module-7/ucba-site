@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    DiseaseContainer,
+    GuidePageContainer,
     Paragraph,
     TextHeader,
     CenteringContainer, 
@@ -28,7 +28,7 @@ line-height: 32px;
 
 const Parasites = () => {
     return (
-        <DiseaseContainer>
+        <GuidePageContainer>
             <CenteringContainer id="parasites">
                 <TextHeader>parasites</TextHeader>
             </CenteringContainer>
@@ -66,7 +66,7 @@ Essential Oils</MainParagraph>
             <MainParagraph>How to prevent tracheal mites: The same methods for treatment can be used for prevention. Maintaining strong colonies will also help keep the effects of tracheal mites to a minimum.</MainParagraph>
             <SubHeader></SubHeader>
 
-        </DiseaseContainer >
+        </GuidePageContainer >
     )
 }
 
