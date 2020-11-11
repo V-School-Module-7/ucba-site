@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  ParagraphTextBottomMargin,
-} from "../../../styles/babstyles.js"
+  Paragraph,
+} from "../../../styles/globalstyles.js"
 
 const TextContainer = styled.div`
   position: relative;
@@ -62,11 +62,11 @@ const General = () => {
   return (
     <TextContainer id="general">
       <HeaderText>GENERAL</HeaderText>
-      <ParagraphTextBottomMargin>
+      <Paragraph>
         This page is intended to give you some of the basic information you will
         need to know if you are interested in becoming a beekeeper.
-      </ParagraphTextBottomMargin>
-      <ParagraphTextBottomMargin>
+      </Paragraph>
+      <Paragraph>
         The Utah County Beekeepers Association strongly encourages you to read
         all you can and to speak with several beekeepers in your area BEFORE you
         commit to becoming a beekeeper so that you fully understand the
@@ -76,10 +76,10 @@ const General = () => {
         The association also offers the opportunity to latch onto a mentor for
         your first year; this is a free service. For more information, email the
         association.
-      </ParagraphTextBottomMargin>
-      <ParagraphTextBottomMargin>
+      </Paragraph>
+      <Paragraph>
         Please visit the sections below or feel free to browse the entire page.
-      </ParagraphTextBottomMargin>
+      </Paragraph>
     </TextContainer>
   )
 }

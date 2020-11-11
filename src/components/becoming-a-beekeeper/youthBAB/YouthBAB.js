@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Paragraph } from "../../../styles/babstyles.js"
-import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph } from "../../../styles/globalstyles.js"
+import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph, Paragraph} from "../../../styles/globalstyles.js"
 
 const TitleContainer = styled.div`
   display: flex;
