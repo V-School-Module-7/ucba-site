@@ -1,11 +1,10 @@
 import React from "react"
 import {
-  TextHeader,
+ 
   ParagraphTextBottomMargin,
-  SubHeaderMarginBottom,
 } from "../../styles/babstyles.js"
 
-import { Container, FlexContainer } from "../../styles/globalstyles.js"
+import { SubHeader,  TextHeader, Container, FlexContainer } from "../../styles/globalstyles.js"
 
 
 const CommittingToBeekeeping = () => {
@@ -20,7 +19,7 @@ const CommittingToBeekeeping = () => {
         more or fewer hives or if you are living somewhere other than
         North/Central Utah.
       </ParagraphTextBottomMargin>
-      <SubHeaderMarginBottom>Time</SubHeaderMarginBottom>
+      <SubHeader>Time</SubHeader>
       <ParagraphTextBottomMargin>
         To begin, you will need to set aside a day early in the year to assemble
         and paint your hives and frames. Typically, a day in mid to late March
@@ -37,7 +36,7 @@ const CommittingToBeekeeping = () => {
         Early to Mid September. Once your hive is established, you may have the
         opportunity to harvest several times a year.
       </ParagraphTextBottomMargin>
-      <SubHeaderMarginBottom>Temperament</SubHeaderMarginBottom>
+      <SubHeader>Temperament</SubHeader>
       <ParagraphTextBottomMargin>
         You must have a temperament that includes patience. You will need to be
         patient and let the bees do the work at their pace - you will NOT have
@@ -50,7 +49,7 @@ const CommittingToBeekeeping = () => {
         the person you are talking to could very well become a customer or a
         fellow beekeeper.
       </ParagraphTextBottomMargin>
-      <SubHeaderMarginBottom>Non-Bee Related Materials</SubHeaderMarginBottom>
+      <SubHeader>Non-Bee Related Materials</SubHeader>
       <ParagraphTextBottomMargin>
         There are some basic tools and materials that you should have before
         getting into beekeeping. Most of these are fairly common in every
@@ -63,7 +62,7 @@ const CommittingToBeekeeping = () => {
         pencil, pen and markers, means or method for moving hives, bees and
         supplies.
       </ParagraphTextBottomMargin>
-      <SubHeaderMarginBottom>Money</SubHeaderMarginBottom>
+      <SubHeader>Money</SubHeader>
       <ParagraphTextBottomMargin>
         It's no secret, beekeeping costs money to get into. Currently (2006),
         you can figure on about $150-$200 per hive for your first year. Add

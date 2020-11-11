@@ -9,21 +9,6 @@ import {
 }
   from "../../../styles/globalstyles.js"
 
-// const SubHeader = styled(BeeHeader)`
-//   display: block;
-//   font-size: 24px;
-//   line-height: 32px;
-//   border-bottom:none;
-//   text-decoration: none;
-
-//   @media (max-width: 900px) {
-//     font-size: 20px;
-//   }
-//    @media (max-width: 500px){
-//     text-decoration: none;
-//    }
-// `
-
 const MainParagraph = styled(Paragraph)`
   padding: 1% 0;
   font-size: 20px;

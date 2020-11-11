@@ -221,7 +221,6 @@ export const TextHeader = styled.h1`
     text-decoration: underline;
     text-decoration-color: #63966A;
     border-bottom: none;
-    // margin: 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;

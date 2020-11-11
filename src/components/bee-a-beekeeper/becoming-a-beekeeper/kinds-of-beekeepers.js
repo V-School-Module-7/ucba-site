@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-    TextHeader,
-    ParagraphText,
-    ParagraphTextBottomMargin,
-} from "../../styles/babstyles.js"
 
-import { Container, FlexContainer } from "../../styles/globalstyles.js"
+import { Paragraph, Container, FlexContainer } from "../../styles/globalstyles.js"
 
 const KindsOfBeekeepers = () => {
     return (
@@ -13,8 +8,8 @@ const KindsOfBeekeepers = () => {
             <FlexContainer>
                 <TextHeader>kinds of beekeepers</TextHeader>
             </FlexContainer>
-            <ParagraphTextBottomMargin>What Kind of Beekeeper do YOU want to Bee?</ParagraphTextBottomMargin>
-            <ParagraphTextBottomMargin>
+            <Paragraph>What Kind of Beekeeper do YOU want to Bee?</Paragraph>
+            <Paragraph>
                 We challenge you to research all the methodologies involved 
                 in beekeeping, treatment methods for disease and parasites, 
                 extraction process and selling techniques to that you can 
@@ -24,13 +19,13 @@ const KindsOfBeekeepers = () => {
                 beekeeping community can only act as guides sharing experiences 
                 and information so that you, the novice, can make informed 
                 intelligent decisions.
-            </ParagraphTextBottomMargin>
-            <ParagraphText>
+            </Paragraph>
+            <Paragraph>
                 Never hesitate to question; remember there is no SINGLE RIGHT 
                 WAY to keep bees successfully - anyone that tells you otherwise 
                 is misinformed. Read, research and question and you will be able 
                 to determine what kind of beekeeper YOU want to BEE!
-            </ParagraphText>
+            </Paragraph>
         </Container>
     );
 };

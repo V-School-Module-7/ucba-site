@@ -33,7 +33,7 @@ const TextContainer = styled.div`
   box-sizing: border-box;
 `
 
-export const ParagraphText = styled.div`
+export const Paragraph = styled.div`
   font-family: Work Sans;
   font-style: normal;
   font-weight: 500;
@@ -190,7 +190,7 @@ const reportASwarm = () => {
   return (
     <HomeContainer>
       <TextContainer id="general">
-        <ParagraphText>
+        <Paragraph>
           It is very important to capture/rescue honey bee swarms in our area so
           that they are not lost to parasites, disease, or exterminators. You can contact Mike, the
           Swarm Coordiantor, at the information below.
@@ -200,7 +200,7 @@ const reportASwarm = () => {
           Please select your city/area below on the interactive map to locate a
           beekeeper near you. If there is not a beekeeper listed, look at
           surrounding cities/areas. */}
-        </ParagraphText>
+        </Paragraph>
       </TextContainer>
 
       <SwarmContact>
@@ -218,12 +218,12 @@ const reportASwarm = () => {
       <AnswerContainer>
         <AnswerQuestion>
           <TextHeader2>What does the swarm look like?</TextHeader2>
-          <ParagraphText>
+          <Paragraph>
             If the swarm has a “nest” then it is not honey bees but more likely
             is hornets or wasps especially if it is “papery” looking. A swarm of
             honey bees will cluster into a roughly round shape on an object like
             a tree branch.
-          </ParagraphText>
+          </Paragraph>
           <TextHeader4>Where is the swarm (physical address)?</TextHeader4>
           <TextHeader4>Your name and phone number.</TextHeader4>
           <TextHeader4>What has the swarm landed on?</TextHeader4>
@@ -252,7 +252,7 @@ const reportASwarm = () => {
 
       <AnswerContainer2>
         <AnswerQuestion>
-          <ParagraphText>
+          <Paragraph>
             When a honey bee swarm can not find an appropriate enclosed cavity,
             be it in a tree or in the walls of your house, they build their comb
             outside exposed to the elements. This is rare, and if it happens
@@ -260,7 +260,7 @@ const reportASwarm = () => {
             left) is a half round umbrella shape. Honey bee comb is comprised of
             parallel paddles, of which six can be seen in the tree. Eight can be
             seen in the hive box.
-          </ParagraphText>
+          </Paragraph>
         </AnswerQuestion>
         <AnswerImg>
           <SwarmImg src={CombBox}></SwarmImg>
@@ -272,13 +272,13 @@ const reportASwarm = () => {
 
       <AnswerContainer2>
         <AnswerQuestion>
-          <ParagraphText>
+          <Paragraph>
             A note on Bumblebees (Bombus spp.). Bumblebees dwarf their honey bee
             cousins. These bees are not aggressive and will not disturb you
             unless you are bothering their nest or blocking the entrance to it.
             Some beekeepers may remove bumblebee nests to protect their
             declining populations.
-          </ParagraphText>
+          </Paragraph>
         </AnswerQuestion>
         <AnswerImg>
           <SwarmImg src={BumbleBee}></SwarmImg>
