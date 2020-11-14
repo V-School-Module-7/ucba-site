@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: `UCBA`,
@@ -24,10 +26,10 @@ module.exports = {
             name: 'about ucba',
             link: '/about-ucba'
           },
-              {
-                name: 'youth bab program',
-                link: '/youth-bab-program'
-              },
+          {
+            name: 'youth bab program',
+            link: '/youth-bab-program'
+          },
           // {
           //   name: 'youth bab application form',
           //   link: '/youth-bab-form'
@@ -72,26 +74,31 @@ module.exports = {
           },
         ]
       },
-      // {
-      //   name: 'membership',
-      //   link: null,
-      //   sublinks: [
-      //     {
-      //       name: 'become a member',
-      //       link: '/become-a-member'
-      //     },
-      //     {
-      //       name: 'sponsors',
-      //       link: '/sponsors'
-      //     },
-      //     {
-      //       name: 'contact ucba',
-      //       link: '/contact-ucba'
-      //     }
-      //   ]
-      // },
+      {
+        name: 'membership',
+        link: null,
+        sublinks: [
+          {
+            name: 'become a member',
+            link: '/become-a-member'
+          },
+          {
+            name: 'sponsors',
+            link: '/sponsors'
+          },
+          {
+            name: 'contact ucba',
+            link: '/contact-ucba'
+          }
+        ]
+      },
+      {
+        name: 'store',
+        link: '/store',
+        sublinks: []
+      },
     ],
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Welcome to the Utah County Beekeepers Association's new website!`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -119,7 +126,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     `gatsby-transformer-sharp`,
@@ -154,3 +161,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+

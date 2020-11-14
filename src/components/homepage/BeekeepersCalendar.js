@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { BeeHeader, Container, CenteringContainer } from "../../styles/edustyles.js"
+import { BeeHeader, Container, CenteringContainer } from "../../styles/globalstyles.js"
 
 
 // const CalendarContainer = styled.div`

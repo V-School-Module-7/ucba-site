@@ -1,39 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import {
-  ParagraphTextBottomMargin,
-  TextContainer
-} from "../../styles/babstyles.js"
-import {GreenLineContainer} from "../../styles/edustyles"
 
-// const TextContainer = styled.div`
-//   position: relative;
-//   // width: 763px;
-//   height: auto;
-//   margin: auto;
-//   margin-top: 32px;
-//   margin-bottom: 102px;
-//   padding-left: 8%;
-//   padding-right: 8%;
-//   padding-bottom: 5%;
-
-//   border: 6px solid #63966a;
-//   box-sizing: border-box;
-
-//   @media (max-width: 900px) {
-//     width: 500px;
-//   }
-
-//   @media (max-width: 550px) {
-//     width: 350px;
-//   }
-
-//   @media (max-width: 400px) {
-//     width: 300px;
-//     padding-left: 8px;
-//     padding-right: 8px;
-//   }
-// `
+import {GreenLineContainer, Container, Paragraph} from "../../styles/globalstyles.js"
 
 const HeaderText = styled.div`
   position: relative;
@@ -62,14 +30,14 @@ const HeaderText = styled.div`
 
 const General = () => {
   return (
-    <TextContainer id="general">
+    <Container id="general">
       <GreenLineContainer>
       <HeaderText>GENERAL</HeaderText>
-      <ParagraphTextBottomMargin>
+      <Paragraph>
         This page is intended to give you some of the basic information you will
         need to know if you are interested in becoming a beekeeper.
-      </ParagraphTextBottomMargin>
-      <ParagraphTextBottomMargin>
+      </Paragraph>
+      <Paragraph>
         The Utah County Beekeepers Association strongly encourages you to read
         all you can and to speak with several beekeepers in your area BEFORE you
         commit to becoming a beekeeper so that you fully understand the
@@ -79,12 +47,12 @@ const General = () => {
         The association also offers the opportunity to latch onto a mentor for
         your first year; this is a free service. For more information, email the
         association.
-      </ParagraphTextBottomMargin>
-      <ParagraphTextBottomMargin>
+      </Paragraph>
+      <Paragraph>
         Please visit the sections below or feel free to browse the entire page.
-      </ParagraphTextBottomMargin>
+      </Paragraph>
       </GreenLineContainer>
-    </TextContainer>
+    </Container>
   )
 }
 

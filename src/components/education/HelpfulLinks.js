@@ -5,7 +5,7 @@ import {    Container,
             GreenLineContainer, 
             BoxTitle, 
             HeaderParagraph, 
-            BeeHeader} from "../../styles/edustyles.js"
+            BeeHeader} from "../../styles/globalstyles.js"
 
 const BHeader = styled(BeeHeader)`
     display: block;

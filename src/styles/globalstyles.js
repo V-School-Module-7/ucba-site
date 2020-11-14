@@ -18,8 +18,10 @@ export const Container = styled.div`
       margin: 10%;
     }
 `
+
+
 //the margins on the media queries work differently on the page with the guide container. hence this container, which is almost identical to the above Container
-export const DiseaseContainer = styled.div`
+export const GuidePageContainer = styled.div`
     font-family: Work Sans;
     margin: 64px 12% 5% 12%;
     box-sizing: border-box;
@@ -108,12 +110,16 @@ font-size: 28px;
 }
 `
 
+
 //the paragraph that goes inside the GreenLineContainer
 export const HeaderParagraph = styled.p`
-margin: 2% 0;
-font-size: 20px;
-line-height: 27px;
-font-family: Nunito;
+  margin: 2% 0;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 
   @media (max-width: 900px){
     font-size: 16px;
@@ -121,6 +127,29 @@ font-family: Nunito;
 
   @media(max-width: 500px) {
       font-size: 12px;
+  }
+`
+//H2 left-aligned small headers in bold but not underlined in green
+export const SubHeader = styled.h2`
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #000000;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `
 //paragraph headers with green underlining the letters
@@ -151,10 +180,16 @@ export const BeeHeader = styled.h1`
 
 
 export const Paragraph = styled.p`
-font-size: 20px;
-line-height: 21px;
-margin: 2% 0 4% 0;
-font-family: Nunito;
+  font-size: 20px;
+  line-height: 21px;
+  margin: 2% 0 4% 0;
+  font-family: Nunito;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
 
 @media (max-width: 900px) {
     width: 100%;
@@ -186,7 +221,6 @@ export const TextHeader = styled.h1`
     text-decoration: underline;
     text-decoration-color: #63966A;
     border-bottom: none;
-    // margin: 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,4 +259,73 @@ font-weight: bold;
 font-size: 18px;
 line-height: 21px;
 letter-spacing: -0.5px;
+`
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
+  align-items: center;
+`
+export const BeeButton = styled.button`
+display: block;
+  background-color: #FFCB00;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 700;
+  width: 569px;
+  height: 72px;
+  border: none;
+  box-shadow: 18px 22px #FFE994;
+  margin: 3% 0 5% 0;
+  cursor: pointer;
+  :hover {
+    box-shadow: 8px 12px #FFE994;
+  }
+
+  @media (max-width: 900px) {
+    width: 400px;
+    font-size: 16px;
+    box-shadow: 18px 22px #FFE994;
+  }
+
+  @media (max-width: 550px) {
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 12px 12px #FFE994;
+  }
+
+  @media (max-width: 400px) {
+    width: 270px;
+    box-shadow: none;
+    font-size: 16px;
+  }
+`
+
+export const StoreButton = styled.button`
+display: block;
+background-color: #FFE994;
+
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 700;
+width: auto;
+padding: 0 10%;
+text-transform: uppercase;
+height: 72px;
+border: 5px solid #FFCB00;;
+margin: 3% 0 5% 0;
+cursor: pointer;
+
+@media (max-width: 900px) {
+  font-size: 16px;
+}
+
+`
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
 `

@@ -7,7 +7,7 @@ import {
     BeeHeader,
     CenteringContainer,
     BeeLink
-} from "../../../styles/edustyles.js"
+} from "../../../styles/globalstyles.js"
 
 const BHeader = styled(BeeHeader)`
     display: block;

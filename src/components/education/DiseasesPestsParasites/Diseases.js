@@ -1,28 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  DiseaseContainer,
-  BeeHeader,
+  GuidePageContainer,
   Paragraph,
   TextHeader,
-  CenteringContainer
+  CenteringContainer,
+  SubHeader
 }
-  from "../../../styles/edustyles.js"
-
-const SubHeader = styled(BeeHeader)`
-  display: block;
-  font-size: 24px;
-  line-height: 32px;
-  border-bottom:none;
-  text-decoration: none;
-
-  @media (max-width: 900px) {
-    font-size: 20px;
-  }
-   @media (max-width: 500px){
-    text-decoration: none;
-   }
-`
+  from "../../../styles/globalstyles.js"
 
 const MainParagraph = styled(Paragraph)`
   padding: 1% 0;
@@ -46,7 +31,7 @@ const BeeLink = styled.a`
 
 const Diseases = () => {
   return (
-    <DiseaseContainer>
+    <GuidePageContainer>
 
       <CenteringContainer id="diseases">
         <TextHeader>diseases of honeybees</TextHeader>
@@ -150,7 +135,7 @@ const Diseases = () => {
       <BoldParagraph>How to prevent Paralysis:</BoldParagraph>
       <MainParagraph>
         Maintain healthy colonies and requeen on a regular basis.   </MainParagraph>
-    </DiseaseContainer >
+    </GuidePageContainer >
   )
 }
 

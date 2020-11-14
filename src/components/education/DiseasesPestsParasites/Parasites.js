@@ -1,24 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    DiseaseContainer,
-    BeeHeader,
+    GuidePageContainer,
     Paragraph,
     TextHeader,
-    CenteringContainer
+    CenteringContainer, 
+    SubHeader
 }
-    from "../../../styles/edustyles.js"
+    from "../../../styles/globalstyles.js"
 
-const SubHeader = styled(BeeHeader)`
-  display: block;
-  font-size: 24px;
-  line-height: 32px;
-  text-decoration: none;
-  border-bottom:none;
-  @media (max-width: 500px){
-    text-decoration: none;
-   }
-`
+// const SubHeader = styled(BeeHeader)`
+//   display: block;
+//   font-size: 24px;
+//   line-height: 32px;
+//   text-decoration: none;
+//   border-bottom:none;
+//   @media (max-width: 500px){
+//     text-decoration: none;
+//    }
+// `
 
 const MainParagraph = styled(Paragraph)`
   padding: 1% 0;
@@ -28,7 +28,7 @@ line-height: 32px;
 
 const Parasites = () => {
     return (
-        <DiseaseContainer>
+        <GuidePageContainer>
             <CenteringContainer id="parasites">
                 <TextHeader>parasites</TextHeader>
             </CenteringContainer>
@@ -66,7 +66,7 @@ Essential Oils</MainParagraph>
             <MainParagraph>How to prevent tracheal mites: The same methods for treatment can be used for prevention. Maintaining strong colonies will also help keep the effects of tracheal mites to a minimum.</MainParagraph>
             <SubHeader></SubHeader>
 
-        </DiseaseContainer >
+        </GuidePageContainer >
     )
 }
 

@@ -1,8 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-// import {
-//   ParagraphTextBottomMargin,
-// } from "../../styles/babstyles.js"
 
 const TextContainer = styled.div`
   position: relative;
@@ -40,12 +37,6 @@ const Title = styled.h1`
 const Paragraph = styled.p`
 margin-bottom: 48px;
 `
-
-// const LicenseLink = styled.a`
-//   width: 50%;
-//   word-wrap: break-word;
-
-// `
 
 function AboutPage() {
     return (

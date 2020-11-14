@@ -1,8 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-// import {
-//   ParagraphTextBottomMargin,
-// } from "../../styles/babstyles.js"
 
 const TextContainer = styled.div`
   position: relative;

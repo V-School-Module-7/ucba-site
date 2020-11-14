@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    DiseaseContainer,
+    GuidePageContainer,
     GreenLineContainer,
     BoxTitle,
     HeaderParagraph,
 }
-    from "../../../styles/edustyles.js"
+    from "../../../styles/globalstyles.js"
 
 const BoxHeader = styled(BoxTitle)`
   font-size: 36;
@@ -19,12 +19,12 @@ const HeaderP = styled(HeaderParagraph)`
 
 const Intro = () => {
     return (
-    <DiseaseContainer id="intro">
+    <GuidePageContainer id="intro">
         <GreenLineContainer>
             <BoxHeader>Intro</BoxHeader>
             <HeaderP>Listed below are diseases, pests, parasites and predators of honeybees in North America. Learn how to recognize their presence in the hive and the current recommended treatment/prevention. Use the key to the left to find specific information.</HeaderP>
         </GreenLineContainer>
-    </DiseaseContainer>
+    </GuidePageContainer>
     )
 }
 

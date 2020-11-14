@@ -1,24 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 import {
-    DiseaseContainer,
-    BeeHeader,
+    GuidePageContainer,
     Paragraph,
     TextHeader,
-    CenteringContainer
+    CenteringContainer,
+    SubHeader
 }
-    from "../../../styles/edustyles.js"
+    from "../../../styles/globalstyles.js"
 
-const SubHeader = styled(BeeHeader)`
-  display: block;
-  font-size: 24px;
-  line-height: 32px;
-  text-decoration: none;
-  border-bottom:none;
-  @media (max-width: 500px){
-    text-decoration: none;
-   }
-`
+// const SubHeader = styled(BeeHeader)`
+//   display: block;
+//   font-size: 24px;
+//   line-height: 32px;
+//   text-decoration: none;
+//   border-bottom:none;
+//   @media (max-width: 500px){
+//     text-decoration: none;
+//    }
+// `
 
 const MainParagraph = styled(Paragraph)`
   padding: 1% 0;
@@ -28,7 +28,7 @@ line-height: 32px;
 
 const Pests = () => {
     return (
-        <DiseaseContainer>
+        <GuidePageContainer>
             <CenteringContainer id="pests">
                 <TextHeader>pests of the honeybee</TextHeader>
             </CenteringContainer>
@@ -71,7 +71,7 @@ const Pests = () => {
             <MainParagraph>How to recognize SHB: Small Hive Beetle larvae consume everything in the comb. They also defecate everywhere they go and this causes the stored honey to ferment and ooze out of the comb causing quite a mess. Eventually, the colony may abscond from the hive entirely. How to eliminate SHB: Fortunately, SHB is currently restricted to the southeastern United States. However, it is probably just a matter of time until it finds its way across the country. The only chemical currently approved for the treatment of SHB is coumaphos (Checkmite+ strips). However, some beekeepers feel that treatments with mineral oil foggers and/or ascetic acid may also control this pest. </MainParagraph>
             <MainParagraph>How to prevent SHB: The larvae of the SHB need to come outside of the hive and burrow into the ground to pupate. Keep your hive on top of a hard packed earth or possibly a concrete pad to prevent re-introduction into the hive. A strong colony will be able to keep the SHB under control; watch weak colonies. Kill any and all SHB that you encounter during routine inspections.</MainParagraph>
 
-        </DiseaseContainer >
+        </GuidePageContainer >
     )
 }
 
