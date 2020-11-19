@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 //container for the whole page
 export const Container = styled.div`
     font-family: Work Sans;
@@ -19,7 +17,6 @@ export const Container = styled.div`
     }
 `
 
-
 //the margins on the media queries work differently on the page with the guide container. hence this container, which is almost identical to the above Container
 export const GuidePageContainer = styled.div`
     font-family: Work Sans;
@@ -36,14 +33,26 @@ export const GuidePageContainer = styled.div`
     }
 `
 
+//container for items you want centered
+export const CenteringContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+`
+
 //text container with green border at top of pages
 export const GreenLineContainer = styled.div`
   position: relative;
   height: auto;
- 
-  // padding-left: 4%;
-  // padding-right: 4%;
-  // padding-bottom: 4%;
   padding: 4% 6%;
   margin-bottom: 2%;
   margin: auto;   
@@ -110,7 +119,6 @@ font-size: 28px;
 }
 `
 
-
 //the paragraph that goes inside the GreenLineContainer
 export const HeaderParagraph = styled.p`
   margin: 2% 0;
@@ -158,7 +166,6 @@ export const BeeHeader = styled.h1`
   border-bottom: 4px solid #63966A;
   padding: 0 0 2px 0 ;
   font-size: 24px;
-  // line-height: 42px;
   color: #000000;
   margin-top: 5%;
   margin-bottom: 3%;
@@ -176,27 +183,6 @@ export const BeeHeader = styled.h1`
     justify-content: center;
     align-items: center;
   }
-`
-
-
-export const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 21px;
-  margin: 2% 0 4% 0;
-  font-family: Nunito;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  letter-spacing: -0.5px;
-
-@media (max-width: 900px) {
-    width: 100%;
-  font-size: 16px;
-  margin: 2%;
-  line-height: 24px;
-}
 `
 //centered, all caps, green underlined headers
 export const TextHeader = styled.h1`
@@ -236,29 +222,31 @@ export const TextHeader = styled.h1`
 
   }
 `
-//container for items you want centered
-export const CenteringContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+export const Paragraph = styled.p`
+  font-size: 20px;
+  line-height: 21px;
+  margin: 2% 0 4% 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+
+@media (max-width: 900px) {
+    width: 100%;
+  font-size: 16px;
+  margin: 2%;
+  line-height: 24px;
+}
 `
 
+//use this for links so that the links will word-wrap rather than running off the page
 export const BeeLink = styled.a`
   word-wrap: break-word;
   color: black;
   font-style: normal;
-`
-
-export const BoldParagraph = styled(Paragraph)`
-font-weight: bold;
-font-size: 22px;
-font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: -0.5px;
 `
 
 export const ButtonContainer = styled.div`
@@ -322,10 +310,4 @@ cursor: pointer;
 }
 
 `
-export const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 72px;
-`
+
