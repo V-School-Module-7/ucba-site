@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph, Paragraph} from "../../../styles/globalstyles.js"
+import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph, Paragraph, ButtonContainer} from "../../../styles/globalstyles.js"
 
 const TitleContainer = styled.div`
   display: flex;
@@ -8,7 +8,6 @@ const TitleContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
-
 
 const Email = styled.span`
   font-weight: bold;
@@ -24,12 +23,7 @@ const Subscript = styled.h3`
     font-size: 16px;
   }
 `
-const ButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-contents: center;
-  align-items: center;
-`
+
 const AppButton = styled.button`
   background-color: #FFCB00;
   font-family: Work Sans;

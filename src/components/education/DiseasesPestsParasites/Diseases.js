@@ -25,14 +25,6 @@ font-size: 18px;
 line-height: 21px;
 letter-spacing: -0.5px;
 `
-// const BoldParagraph = styled(Paragraph)`
-//   font-family: Work Sans;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 21px;
-//   letter-spacing: -0.5px;
-// `
 
 const BeeLink = styled.a`
   width: 50%;

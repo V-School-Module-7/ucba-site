@@ -40,7 +40,7 @@ export const CenteringContainer = styled.div`
   align-items: center;
   justify-content: center;
 `
-
+//centering container with bottom margin added
 export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -222,7 +222,7 @@ export const TextHeader = styled.h1`
 
   }
 `
-
+//regular paragraph that appears throughout the site
 export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 21px;
@@ -256,7 +256,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
 `
 export const BeeButton = styled.button`
-display: block;
+  display: block;
   background-color: #FFCB00;
   font-family: Work Sans;
   font-size: 24px;
@@ -291,23 +291,21 @@ display: block;
 `
 
 export const StoreButton = styled.button`
-display: block;
-background-color: #FFE994;
-
-font-family: Work Sans;
-font-size: 20px;
-font-weight: 700;
-width: auto;
-padding: 0 10%;
-text-transform: uppercase;
-height: 72px;
-border: 5px solid #FFCB00;;
-margin: 3% 0 5% 0;
-cursor: pointer;
+  display: block;
+  background-color: #FFE994;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  padding: 0 10%;
+  text-transform: uppercase;
+  height: 72px;
+  border: 5px solid #FFCB00;;
+  margin: 3% 0 5% 0;
+  cursor: pointer;
 
 @media (max-width: 900px) {
   font-size: 16px;
 }
-
 `
 
