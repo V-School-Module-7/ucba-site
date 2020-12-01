@@ -6,22 +6,9 @@ import {
     Paragraph,
     BeeHeader,
     CenteringContainer,
-    BeeLink
+    BeeLink,
+    BHeader
 } from "../../../styles/globalstyles.js"
-
-const BHeader = styled(BeeHeader)`
-    display: block;
-    margin-bottom: 2%;
-
-    @media (max-width: 500px) {
-        margin-top: 8%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 4%;
-    }
-`
 
 const MainHeader = styled(BeeHeader)`
     @media (max-width: 500px) {

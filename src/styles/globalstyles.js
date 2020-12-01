@@ -111,6 +111,7 @@ align-items: center;
 align-self: center;
 margin: 30px;
 font-size: 28px;
+line-height: 32.84px;
 
 
 @media (max-width: 900px){
@@ -160,7 +161,7 @@ export const SubHeader = styled.h2`
     font-size: 16px;
   }
 `
-//paragraph headers with green underlining the letters
+//paragraph headers with green underlining the letters. PUT INTO "CENTERING CONTAINER" IF YOU WANT IT TO BE CENTERED, NOT LEFT-JUSTIFIED.
 export const BeeHeader = styled.h1`
   display: inline-block;
   border-bottom: 4px solid #63966A;
@@ -169,6 +170,9 @@ export const BeeHeader = styled.h1`
   color: #000000;
   margin-top: 5%;
   margin-bottom: 3%;
+  font-weight: 700;
+  line-height: 28.15px; margin: 15px 0;
+  font-size: 28px;
 
   @media (max-width: 900px) {
       font-size: 24px;
@@ -221,6 +225,34 @@ export const TextHeader = styled.h1`
     }
 
   }
+`
+//green underlined H2 where the line goes all the way across the page, not just under the letters.
+export const BHeader = styled.h2`
+border-bottom: 4px solid #63966A;
+padding: 0 0 2px 0 ;
+margin-top: 5%;
+margin-bottom: 3%;
+font-weight: 700;
+display: block;
+margin-bottom: 2%;
+font-family: Work Sans;
+font-style: normal;
+font-size: 24px;
+line-height: 38px;
+
+@media (max-width: 500px) {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #63966A;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
+  
 `
 //regular paragraph that appears throughout the site
 export const Paragraph = styled.p`

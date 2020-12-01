@@ -29,8 +29,8 @@ const StorePage = () => {
         <StoreTitle>
         $20 Annual Membership
         </StoreTitle>
-        <Paragraph>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvr8pE9Se3DCHQskVRMHorqGt8t0HWRa1hPAfnTpqqnBpJIQ/viewform" target="_blank" rel="noopener noreferrer">membership form</a> must be sent in to activate new memberships</Paragraph>
+        <Paragraph>A
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvr8pE9Se3DCHQskVRMHorqGt8t0HWRa1hPAfnTpqqnBpJIQ/viewform" target="_blank" rel="noopener noreferrer">membership form</a> must be sent in to activate new memberships.</Paragraph>
         <StoreButton>add to cart</StoreButton>
 
         <StoreTitle>
