@@ -47,11 +47,12 @@ const Container4 = styled.div`
 text-align: center;
 margin: 10vw;
 margin-top: 5vh;
+font-family: Nunito;
 `
 const Section3 = styled.div`
 border: 5px solid #63966a;
 padding: 5vw;
-font-family: Work Sans;
+font-family: Nunito;
 padding-top: 5vh;
 `
 const SectionModel = styled.div`
@@ -70,7 +71,7 @@ text-align: left;
 margin-bottom:50px;
 font-size: 22px;
 line-height: 28px;
-
+font-family: Nunito;
 `
 
 
@@ -89,12 +90,9 @@ const BeeTitle = styled.h1`
   color: #000000;
 `
 
-
-
 const ParaImg = styled.img`
   width: 100%;
 `
-
 
 const AfricanHoneyBees = () => {
     return (

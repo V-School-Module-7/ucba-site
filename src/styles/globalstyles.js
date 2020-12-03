@@ -54,8 +54,8 @@ export const GreenLineContainer = styled.div`
   position: relative;
   height: auto;
   padding: 4% 6%;
-  margin-bottom: 2%;
-  margin: auto;   
+  margin: auto;  
+  margin-bottom: 6%; 
 
   border: 6px solid #63966a;
   box-sizing: border-box;
@@ -83,24 +83,6 @@ export const GreenLineContainer = styled.div`
   }
 `
 
-// export const CornerContainer = styled.div`
-
-//   position: relative;
-//   width: 100px;
-//   height: 100px;
-//   margin: 20px;
-//   background: none;
-//   border: none;
-//   cursor: pointer;
-//   color: blue;
-//   padding: 0;
-//   box-sizing: content-box;
-//   border: 2px solid orange;
-
-
-// `
-//this might help: https://stackoverflow.com/questions/42816074/css-for-border-in-corners-only/42816202
-
 
 //for the header inside the green box (above)
 export const BoxTitle = styled.h1`
@@ -120,7 +102,7 @@ line-height: 32.84px;
 }
 `
 
-//the paragraph that goes inside the GreenLineContainer
+//the paragraph that goes inside the GreenLineContainer. Basically identical to Paragraph, with the main difference being the margins and line spacing, which are smaller in the header paragraph than in the body.
 export const HeaderParagraph = styled.p`
   margin: 2% 0;
   font-size: 20px;
@@ -138,30 +120,9 @@ export const HeaderParagraph = styled.p`
       font-size: 12px;
   }
 `
-//H2 left-aligned small headers in bold but not underlined in green
-export const SubHeader = styled.h2`
 
-  font-family: Work Sans;
-  font-style: normal;
-  font-size: 24px;
-  display: inline-block;
-  padding-right: 10px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
-  text-align: left;
-
-  color: #000000;
-
-  @media (max-width: 900px) {
-    font-size: 20px;
-  }
-
-  @media (max-width: 550px) {
-    font-size: 16px;
-  }
-`
-//paragraph headers with green underlining the letters. PUT INTO "CENTERING CONTAINER" IF YOU WANT IT TO BE CENTERED, NOT LEFT-JUSTIFIED.
+//H1.  Paragraph headers with green underlining the letters. 
+//PUT INTO "CENTERING CONTAINER" IF YOU WANT IT TO BE CENTERED, NOT LEFT-JUSTIFIED.
 export const BeeHeader = styled.h1`
   display: inline-block;
   border-bottom: 4px solid #63966A;
@@ -171,7 +132,8 @@ export const BeeHeader = styled.h1`
   margin-top: 5%;
   margin-bottom: 3%;
   font-weight: 700;
-  line-height: 28.15px; margin: 15px 0;
+  line-height: 28.15px; 
+  margin: 5% 0 2% 0;
   font-size: 28px;
 
   @media (max-width: 900px) {
@@ -188,20 +150,21 @@ export const BeeHeader = styled.h1`
     align-items: center;
   }
 `
-//centered, all caps, green underlined headers
+//H1. Centered, all caps, green underlined headers
 export const TextHeader = styled.h1`
   position: relative;
   height: 33px;
   margin: auto;
-  margin-top: 10%;
+  margin: 5%;
   display: inline-block;
   border-bottom: 4px solid #63966a;
-  padding-bottom: 16px;
+  padding-bottom: 2px;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 28px;
+  // line-height: 42px;
+  line-height: 28.15px; 
   text-transform: uppercase;
   color: #000000;
   
@@ -219,14 +182,11 @@ export const TextHeader = styled.h1`
 
     @media (max-width: 500px) {
       font-size: 20px;
-      text-decoration: underline;
-      text-decoration-color: #63966A;
-      border-bottom: none;
     }
 
   }
 `
-//green underlined H2 where the line goes all the way across the page, not just under the letters.
+//H2.  green underlined H2 where the line goes all the way across the page, not just under the letters.
 export const BHeader = styled.h2`
 border-bottom: 4px solid #63966A;
 padding: 0 0 2px 0 ;
@@ -252,7 +212,30 @@ line-height: 38px;
   margin-top: 8%;
   margin-bottom: 4%;
 }
-  
+`
+
+//H2 left-aligned small headers in bold but not underlined in green
+export const SubHeader = styled.h2`
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #000000;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
+  }
 `
 //regular paragraph that appears throughout the site
 export const Paragraph = styled.p`
@@ -281,12 +264,6 @@ export const BeeLink = styled.a`
   font-style: normal;
 `
 
-export const ButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-contents: center;
-  align-items: center;
-`
 export const BeeButton = styled.button`
   display: block;
   background-color: #FFCB00;
@@ -341,3 +318,21 @@ export const StoreButton = styled.button`
 }
 `
 
+
+// export const CornerContainer = styled.div`
+
+//   position: relative;
+//   width: 100px;
+//   height: 100px;
+//   margin: 20px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   color: blue;
+//   padding: 0;
+//   box-sizing: content-box;
+//   border: 2px solid orange;
+
+
+// `
+//this might help: https://stackoverflow.com/questions/42816074/css-for-border-in-corners-only/42816202

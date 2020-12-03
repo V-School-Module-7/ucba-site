@@ -42,7 +42,7 @@ const Diseases = () => {
       <div id="AFB">
         <SubHeader>American Foulbrood (Bacillus larvae) Abbreviated as AFB</SubHeader>
       </div>
-
+     
       <BoldParagraph>How to recognize AFB:</BoldParagraph>
       <MainParagraph> Brood that are infected by AFB quickly die in the cells. The cell cap will be sunken rather than rounded and will typically be pierced or punctured. If you can see the larvae in the cell they will look melted and there will be a distinctive sour odor to the frame. Odor however, is not a positive identification of American Foulbrood. Another test is to take a small piece of wood (toothpick, twig, matchstick, etc) and insert into a suspect cell. Stir the remains and then slowly withdraw the stick; if you can pull the mass out (about an inch) and it adheres to the stick and the larval mass then it is highly likely that you have AFB.</MainParagraph>
       <BoldParagraph>How to treat for AFB: </BoldParagraph>

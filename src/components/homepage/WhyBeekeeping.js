@@ -5,7 +5,6 @@ import {
     Container,
     CenteringContainer,
     Paragraph,
-    ButtonContainer,
     BeeButton
 } from "../../styles/globalstyles.js"
 
@@ -23,12 +22,6 @@ import { Link } from "gatsby"
 
 const AppButton = styled(BeeButton)`
   background-color: #F5D75F;
-  // width: 569px;
-  // height: 72px;
-  // border: none;
-  // box-shadow: 8px 12px #FFE994;
-  // margin: 3% 0 5% 0;
-  // width: 147px;
   font-style: normal;
   line-height: 19px;
 /* identical to box height */
@@ -59,7 +52,7 @@ const WhyBeekeeping = () => {
             <Paragraph>Many different people keep bees for many different reasons, the most important one being pollination. Bee pollination is needed for the production of about one-third of our food crops.  Beekeepers also raise bees for their honey production and numerous hive by-products, including wax, royal jelly, pollen and, yes, even venom!</Paragraph>
 
             <Paragraph>Read more about being a beekeeper in our guide below!</Paragraph>
-          <ButtonContainer>
+          <CenteringContainer>
             <AppLink to="/becoming-a-beekeeper">
                 <AppButton>
      
@@ -67,7 +60,7 @@ const WhyBeekeeping = () => {
       
                 </AppButton>
             </AppLink>
-          </ButtonContainer>
+          </CenteringContainer>
         </CenteringContainer>
     </Container>
 
