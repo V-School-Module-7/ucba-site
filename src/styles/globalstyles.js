@@ -125,6 +125,7 @@ export const HeaderParagraph = styled.p`
 //PUT INTO "CENTERING CONTAINER" IF YOU WANT IT TO BE CENTERED, NOT LEFT-JUSTIFIED.
 export const BeeHeader = styled.h1`
   display: inline-block;
+  font-family: Work Sans;
   border-bottom: 4px solid #63966A;
   padding: 0 0 2px 0 ;
   font-size: 24px;
