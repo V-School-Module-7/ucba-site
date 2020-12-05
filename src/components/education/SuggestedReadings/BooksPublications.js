@@ -5,7 +5,8 @@ import {
     Paragraph,
     BeeHeader,
     CenteringContainer,
-    BeeLink
+    BeeLink,
+    BHeader
 } from "../../../styles/globalstyles.js"
 
 const Title = styled(BeeHeader)`
@@ -17,26 +18,6 @@ const Title = styled(BeeHeader)`
     }
 `
 
-const BHeader = styled(BeeHeader)`
-    display: block;
-    margin-bottom: 2%;
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 38px;
-
-    @media (max-width: 500px) {
-        margin-top: 8%;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 4%;
-    }
-`
-
 const BooksPublications = () => {
     return (
         <Container>
@@ -45,7 +26,7 @@ const BooksPublications = () => {
             </CenteringContainer>
 
             <BHeader>Honey</BHeader>
-
+            
             <Paragraph><i>Cooking with Honey</i> by Hazel Berto, 1972, <i>Gramercy</i></Paragraph>
             <Paragraph><i>Honey: BeesOnline Recipe Book</i> by Maureen Maxwell, 2003, <i>BeesOnline</i></Paragraph>
 

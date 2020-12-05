@@ -1,57 +1,34 @@
 import React from "react"
 import styled from "styled-components"
-import AfricanPara1 from "../../images/africanizedbeespt1.png"
-import Africanpt2 from "../../images/africanpt2.png"
 import AfricanbeeMap from "../../images/Africanbeemap.png"
 import AfricanUtahMap from "../../images/AfricanUtahMap.png"
-import Africanpt3 from "../../images/africanpt3.png"
 
-
-const AfricanBeeContainer = styled.div`
-    // display: block;
-    // text-align: center;
-    // border: 5px solid #63966a;
-    // margin: 10vw;
-    // padding: 5vw;
-    // font-family: Work Sans;
-    // padding-top: 5vh;
-    // // padding-bottom: 100px;
-`
-
-const Container1 = styled.div`
-    display: block;
-    text-align: center;
-    border: 5px solid #63966a;
-    margin: 10vw;
-    margin-bottom: 10vh;
-    padding: 5vw;
-    font-family: Work Sans;
-    padding-top: 5vh;
-`
-
-const Container2 = styled.div`
-text-align: center;
-margin: 10vw;
-margin-top: 5vh;
-`
+import { Container, BoxTitle, GreenLineContainer, Paragraph, BeeHeader, BHeader, CenteringContainer, SubHeader } from "../../styles/globalstyles"
 
 const Container3 = styled.div`
 display: grid;
 grid-template-columns: 35% 5% 60%; 
 text-align: center;
-margin: 10vw;
+margin-bottom: 10vw;
 margin-top: 5vh;
+
+@media (max-width: 900px){
+    grid-template-columns: 100%;
+    grid-template-rows: auto 5% auto;
+    margin-bottom: 15vh;
+}
 `
 
 const Container4 = styled.div`
 text-align: center;
-margin: 10vw;
+// margin: 10vw;
 margin-top: 5vh;
+font-family: Nunito;
 `
 const Section3 = styled.div`
 border: 5px solid #63966a;
 padding: 5vw;
-font-family: Work Sans;
+font-family: Nunito;
 padding-top: 5vh;
 `
 const SectionModel = styled.div`
@@ -59,69 +36,81 @@ const SectionModel = styled.div`
 `
 const SectionTitle = styled.h2`
 text-align: left;
+font-family: Work Sans; 
 border-bottom: 4px solid #63966a;   
 margin-bottom: 20px;
 padding-bottom: 10px;
 line-height: 28px;
-font-size: 36px;
+font-size: 28px;
+
+@media (max-width: 500px) {
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #63966A;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
 `
 const SectionContent = styled.p`
 text-align: left;
 margin-bottom:50px;
 font-size: 22px;
 line-height: 28px;
+font-family: Nunito;
 
+@media (max-width: 900px) {
+    width: 100%;
+  font-size: 16px;
+  margin: 2%;
+  line-height: 24px;
+}
 `
-
-
-const BeeHeader = styled.h1`
-  padding-bottom: 5vh;
-  font-size: 48px;
-  color: #000000;
-`
-
-const BeeTitle = styled.h1`
-  border-bottom: 6px solid #63966a;
-  padding-bottom: 14px;
-  margin-bottom: 5vh;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000000;
-`
-
-
 
 const ParaImg = styled.img`
   width: 100%;
 `
 
-
 const AfricanHoneyBees = () => {
     return (
-        <AfricanBeeContainer>
-            <Container1>
-                <BeeHeader>History of Africanized Honey Bees</BeeHeader>
-                <ParaImg src={AfricanPara1}></ParaImg>
-            </Container1>
+        <Container>
+            {/* <Container1> */}
+            <GreenLineContainer>
+                <BoxTitle>History of Africanized Honey Bees</BoxTitle> <Paragraph>African honey bees were first imported to the Americas in 1956 by the prominent Brazilian geneticist, Warwick Kerr.  He thought there was a good possibility that he could utilize African stock to produce a new breed of honey bees, which would be less defensive than the wild African bees but which would be more productive than European honey bees (EHB) in Brazil's tropical setting.  Kerr was able to acquire 63 live queens from South African beekeepers. These were later taken to a quarantine area at an agricultural research station near Rio Claro, where 48 queens survived till the next year. </Paragraph>
 
-            <Container2>
-                <BeeTitle>Spread of Africanized Honey Bees in the United States</BeeTitle>
-                <ParaImg src={Africanpt2}></ParaImg>
+                <Paragraph>Through selective breeding with European drones, Kerr and his associates had produced a number of first generation hybrids, now known as Africanized honey bees.  After several months of this activity, natural attrition had reduced their stock of Africanized honey bees to 29 which were maintained in hive boxes equipped with queen excluders.  In October of 1957 (according to Kerr), a local beekeeper wandered by, noticed the queen excluders and removed them. In any case, as the story goes, the removal of the excluders accidentally released 26 Africanized honey bee queens with small swarms into the nearby forest.  Kerr hoped the escaped bees would either perish in the wild or mate with European honey bees and eventually lose their African characteristics.</Paragraph>
+
+                <Paragraph>Within a few years, however, reports began arriving from surrounding areas of wild bees relentlessly attacking farm animals and even humans. Many poor Brazilian farmers suffered livestock losses, and, eventually, there were human fatalities as well. By the early 1960s, it was clear that a rapid expansion had occurred among feral bee colonies and that the Africanized honey bees were moving quickly into other parts of the country.  While European honey bee swarms might disperse only a few miles and then look for an ideal place to establish themselves, swarms of Africanized honey bees can move 60 miles or more at a time and build their nests in a variety of locations. In October 1986, they reached Mexico.</Paragraph>
+                {/* <ParaImg src={AfricanPara1}></ParaImg> */}
+                </GreenLineContainer>
+            {/* </Container1> */}
+
+            {/* <Container2> */}
+            <CenteringContainer>
+                <BeeHeader>Spread of Africanized Honey Bees in the United States</BeeHeader>
+                </CenteringContainer>
+                <Paragraph>On October 15, 1990, the first wild colony of Africanized honey bees was found in the United States, near Hidalgo, Texas. By 1993, naturally occurring swarms were recovered in Arizona and New Mexico, and the following year California confirmed arrival of this invasive species. By 2009, over 100 counties in Texas, 13 counties in New Mexico, every county in Arizona, 14 counties in California, 3 counties in Nevada, 2 counties in Utah, 28 counties in Oklahoma, 3 counties in Louisiana, 1 county in Arkasas, and 16 counties in Florida were infested with AHB.  Below is the map of the spread of AHB from 1990 - 2009. For the current map see USDA:</Paragraph>
+               
+                {/* <ParaImg src={Africanpt2}></ParaImg> */}
                 <ParaImg src={AfricanbeeMap}></ParaImg>
-            </Container2>
+            {/* </Container2> */}
 
             <Container3>
                 <ParaImg src={AfricanUtahMap}></ParaImg>
                 <div></div>
                 <Section3>
-                    <ParaImg src={Africanpt3}></ParaImg>
+                    {/* <ParaImg src={Africanpt3}></ParaImg> */}
+                    <Paragraph>The Utah Department of Agriculture and Food has been surveying for Africanized honey bees since the 1990s.  The main area of focus has been in southern Utah because of established populations in northen Arizona and Nevada. In 2009, they announced that Africanized Bees had been discovered in southern Utah. While this is of concern to the population of southern Utah, because of our winter season those in northern Utah (including Utah county) really have nothing to worry about. This is because the Africanized bee will probably colonize Utah (and the US) the way it has South America, with a southern zone developing where feral (wild) honey bees are almost completely Africanized and a northern zone that will continue to be populated almost completely by the European honey bee.  A transition area will probably exist between the northern and southern zones in which the two groups interbreed and their behavior stretching across the entire range of defensiveness.</Paragraph>
                 </Section3>
 
             </Container3>
             <Container4>
                 <SectionModel>
                     <SectionTitle>
-                        Stopping the spread of AFB
+                        Stopping the Spread of AFB
                     </SectionTitle>
                     <SectionContent>
                         Managed hives (those kept by beekeepers) are the first and best defense against an area becoming Africanized.
@@ -152,13 +141,12 @@ const AfricanHoneyBees = () => {
                         The surviving hives have resulted in an Africanized bee that produces 20% more honey and is 50% less defensive.
                     </SectionContent>
                 </SectionModel>
+                
                 <SectionModel>
-                    <SectionTitle>
-                        Other Facts About AFBs
-                    </SectionTitle>
+                   
                     <SectionContent>
 
-                        How can I prepare?
+                       <BHeader> How can I prepare?</BHeader>
 
     When involved in outdoor activities, be aware of your surroundings and 
     keep an eye out for bees.  Don't panic at the sight of a few bees foraging 
@@ -167,7 +155,10 @@ const AfricanHoneyBees = () => {
     generally not bother you.
                     </SectionContent>
                     <SectionContent>
-    There are a few things you can do to be prepared:
+                        <b>
+    There are a few things you can do to be prepared:</b>
+    <br></br>
+    <br></br>
 
 Wear light-colored clothing. Experience has shown that bees tend to attack dark objects such as clothing or hair.
 Avoid wearing floral or citrus aftershaves or perfumes when hiking. Bees are sensitive to odors, both pleasant and unpleasant. The smell of newly cut grass has been shown to rile honey bees.
@@ -257,7 +248,7 @@ alike only a laboratory analysis can tell them apart). Additionally, they are 25
 
 
 
-        </ AfricanBeeContainer>
+        </Container>
 
     )
 }

@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, GreenLineContainer, BoxTitle, BeeHeader, HeaderParagraph, Paragraph} from "../../../styles/globalstyles.js"
-
-const TitleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
+import {  Container, 
+          GreenLineContainer, 
+          CenteringContainer,
+          BoxTitle, 
+          BeeHeader, 
+          HeaderParagraph, 
+          Paragraph
+          } from "../../../styles/globalstyles.js"
 
 
 const Email = styled.span`
@@ -24,12 +24,7 @@ const Subscript = styled.h3`
     font-size: 16px;
   }
 `
-const ButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-contents: center;
-  align-items: center;
-`
+
 const AppButton = styled.button`
   background-color: #FFCB00;
   font-family: Work Sans;
@@ -68,12 +63,13 @@ function YouthBAB() {
   return (
     <Container>
       <GreenLineContainer>
-        <TitleContainer>
+        <CenteringContainer>
           <BoxTitle>Youth Be A Beekeeper Program</BoxTitle>
-        </TitleContainer>
+        </CenteringContainer>
 
         <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. the last Tuesday in February. If you are selected as a finalist, you must be in attendance at the March Utah County Beekeeping Association meeting.</HeaderParagraph>
       </GreenLineContainer>
+      
       <BeeHeader>Expectations</BeeHeader>
       <Paragraph>If selected, each participant will attend a minimum of five Utah County Beekeepers Association (UCBA) meetings; participate in UCBA for at least two years; supply two written reports or presentations of progress; email the BAB coordinator once a month; write and give thank you notes to BAB coordinator for sponsors no later than May 31; must participate in at least two speaking engagements; meet the financial obligation associated with the BAB program; and learn and have fun!</Paragraph>
       <BeeHeader>Cost to the BAB participant </BeeHeader>
@@ -95,11 +91,11 @@ function YouthBAB() {
 
       <Subscript>Good Luck! We look forward to receiving your entries!</Subscript>
 
-      <ButtonContainer>
+      <CenteringContainer>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScr98AmiU7JdhVzs37CLmkGXazeOvAHzMmHVwD09UmZyzgpQw/viewform" target="_blank" rel="noopener noreferrer">
           <AppButton>CLICK HERE TO FILL OUT AN APPLICATION</AppButton>
         </a>
-      </ButtonContainer>
+      </CenteringContainer>
 
     </Container>
   )
