@@ -49,7 +49,7 @@ const Links = () => {
                 <ListItem><strong>Cache Valley Beekeepers Association</strong></ListItem>
                 <ListItem>Facebook: <StyledLink href="http://www.facebook.com/groups/cachebeekeepers/" target="_blank" rel="noopener noreferrer">http://www.facebook.com/groups/cachebeekeepers/</StyledLink></ListItem>
                 <ListItem>
-                    website: <StyledLink href="https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/cache-beekeepers-association/" target="_blank" rel="noopener noreferrer">https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/cache-beekeepers-association/</StyledLink>
+                    website: <StyledLink href="https://www.cvbees.org/" target="_blank" rel="noopener noreferrer">https://www.cvbees.org//</StyledLink>
                 </ListItem>
             </HelpfulList>
 
@@ -119,7 +119,7 @@ const Links = () => {
 
             <HelpfulList>
                 <ListItem><strong>Weber County Beekeepers Association</strong></ListItem>
-                <ListItem>website: <StyledLink href="http://www.weberbeekeepersassociation.com/" target="_blank" rel="noopener noreferrer">http://www.weberbeekeepersassociation.com/</StyledLink></ListItem>
+                <ListItem>Facebook: <StyledLink href="https://www.facebook.com/groups/1382241211993111/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/groups/1382241211993111/</StyledLink></ListItem>
             </HelpfulList>
 
             <BHeader>Honey Information:</BHeader>
