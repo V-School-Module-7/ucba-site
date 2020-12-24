@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
-@import url('http://allfont.net/allfont.css?fonts=chunkfive');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap");
+@import url("http://allfont.net/allfont.css?fonts=chunkfive");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
+main {
+  background-image: url(../images/BeeBackground.png);
+  background-size: contain;
+}
+
 html {
   font-family: Work Sans, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  
 }
 body {
   margin: 0;

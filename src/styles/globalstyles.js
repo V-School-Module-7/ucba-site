@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import background from "../images/BeeBackground.png"
 
 //container for the whole page
 export const Container = styled.div`
     font-family: Work Sans;
     margin: 64px 12% 5% 12%;
     box-sizing: border-box;
-    // background-image: url(../images/BeeBackground.png);
+
 
     @media (max-width: 900px) {
       // margin-top: 10%;
