@@ -18,7 +18,7 @@ export const Container = styled.div`
     }
 `
 
-//the margins on the media queries work differently on the page with the guide container. Hence this container, which is almost identical to the above Container
+//the margins on the media queries work differently on the page with the guide container. hence this container, which is almost identical to the above Container
 export const GuidePageContainer = styled.div`
     font-family: Work Sans;
     margin: 64px 12% 5% 12%;
