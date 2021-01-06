@@ -7,23 +7,15 @@ import HomePageImage from "../images/HomePageImage.png"
 import WhyBeekeeping from "../components/homepage/WhyBeekeeping"
 import BeekeepersCalendar from '../components/homepage/BeekeepersCalendar'
 import HomeBackground from "../ImageComponents/HomeBackground.js"
-// import { graphql , useStaticQuery } from 'gatsby'
 
 const IndexPage = (props) => (
   <Layout>
     
     <SEO title="Home" />
     <HeroHeader img={HomePageImage} text={"WELCOME TO THE UTAH COUNTY BEEKEEPERS ASSOCIATION"} />
-    {/* <HomeBackground> */}
-    {/* <BackgroundImage
-      fluid={props.data.indexImage.childImageSharp.fluid}
-    >
-
-      Text Should Go Here
-    </BackgroundImage> */}
+  
     <WhyBeekeeping />
     <BeekeepersCalendar />
-    {/* </HomeBackground> */}
   </Layout>
 )
 

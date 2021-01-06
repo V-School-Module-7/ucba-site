@@ -67,7 +67,7 @@ function YouthBAB() {
           <BoxTitle>Youth Be A Beekeeper Program</BoxTitle>
         </CenteringContainer>
 
-        <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. the last Tuesday in February. If you are selected as a finalist, you must be in attendance at the March Utah County Beekeeping Association meeting.</HeaderParagraph>
+        <HeaderParagraph>To be considered for BAB, an application will be filled out and an essay must be written based on the given topic. The essay will be judged based on a rubric. The application and essay must be emailed to <Email>ut.co.beekeepers@gmail.com</Email> before 11:59 p.m. on January 31. If you are selected as a finalist, you must be in attendance at the March Utah County Beekeeping Association meeting.</HeaderParagraph>
       </GreenLineContainer>
       
       <BeeHeader>Expectations</BeeHeader>
