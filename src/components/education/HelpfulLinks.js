@@ -49,7 +49,7 @@ const Links = () => {
                 <ListItem><strong>Cache Valley Beekeepers Association</strong></ListItem>
                 <ListItem>Facebook: <StyledLink href="http://www.facebook.com/groups/cachebeekeepers/" target="_blank" rel="noopener noreferrer">http://www.facebook.com/groups/cachebeekeepers/</StyledLink></ListItem>
                 <ListItem>
-                    website: <StyledLink href="https://www.cvbees.org/" target="_blank" rel="noopener noreferrer">https://www.cvbees.org/</StyledLink>
+                    website: <StyledLink href="https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/cache-beekeepers-association/" target="_blank" rel="noopener noreferrer">https://utahpests.usu.edu/bees/htm/honey-bees/cache-county-beekeeping-info/cache-beekeepers-association/</StyledLink>
                 </ListItem>
             </HelpfulList>
 
@@ -67,7 +67,7 @@ const Links = () => {
                 <ListItem><strong>Iron County 4-H Beekeeping Club</strong></ListItem>
                 <ListItem>Blaine Nay <StyledLink href="tel:+4355868132">(435) 586-8132</StyledLink></ListItem>
                 <ListItem>email: <StyledLink href="mailto:blaine@ironbee.us">blaine@ironbee.us</StyledLink></ListItem>
-                <ListItem>website: <StyledLink href="http://www.ironbeekeeper.org/ " target="_blank" rel="noopener noreferrer">www.ironbeekeeper.org</StyledLink></ListItem>
+                <ListItem>website: <StyledLink href="www.ironbeekeeper.org" target="_blank" rel="noopener noreferrer">www.ironbeekeeper.org</StyledLink></ListItem>
                 <ListItem>714 South 1175 West</ListItem>
                 <ListItem>Cedar City UT 84720</ListItem>
 
@@ -119,7 +119,7 @@ const Links = () => {
 
             <HelpfulList>
                 <ListItem><strong>Weber County Beekeepers Association</strong></ListItem>
-                <ListItem>Facebook: <StyledLink href="https://www.facebook.com/groups/1382241211993111/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/groups/1382241211993111/</StyledLink></ListItem>
+                <ListItem>website: <StyledLink href="http://www.weberbeekeepersassociation.com/" target="_blank" rel="noopener noreferrer">http://www.weberbeekeepersassociation.com/</StyledLink></ListItem>
             </HelpfulList>
 
             <BHeader>Honey Information:</BHeader>
