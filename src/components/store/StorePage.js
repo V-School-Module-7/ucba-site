@@ -38,7 +38,7 @@ const StorePage = () => {
         <StoreButton>add to cart</StoreButton>
 
         <StoreTitle>
-        $5 three Inspection Sheets
+        $5 three Hive Inspection Sheets
         </StoreTitle>
         <StoreButton>add to cart</StoreButton>
 
