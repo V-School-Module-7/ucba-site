@@ -115,6 +115,7 @@ export const HeaderParagraph = styled.p`
 
   @media (max-width: 900px){
     font-size: 16px;
+    line-height: 24px;
   }
 
   @media(max-width: 500px) {
@@ -257,6 +258,9 @@ export const Paragraph = styled.p`
   margin: 2%;
   line-height: 24px;
 }
+@media(max-width: 500px) {
+      font-size: 12px;
+  }
 `
 
 //use this for links so that the links will word-wrap rather than running off the page

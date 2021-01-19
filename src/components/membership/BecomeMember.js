@@ -1,27 +1,31 @@
 import React from "react"
-// import styled from "styled-components"
+import styled from "styled-components"
 
 import { BeeHeader, Container, BoxTitle, GreenLineContainer, HeaderParagraph, Paragraph } from "../../styles/globalstyles.js"
 
-
+const Indent = styled.div`
+    margin: 0 10%;
+`
 
 const BecomeMember = () => {
     return (
         <Container>
             <GreenLineContainer>
                 <BoxTitle>Membership in the Utah County Beekeepers Association is open to anyone who meets the following criteria:</BoxTitle>
+                <Indent>
                 <HeaderParagraph>- Currently a Beekeeper or interested in becoming a beekeeper or interested in beekeeping</HeaderParagraph>
 
-                <HeaderParagraph>- Submits the yearly dues for membership along with the membership form</HeaderParagraph>
+                <HeaderParagraph>- Submits the yearly dues for membership along with the membership form. The application and payment are due by January 31 of that year.</HeaderParagraph>
+                </Indent>
 
                 <HeaderParagraph>It is that easy! We don't mind if you are not currently keeping bees or if you live in Utah County or not.</HeaderParagraph>
 
                 <HeaderParagraph>We want to welcome all who are interested in being part of our group.</HeaderParagraph>
             </GreenLineContainer>
 
-            <BeeHeader>Membership Dues information:</BeeHeader>
+            <BeeHeader>Membership Dues Information:</BeeHeader>
 
-            <Paragraph>Those people who are interested in being an official member of the UCBA should submit the annual dues which are currently $20 per household. The annual dues are used to purchase supplies and help with our Bee a Beekeeper Program. The dues are also used to purchase educational materials (posters, books, observation hives, etc.) for use at educational events.</Paragraph>
+            <Paragraph>Those people who are interested in being an official member of the UCBA should submit the annual dues which are currently $20 per household. The annual dues are used to purchase supplies and help with our Bee a Beekeeper Program. The dues are also used to purchase educational materials (posters, books, observation hives, etc.) for use at educational events. Please submit dues by January 31 each year.</Paragraph>
             <Paragraph>All dues-paying members will receive the newsletter via email.
             </Paragraph>
 
