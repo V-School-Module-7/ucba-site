@@ -4,13 +4,16 @@ import styled from "styled-components"
 import { BeeHeader, Container, GreenLineContainer, BoxTitle, HeaderParagraph, Paragraph } from "../../styles/globalstyles.js"
 
 const Pgraph = styled(Paragraph)`
+@media (min-width: 900px) {
     margin: 10px 0;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.5px;
+}  
 `
+
 const BHeader = styled(BeeHeader)`
     display: block;
     margin-bottom: 2%;
