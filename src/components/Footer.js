@@ -77,8 +77,7 @@ const Footer = () => (
       <AddressBox>
         Utah County Beekeepers Association <br />
         185 North 1300 East <br />
-        Pleasant Grove, UT <br />
-        84062
+        Pleasant Grove, UT 84062
       </AddressBox>
     </MailBox>
     <ContactBox>
