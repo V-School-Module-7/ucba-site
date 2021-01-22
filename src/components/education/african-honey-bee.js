@@ -3,7 +3,7 @@ import styled from "styled-components"
 import AfricanbeeMap from "../../images/Africanbeemap.png"
 import AfricanUtahMap from "../../images/AfricanUtahMap.png"
 
-import { Container, BoxTitle, GreenLineContainer, Paragraph, BeeHeader, BHeader, CenteringContainer, SubHeader } from "../../styles/globalstyles"
+import { Container, BoxTitle, GreenLineContainer, Paragraph, BeeHeader, BHeader, CenteringContainer } from "../../styles/globalstyles"
 
 const Container3 = styled.div`
 display: grid;

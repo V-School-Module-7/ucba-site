@@ -11,6 +11,10 @@ main {
   background-image: url(../images/BeeBackground.jpg);
   background-size: 100%;
 }
+#Footer {
+  background-image: url(../images/FooterBackground.jpg);
+  background-size: 100%;
+}
 
 html {
   font-family: Work Sans, sans-serif;

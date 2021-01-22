@@ -4,6 +4,8 @@ import styled from "styled-components"
 const FooterContainer = styled.footer`
   background: #FCECAD;
   background-image: url("paper.gif");
+  background-image: url("../images/FooterBackground.jpg");
+  /* background-size: 100%; */
   margin: 0;
   display: grid;
   grid-template-columns: 2fr 18fr 18fr 8fr 10fr;
@@ -77,8 +79,8 @@ const Footer = () => (
       <AddressBox>
         Utah County Beekeepers Association <br />
         185 North 1300 East <br />
-        Pleasant Grove, UT <br />
-        84062
+        Pleasant Grove, UT, 84062<br />
+        
       </AddressBox>
     </MailBox>
     <ContactBox>
