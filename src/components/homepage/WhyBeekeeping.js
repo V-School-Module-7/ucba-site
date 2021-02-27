@@ -10,16 +10,6 @@ import {
 
 import { Link } from "gatsby"
 
-
-// import HomepageBackground from "../../images/HomepageBackground"
-// import Africanbeemap from '../../images/Africanbeemap'
-// import '../../images/Africanbeemap'
-
-// const HomeContainer = styled(Container)`
-//   background-image: src="../../images/Africanbeemap";
-// `
-
-
 const AppButton = styled(BeeButton)`
   background-color: #F5D75F;
   font-style: normal;

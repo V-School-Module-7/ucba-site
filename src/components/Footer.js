@@ -5,7 +5,6 @@ const FooterContainer = styled.footer`
   background: #FCECAD;
   background-image: url("paper.gif");
   background-image: url("../images/FooterBackground.jpg");
-  /* background-size: 100%; */
   margin: 0;
   display: grid;
   grid-template-columns: 2fr 18fr 18fr 8fr 10fr;

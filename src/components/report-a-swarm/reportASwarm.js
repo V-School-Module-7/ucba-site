@@ -7,6 +7,7 @@ import CombBox from "../../images/RASbeeCombBox.png"
 import CombTree from "../../images/RASbeeCombTree.png"
 import HoneyBee from "../../images/RAShoneyBee.png"
 import BumbleBee from "../../images/RASbumbleBee.png"
+import BeeHeader from "../../styles/globalstyles"
 
 const HomeContainer = styled.div`
   position: relative;
@@ -93,7 +94,6 @@ export const TextHeader = styled.h1`
 
 export const TextHeader2 = styled.h1`
   position: relative;
-
   margin: auto;
   display: inline-block;
   border-bottom: 6px solid #63966a;
@@ -217,6 +217,7 @@ const reportASwarm = () => {
 
       <AnswerContainer>
         <AnswerQuestion>
+          {/* <BeeHeader>This is the header im adding.</BeeHeader> */}
           <TextHeader2>What does the swarm look like?</TextHeader2>
           <Paragraph>
             If the swarm has a “nest” then it is not honey bees but more likely
