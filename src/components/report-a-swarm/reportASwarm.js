@@ -12,7 +12,7 @@ import BeeHeader from "../../styles/globalstyles"
 const HomeContainer = styled.div`
   position: relative;
   width: 100%;
-  height auto;
+  height: auto;
   text-align: center;
   padding-bottom: 80px;
 
@@ -193,7 +193,7 @@ const reportASwarm = () => {
         <Paragraph>
           It is very important to capture/rescue honey bee swarms in our area so
           that they are not lost to parasites, disease, or exterminators. You can contact Mike, the
-          Swarm Coordiantor, at the information below.
+          Swarm Coordinator, at the information below.
           
           {/* have put together
           the lists of available beekeepers who will remove swarms at no charge.
@@ -204,7 +204,7 @@ const reportASwarm = () => {
       </TextContainer>
 
       <SwarmContact>
-        Swarm Coordiantor Contact Info: <br />
+        Swarm Coordinator Contact Info: <br />
         Mike Shaffer <br />
         <a href="tel:+18016331887">801-633-1887</a>
         <br />
