@@ -30,7 +30,7 @@ const BecomeMember = () => {
             </Paragraph>
 
             <BeeHeader>How to Pay your Dues</BeeHeader>
-            <Paragraph>Click here to fill out an <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvr8pE9Se3DCHQskVRMHorqGt8t0HWRa1hPAfnTpqqnBpJIQ/viewform" target="_blank" rel="noopener noreferrer">online application</a> and pay online</Paragraph>
+            <Paragraph>Click here to fill out an <a href="https://docs.google.com/forms/d/1f4nNeZFfyYn2vqLFDt1Cqvle8aMp3EaA1OAhnVCM65k/edit?ts=5ff898bb&gxids=7628" target="_blank" rel="noopener noreferrer">online application</a> and pay online</Paragraph>
             <Paragraph>Or, you can send a check or money order made out to "Utah County Beekeepers Association" along with a completed Membership Application Form to:</Paragraph>
             <Paragraph>Utah County Beekeepers Association <br></br>
             Attention: Secretary<br></br>
