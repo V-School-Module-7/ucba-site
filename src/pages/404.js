@@ -15,7 +15,6 @@ position: relative;
 width: 100%;
 height: auto;
 text-align: center;
-// padding: 5%;
 padding: 125px 0;
 @media (max-width: 1000px) {
   display: grid;
@@ -31,8 +30,6 @@ const ParagraphContainer = styled.div`
 grid-column: 1/2;
 justify-self: center;
 font-family: Work Sans;
-// font-style: normal;
-// font-weight: bold;
 font-size: 24px;
 line-height: 32px;
 color: #000000;

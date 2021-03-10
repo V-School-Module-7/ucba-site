@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import background from "../images/BeeBackground.jpg"
 
 //container for the whole page
 export const Container = styled.div`
@@ -171,7 +170,6 @@ export const TextHeader = styled.h1`
   text-transform: uppercase;
   color: #000000;
   
-
   @media (max-width: 900px) {
     font-size: 24px;
     text-decoration: underline;
@@ -186,7 +184,6 @@ export const TextHeader = styled.h1`
     @media (max-width: 500px) {
       font-size: 20px;
     }
-
   }
 `
 //H2.  green underlined H2 where the line goes all the way across the page, not just under the letters.

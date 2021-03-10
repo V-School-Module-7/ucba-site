@@ -14,8 +14,6 @@ const StoreTitle = styled(BeeHeader)`
         align-items: center;
         align-self: center;
       }
-    
-
 `
 
 const StorePage = () => {

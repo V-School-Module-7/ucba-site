@@ -24,7 +24,7 @@ const CommittingToBeekeeping = () => {
         the year.
       </Paragraph>
       <Paragraph>
-        Next you are looking at about an hour or two a month for checking your
+        Next, you are looking at about an hour or two a month for checking your
         hives and performing basic maintenance between April and September.
       </Paragraph>
       <Paragraph>

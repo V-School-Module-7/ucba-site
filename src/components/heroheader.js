@@ -21,7 +21,6 @@ const HeroText = styled.p`
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  /* font-size: 62px; */
   font-size: 48px;
   line-height: 74px;
   text-transform: uppercase;
