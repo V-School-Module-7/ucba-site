@@ -7,7 +7,10 @@ import CombBox from "../../images/RASbeeCombBox.png"
 import CombTree from "../../images/RASbeeCombTree.png"
 import HoneyBee from "../../images/RAShoneyBee.png"
 import BumbleBee from "../../images/RASbumbleBee.png"
-import BeeHeader from "../../styles/globalstyles"
+import SwarmMap from "./SwarmMap"
+import {CenteringContainer} from "../../styles/globalstyles"
+
+// import BeeHeader from "../../styles/globalstyles"
 
 const HomeContainer = styled.div`
   position: relative;
@@ -49,10 +52,11 @@ export const Paragraph = styled.div`
   }
 `
 
-const SwarmContact = styled.h1`
+const SwarmContact = styled.div`
   width: 60%;
   border: 2px solid #63966a;
   margin-bottom: 60px;
+  padding-bottom: 50px;
   display: inline-block;
   padding: 10px;
   & > a {
@@ -209,7 +213,22 @@ const reportASwarm = () => {
         <a href="tel:+18016331887">801-633-1887</a>
         <br />
         <a href="mailto:mike@carnibuilders.com">mike@carnibuilders.com</a>
+        <CenteringContainer>
+        <SwarmMap />
+        </CenteringContainer>
       </SwarmContact>
+{/* <div> */}
+      {/* <div id='ucmap' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'process.env.REACT_APP_MAP_TOKEN';
+var map = new mapboxgl.Map({
+container="ucmap",// container ID
+style='mapbox://styles/mapbox/streets-v11', // style URL
+center=[40.2338, 111.6585], // starting position [lng, lat]
+zoom=9 // starting zoom
+});
+</script> */}
+{/* </div> */}
 
       <TextHeader>
         Be prepared to answer the questions below to help the beekeeper:

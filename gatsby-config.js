@@ -1,5 +1,9 @@
 const path = require(`path`)
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `UCBA`,
@@ -30,10 +34,6 @@ module.exports = {
             name: 'youth bab program',
             link: '/youth-bab-program'
           },
-          // {
-          //   name: 'youth bab application form',
-          //   link: '/youth-bab-form'
-          // }
           {
             name: 'licensing',
             link: '/licensing'
@@ -107,6 +107,12 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["GATSBY_MAP_TOKEN", "MAP_TOKEN"]
       },
     },
     {
