@@ -198,7 +198,7 @@ const reportASwarm = () => {
           It is very important to capture/rescue honey bee swarms in our area so
           that they are not lost to parasites, disease, or exterminators. You can contact Mike, the
           Swarm Coordinator, at the information below.
-          
+          <img src="/BeeSVG.svg" alt="Skate Park Icon"/>SKATE
           {/* have put together
           the lists of available beekeepers who will remove swarms at no charge.
           Please select your city/area below on the interactive map to locate a

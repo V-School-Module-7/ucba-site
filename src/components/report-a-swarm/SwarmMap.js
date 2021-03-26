@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl'
 import * as parkData from "./skateboard-parks.json"
-
+import BeePNG from "./6-2-bee-png-5.png"
 
 export default function SwarmMap() {
   const [viewport, setViewport] = useState({
@@ -49,7 +49,7 @@ export default function SwarmMap() {
               setSelectedPark(park);
             }}
             >
-              <img src="./skateboarding.svg" alt="Skate Park Icon"/>SKATE</button>
+              <img src={BeePNG} alt="Skate Park Icon"/>SKATE</button>
           </Marker>
         ))} 
         {selectedPark && (
@@ -63,7 +63,9 @@ export default function SwarmMap() {
               <h2>{selectedPark.properties.NAME}</h2>
               <p>{selectedPark.properties.DESCRIPTIO}</p>
             </div>
+            <p>Bee image from freepngimg.com</p>
           </Popup>
+   
         )}
         </ReactMapGL>
   </div>
