@@ -21,15 +21,20 @@
     "gatsby-source-airtable": "^2.1.1",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.4",
-    "mapbox-gl": "^2.1.1",
+    // "mapbox-gl": "^2.1.1",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    // "react": "^16.13.1",
+    // "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-map-gl": "^6.1.10",
     "react-scroll": "^1.7.16",
     "react-spring": "^8.0.27",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "mapbox-gl": "^2.2.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "^4.0.1",
+    "worker-loader": "^3.0.7"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -37,7 +42,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -53,5 +57,13 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+
+    "browserslist": [
+    "defaults"
+    ],
+    
+    
+    "homepage": "https://docs.mapbox.com/help/tutorials/use-mapbox-gl-js-with-react/"
+    
 }
