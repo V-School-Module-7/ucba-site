@@ -13,6 +13,7 @@ const ReportASwarmPage = () => (
         <SEO title="Report A Swarm" />
         <HeroHeader img={SwarmImage} text={"Report A Swarm"} />
         <ReportASwarm></ReportASwarm>
+         
     </Layout>
 )
 

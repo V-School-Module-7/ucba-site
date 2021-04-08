@@ -1,0 +1,123 @@
+[
+ 
+  {
+    "Location": "Alpine",
+    "Latitude": 40.4532834,
+    "Longitude": -111.7779865
+  },
+  {
+    "Location": "American Fork",
+    "Latitude": 40.3768954,
+    "Longitude": -111.7957645
+  },
+  {
+    "Location": "Cedar Fort",
+    "Latitude": 40.3271707,
+    "Longitude": -112.1043852
+  },
+  {
+    "Location": "Cedar Hills",
+    "Latitude": 40.4141174,
+    "Longitude": -111.7585414
+  },
+  {
+    "Location": "Draper",
+    "Latitude": 40.52467,
+    "Longitude": -111.863823
+  },
+  {
+    "Location": "Eagle Mountain",
+    "Latitude": 40.3141169,
+    "Longitude": -112.006882
+  },
+  {
+    "Location": "Elk Ridge",
+    "Latitude": 40.0113439,
+    "Longitude": -111.6768698
+  },
+  {
+    "Location": "Genola",
+    "Latitude": 39.9963426,
+    "Longitude": -111.8432692
+  },
+  {
+    "Location": "Goshen",
+    "Latitude": 39.9530088,
+    "Longitude": -111.9007716
+  },
+  {
+    "Location": "Highland",
+    "Latitude": 40.4499502,
+    "Longitude": -111.7702084
+  },
+  {
+    "Location": "Lehi",
+    "Latitude": 40.3916172,
+    "Longitude": -111.8507662
+  },
+  {
+    "Location": "Lindon",
+    "Latitude": 40.3432857,
+    "Longitude": -111.7207608
+  },
+  {
+    "Location": "Mapleton",
+    "Latitude": 40.1302338,
+    "Longitude": -111.5785281
+  },
+  {
+    "Location": "Orem",
+    "Latitude": 40.2968979,
+    "Longitude": -111.6946475
+  },
+  {
+    "Location": "Payson",
+    "Latitude": 40.0443989,
+    "Longitude": -111.7321518
+  },
+  {
+    "Location": "Pleasant Grove",
+    "Latitude": 40.3641184,
+    "Longitude": -111.73854
+  },
+  {
+    "Location": "Provo",
+    "Latitude": 40.2338438,
+    "Longitude": -111.6585337
+  },
+  {
+    "Location": "Salem",
+    "Latitude": 40.0530105,
+    "Longitude": -111.673536
+  },
+  {
+    "Location": "Santaquin",
+    "Latitude": 39.9755101,
+    "Longitude": -111.7852106
+  },
+  {
+    "Location": "Saratoga Springs",
+    "Latitude": 40.3491173,
+    "Longitude": -111.9046567
+  },
+  {
+    "Location": "Spanish Fork",
+    "Latitude": 40.114955,
+    "Longitude": -111.654923
+  },
+  {
+    "Location": "Springville",
+    "Latitude": 40.1652335,
+    "Longitude": -111.6107526
+  },
+  {
+    "Location": "Vineyard",
+    "Latitude": 40.297037,
+    "Longitude": -111.746702
+  },
+  {
+    "Location": "Woodland Hills",
+    "Latitude": 40.015322,
+    "Longitude": -111.648682
+  }
+]
