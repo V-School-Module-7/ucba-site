@@ -5,9 +5,6 @@ import SEO from "../components/seo"
 import HeroHeader from "../components/heroheader"
 import BABimage from "../images/BABimage.png"
 import YouthBAB from "../components/becoming-a-beekeeper/youthBAB/YouthBAB.js"
-import SheetMap from "../components/report-a-swarm/SheetMap.js"
-
-
 
 
 function YouthBabProgram() {

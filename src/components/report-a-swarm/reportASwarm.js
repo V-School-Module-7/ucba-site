@@ -27,7 +27,7 @@ const HomeContainer = styled.div`
 
 const TextContainer = styled.div`
   position: relative;
-  width: 80vw;
+  width: 100vw;
   height: auto;
   margin: auto;
   margin-top: 32px;
@@ -53,7 +53,7 @@ export const Paragraph = styled.div`
 `
 
 const SwarmContact = styled.div`
-  width: 60%;
+  width: 80%;
   border: 2px solid #63966a;
   margin-bottom: 60px;
   padding-bottom: 50px;
@@ -198,13 +198,13 @@ const reportASwarm = () => {
           It is very important to capture/rescue honey bee swarms in our area so
           that they are not lost to parasites, disease, or exterminators. You can contact Mike, the
           Swarm Coordinator, at the information below.
-          <img src="/BeeSVG.svg" alt="Skate Park Icon"/>SKATE
           {/* have put together
           the lists of available beekeepers who will remove swarms at no charge.
           Please select your city/area below on the interactive map to locate a
           beekeeper near you. If there is not a beekeeper listed, look at
           surrounding cities/areas. */}
         </Paragraph>
+       
       </TextContainer>
 
       <SwarmContact>
@@ -215,20 +215,9 @@ const reportASwarm = () => {
         <a href="mailto:mike@carnibuilders.com">mike@carnibuilders.com</a>
         <CenteringContainer>
         <SwarmMap />
+        
         </CenteringContainer>
       </SwarmContact>
-{/* <div> */}
-      {/* <div id='ucmap' style='width: 400px; height: 300px;'></div>
-<script>
-mapboxgl.accessToken = 'process.env.REACT_APP_MAP_TOKEN';
-var map = new mapboxgl.Map({
-container="ucmap",// container ID
-style='mapbox://styles/mapbox/streets-v11', // style URL
-center=[40.2338, 111.6585], // starting position [lng, lat]
-zoom=9 // starting zoom
-});
-</script> */}
-{/* </div> */}
 
       <TextHeader>
         Be prepared to answer the questions below to help the beekeeper:

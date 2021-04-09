@@ -1,47 +1,24 @@
 import React, {useState, useEffect} from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl'
-// import * as parkData from "./skateboard-parks.json"
 import BeeSVG from "./BeeSVG.svg"
 import BeePNG from "./BeePNG.png"
-import skateboarding from "./skateboarding.svg"
-// var csv2geojson = require('csv2geojson');
+// import skateboarding from "./skateboarding.svg"
 import UtahLatLong from "./UtahLatLong.json"
-import SwarmContacts from "./SwarmContacts.json"
-// import request from 'request'
-// import csv from 'csvtojson'
 import { readRemoteFile } from 'react-papaparse'
+import styled from "styled-components"
 
-// var geoJson = csv2geojson.csv2geojson("https://docs.google.com/spreadsheets/d/1eKByanlX5fbLr5pqOH54rEUUHh9sb15s/edit#gid=838673634", function(err, data) {
-//   if(err){
-//     console.log('error')
-//   } else {
-//     console.log(data)
-//   }
-
-//   // "https://docs.google.com/spreadsheets/d/838673634/gviz/tq?tqx=out:csv&sheet=MainLocations"
-// });
-// geoJson()
-
-
- 
-// csv()
-// .fromStream(request.get('https://docs.google.com/spreadsheets/d/1EpjqQ4WHQ46nhbVJzgn_klD3clAToeqUYJoUkcsRE5U/edit#gid=1628270625'))
-// .subscribe((json)=>{
-//     return new Promise((resolve,reject)=>{
-//       console.log(json)
-//         // long operation for each json e.g. transform / write into database.
-//     })
-// },onError,onComplete);
-
-
+const CityButton = styled.button`
+  background-color: paleblue;
+`
 
 export default function SwarmMap() {
   const [viewport, setViewport] = useState({
     latitude: 40.2338,
     longitude: -111.6585,
-    width: '60vw',
+    width: '80vw',
     height: '60vh',
     zoom: 10
+  
 
   });
 
@@ -88,14 +65,14 @@ console.log(swarmContacts, "swarm contacts")
   })
 
     const listener = e => {
-      if(e.key === "Escape") {
-        setSelectedCity(null);
-      }
+      // if(e.key === "Escape") {
+      //   setSelectedCity(null);
+      // }
     };
-    window.addEventListener('keydown', listener);
-    return () => {
-      window.removeEventListener('keydown', listener);
-    }
+    // window.addEventListener('keydown', listener);
+    // return () => {
+    //   window.removeEventListener('keydown', listener);
+    // }
 
   }, [])
 
@@ -113,7 +90,7 @@ console.log(swarmContacts, "swarm contacts")
         {UtahLatLong.map((city, index) => (
           <Marker key={index} latitude={city.Latitude}
             longitude={city.Longitude}>
-            <button 
+            <CityButton             
               className="marker-btn" 
               onClick={(e) => {
               e.preventDefault();
@@ -121,7 +98,10 @@ console.log(swarmContacts, "swarm contacts")
               displayContacts()
             }}
             >
-              <img src={skateboarding} alt="Bee Icon"/>{city.Location}</button>
+              {/* <img src={skateboarding} alt="Bee Icon"/> */}
+              {city.Location}
+              </CityButton>
+              
           </Marker>
         ))} 
       
@@ -129,6 +109,6 @@ console.log(swarmContacts, "swarm contacts")
 
         {locations}
 
-        <p>Bee image from freepngimg.com</p>
+       
   </div>
 }
