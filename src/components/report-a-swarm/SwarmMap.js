@@ -75,7 +75,8 @@ export default function SwarmMap() {
     <ReactMapGL
       {...viewport}
      mapboxApiAccessToken={process.env.GATSBY_MAP_TOKEN}
-      mapStyle="mapbox://styles/sealdous/ckmb69xdc0zug17q5wz14j8dw"
+      // mapStyle="mapbox://styles/sealdous/ckmb69xdc0zug17q5wz14j8dw"
+      mapStyle="mapbox://styles/mapbox/outdoors-v11"
       onViewportChange={viewport => {
         setViewport(viewport);
       }}
