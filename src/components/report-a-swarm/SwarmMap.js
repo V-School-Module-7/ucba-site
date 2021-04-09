@@ -7,6 +7,9 @@ import skateboarding from "./skateboarding.svg"
 // var csv2geojson = require('csv2geojson');
 import UtahLatLong from "./UtahLatLong.json"
 import SwarmContacts from "./SwarmContacts.json"
+// import request from 'request'
+// import csv from 'csvtojson'
+import { readRemoteFile } from 'react-papaparse'
 
 // var geoJson = csv2geojson.csv2geojson("https://docs.google.com/spreadsheets/d/1eKByanlX5fbLr5pqOH54rEUUHh9sb15s/edit#gid=838673634", function(err, data) {
 //   if(err){
@@ -18,6 +21,17 @@ import SwarmContacts from "./SwarmContacts.json"
 //   // "https://docs.google.com/spreadsheets/d/838673634/gviz/tq?tqx=out:csv&sheet=MainLocations"
 // });
 // geoJson()
+
+
+ 
+// csv()
+// .fromStream(request.get('https://docs.google.com/spreadsheets/d/1EpjqQ4WHQ46nhbVJzgn_klD3clAToeqUYJoUkcsRE5U/edit#gid=1628270625'))
+// .subscribe((json)=>{
+//     return new Promise((resolve,reject)=>{
+//       console.log(json)
+//         // long operation for each json e.g. transform / write into database.
+//     })
+// },onError,onComplete);
 
 
 
@@ -32,15 +46,19 @@ export default function SwarmMap() {
   });
 
   const [selectedCity, setSelectedCity] = useState(null);
-  const [swarmContacts, setSwarmContacts] = useState(SwarmContacts);
+  const [swarmContacts, setSwarmContacts] = useState([]);
   const [locationContacts, setLocationContacts] = useState([])
-  console.log(swarmContacts, "swarm contacts")
+  
+
+
+console.log(swarmContacts, "swarm contacts")
 
   const displayContacts = () => { 
     if(selectedCity) { 
       let newContacts = swarmContacts.filter((contact, index) => {
-        let location = contact["Coverage areas"].split(", ")
-        return location.includes(selectedCity.Location)
+        let location = contact[5].split(", ")
+        console.log(location)
+        return location.includes(selectedCity.Location) || location.includes("All Utah County")
       })
 
       setLocationContacts(newContacts)
@@ -50,14 +68,25 @@ export default function SwarmMap() {
   const locations = locationContacts.map((contact)=> { 
     return (
       <div>
-        <h2>{contact["First and Last Name:"]}</h2>
-        <h3>{contact["MMS and SMS capable phone number (CELL ONLY)"]}</h3>
+        <h2>{contact[2]}</h2>
+        <h3><a href={`tel:${contact[3]} `}>{contact[3]}</a></h3>
+        <h3><a href={`mailto:${contact[4]} `}>{contact[4]}</a></h3>
       </div>
     )
   })
 
+
+
   useEffect(() => {
     
+  readRemoteFile('https://docs.google.com/spreadsheets/d/e/2PACX-1vTRN6CnLBRxR58umkFZl9dbSKd42l7Gzu0TyRrH6OlUOxO-ki13Fa1MjO1QR4T_eNfJOwsPFY-4Fqhj/pub?gid=1628270625&single=true&output=csv', {
+    download: true,
+    complete: (results) => {
+      console.log(results.data, "results data")
+      setSwarmContacts(results.data)
+    }
+  })
+
     const listener = e => {
       if(e.key === "Escape") {
         setSelectedCity(null);
@@ -76,7 +105,7 @@ export default function SwarmMap() {
       {...viewport}
      mapboxApiAccessToken={process.env.GATSBY_MAP_TOKEN}
       // mapStyle="mapbox://styles/sealdous/ckmb69xdc0zug17q5wz14j8dw"
-      mapStyle="mapbox://styles/mapbox/outdoors-v11"
+      mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={viewport => {
         setViewport(viewport);
       }}
@@ -95,20 +124,7 @@ export default function SwarmMap() {
               <img src={skateboarding} alt="Bee Icon"/>{city.Location}</button>
           </Marker>
         ))} 
-        {selectedCity && (
-          <Popup 
-            latitude={selectedCity.Latitude} 
-            longitude={selectedCity.Longitude}
-            onClose={() => {
-              setSelectedCity(null)
-            }}>
-            <div>
-              <h2>{selectedCity.Location}</h2>
-            </div>
-          
-          </Popup>
-   
-        )}
+      
         </ReactMapGL>
 
         {locations}
