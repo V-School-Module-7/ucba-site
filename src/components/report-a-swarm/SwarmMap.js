@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl'
-import BeeSVG from "./BeeSVG.svg"
-import BeePNG from "./BeePNG.png"
-// import skateboarding from "./skateboarding.svg"
 import UtahLatLong from "./UtahLatLong.json"
 import { readRemoteFile } from 'react-papaparse'
 import styled from "styled-components"
@@ -15,7 +12,7 @@ export default function SwarmMap() {
   const [viewport, setViewport] = useState({
     latitude: 40.2338,
     longitude: -111.6585,
-    width: '80vw',
+    width: '60vw',
     height: '60vh',
     zoom: 10
   
@@ -27,14 +24,10 @@ export default function SwarmMap() {
   const [locationContacts, setLocationContacts] = useState([])
   
 
-
-console.log(swarmContacts, "swarm contacts")
-
   const displayContacts = () => { 
     if(selectedCity) { 
       let newContacts = swarmContacts.filter((contact, index) => {
         let location = contact[5].split(", ")
-        console.log(location)
         return location.includes(selectedCity.Location) || location.includes("All Utah County")
       })
 
@@ -59,7 +52,7 @@ console.log(swarmContacts, "swarm contacts")
   readRemoteFile('https://docs.google.com/spreadsheets/d/e/2PACX-1vTRN6CnLBRxR58umkFZl9dbSKd42l7Gzu0TyRrH6OlUOxO-ki13Fa1MjO1QR4T_eNfJOwsPFY-4Fqhj/pub?gid=1628270625&single=true&output=csv', {
     download: true,
     complete: (results) => {
-      console.log(results.data, "results data")
+      // console.log(results.data, "results data")
       setSwarmContacts(results.data)
     }
   })
@@ -81,7 +74,6 @@ console.log(swarmContacts, "swarm contacts")
     <ReactMapGL
       {...viewport}
      mapboxApiAccessToken={process.env.GATSBY_MAP_TOKEN}
-      // mapStyle="mapbox://styles/sealdous/ckmb69xdc0zug17q5wz14j8dw"
       mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={viewport => {
         setViewport(viewport);
@@ -98,7 +90,6 @@ console.log(swarmContacts, "swarm contacts")
               displayContacts()
             }}
             >
-              {/* <img src={skateboarding} alt="Bee Icon"/> */}
               {city.Location}
               </CityButton>
               
