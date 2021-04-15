@@ -27,7 +27,7 @@ const HomeContainer = styled.div`
 
 const TextContainer = styled.div`
   position: relative;
-  width: 100vw;
+  width: 80vw;
   height: auto;
   margin: auto;
   margin-top: 32px;
@@ -45,6 +45,7 @@ export const Paragraph = styled.div`
   line-height: 32px;
   text-align: left;
   color: #000000;
+  
 
   @media (max-width: 1000px) {
     text-align: center;
@@ -197,12 +198,12 @@ const reportASwarm = () => {
         <Paragraph>
           It is very important to capture/rescue honey bee swarms in our area so
           that they are not lost to parasites, disease, or exterminators. You can contact Mike, the
-          Swarm Coordinator, at the information below.
-          {/* have put together
-          the lists of available beekeepers who will remove swarms at no charge.
-          Please select your city/area below on the interactive map to locate a
+          Swarm Coordinator, at the information below.</Paragraph>
+          <br></br><br></br>
+          <Paragraph>We have put together the lists of available beekeepers who will remove swarms at no charge.
+          Please double-click your city/area below on the interactive map to locate a
           beekeeper near you. If there is not a beekeeper listed, look at
-          surrounding cities/areas. */}
+          surrounding cities/areas.
         </Paragraph>
        
       </TextContainer>
@@ -213,6 +214,8 @@ const reportASwarm = () => {
         <a href="tel:+18016331887">801-633-1887</a>
         <br />
         <a href="mailto:mike@carnibuilders.com">mike@carnibuilders.com</a>
+
+       
         <CenteringContainer>
         <SwarmMap />
         
