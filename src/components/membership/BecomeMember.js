@@ -13,9 +13,9 @@ const BecomeMember = () => {
             <GreenLineContainer>
                 <BoxTitle>Membership in the Utah County Beekeepers Association is open to anyone who meets the following criteria:</BoxTitle>
                 <Indent>
-                <HeaderParagraph>- Currently a Beekeeper or interested in becoming a beekeeper or interested in beekeeping</HeaderParagraph>
+                    <HeaderParagraph>- Currently a Beekeeper or interested in becoming a beekeeper or interested in beekeeping</HeaderParagraph>
 
-                <HeaderParagraph>- Submits the yearly dues for membership along with the membership form. The application and payment are due by January 31 of that year.</HeaderParagraph>
+                    <HeaderParagraph>- Submits the yearly dues for membership along with the membership form. The application and payment are due by January 31 of that year.</HeaderParagraph>
                 </Indent>
 
                 <HeaderParagraph>It is that easy! We don't mind if you are not currently keeping bees or if you live in Utah County or not.</HeaderParagraph>
@@ -33,9 +33,9 @@ const BecomeMember = () => {
             <Paragraph>Click here to fill out an <a href="https://docs.google.com/forms/d/1f4nNeZFfyYn2vqLFDt1Cqvle8aMp3EaA1OAhnVCM65k/edit?ts=5ff898bb&gxids=7628" target="_blank" rel="noopener noreferrer">online application</a> and pay online</Paragraph>
             <Paragraph>Or, you can send a check or money order made out to "Utah County Beekeepers Association" along with a completed Membership Application Form to:</Paragraph>
             <Paragraph>Utah County Beekeepers Association <br></br>
-            Attention: Secretary<br></br>
-            2862 W 1060 N<br></br>
-            Provo UT 84601</Paragraph>
+                Attention: Secretary<br></br>
+                185 North 1300 East<br></br>
+                Pleasant Grove, UT 84062</Paragraph>
             <Paragraph>NOTE: If ordering a T-shirt or Honey Bee Oil, you must pick them up at the next meeting you attend – they will not be shipped to your home!</Paragraph>
             <br></br>
             <br></br>
