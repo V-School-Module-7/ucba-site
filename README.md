@@ -16,9 +16,9 @@ This site is built using Gatsby JS and hosetd through Netlify. Please contact th
 To clone down the code and run it locally, you must have Node.js installed. In a terminal window, run the
 following commands: 
 
-`
+```
 git clone git@github.com:V-School-Module-7/ucba-site.git
 cd ucba-site
 npm install
 npm start
-`
+```
