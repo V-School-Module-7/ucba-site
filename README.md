@@ -13,6 +13,7 @@ We're glad you're here! Enjoy UCBA's new website!
 ### Maintenence 
 This site is built using Gatsby JS and hosetd through Netlify. Please contact the administrator for the Netlify account details.
 
+#### Fork Code to Make Changes
 To fork the code, click on "Fork" in the top right corner. This will add a new copy to your Github account. Navigate to the repository. Click on the arrow next to the green "Code" button and copy either the SSH or HTTPS address. Run the following command (replacing the address after "git clone" with the address you copied):
 
 You must have Node.js installed to tun the code locally.
