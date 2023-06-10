@@ -8,7 +8,7 @@
     "@babel/core": "^7.11.1",
     "a": "^2.1.2",
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.20.13",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^1.1.2",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
